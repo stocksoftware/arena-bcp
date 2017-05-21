@@ -54,7 +54,7 @@ li.L9 { background: #eee }
 
 
 /* Highlighting style for Apache configuration files */
-pre.lang-config{ 
+pre.lang-config{
     background-color: #e5ecf3;
     color: #000;
     padding: 0.5em;
@@ -69,7 +69,7 @@ pre.lang-config{
 
 
 /* Highlighting style for C source code */
-pre.lang-c{ 
+pre.lang-c{
     background-color: #f8f6ee;
     color: #000;
     padding: 0.5em;
@@ -88,7 +88,7 @@ pre.lang-c{
 
 
 /* Highlighting style for Lua source code */
-pre.lang-lua{ 
+pre.lang-lua{
     background-color: #f8f6ee;
     color: #000;
     padding: 0.5em;
@@ -106,7 +106,7 @@ pre.lang-lua{
 
 
 /* Highlighting style for Perl source code */
-pre.lang-perl{ 
+pre.lang-perl{
     background-color: #f8f6ee;
     color: #000;
     padding: 0.5em;

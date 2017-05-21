@@ -12,7 +12,7 @@
      $ make install
      $ PREFIX/bin/apachectl start
 
-     NOTES: * Replace PREFIX with the filesystem path under which 
+     NOTES: * Replace PREFIX with the filesystem path under which
               Apache should be installed.  A typical installation
               might use "/usr/local/apache2" for PREFIX (without the
               quotes).
@@ -62,7 +62,7 @@
      $ CC="pgcc" CFLAGS="-O2" \
      ./configure --prefix=/sw/pkg/apache \
      --enable-rewrite=shared \
-     --enable-speling=shared 
+     --enable-speling=shared
 
   The easiest way to find all of the configuration flags for Apache 2.4
   is to run ./configure --help.

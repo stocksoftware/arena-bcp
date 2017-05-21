@@ -2,13 +2,13 @@
  Apache HTTP Server 2.4 Limited OpenSSL Distribution
 
  This binary distribution includes the minimal components of OpenSSL required
- to support mod_ssl for Apache HTTP Server version 2.4 (details are listed 
- in OPENSSL-README.txt.)  For the complete list of CHANGES to this and later 
+ to support mod_ssl for Apache HTTP Server version 2.4 (details are listed
+ in OPENSSL-README.txt.)  For the complete list of CHANGES to this and later
  versions of OpenSSL, please refer to the definative source,
  <http://www.openssl.org/news/changelog.html>, or see the CHANGES file in the
  full binary or source distribution package from <http://www.openssl.org/>.
 
- These OpenSSL binaries were built for distribution from the U.S. without 
+ These OpenSSL binaries were built for distribution from the U.S. without
  support for the patented encryption methods IDEA, MDC-2 or RC5.
 
 --------------------------------------------------------------------------------
@@ -307,7 +307,7 @@
       o Compression memory leak fixed.
       o Compression session resumption fixed.
       o Ticket and SNI coexistence fixes.
-      o Many fixes to DTLS handling. 
+      o Many fixes to DTLS handling.
 
   Major changes between OpenSSL 0.9.8k and OpenSSL 0.9.8l [5 Nov 2009]:
 
@@ -340,7 +340,7 @@
       o Add gcc 4.2 support.
       o Add support for AES and SSE2 assembly lanugauge optimization
         for VC++ build.
-      o Support for RFC4507bis and server name extensions if explicitly 
+      o Support for RFC4507bis and server name extensions if explicitly
         selected at compile time.
       o DTLS improvements.
       o RFC4507bis support.
@@ -520,7 +520,7 @@
   Major changes between OpenSSL 0.9.7a and OpenSSL 0.9.7b [10 Apr 2003]:
 
       o Security: counter the Klima-Pokorny-Rosa extension of
-        Bleichbacher's attack 
+        Bleichbacher's attack
       o Security: make RSA blinding default.
       o Configuration: Irix fixes, AIX fixes, better mingw support.
       o Support for new platforms: linux-ia64-ecc.
@@ -593,7 +593,7 @@
   Major changes between OpenSSL 0.9.6i and OpenSSL 0.9.6j [10 Apr 2003]:
 
       o Security: counter the Klima-Pokorny-Rosa extension of
-        Bleichbacher's attack 
+        Bleichbacher's attack
       o Security: make RSA blinding default.
       o Build: shared library support fixes.
 
@@ -705,7 +705,7 @@
 
   Major changes between OpenSSL 0.9.5 and OpenSSL 0.9.5a [1 Apr 2000]:
 
-      o Bug fixes for Win32, SuSE Linux, NeXTSTEP and FreeBSD 2.2.8 
+      o Bug fixes for Win32, SuSE Linux, NeXTSTEP and FreeBSD 2.2.8
       o Shared library support for HPUX and Solaris-gcc
       o Support of Linux/IA64
       o Assembler support for Mingw32

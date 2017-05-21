@@ -21,4 +21,3 @@ http://ming.sf.net
 Good luck!  :)
 
  + The Ming Development Team
-
