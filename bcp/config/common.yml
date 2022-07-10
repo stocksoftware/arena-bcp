@@ -1,0 +1,51 @@
+sso_auth_url:  https://arena.nafc.org.au/auth/realms/Arena/protocol/openid-connect/token
+sso_auth_grant_type: password
+sso_auth_client_id: arena-api
+sso_auth_client_secret: na
+
+arena_rest_api_root_url: https://arena.nafc.org.au/
+
+report_completion_url: register/api/unsec/bcp/complete
+report_completion_version: 2017-03
+
+arena_apis:
+  aircraft:
+    file_name: aircraft
+    url: resource/api/ext/aircraft?fields
+    version: 2016-12
+  equipment:
+    file_name: equipment
+    url: resource/api/ext/equipment?fields
+    version: 2016-12
+  availability:
+    file_name: availability
+    url: register/api/availability
+    version: 2018-06
+  locations:
+    file_name: locations
+    url: register/api/locations?fields
+    version: 2017-01
+  callsigns:
+    file_name: callsigns
+    url: resource/api/aircraftCallsigns
+    version: 2017-02
+  currentGeoLocations:
+    file_name: currentGeoLocations
+    url: tracking/api/ext/currentLocations?geojson=true&fields
+    version: 2016-01
+  currentLocations:
+    file_name: currentLocations
+    url: tracking/api/ext/currentLocations?fields
+    version: 2016-01
+  incidents:
+    file_name: incidents
+    url: register/api/incidents?geojson=true&fields
+    version: 2016-06
+  tracks:
+    file_name: tracks
+    url: tracking/api/ext/tracks?fields
+    version: 2016-01
+  geoTracks:
+    file_name: geoTracks
+    url: tracking/api/ext/tracks?geojson=true&fields
+    version: 2016-01

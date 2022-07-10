@@ -1,0 +1,7 @@
+Cluster markers so we dont miss any available aircarft
+CSS to ARENA style
+Plan a heiracy of data tables 
+provide links to excel files
+clean up .txt files from node process
+only make win .exe
+use ARENA aircraft icons

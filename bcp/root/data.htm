@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.min.css">		
+<script src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function(e) {
+	$('#aircraftTable').DataTable({
+        "ajax": {
+            "url": "data/callsigns.json",
+            "dataSrc": "aircraft",
+        },
+		columns: [
+            { data: 'callsign' },
+            { data: 'operatorName' },
+            { data: 'airframe' },
+            { data: 'registration' },
+            { data: 'categoryReadable' },
+			{ data: 'make' },
+            { data: 'operatorName' }
+        ]
+    });
+	
+   $.getJSON( "data/callsigns.json" , function( result ){
+ 		console.log(result);
+    });
+});
+</script>
+</head>
+<body>
+
+<A href ="./map.htm">MAP</A>
+<table id="aircraftTable" class="display compact" style="width:100%">
+ </table>
+
+</body>
+</html>

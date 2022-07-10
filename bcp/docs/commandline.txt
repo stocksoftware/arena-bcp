@@ -1,0 +1,5 @@
+node backup.js d: .\config\common.yml .\config\local.yml
+
+or
+
+arena-bcp-win.exe  d: .\config\common.yml .\config\local.yml

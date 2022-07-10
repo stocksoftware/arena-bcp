@@ -1,0 +1,6 @@
+npm install js-yaml
+npm install merge-yaml
+npm install git-revision
+npm install request
+npm install csvjson
+npm install express

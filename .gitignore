@@ -1,3 +1,5 @@
 /.bundle
 /.idea
 /vendor/bundle
+bcp/data
+bcp/root/data
