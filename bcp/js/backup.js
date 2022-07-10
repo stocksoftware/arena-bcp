@@ -1,6 +1,5 @@
-const CONSOLE = require('lib/console');
+const CONSOLE = require('./lib/console');
 const fs = require('fs');
-const yaml = require('js-yaml');
 const mergeYaml = require('merge-yaml');
 const gitRevision = require('git-revision');
 const request = require('request');
@@ -25,64 +24,50 @@ console.log('localConfigFile: ' + localConfigFile);
 // Read config files
 let config;
 try {
-  try {
-    if (fs.existsSync(commonConfigFile))
-      // read the main config file
-    {
-      config = yaml.safeLoad(fs.readFileSync(commonConfigFile, 'utf8'));
-      console.log('commonConfigFile: READ');
-
-      try {
-        if (fs.existsSync(localConfigFile))
-          // look for the 'local config file on the USB drive
-        {
-          config = mergeYaml([commonConfigFile, localConfigFile]);
-          console.log('localConfigFile: READ');
-        } else
-          // otherwise look for teh local config file in the current directory
-        {
-          if (fs.existsSync(localConfigFile)) {
-            config = mergeYaml([commonConfigFile, localConfigFile]);
-            console.log(CONSOLE.BgMagenta + 'localConfigFile: READ from startup directory' + CONSOLE.Reset);
-          }
-        }
-      } catch (err) {
-        console.error(err);
-      }
-    }
-  } catch (err) {
-    console.error(err);
+  if (!fs.existsSync(commonConfigFile)) {
+    console.log(`${CONSOLE.Error}ERROR${CONSOLE.Reset} Failed to open COMMON config file: ${__dirname}/${commonConfigFile}`);
+    process.exit(-1);
   }
-} catch (e) {
-  console.log(e);
+  if (!fs.existsSync(localConfigFile)) {
+    console.log(`${CONSOLE.Error}ERROR${CONSOLE.Reset} Failed to open LOCAL config file: ${__dirname}/${localConfigFile}`);
+    process.exit(-1);
+  }
+
+  config = mergeYaml([commonConfigFile, localConfigFile]);
+  console.log('localConfigFile: READ');
+
+} catch (err) {
+  console.error(`${CONSOLE.Error}ERROR${CONSOLE.Reset} Failed to read config: ${err}`);
+  process.exit(-1);
 }
 
 // Get Git Version and print to console
 let git_revision;
 try {
   git_revision = gitRevision('short');
-  console.log('GIT revision: ' + git_revision);
+  console.log(`GIT revision: ${git_revision}`);
 } catch (e) {
-  console.log(CONSOLE.BgRed + 'ERROR' + CONSOLE.Reset + ' GIT revision not found.');
+  console.log(`${CONSOLE.Error}ERROR${CONSOLE.Reset} GIT revision not found.`);
   git_revision = 'none';
 }
 
 // check data directory exists
 const data_path = config.data_path || './data';
 if (fs.existsSync(data_path)) {
-  console.log('Local data directory OK: ' + data_path);
+  console.log(`Local data directory OK: ${data_path}`);
 } else {
-  console.log(CONSOLE.BgYellow + 'WARNING' + CONSOLE.Reset + ' local data directory missing: ' + data_path);
+  console.log(`${CONSOLE.Warning}WARNING${CONSOLE.Reset} Local data directory missing: ${data_path}`);
   try {
     fs.mkdirSync(data_path);
-    console.log('Local data directory created: ' + data_path);
+    console.log(`Local data directory created: ${data_path}`);
   } catch {
-    console.log('Local data directory create ' + CONSOLE.BgRed + 'ERROR' + CONSOLE.Reset + ': ' + data_path);
+    console.log(`${CONSOLE.Error}ERROR${CONSOLE.Reset} Failed to create local data directory: ${__dirname}/${data_path}`);
+    process.exit(-1);
   }
 }
 
 console.log('=======================');
-console.log('==== FETCHING DATA ==== ');
+console.log('==== FETCHING DATA ====');
 
 // Get access token
 let access;
@@ -135,7 +120,7 @@ request.post({
       console.log(options.filename);
       console.error('request error:', err); // Print the error if one occurred
       if (res.statusCode !== '200') {
-        console.log(CONSOLE.BgMagenta + 'statusCode:', res && res.statusCode + CONSOLE.Reset);
+        console.log(CONSOLE.Highlight + 'statusCode:', res && res.statusCode + CONSOLE.Reset);
       } else {
         console.log('statusCode:', res && res.statusCode); // Print the response status code if a response was received
       }
