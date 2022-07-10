@@ -1,2 +1,6 @@
-node\node.exe bcp/js/backup.js
-copy bcp\data\*.json bcp\root\data\*.json
+if not exist "reports" mkdir reports
+cd bcp
+node\node.exe js/backup.js
+copy data\*.json root\data
+copy data\*.csv ..\reports
+cd ..
