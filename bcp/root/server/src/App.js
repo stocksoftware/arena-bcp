@@ -6,21 +6,20 @@ import List from './pages/list';
 import './less/app.less';
 // import 'react-bootstrap/dist/'
 const App = () => {
-    const [key, setKey] = useState("map");
+    const [key, setKey] = useState('map');
+
     return (
-        <div className="app">
-            <Tabs
-                activeKey={key}
-                onSelect={(k) => setKey(k)}
-                className="mb-3"
-            >
-                <Tab eventKey="map" title="MAP">
-                    <Map/>
-                </Tab>
-                <Tab eventKey="list" title="LIST">
-                    <List/>
-                </Tab>
-            </Tabs>
+        <div id="app">
+            <div className="navFilter">
+            <div>
+                Mode
+            </div>
+             <ul id="viewFilter">
+                 <li className={key==='map'? 'active btn':'btn'} onClick={()=>{setKey('map')}}>MAP</li>
+                 <li className={key==='list'?'active btn':'btn'} onClick={()=>{setKey('list')}}>LIST</li>
+             </ul>
+            </div>
+            {key==='map'? <Map/> : <List/>}
         </div>
     );
 };
