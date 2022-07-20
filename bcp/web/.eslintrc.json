@@ -1,0 +1,56 @@
+{
+    "parser": "@babel/eslint-parser",
+    "env": {
+        "browser": true,
+        "es2015": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "plugin:react-hooks/recommended",
+        "plugin:lodash/recommended"
+    ],
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "requireConfigFile": false
+    },
+    "plugins": [
+        "react",
+        "lodash"
+    ],
+    "rules": {
+        "indent": "off",
+        "no-extra-semi": 2,
+        "object-curly-spacing": "off",
+        "arrow-body-style": ["off", "always"],
+        "semi": [2, "always"],
+        "space-before-function-paren": "off",
+        "react/display-name": "off",
+        "react-hooks/exhaustive-deps": "off",
+        "react/prop-types": "off",
+        "react/jsx-key": "off",
+        "node/no-callback-literal": "off",
+        "lodash/collection-ordering": "off",
+        "lodash/collection-method-value": "off",
+        "lodash/import-scope": "off",
+        "lodash/matches-prop-shorthand": "off",
+        "lodash/preferred-alias": "off",
+        "lodash/prefer-constant": "off",
+        "lodash/prefer-get": "off",
+        "lodash/prefer-immutable-method": "off",
+        "lodash/prefer-includes": "off",
+        "lodash/prefer-is-nil": "off",
+        "lodash/prefer-lodash-method": "off",
+        "lodash/prefer-lodash-typecheck": "off",
+        "lodash/prefer-noop": "off",
+        "lodash/prefer-startswith": "off"
+    }
+}
