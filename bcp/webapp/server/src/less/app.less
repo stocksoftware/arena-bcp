@@ -1,0 +1,58 @@
+@import "variables.less";
+body{
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  #app {
+
+    .navFilter {
+      background: @altColour;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 1em;
+      height: 46px;
+
+      #modeFilter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        #dropdown-mode {
+          background: #fff;
+          color: black;
+          height: 34px;
+
+          &:hover {
+            background: @darkOrange;
+          }
+        }
+      }
+
+      #viewFilter {
+        border-radius: 4px;
+        margin: 0 0.5em;
+        display: flex;
+        background: #fff;
+        padding: 0;
+
+        li {
+          list-style: none;
+          border-radius: 0;
+          box-shadow: -1px 0 0 0 lightgrey;
+          height: 34px;
+
+          &:hover {
+            background: @darkOrange;
+          }
+
+          &.active {
+            background: @primaryColour;
+          }
+        }
+      }
+    }
+
+    .leaflet-container {
+      height: 100vh;
+    }
+  }
+}
