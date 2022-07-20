@@ -4,4 +4,4 @@
 bcp/data
 bcp/webapp/data
 reports
-bcp/webapp/server/node_modules
+bcp/webapp/src/node_modules
