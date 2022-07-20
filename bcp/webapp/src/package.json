@@ -9,7 +9,9 @@
     "react": "^18.2.0",
     "react-bootstrap": "^2.4.0",
     "react-dom": "^18.2.0",
-    "react-leaflet": "4.0.0"
+    "react-leaflet": "4.0.0",
+    "mobx": "6.1.8",
+    "mobx-react": "7.4.0"
   },
   "devDependencies": {
     "@babel/core": "^7.18.6",
