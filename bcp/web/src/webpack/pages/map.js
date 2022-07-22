@@ -1,36 +1,32 @@
-import React from "react";
-import {MAP_CONFIG} from "../constant";
+import React, {useState} from "react";
 import {
-    LayersControl,
-    MapContainer,
-    TileLayer,
+    MapContainer, LayersControl, TileLayer, LayerGroup
 } from "react-leaflet";
+import IncidentLayer from "../components/incidentLayer";
+import EquipmentLayer from "../components/equipmentLayer"
+import {MAP_CONFIG} from "../constant";
 
 const Map = () => {
-    const position = [51.505, -0.09];
-
-    return(
+    const position = [-27, 130];
+    const {showIncident, setShowIncident} = useState(true);
+    return (
         <MapContainer
             center={position}
-            zoom={10}
-            scrollWheelZoom={false}
+            zoom={5}
+            scrollWheelZoom={true}
+            id="map"
         >
-            <LayersControl position="topright">
-                <LayersControl.BaseLayer name="Topographic" checked>
-                    <TileLayer attribution="Tiles &copy; Esri" url={MAP_CONFIG.ESRItopoURL} />
-                </LayersControl.BaseLayer>
-                <LayersControl.BaseLayer name="Aerial">
-                    <TileLayer
-                        attribution="Tiles &copy; Esri"
-                        url={MAP_CONFIG.ESRIearthURL}
-                    />
-                </LayersControl.BaseLayer>
-                <LayersControl.BaseLayer name="Aerial - Topo - Blend">
-                    <TileLayer
-                        attribution="Tiles &copy; Esri"
-                        url={MAP_CONFIG.ESRIearthURL}
-                    />
-                </LayersControl.BaseLayer>
+            <TileLayer
+                attribution='Tiles &copy; Esri'
+                url={MAP_CONFIG.ESRItopoURL}
+            />
+            <LayersControl>
+                <LayersControl.Overlay name="Incident" >
+                    <IncidentLayer/>
+                </LayersControl.Overlay>
+                <LayersControl.Overlay name="Equipment" >
+                    <EquipmentLayer/>
+                </LayersControl.Overlay>
             </LayersControl>
         </MapContainer>
     );

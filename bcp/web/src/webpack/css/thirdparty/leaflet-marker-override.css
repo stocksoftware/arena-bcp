@@ -1,0 +1,26 @@
+.unselectedIncident {
+  opacity: 0.2;
+}
+
+.unselectedIncident[class*="red"] {
+  opacity: 0.3;
+}
+
+.dispatched {
+  margin-top: 20px;
+}
+
+.dispatched:after {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  content: attr(data-content);
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 12px;
+}
+
+.extra-marker i.fa.dispatched {
+  margin-top: 6px;
+}

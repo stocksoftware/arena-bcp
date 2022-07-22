@@ -1,4 +1,7 @@
 @import "variables.less";
+@import-fa-dir: "../css/thirdparty/font-awesome/less";
+@import "@{import-fa-dir}/variables";
+
 body{
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   #app {
@@ -53,6 +56,13 @@ body{
 
     .leaflet-container {
       height: 100vh;
+      .leaflet-marker-icon {
+        .fa{
+          position: absolute;
+          bottom:25px;
+          left: 12px;
+          font-size: 14px;
+        }
     }
   }
-}
+}}

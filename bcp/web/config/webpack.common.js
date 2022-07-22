@@ -5,7 +5,7 @@ module.exports = {
         index: path.join(__dirname, "../src/webpack/index.js"),
     },
     output: {
-        filename: "[name].[chunkhash:4].js",
+        filename: "[name].[hash:4].js",
         path: path.join(__dirname, "../../dist"),
     },
     plugins: [
