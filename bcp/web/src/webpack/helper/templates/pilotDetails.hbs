@@ -1,0 +1,15 @@
+<div class="section">
+  <div class="emphasis">Pilot</div>
+  <div class="subsection">
+    <div>{{name}}</div>
+    <div class="contact">
+      <div>{{mobile}}</div>
+      {{#if mobile}}
+        <div class="callto"><a href="{{{phoneIntegration}}}">
+          <i class="fa fa-phone"></i> Call</a>
+        </div>
+      {{/if}}
+    </div>
+    <div>Checked in {{checkinAt}}</div>
+  </div>
+</div>

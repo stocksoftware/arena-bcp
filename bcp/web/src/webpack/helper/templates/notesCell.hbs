@@ -1,0 +1,11 @@
+<div class="colNotes amPopupContainer hoverToggle" {{#if popup}}data-popup="{{popup}}{{/if}}">
+  <div>
+    {{#if truncatedNotes}}
+      {{{truncatedNotes}}}
+    {{/if}}
+  </div>
+  {{#if notesUrl}}
+    <a href="#" title="Edit Notes" target="register" class="btn editNotesBtn"
+       onclick="return AM_FUNCS.editAssetNotes(this, '{{notesUrl}}')"><i></i></a>
+  {{/if}}
+</div>

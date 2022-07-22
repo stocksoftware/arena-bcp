@@ -1,0 +1,10 @@
+<div class="section opsOnly">
+  <div class="action-buttons opsButtons">
+    <a href="{{viewUrl}}" title="View in Register" target="register" class="btn viewInRegisterBtn"><i></i></a>
+    {{#if pinned}}
+      <a title="Unpin Asset" data-assetid="{{assetId}}" data-assettype="{{assetType}}" class="btn unpinAssetBtn"><i class="fa fa-thumb-tack"></i></a>
+    {{else}}
+      <a title="Pin Asset" data-assetid="{{assetId}}" data-assettype="{{assetType}}" class="btn pinAssetBtn"><i class="fa fa-thumb-tack unpinned"></i></a>
+    {{/if}}
+  </div>
+</div>

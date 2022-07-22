@@ -1,0 +1,26 @@
+<div class="arena-map-table">
+  {{{commonContent}}}
+  <span class="warning-icon">
+    <i class="fa fa-warning"></i> This aircraft has been registered by multiple operators
+  </span>
+  <ul class="tabs" id="{{tabsId}}-ul">
+    {{#each aircraft}}
+      <li id="li-{{@index}}" class="{{#if @first}}selected{{/if}}">
+        <a href="#" onclick="AM_MAP.showOperatorTab('{{../tabsId}}', 'tab-{{@index}}', 'li-{{@index}}')">Operator {{this.index}}</a>
+      </li>
+    {{/each}}
+  </ul>
+  <div id="{{tabsId}}-div">
+    {{#each aircraft}}
+    <div id="tab-{{@index}}" class="tabContent {{#if @first}}open{{else}}close{{/if}}">
+      <div class="section">{{{incidentDetials}}}</div>
+      <div class="section">{{{operatorDetails}}}</div>
+      <div class="section">{{{availabilityNotes}}}</div>
+      <div class="section">{{{aircraftAction}}}</div>
+      <div class="section planningOnly">{{{planningButton}}}</div>
+      {{{opsButtons}}}
+    </div>
+    {{/each}}
+  </div>
+  <div class="section">{{{contactDetails}}}</div>
+</div>

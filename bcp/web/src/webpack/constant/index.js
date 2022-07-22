@@ -1,6 +1,6 @@
 export const ASSET_MODE={
-    aircraft: 'AIRCRAFT',
-    equipment: 'EQUIPMENT'
+    AIRCRAFT: 'AIRCRAFT',
+    EQUIPMENT: 'EQUIPMENT'
 };
 
 export const MAP_CONFIG = {

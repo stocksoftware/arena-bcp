@@ -1,0 +1,8 @@
+<div class="activeBaseMarker pos_{{pos}}">
+  <div class="abmIcon"><img src="icons/location-crosshairs-active.svg" alt="X"></div>
+  <div class="abmContent">
+    {{#each callsigns}}
+      <div class="abmCallsign {{#if this.selected}}selected{{/if}}" data-action-id="{{{this.id}}}">{{{this.callsign}}}</div>
+    {{/each}}
+  </div>
+</div>

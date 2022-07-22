@@ -1,0 +1,22 @@
+<div class="emphasis">
+  This {{assetLabel}} has no tracking tracking data found in ARENA
+</div>
+<div class="section">
+  This could be because:
+  <div>
+    1) the {{assetLabel}} has not flown since 1 Jan 2016
+  </div>
+  <div>
+    2) the IMEI set in ARENA is wrong
+  </div>
+    {{#if imei}}<div>IMEI currently: <span class="emphasis">{{imei}}</span></div>{{/if}}
+  <div>
+    3) the Operator has not configured TracPlus and / or their tracking providers systems to forward the data to NAFC.
+  </div>
+  <div class="section">
+    Set the correct IMEI in {{assetLabel}} -> {{imeiInstruction}} GPS & Tracking -> Tracking System IMEI or Serial Number
+  </div>
+  <div class="section">
+    Contact TracPlus at support@tracplus.com
+  </div>
+</div>

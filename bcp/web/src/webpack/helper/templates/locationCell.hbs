@@ -1,0 +1,10 @@
+<div>
+  {{#each locations}}
+    <div>
+      <span class="loc-header">{{eventType}}</span> {{location}}
+    </div>
+  {{/each}}
+  {{#if distance}}
+    <div>{{distance}}</div>
+  {{/if}}
+</div>

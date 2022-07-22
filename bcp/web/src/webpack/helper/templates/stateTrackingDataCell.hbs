@@ -1,0 +1,21 @@
+<div class="amPopupContainer mapPopup hoverToggle"
+  {{#if locationFeature}}
+     data-lat="{{locationFeature.geometry.coordinates.[1]}}"
+     data-lon="{{locationFeature.geometry.coordinates.[0]}}"
+  {{/if}}
+     data-popup="{{popup}}">
+  <span class="{{#if unknown}}tblWarning{{else}}availability flying{{/if}}">{{stateText}}</span>
+  {{#if locationFeature}}
+    <span class="registration">[{{func locationFeature.geometry.coordinates.[1] 'toFixed' 3}},{{func locationFeature.geometry.coordinates.[0] 'toFixed' 3}}]</span>
+    {{#if showFlightState}}
+      <div class="registration">[{{locationFeature.properties.speed}} km/h, {{locationFeature.properties.track}}&deg;, {{locationFeature.geometry.coordinates.[2]}} feet]</div>
+    {{/if}}
+    <div></div>
+  {{/if}}
+  {{#if locationText}}
+    <div> at <span class="registration">{{locationText}}</span></div>
+  {{/if}}
+  {{#if reportingInterval}}
+      <div class="availability tblWarning emphasis">Reporting Interval: {{reportingInterval}}s</div>
+  {{/if}}
+</div>

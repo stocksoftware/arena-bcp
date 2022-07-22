@@ -1,0 +1,16 @@
+<div class="amPopup arrow {{position}} {{#if open}}open{{/if}}">
+  <div class="popupBody">
+    {{#if title}}<h3 class="popupTitle">{{{title}}}</h3>{{/if}}
+    <div class="popupContent">
+      {{#if content}}
+        {{{content}}}
+      {{/if}}
+      {{#if contents}}
+        {{#each contents}}
+          {{#if this}}
+            <div class="section">{{{this}}}</div>{{/if}}
+        {{/each}}
+      {{/if}}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+<div class="section opsOnly">
+  <div class="action-buttons opsButtons">
+    <a href="{{viewUrl}}" title="View Incident" target="register" class="btn viewIncidentBtn"><i></i></a>
+    {{#if linked}}
+      <a title="UnLink Incident" data-incidentid="{{incidentId}}" class="btn unlinkIncidentBtn"><i class="svg-icon unlink-icon"></i></a>
+    {{else}}
+      <a title="Link Incident" data-incidentid="{{incidentId}}" class="btn linkIncidentBtn"><i class="svg-icon link-icon"></i></a>
+    {{/if}}
+  </div>
+</div>

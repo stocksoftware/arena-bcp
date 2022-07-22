@@ -1,6 +1,28 @@
+
 {
     "type": "FeatureCollection",
     "features": [
+        {
+            "type": "Feature",
+            "geometry": null,
+            "properties": {
+                "id": 622279,
+                "url": "https://arena.nafc.org.au/register/api/incidents/622279?geojson=true",
+                "number": null,
+                "name": "DPI - LLS AERIAL BAITING PROGRAM",
+                "dataSource": "ARENA",
+                "classification": "OTHER",
+                "status": "OTHER",
+                "jurisdiction": "NSW",
+                "locationText": null,
+                "dateCreated": "2019-05-14",
+                "dateClosed": null,
+                "endDate": null,
+                "notes": null,
+                "dispatchCount": 14,
+                "currentDispatchCount": 0
+            }
+        },
         {
             "type": "Feature",
             "geometry": {
@@ -25,7 +47,7 @@
                 "endDate": null,
                 "notes": null,
                 "dispatchCount": 49,
-                "currentDispatchCount": 1
+                "currentDispatchCount": 0
             }
         },
         {
@@ -42,7 +64,6 @@
                 "url": "https://arena.nafc.org.au/register/api/incidents/1109155?geojson=true",
                 "number": null,
                 "name": "ACT RFS RAFT TRAINING",
-                "popupContent": "This is where the Rockies play!",
                 "dataSource": "ARENA",
                 "classification": "OTHER",
                 "status": "OTHER",
@@ -704,7 +725,7 @@
                 "endDate": null,
                 "notes": null,
                 "dispatchCount": 19,
-                "currentDispatchCount": 1
+                "currentDispatchCount": 0
             }
         },
         {
@@ -1074,7 +1095,7 @@
                 "dateCreated": "2022-06-24",
                 "dateClosed": null,
                 "endDate": null,
-                "notes": "ALERT LEVEL : Not Applicable\nCOUNCIL AREA : Maitland\nFIRE : No\nLOCATION : 110 Mount Vincent Road East Maitland\nRESPONSIBLE AGENCY : Rural Fire Service\nSIZE : 0 ha\nSTATUS : Under control\nTYPE : Assist Other Agency\nUPDATED : 21 Jul 2022 11:14\n",
+                "notes": "ALERT LEVEL : Not Applicable\nCOUNCIL AREA : Maitland\nFIRE : No\nLOCATION : 110 Mount Vincent Road East Maitland\nRESPONSIBLE AGENCY : Rural Fire Service\nSIZE : 0 ha\nSTATUS : Under control\nTYPE : Assist Other Agency\nUPDATED : 22 Jul 2022 09:31\n",
                 "dispatchCount": 0,
                 "currentDispatchCount": 0
             }
@@ -1378,114 +1399,6 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    130.737,
-                    -12.4378
-                ]
-            },
-            "properties": {
-                "id": 1372284,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1372284?geojson=true",
-                "number": null,
-                "name": "ERICKSON CR, WAGAIT BEACH",
-                "dataSource": "NT",
-                "classification": "FIRE",
-                "status": "CONTROLLED",
-                "jurisdiction": "NT",
-                "locationText": "ERICKSON CR, WAGAIT BEACH",
-                "dateCreated": "2022-07-16",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "Fire Type : Grass and Scrub Fire\nStatus : Closed\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    134.3961,
-                    -23.523
-                ]
-            },
-            "properties": {
-                "id": 1372649,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1372649?geojson=true",
-                "number": null,
-                "name": "*TREPHINA GORGE -, HART",
-                "dataSource": "NT",
-                "classification": "FIRE",
-                "status": "CONTROLLED",
-                "jurisdiction": "NT",
-                "locationText": "*TREPHINA GORGE -, HART",
-                "dateCreated": "2022-07-17",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "Fire Type : Grass and Scrub Fire\nStatus : Closed\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    126.9996,
-                    -15.9532
-                ]
-            },
-            "properties": {
-                "id": 1372687,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1372687?geojson=true",
-                "number": "2251478",
-                "name": "Bushfire (GIBB, SHIRE OF WYNDHAM-EAST KIMBERLEY,KIMBERLEY,  FCAD: 582722)",
-                "dataSource": "WA",
-                "classification": "FIRE",
-                "status": "OTHER",
-                "jurisdiction": "WA",
-                "locationText": "KIMBERLEY",
-                "dateCreated": "2022-07-17",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "incidentNumber : 582722\npublicationTime : 17/07/2022 15:47:42\nregion : KIMBERLEY\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    131.0321,
-                    -12.6134
-                ]
-            },
-            "properties": {
-                "id": 1372803,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1372803?geojson=true",
-                "number": null,
-                "name": "",
-                "dataSource": "NT",
-                "classification": "FIRE",
-                "status": "CONTROLLED",
-                "jurisdiction": "NT",
-                "locationText": "",
-                "dateCreated": "2022-07-17",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "Fire Type : Grass and Scrub Fire\nStatus : Closed\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
                     128.7027,
                     -15.88
                 ]
@@ -1503,61 +1416,7 @@
                 "dateCreated": "2022-07-17",
                 "dateClosed": null,
                 "endDate": null,
-                "notes": "incidentNumber : 582740\npublicationTime : 18/07/2022 19:41:02\nregion : KIMBERLEY\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    132.2355,
-                    -14.4411
-                ]
-            },
-            "properties": {
-                "id": 1372957,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1372957?geojson=true",
-                "number": null,
-                "name": "STUART HWY, COSSACK",
-                "dataSource": "NT",
-                "classification": "FIRE",
-                "status": "CONTROLLED",
-                "jurisdiction": "NT",
-                "locationText": "STUART HWY, COSSACK",
-                "dateCreated": "2022-07-18",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "Fire Type : Grass and Scrub Fire\nStatus : Closed\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    131.0753,
-                    -12.6433
-                ]
-            },
-            "properties": {
-                "id": 1373028,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1373028?geojson=true",
-                "number": null,
-                "name": "STUART HWY, NOONAMAH",
-                "dataSource": "NT",
-                "classification": "FIRE",
-                "status": "CONTROLLED",
-                "jurisdiction": "NT",
-                "locationText": "STUART HWY, NOONAMAH",
-                "dateCreated": "2022-07-18",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "Fire Type : Grass and Scrub Fire\nStatus : Closed\n",
+                "notes": "incidentNumber : 582740\npublicationTime : 21/07/2022 12:42:20\nregion : KIMBERLEY\n",
                 "dispatchCount": 0,
                 "currentDispatchCount": 0
             }
@@ -1621,87 +1480,6 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    130.935,
-                    -13.0228
-                ]
-            },
-            "properties": {
-                "id": 1373182,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1373182?geojson=true",
-                "number": null,
-                "name": "",
-                "dataSource": "NT",
-                "classification": "FIRE",
-                "status": "CONTROLLED",
-                "jurisdiction": "NT",
-                "locationText": "",
-                "dateCreated": "2022-07-18",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "Fire Type : Grass and Scrub Fire\nStatus : Closed\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    130.996,
-                    -13.0652
-                ]
-            },
-            "properties": {
-                "id": 1373195,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1373195?geojson=true",
-                "number": null,
-                "name": "FOWLER RD, FINNISS VALLEY",
-                "dataSource": "NT",
-                "classification": "FIRE",
-                "status": "CONTROLLED",
-                "jurisdiction": "NT",
-                "locationText": "FOWLER RD, FINNISS VALLEY",
-                "dateCreated": "2022-07-18",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "Fire Type : Grass and Scrub Fire\nStatus : Closed\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    145.2349,
-                    -15.5194
-                ]
-            },
-            "properties": {
-                "id": 1373270,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1373270?geojson=true",
-                "number": "QF7-22-073984",
-                "name": "Annan River",
-                "dataSource": "QFES",
-                "classification": "BURN",
-                "status": "CONTROLLED",
-                "jurisdiction": "QLD",
-                "locationText": "COOKTOWN",
-                "dateCreated": "2022-07-19",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "CurrentStatus : Patrolled\nGroupedType : FIRE PERMITTED BURN\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
                     145.458,
                     -16.8508
                 ]
@@ -1713,13 +1491,13 @@
                 "name": "Bilwon Rd",
                 "dataSource": "QFES",
                 "classification": "BURN",
-                "status": "GOING",
+                "status": "CONTROLLED",
                 "jurisdiction": "QLD",
                 "locationText": "BIBOOHRA",
                 "dateCreated": "2022-07-19",
                 "dateClosed": null,
                 "endDate": null,
-                "notes": "CurrentStatus : Going\nGroupedType : FIRE PERMITTED BURN\n",
+                "notes": "CurrentStatus : Patrolled\nGroupedType : FIRE PERMITTED BURN\n",
                 "dispatchCount": 0,
                 "currentDispatchCount": 0
             }
@@ -1753,114 +1531,6 @@
         },
         {
             "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    116.0796,
-                    -31.7608
-                ]
-            },
-            "properties": {
-                "id": 1373348,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1373348?geojson=true",
-                "number": "2251888",
-                "name": "Burn Off (BRIGADOON, CITY OF SWAN,METRO NORTH EAST,  FCAD: 582863)",
-                "dataSource": "WA",
-                "classification": "BURN",
-                "status": "OTHER",
-                "jurisdiction": "WA",
-                "locationText": "METRO NORTH EAST",
-                "dateCreated": "2022-07-19",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "incidentNumber : 582863\npublicationTime : 19/07/2022 09:54:03\nregion : METRO NORTH EAST\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    115.6394,
-                    -33.4043
-                ]
-            },
-            "properties": {
-                "id": 1373417,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1373417?geojson=true",
-                "number": "2251956",
-                "name": "Burn Off (GELORUP, SHIRE OF CAPEL,SOUTH WEST,  FCAD: 582880)",
-                "dataSource": "WA",
-                "classification": "BURN",
-                "status": "OTHER",
-                "jurisdiction": "WA",
-                "locationText": "SOUTH WEST",
-                "dateCreated": "2022-07-19",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "incidentNumber : 582880\npublicationTime : 19/07/2022 13:03:02\nregion : SOUTH WEST\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    128.7171,
-                    -15.8259
-                ]
-            },
-            "properties": {
-                "id": 1373465,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1373465?geojson=true",
-                "number": "2251990",
-                "name": "Burn Off (KUNUNURRA, SHIRE OF WYNDHAM-EAST KIMBERLEY,KIMBERLEY,  FCAD: 582892)",
-                "dataSource": "WA",
-                "classification": "BURN",
-                "status": "OTHER",
-                "jurisdiction": "WA",
-                "locationText": "KIMBERLEY",
-                "dateCreated": "2022-07-19",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "incidentNumber : 582892\npublicationTime : 19/07/2022 15:04:12\nregion : KIMBERLEY\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    138.5646,
-                    -34.6289
-                ]
-            },
-            "properties": {
-                "id": 1373509,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1373509?geojson=true",
-                "number": "1481073",
-                "name": "LEWISTON, JOHNS ROAD",
-                "dataSource": "CFS",
-                "classification": "OTHER",
-                "status": "OTHER",
-                "jurisdiction": "SA",
-                "locationText": "MID NORTH",
-                "dateCreated": "2022-07-19",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "Level : 1\nStatus : GOING\nType : Search\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
             "geometry": null,
             "properties": {
                 "id": 1373684,
@@ -1878,789 +1548,6 @@
                 "notes": null,
                 "dispatchCount": 1,
                 "currentDispatchCount": 1
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    116.9239,
-                    -35.0403
-                ]
-            },
-            "properties": {
-                "id": 1373738,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1373738?geojson=true",
-                "number": "2252203",
-                "name": "Burn Off (PEACEFUL BAY, SHIRE OF DENMARK,GREAT SOUTHERN,  FCAD: 582950)",
-                "dataSource": "WA",
-                "classification": "BURN",
-                "status": "OTHER",
-                "jurisdiction": "WA",
-                "locationText": "GREAT SOUTHERN",
-                "dateCreated": "2022-07-20",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "incidentNumber : 582950\npublicationTime : 20/07/2022 11:26:40\nregion : GREAT SOUTHERN\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    133.8528,
-                    -23.7122
-                ]
-            },
-            "properties": {
-                "id": 1373742,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1373742?geojson=true",
-                "number": null,
-                "name": "FORRESTER CT, FLYNN",
-                "dataSource": "NT",
-                "classification": "FIRE",
-                "status": "CONTROLLED",
-                "jurisdiction": "NT",
-                "locationText": "FORRESTER CT, FLYNN",
-                "dateCreated": "2022-07-20",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "Fire Type : Grass and Scrub Fire\nStatus : Closed\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    134.1943,
-                    -19.6501
-                ]
-            },
-            "properties": {
-                "id": 1373750,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1373750?geojson=true",
-                "number": null,
-                "name": "LIMONITE ST, TENNANT CREEK",
-                "dataSource": "NT",
-                "classification": "FIRE",
-                "status": "CONTROLLED",
-                "jurisdiction": "NT",
-                "locationText": "LIMONITE ST, TENNANT CREEK",
-                "dateCreated": "2022-07-20",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "Fire Type : Grass and Scrub Fire\nStatus : Closed\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    135.5638,
-                    -12.0245
-                ]
-            },
-            "properties": {
-                "id": 1373755,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1373755?geojson=true",
-                "number": null,
-                "name": "YAWUNYMIRRINGURA ST, GALIWINKU",
-                "dataSource": "NT",
-                "classification": "FIRE",
-                "status": "CONTROLLED",
-                "jurisdiction": "NT",
-                "locationText": "YAWUNYMIRRINGURA ST, GALIWINKU",
-                "dateCreated": "2022-07-20",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "Fire Type : Grass and Scrub Fire\nStatus : Closed\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    135.5636,
-                    -12.0247
-                ]
-            },
-            "properties": {
-                "id": 1373761,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1373761?geojson=true",
-                "number": null,
-                "name": "YAWUNYMIRRINGURA ST, GALIWINKU",
-                "dataSource": "NT",
-                "classification": "FIRE",
-                "status": "CONTROLLED",
-                "jurisdiction": "NT",
-                "locationText": "YAWUNYMIRRINGURA ST, GALIWINKU",
-                "dateCreated": "2022-07-20",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "Fire Type : Grass and Scrub Fire\nStatus : Closed\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    131.5833,
-                    -12.8456
-                ]
-            },
-            "properties": {
-                "id": 1373765,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1373765?geojson=true",
-                "number": null,
-                "name": "Maranatha Farm, ARNHEM HIGHWAY",
-                "dataSource": "NT",
-                "classification": "FIRE",
-                "status": "CONTROLLED",
-                "jurisdiction": "NT",
-                "locationText": "Maranatha Farm, ARNHEM HIGHWAY",
-                "dateCreated": "2022-07-20",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "Fire Type : Bushfire\nStatus : Going\n",
-                "dispatchCount": 5,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    131.4742,
-                    -12.8102
-                ]
-            },
-            "properties": {
-                "id": 1373779,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1373779?geojson=true",
-                "number": null,
-                "name": "MARRAKAI RD, MARRAKAI",
-                "dataSource": "NT",
-                "classification": "FIRE",
-                "status": "CONTROLLED",
-                "jurisdiction": "NT",
-                "locationText": "MARRAKAI RD, MARRAKAI",
-                "dateCreated": "2022-07-20",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "Fire Type : Grass and Scrub Fire\nStatus : Closed\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    115.7752,
-                    -32.5067
-                ]
-            },
-            "properties": {
-                "id": 1373783,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1373783?geojson=true",
-                "number": "2252234",
-                "name": "Burn Off (PARKLANDS, CITY OF MANDURAH,METRO SOUTH COASTAL,  FCAD: 582959)",
-                "dataSource": "WA",
-                "classification": "BURN",
-                "status": "OTHER",
-                "jurisdiction": "WA",
-                "locationText": "METRO SOUTH COASTAL",
-                "dateCreated": "2022-07-20",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "incidentNumber : 582959\npublicationTime : 20/07/2022 13:25:22\nregion : METRO SOUTH COASTAL\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    134.1936,
-                    -19.6353
-                ]
-            },
-            "properties": {
-                "id": 1373787,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1373787?geojson=true",
-                "number": null,
-                "name": "*NGALPA NGALPA -, TENNANT CREEK",
-                "dataSource": "NT",
-                "classification": "FIRE",
-                "status": "CONTROLLED",
-                "jurisdiction": "NT",
-                "locationText": "*NGALPA NGALPA -, TENNANT CREEK",
-                "dateCreated": "2022-07-20",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "Fire Type : Grass and Scrub Fire\nStatus : Closed\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    132.7254,
-                    -23.6585
-                ]
-            },
-            "properties": {
-                "id": 1373789,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1373789?geojson=true",
-                "number": null,
-                "name": "",
-                "dataSource": "NT",
-                "classification": "FIRE",
-                "status": "CONTROLLED",
-                "jurisdiction": "NT",
-                "locationText": "",
-                "dateCreated": "2022-07-20",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "Fire Type : Grass and Scrub Fire\nStatus : Closed\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    133.8818,
-                    -23.7078
-                ]
-            },
-            "properties": {
-                "id": 1373796,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1373796?geojson=true",
-                "number": null,
-                "name": "BARRETT DR, DESERT SPRINGS",
-                "dataSource": "NT",
-                "classification": "FIRE",
-                "status": "CONTROLLED",
-                "jurisdiction": "NT",
-                "locationText": "BARRETT DR, DESERT SPRINGS",
-                "dateCreated": "2022-07-20",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "Fire Type : Grass and Scrub Fire\nStatus : Closed\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    130.9055,
-                    -12.739
-                ]
-            },
-            "properties": {
-                "id": 1373823,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1373823?geojson=true",
-                "number": null,
-                "name": "LITCHFIELD PARK RD, CHARLOTTE",
-                "dataSource": "NT",
-                "classification": "FIRE",
-                "status": "CONTROLLED",
-                "jurisdiction": "NT",
-                "locationText": "LITCHFIELD PARK RD, CHARLOTTE",
-                "dateCreated": "2022-07-20",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "Fire Type : Grass and Scrub Fire\nStatus : Closed\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    130.9895,
-                    -12.5108
-                ]
-            },
-            "properties": {
-                "id": 1373862,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1373862?geojson=true",
-                "number": null,
-                "name": "FORREST PDE, ROSEBERY",
-                "dataSource": "NT",
-                "classification": "FIRE",
-                "status": "CONTROLLED",
-                "jurisdiction": "NT",
-                "locationText": "FORREST PDE, ROSEBERY",
-                "dateCreated": "2022-07-20",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "Fire Type : Grass and Scrub Fire\nStatus : Closed\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    133.8843,
-                    -23.6973
-                ]
-            },
-            "properties": {
-                "id": 1373866,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1373866?geojson=true",
-                "number": null,
-                "name": "TODD ST, ALICE SPRINGS",
-                "dataSource": "NT",
-                "classification": "FIRE",
-                "status": "CONTROLLED",
-                "jurisdiction": "NT",
-                "locationText": "TODD ST, ALICE SPRINGS",
-                "dateCreated": "2022-07-20",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "Fire Type : Grass and Scrub Fire\nStatus : Closed\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    130.9901,
-                    -12.5136
-                ]
-            },
-            "properties": {
-                "id": 1373872,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1373872?geojson=true",
-                "number": null,
-                "name": "FORREST PDE, ROSEBERY",
-                "dataSource": "NT",
-                "classification": "FIRE",
-                "status": "CONTROLLED",
-                "jurisdiction": "NT",
-                "locationText": "FORREST PDE, ROSEBERY",
-                "dateCreated": "2022-07-20",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "Fire Type : Grass and Scrub Fire\nStatus : Closed\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    130.9854,
-                    -12.4691
-                ]
-            },
-            "properties": {
-                "id": 1373913,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1373913?geojson=true",
-                "number": null,
-                "name": "MCKENZIE PL, YARRAWONGA",
-                "dataSource": "NT",
-                "classification": "FIRE",
-                "status": "CONTROLLED",
-                "jurisdiction": "NT",
-                "locationText": "MCKENZIE PL, YARRAWONGA",
-                "dateCreated": "2022-07-20",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "Fire Type : Grass and Scrub Fire\nStatus : Closed\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    133.8732,
-                    -23.6854
-                ]
-            },
-            "properties": {
-                "id": 1373921,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1373921?geojson=true",
-                "number": null,
-                "name": "HEARNE PL, BRAITLING",
-                "dataSource": "NT",
-                "classification": "FIRE",
-                "status": "CONTROLLED",
-                "jurisdiction": "NT",
-                "locationText": "HEARNE PL, BRAITLING",
-                "dateCreated": "2022-07-20",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "Fire Type : Grass and Scrub Fire\nStatus : Closed\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    133.8932,
-                    -23.6983
-                ]
-            },
-            "properties": {
-                "id": 1373926,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1373926?geojson=true",
-                "number": null,
-                "name": "STOTT TCE, EAST SIDE",
-                "dataSource": "NT",
-                "classification": "FIRE",
-                "status": "CONTROLLED",
-                "jurisdiction": "NT",
-                "locationText": "STOTT TCE, EAST SIDE",
-                "dateCreated": "2022-07-20",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "Fire Type : Grass and Scrub Fire\nStatus : Closed\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    133.8849,
-                    -23.6972
-                ]
-            },
-            "properties": {
-                "id": 1373928,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1373928?geojson=true",
-                "number": null,
-                "name": "ALICE SPRINGS",
-                "dataSource": "NT",
-                "classification": "FIRE",
-                "status": "CONTROLLED",
-                "jurisdiction": "NT",
-                "locationText": "ALICE SPRINGS",
-                "dateCreated": "2022-07-20",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "Fire Type : Grass and Scrub Fire\nStatus : Closed\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    133.8736,
-                    -23.7052
-                ]
-            },
-            "properties": {
-                "id": 1373940,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1373940?geojson=true",
-                "number": null,
-                "name": "GILLEN",
-                "dataSource": "NT",
-                "classification": "FIRE",
-                "status": "CONTROLLED",
-                "jurisdiction": "NT",
-                "locationText": "GILLEN",
-                "dateCreated": "2022-07-20",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "Fire Type : Grass and Scrub Fire\nStatus : Closed\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    133.8739,
-                    -23.6948
-                ]
-            },
-            "properties": {
-                "id": 1373947,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1373947?geojson=true",
-                "number": null,
-                "name": "GHAN RD, CICCONE",
-                "dataSource": "NT",
-                "classification": "FIRE",
-                "status": "CONTROLLED",
-                "jurisdiction": "NT",
-                "locationText": "GHAN RD, CICCONE",
-                "dateCreated": "2022-07-20",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "Fire Type : Grass and Scrub Fire\nStatus : Closed\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    133.8732,
-                    -23.7081
-                ]
-            },
-            "properties": {
-                "id": 1373949,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1373949?geojson=true",
-                "number": null,
-                "name": "TELEGRAPH TCE, THE GAP",
-                "dataSource": "NT",
-                "classification": "FIRE",
-                "status": "CONTROLLED",
-                "jurisdiction": "NT",
-                "locationText": "TELEGRAPH TCE, THE GAP",
-                "dateCreated": "2022-07-21",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "Fire Type : Grass and Scrub Fire\nStatus : Closed\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    133.8717,
-                    -23.7136
-                ]
-            },
-            "properties": {
-                "id": 1373950,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1373950?geojson=true",
-                "number": null,
-                "name": "TELEGRAPH TCE, THE GAP",
-                "dataSource": "NT",
-                "classification": "FIRE",
-                "status": "CONTROLLED",
-                "jurisdiction": "NT",
-                "locationText": "TELEGRAPH TCE, THE GAP",
-                "dateCreated": "2022-07-21",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "Fire Type : Grass and Scrub Fire\nStatus : Closed\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    133.8736,
-                    -23.7109
-                ]
-            },
-            "properties": {
-                "id": 1373957,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1373957?geojson=true",
-                "number": null,
-                "name": "SPEED ST, THE GAP",
-                "dataSource": "NT",
-                "classification": "FIRE",
-                "status": "CONTROLLED",
-                "jurisdiction": "NT",
-                "locationText": "SPEED ST, THE GAP",
-                "dateCreated": "2022-07-21",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "Fire Type : Grass and Scrub Fire\nStatus : Closed\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    115.3215,
-                    -33.7515
-                ]
-            },
-            "properties": {
-                "id": 1373962,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1373962?geojson=true",
-                "number": "2252347",
-                "name": "Road Crash (CHAPMAN HILL, CITY OF BUSSELTON,LOWER SOUTH WEST,  FCAD: 583002)",
-                "dataSource": "WA",
-                "classification": "OTHER",
-                "status": "OTHER",
-                "jurisdiction": "WA",
-                "locationText": "LOWER SOUTH WEST",
-                "dateCreated": "2022-07-21",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "incidentNumber : 583002\npublicationTime : 21/07/2022 01:07:32\nregion : LOWER SOUTH WEST\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    133.8845,
-                    -23.6987
-                ]
-            },
-            "properties": {
-                "id": 1373999,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1373999?geojson=true",
-                "number": null,
-                "name": "LEICHHARDT TCE, ALICE SPRINGS",
-                "dataSource": "NT",
-                "classification": "FIRE",
-                "status": "CONTROLLED",
-                "jurisdiction": "NT",
-                "locationText": "LEICHHARDT TCE, ALICE SPRINGS",
-                "dateCreated": "2022-07-21",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "Fire Type : Grass and Scrub Fire\nStatus : Closed\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    138.6503,
-                    -34.9985
-                ]
-            },
-            "properties": {
-                "id": 1374024,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1374024?geojson=true",
-                "number": "1481245",
-                "name": "BELAIR, PONY RIDGE ROAD",
-                "dataSource": "CFS",
-                "classification": "BURN",
-                "status": "CONTROLLED",
-                "jurisdiction": "SA",
-                "locationText": "MOUNT LOFTY RANGES",
-                "dateCreated": "2022-07-21",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "Level : 1\nStatus : CONTROLLED\nType : Burn Off\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    133.8682,
-                    -23.6897
-                ]
-            },
-            "properties": {
-                "id": 1374028,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1374028?geojson=true",
-                "number": null,
-                "name": "CRISPE ST, CICCONE",
-                "dataSource": "NT",
-                "classification": "FIRE",
-                "status": "CONTROLLED",
-                "jurisdiction": "NT",
-                "locationText": "CRISPE ST, CICCONE",
-                "dateCreated": "2022-07-21",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "Fire Type : Grass and Scrub Fire\nStatus : Closed\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    142.7196,
-                    -37.0198
-                ]
-            },
-            "properties": {
-                "id": 1374037,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1374037?geojson=true",
-                "number": "1910661",
-                "name": "DEEP LEAD",
-                "dataSource": "VIC",
-                "classification": "OTHER",
-                "status": "OTHER",
-                "jurisdiction": "VIC",
-                "locationText": "Wimmera",
-                "dateCreated": "2022-07-21",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "category1 : Accident / Rescue\ncategory2 : Road Accident\nincidentSize : SMALL\noriginStatus : CONTROLLED\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
             }
         },
         {
@@ -2695,8 +1582,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    131.0181,
-                    -13.044
+                    130.9948,
+                    -13.0302
                 ]
             },
             "properties": {
@@ -2712,35 +1599,8 @@
                 "dateCreated": "2022-07-21",
                 "dateClosed": null,
                 "endDate": null,
-                "notes": "Fire Type : Bushfire\nStatus : Going\n",
-                "dispatchCount": 5,
-                "currentDispatchCount": 5
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    138.6735,
-                    -35.5157
-                ]
-            },
-            "properties": {
-                "id": 1374044,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1374044?geojson=true",
-                "number": "1481253",
-                "name": "PORT ELLIOT, CROWS NEST ROAD",
-                "dataSource": "CFS",
-                "classification": "BURN",
-                "status": "CONTROLLED",
-                "jurisdiction": "SA",
-                "locationText": "MOUNT LOFTY RANGES",
-                "dateCreated": "2022-07-21",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "Level : 1\nStatus : CONTROLLED\nType : Burn Off\n",
-                "dispatchCount": 0,
+                "notes": "Fire Type : Bushfire\nStatus : Being Controlled\n",
+                "dispatchCount": 6,
                 "currentDispatchCount": 0
             }
         },
@@ -2760,418 +1620,13 @@
                 "name": "Emerald Falls Rd",
                 "dataSource": "QFES",
                 "classification": "BURN",
-                "status": "GOING",
+                "status": "CONTROLLED",
                 "jurisdiction": "QLD",
                 "locationText": "MAREEBA",
                 "dateCreated": "2022-07-21",
                 "dateClosed": null,
                 "endDate": null,
-                "notes": "CurrentStatus : Going\nGroupedType : FIRE PERMITTED BURN\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    145.2706,
-                    -37.834
-                ]
-            },
-            "properties": {
-                "id": 1374057,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1374057?geojson=true",
-                "number": "1910667",
-                "name": "BAYSWATER NORTH",
-                "dataSource": "VIC",
-                "classification": "FIRE",
-                "status": "CONTROLLED",
-                "jurisdiction": "VIC",
-                "locationText": "Central",
-                "dateCreated": "2022-07-21",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "category1 : Fire\ncategory2 : Building\nincidentSize : SMALL\noriginStatus : CONTROLLED\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    149.3982,
-                    -31.2167
-                ]
-            },
-            "properties": {
-                "id": 1374063,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1374063?geojson=true",
-                "number": null,
-                "name": "Oxley Hwy, Coonabarabran",
-                "dataSource": "ICON",
-                "classification": "FIRE",
-                "status": "CONTROLLED",
-                "jurisdiction": "NSW",
-                "locationText": "Warrumbungle",
-                "dateCreated": "2022-07-21",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "ALERT LEVEL : Advice\nCOUNCIL AREA : Warrumbungle\nFIRE : Yes\nLOCATION : 16957 Oxley Hwy, Coonabarabran, NSW 2357\nRESPONSIBLE AGENCY : Rural Fire Service\nSIZE : 2 ha\nSTATUS : Under control\nTYPE : Grass Fire\nUPDATED : 21 Jul 2022 13:54\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    153.5079,
-                    -28.2736
-                ]
-            },
-            "properties": {
-                "id": 1374067,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1374067?geojson=true",
-                "number": null,
-                "name": "Tweed Valley Way, Stotts Creek",
-                "dataSource": "ICON",
-                "classification": "OTHER",
-                "status": "OTHER",
-                "jurisdiction": "NSW",
-                "locationText": "Tweed",
-                "dateCreated": "2022-07-21",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "ALERT LEVEL : Not Applicable\nCOUNCIL AREA : Tweed\nFIRE : No\nLOCATION : Tweed Valley Way, Stotts Creek, NSW 2487\nRESPONSIBLE AGENCY : Rural Fire Service\nSIZE : 0 ha\nSTATUS : Out of control\nTYPE : MVA/Transport\nUPDATED : 21 Jul 2022 11:14\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    150.3445,
-                    -30.7721
-                ]
-            },
-            "properties": {
-                "id": 1374073,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1374073?geojson=true",
-                "number": null,
-                "name": "Gomeroi Workshop 1 HR",
-                "dataSource": "ICON",
-                "classification": "BURN",
-                "status": "CONTROLLED",
-                "jurisdiction": "NSW",
-                "locationText": "Gunnedah",
-                "dateCreated": "2022-07-21",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "ALERT LEVEL : Advice\nCOUNCIL AREA : Gunnedah\nFIRE : Yes\nLOCATION : boonalla Aboriginal Area\nRESPONSIBLE AGENCY : NSW National Parks and Wildlife Service\nSIZE : 0 ha\nSTATUS : Under control\nTYPE : Hazard Reduction\nUPDATED : 21 Jul 2022 13:32\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    144.3786,
-                    -38.0765
-                ]
-            },
-            "properties": {
-                "id": 1374074,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1374074?geojson=true",
-                "number": "1910672",
-                "name": "CORIO - REFINERY RD",
-                "dataSource": "VIC",
-                "classification": "OTHER",
-                "status": "OTHER",
-                "jurisdiction": "VIC",
-                "locationText": "Central",
-                "dateCreated": "2022-07-21",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "category1 : Hazardous Material\ncategory2 : Hazardous Material\nincidentSize : SMALL\noriginStatus : CONTROLLED\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    115.007,
-                    -33.6827
-                ]
-            },
-            "properties": {
-                "id": 1374080,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1374080?geojson=true",
-                "number": "2252418",
-                "name": "Burn Off (YALLINGUP, CITY OF BUSSELTON,LOWER SOUTH WEST,  FCAD: 583024)",
-                "dataSource": "WA",
-                "classification": "BURN",
-                "status": "OTHER",
-                "jurisdiction": "WA",
-                "locationText": "LOWER SOUTH WEST",
-                "dateCreated": "2022-07-21",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "incidentNumber : 583024\npublicationTime : 21/07/2022 09:59:18\nregion : LOWER SOUTH WEST\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    116.0254,
-                    -31.9883
-                ]
-            },
-            "properties": {
-                "id": 1374081,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1374081?geojson=true",
-                "number": "2252417",
-                "name": "Burn Off (FORRESTFIELD, CITY OF KALAMUNDA,METRO SOUTH EAST,  FCAD: 583023)",
-                "dataSource": "WA",
-                "classification": "BURN",
-                "status": "OTHER",
-                "jurisdiction": "WA",
-                "locationText": "METRO SOUTH EAST",
-                "dateCreated": "2022-07-21",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "incidentNumber : 583023\npublicationTime : 21/07/2022 09:56:39\nregion : METRO SOUTH EAST\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    138.8534,
-                    -34.7434
-                ]
-            },
-            "properties": {
-                "id": 1374085,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1374085?geojson=true",
-                "number": "1481270",
-                "name": "KERSBROOK, KE38 TRACK",
-                "dataSource": "CFS",
-                "classification": "BURN",
-                "status": "CONTROLLED",
-                "jurisdiction": "SA",
-                "locationText": "",
-                "dateCreated": "2022-07-21",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "Level : 1\nStatus : CONTROLLED\nType : Prescribed Burn\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    138.9347,
-                    -34.7075
-                ]
-            },
-            "properties": {
-                "id": 1374086,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1374086?geojson=true",
-                "number": "1481267",
-                "name": "MOUNT CRAWFORD, UNNAMED",
-                "dataSource": "CFS",
-                "classification": "BURN",
-                "status": "CONTROLLED",
-                "jurisdiction": "SA",
-                "locationText": "",
-                "dateCreated": "2022-07-21",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "Level : 1\nStatus : CONTROLLED\nType : Prescribed Burn\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    115.8588,
-                    -32.0999
-                ]
-            },
-            "properties": {
-                "id": 1374088,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1374088?geojson=true",
-                "number": "2252426",
-                "name": "Burn Off (JANDAKOT, CITY OF COCKBURN,METRO SOUTH EAST,  FCAD: 583028)",
-                "dataSource": "WA",
-                "classification": "BURN",
-                "status": "OTHER",
-                "jurisdiction": "WA",
-                "locationText": "METRO SOUTH EAST",
-                "dateCreated": "2022-07-21",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "incidentNumber : 583028\npublicationTime : 21/07/2022 10:13:46\nregion : METRO SOUTH EAST\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    135.8045,
-                    -34.6768
-                ]
-            },
-            "properties": {
-                "id": 1374090,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1374090?geojson=true",
-                "number": "1481271",
-                "name": "BOSTON, CHAPMAN ROAD",
-                "dataSource": "CFS",
-                "classification": "FIRE",
-                "status": "OTHER",
-                "jurisdiction": "SA",
-                "locationText": "LOWER EYRE PENINSULA",
-                "dateCreated": "2022-07-21",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "Level : 1\nStatus : COMPLETE\nType : Grass Fire\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    145.4571,
-                    -17.1841
-                ]
-            },
-            "properties": {
-                "id": 1374091,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1374091?geojson=true",
-                "number": "QF7-22-074783",
-                "name": "Frazer Rd",
-                "dataSource": "QFES",
-                "classification": "BURN",
-                "status": "GOING",
-                "jurisdiction": "QLD",
-                "locationText": "TOLGA",
-                "dateCreated": "2022-07-21",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "CurrentStatus : Going\nGroupedType : FIRE PERMITTED BURN\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    133.8741,
-                    -23.6849
-                ]
-            },
-            "properties": {
-                "id": 1374098,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1374098?geojson=true",
-                "number": null,
-                "name": "STUART HWY, BRAITLING",
-                "dataSource": "NT",
-                "classification": "FIRE",
-                "status": "CONTROLLED",
-                "jurisdiction": "NT",
-                "locationText": "STUART HWY, BRAITLING",
-                "dateCreated": "2022-07-21",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "Fire Type : Grass and Scrub Fire\nStatus : Closed\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    150.6413,
-                    -34.5584
-                ]
-            },
-            "properties": {
-                "id": 1374100,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1374100?geojson=true",
-                "number": null,
-                "name": "Illawarra Hwy, Macquarie Pass",
-                "dataSource": "ICON",
-                "classification": "OTHER",
-                "status": "CONTROLLED",
-                "jurisdiction": "NSW",
-                "locationText": "Shellharbour",
-                "dateCreated": "2022-07-21",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "ALERT LEVEL : Not Applicable\nCOUNCIL AREA : Shellharbour\nFIRE : No\nLOCATION : Illawarra Hwy, Macquarie Pass, NSW 2577\nRESPONSIBLE AGENCY : Rural Fire Service\nSIZE : 0 ha\nSTATUS : Under control\nTYPE : MVA/Transport\nUPDATED : 21 Jul 2022 13:40\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    145.3213,
-                    -37.8573
-                ]
-            },
-            "properties": {
-                "id": 1374101,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1374101?geojson=true",
-                "number": "1910677",
-                "name": "THE BASIN - WICKS RD",
-                "dataSource": "VIC",
-                "classification": "OTHER",
-                "status": "OTHER",
-                "jurisdiction": "VIC",
-                "locationText": "Central",
-                "dateCreated": "2022-07-21",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "category1 : Other\ncategory2 : Other\nincidentSize : SMALL\noriginStatus : SAFE\n",
+                "notes": "CurrentStatus : Patrolled\nGroupedType : FIRE PERMITTED BURN\n",
                 "dispatchCount": 0,
                 "currentDispatchCount": 0
             }
@@ -3192,94 +1647,13 @@
                 "name": "ACACIA GAP RD, MANTON",
                 "dataSource": "NT",
                 "classification": "FIRE",
-                "status": "GOING",
+                "status": "CONTROLLED",
                 "jurisdiction": "NT",
                 "locationText": "ACACIA GAP RD, MANTON",
                 "dateCreated": "2022-07-21",
                 "dateClosed": null,
                 "endDate": null,
-                "notes": "Fire Type : Grass and Scrub Fire\nStatus : Active\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    140.3573,
-                    -37.5902
-                ]
-            },
-            "properties": {
-                "id": 1374103,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1374103?geojson=true",
-                "number": "1481274",
-                "name": "MILLICENT, MOUNT BURR ROAD",
-                "dataSource": "CFS",
-                "classification": "FIRE",
-                "status": "OTHER",
-                "jurisdiction": "SA",
-                "locationText": "LOWER SOUTH EAST",
-                "dateCreated": "2022-07-21",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "Level : 1\nStatus : COMPLETE\nType : Fire Alarm\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    149.1785,
-                    -33.438
-                ]
-            },
-            "properties": {
-                "id": 1374106,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1374106?geojson=true",
-                "number": null,
-                "name": "Springvale Lane, Millthorpe",
-                "dataSource": "ICON",
-                "classification": "FIRE",
-                "status": "CONTROLLED",
-                "jurisdiction": "NSW",
-                "locationText": "Blayney",
-                "dateCreated": "2022-07-21",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "ALERT LEVEL : Not Applicable\nCOUNCIL AREA : Blayney\nFIRE : Yes\nLOCATION : 10 Springvale Lane, Millthorpe, NSW 2798\nRESPONSIBLE AGENCY : Rural Fire Service\nSIZE : 0 ha\nSTATUS : Under control\nTYPE : Structure Fire\nUPDATED : 21 Jul 2022 13:56\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    145.3506,
-                    -38.5145
-                ]
-            },
-            "properties": {
-                "id": 1374107,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1374107?geojson=true",
-                "number": "1910678",
-                "name": "NEWHAVEN - PHILLIP ISLAND RD",
-                "dataSource": "VIC",
-                "classification": "OTHER",
-                "status": "OTHER",
-                "jurisdiction": "VIC",
-                "locationText": "Central",
-                "dateCreated": "2022-07-21",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "category1 : Other\ncategory2 : Other\nincidentSize : SMALL\noriginStatus : SAFE\n",
+                "notes": "Fire Type : Grass and Scrub Fire\nStatus : Closed\n",
                 "dispatchCount": 0,
                 "currentDispatchCount": 0
             }
@@ -3300,13 +1674,13 @@
                 "name": "TIVENDALE RD, BERRIMAH",
                 "dataSource": "NT",
                 "classification": "FIRE",
-                "status": "GOING",
+                "status": "CONTROLLED",
                 "jurisdiction": "NT",
                 "locationText": "TIVENDALE RD, BERRIMAH",
                 "dateCreated": "2022-07-21",
                 "dateClosed": null,
                 "endDate": null,
-                "notes": "Fire Type : Grass and Scrub Fire\nStatus : Active\n",
+                "notes": "Fire Type : Grass and Scrub Fire\nStatus : Closed\n",
                 "dispatchCount": 0,
                 "currentDispatchCount": 0
             }
@@ -3354,310 +1728,13 @@
                 "name": "FARRAR BVD, FARRAR",
                 "dataSource": "NT",
                 "classification": "FIRE",
-                "status": "GOING",
+                "status": "CONTROLLED",
                 "jurisdiction": "NT",
                 "locationText": "FARRAR BVD, FARRAR",
                 "dateCreated": "2022-07-21",
                 "dateClosed": null,
                 "endDate": null,
-                "notes": "Fire Type : Grass and Scrub Fire\nStatus : Active\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    115.826,
-                    -31.8588
-                ]
-            },
-            "properties": {
-                "id": 1374118,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1374118?geojson=true",
-                "number": "2252451",
-                "name": "Bushfire (BALGA, CITY OF STIRLING,METRO NORTH COASTAL,  FCAD: 583032)",
-                "dataSource": "WA",
-                "classification": "FIRE",
-                "status": "OTHER",
-                "jurisdiction": "WA",
-                "locationText": "METRO NORTH COASTAL",
-                "dateCreated": "2022-07-21",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "incidentNumber : 583032\npublicationTime : 21/07/2022 11:51:18\nregion : METRO NORTH COASTAL\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    144.3867,
-                    -37.2206
-                ]
-            },
-            "properties": {
-                "id": 1374119,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1374119?geojson=true",
-                "number": "1910680",
-                "name": "KYNETON - YOUNGS RD",
-                "dataSource": "VIC",
-                "classification": "FIRE",
-                "status": "CONTROLLED",
-                "jurisdiction": "VIC",
-                "locationText": "Central",
-                "dateCreated": "2022-07-21",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "category1 : Fire\ncategory2 : Bushfire\nincidentSize : SMALL\noriginStatus : CONTROLLED\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    151.2062,
-                    -33.4549
-                ]
-            },
-            "properties": {
-                "id": 1374120,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1374120?geojson=true",
-                "number": null,
-                "name": "Pacific Mtwy (Southbound), Mount White",
-                "dataSource": "ICON",
-                "classification": "OTHER",
-                "status": "OTHER",
-                "jurisdiction": "NSW",
-                "locationText": "Central Coast",
-                "dateCreated": "2022-07-21",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "ALERT LEVEL : Not Applicable\nCOUNCIL AREA : Central Coast\nFIRE : No\nLOCATION : M1 Pacific Mtwy (Southbound), Mount White, NSW 2250\nRESPONSIBLE AGENCY : Rural Fire Service\nSIZE : 0 ha\nSTATUS : Out of control\nTYPE : MVA/Transport\nUPDATED : 21 Jul 2022 13:34\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    143.5253,
-                    -35.3442
-                ]
-            },
-            "properties": {
-                "id": 1374121,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1374121?geojson=true",
-                "number": "1910682",
-                "name": "SWAN HILL - ACACIA ST",
-                "dataSource": "VIC",
-                "classification": "FIRE",
-                "status": "CONTROLLED",
-                "jurisdiction": "VIC",
-                "locationText": "Mallee",
-                "dateCreated": "2022-07-21",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "category1 : Fire\ncategory2 : Building\nincidentSize : SMALL\noriginStatus : CONTROLLED\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    146.0913,
-                    -37.0522
-                ]
-            },
-            "properties": {
-                "id": 1374122,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1374122?geojson=true",
-                "number": "1910681",
-                "name": "MANSFIELD - HIGH ST",
-                "dataSource": "VIC",
-                "classification": "OTHER",
-                "status": "OTHER",
-                "jurisdiction": "VIC",
-                "locationText": "North East",
-                "dateCreated": "2022-07-21",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "category1 : Hazardous Material\ncategory2 : Hazardous Material\nincidentSize : SMALL\noriginStatus : CONTROLLED\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    142.8592,
-                    -37.4335
-                ]
-            },
-            "properties": {
-                "id": 1374123,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1374123?geojson=true",
-                "number": "1910684",
-                "name": "MAROONA",
-                "dataSource": "VIC",
-                "classification": "OTHER",
-                "status": "OTHER",
-                "jurisdiction": "VIC",
-                "locationText": "South West",
-                "dateCreated": "2022-07-21",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "category1 : Other\ncategory2 : Other\nincidentSize : SMALL\noriginStatus : RESPONDING\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    145.6112,
-                    -38.6681
-                ]
-            },
-            "properties": {
-                "id": 1374124,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1374124?geojson=true",
-                "number": "1910683",
-                "name": "CAPE PATERSON - PARK PARADE RD",
-                "dataSource": "VIC",
-                "classification": "FIRE",
-                "status": "GOING",
-                "jurisdiction": "VIC",
-                "locationText": "Central",
-                "dateCreated": "2022-07-21",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "category1 : Fire\ncategory2 : Building\nincidentSize : SMALL\noriginStatus : RESPONDING\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    138.7121,
-                    -35.0212
-                ]
-            },
-            "properties": {
-                "id": 1374125,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1374125?geojson=true",
-                "number": "1481285",
-                "name": "HEATHFIELD, LONGWOOD ROAD",
-                "dataSource": "CFS",
-                "classification": "OTHER",
-                "status": "OTHER",
-                "jurisdiction": "SA",
-                "locationText": "MOUNT LOFTY RANGES",
-                "dateCreated": "2022-07-21",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "Level : 1\nStatus : GOING\nType : Private Alarm\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    115.4199,
-                    -33.7496
-                ]
-            },
-            "properties": {
-                "id": 1374126,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1374126?geojson=true",
-                "number": "2252455",
-                "name": "Road Crash (SABINA RIVER, CITY OF BUSSELTON,LOWER SOUTH WEST,  FCAD: 583033)",
-                "dataSource": "WA",
-                "classification": "OTHER",
-                "status": "OTHER",
-                "jurisdiction": "WA",
-                "locationText": "LOWER SOUTH WEST",
-                "dateCreated": "2022-07-21",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "incidentNumber : 583033\npublicationTime : 21/07/2022 11:47:39\nregion : LOWER SOUTH WEST\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    144.7602,
-                    -37.583
-                ]
-            },
-            "properties": {
-                "id": 1374127,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1374127?geojson=true",
-                "number": "1910685",
-                "name": "SUNBURY",
-                "dataSource": "VIC",
-                "classification": "OTHER",
-                "status": "OTHER",
-                "jurisdiction": "VIC",
-                "locationText": "Central",
-                "dateCreated": "2022-07-21",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "category1 : Hazardous Material\ncategory2 : Hazardous Material\nincidentSize : SMALL\noriginStatus : RESPONDING\n",
-                "dispatchCount": 0,
-                "currentDispatchCount": 0
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    144.4524,
-                    -37.2539
-                ]
-            },
-            "properties": {
-                "id": 1374128,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1374128?geojson=true",
-                "number": "1910686",
-                "name": "KYNETON - MOLLISON ST",
-                "dataSource": "VIC",
-                "classification": "OTHER",
-                "status": "OTHER",
-                "jurisdiction": "VIC",
-                "locationText": "Central",
-                "dateCreated": "2022-07-21",
-                "dateClosed": null,
-                "endDate": null,
-                "notes": "category1 : Other\ncategory2 : Other\nincidentSize : SMALL\noriginStatus : RESPONDING\n",
+                "notes": "Fire Type : Grass and Scrub Fire\nStatus : Closed\n",
                 "dispatchCount": 0,
                 "currentDispatchCount": 0
             }
@@ -3678,13 +1755,13 @@
                 "name": "LAMBRICK AV, JOHNSTON",
                 "dataSource": "NT",
                 "classification": "FIRE",
-                "status": "GOING",
+                "status": "CONTROLLED",
                 "jurisdiction": "NT",
                 "locationText": "LAMBRICK AV, JOHNSTON",
                 "dateCreated": "2022-07-21",
                 "dateClosed": null,
                 "endDate": null,
-                "notes": "Fire Type : Grass and Scrub Fire\nStatus : Active\n",
+                "notes": "Fire Type : Grass and Scrub Fire\nStatus : Closed\n",
                 "dispatchCount": 0,
                 "currentDispatchCount": 0
             }
@@ -3694,24 +1771,24 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    144.5667,
-                    -37.6937
+                    130.8672,
+                    -12.3621
                 ]
             },
             "properties": {
-                "id": 1374130,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1374130?geojson=true",
-                "number": "1910688",
-                "name": "MELTON SOUTH - COBURNS RD",
-                "dataSource": "VIC",
+                "id": 1374137,
+                "url": "https://arena.nafc.org.au/register/api/incidents/1374137?geojson=true",
+                "number": null,
+                "name": "DARIBAH RD, TIWI",
+                "dataSource": "NT",
                 "classification": "FIRE",
-                "status": "GOING",
-                "jurisdiction": "VIC",
-                "locationText": "Central",
+                "status": "CONTROLLED",
+                "jurisdiction": "NT",
+                "locationText": "DARIBAH RD, TIWI",
                 "dateCreated": "2022-07-21",
                 "dateClosed": null,
                 "endDate": null,
-                "notes": "category1 : Fire\ncategory2 : Building\nincidentSize : SMALL\noriginStatus : RESPONDING\n",
+                "notes": "Fire Type : Grass and Scrub Fire\nStatus : Closed\n",
                 "dispatchCount": 0,
                 "currentDispatchCount": 0
             }
@@ -3721,24 +1798,24 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    145.1747,
-                    -38.0978
+                    153.5169,
+                    -28.4768
                 ]
             },
             "properties": {
-                "id": 1374131,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1374131?geojson=true",
-                "number": "1910687",
-                "name": "CARRUM DOWNS - FRANKSTON-DANDENONG RD",
-                "dataSource": "VIC",
-                "classification": "FIRE",
-                "status": "GOING",
-                "jurisdiction": "VIC",
-                "locationText": "Central",
+                "id": 1374142,
+                "url": "https://arena.nafc.org.au/register/api/incidents/1374142?geojson=true",
+                "number": null,
+                "name": "Splendour in the Grass Music Festival",
+                "dataSource": "ICON",
+                "classification": "OTHER",
+                "status": "CONTROLLED",
+                "jurisdiction": "NSW",
+                "locationText": "Byron",
                 "dateCreated": "2022-07-21",
                 "dateClosed": null,
                 "endDate": null,
-                "notes": "category1 : Fire\ncategory2 : Building\nincidentSize : SMALL\noriginStatus : RESPONDING\n",
+                "notes": "ALERT LEVEL : Not Applicable\nCOUNCIL AREA : Byron\nFIRE : No\nLOCATION : Jones Rd, Wooyung, NSW 2483\nRESPONSIBLE AGENCY : Rural Fire Service\nSIZE : 0 ha\nSTATUS : Under control\nTYPE : Other\nUPDATED : 22 Jul 2022 12:20\n",
                 "dispatchCount": 0,
                 "currentDispatchCount": 0
             }
@@ -3748,24 +1825,24 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    138.6513,
-                    -34.791
+                    133.8761,
+                    -23.7027
                 ]
             },
             "properties": {
-                "id": 1374132,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1374132?geojson=true",
-                "number": "1481290",
-                "name": "SALISBURY EAST, HARVEY DRIVE",
-                "dataSource": "CFS",
+                "id": 1374146,
+                "url": "https://arena.nafc.org.au/register/api/incidents/1374146?geojson=true",
+                "number": null,
+                "name": "TELEGRAPH TCE, ALICE SPRINGS",
+                "dataSource": "NT",
                 "classification": "FIRE",
-                "status": "GOING",
-                "jurisdiction": "SA",
-                "locationText": "ADELAIDE METRO",
+                "status": "CONTROLLED",
+                "jurisdiction": "NT",
+                "locationText": "TELEGRAPH TCE, ALICE SPRINGS",
                 "dateCreated": "2022-07-21",
                 "dateClosed": null,
                 "endDate": null,
-                "notes": "Level : 1\nStatus : GOING\nType : Grass Fire\n",
+                "notes": "Fire Type : Grass and Scrub Fire\nStatus : Closed\n",
                 "dispatchCount": 0,
                 "currentDispatchCount": 0
             }
@@ -3775,24 +1852,780 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    138.0054,
-                    -33.8639
+                    125.2212,
+                    -17.1387
                 ]
             },
             "properties": {
-                "id": 1374133,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1374133?geojson=true",
-                "number": "1481287",
-                "name": "BUTE, HIGH STREET",
+                "id": 1374167,
+                "url": "https://arena.nafc.org.au/register/api/incidents/1374167?geojson=true",
+                "number": "2252485",
+                "name": "Bushfire (KING LEOPOLD RANGES, SHIRE OF DERBY/WEST KIMBERLEY,KIMBERLEY,  FCAD: 583038)",
+                "dataSource": "WA",
+                "classification": "FIRE",
+                "status": "OTHER",
+                "jurisdiction": "WA",
+                "locationText": "KIMBERLEY",
+                "dateCreated": "2022-07-21",
+                "dateClosed": null,
+                "endDate": null,
+                "notes": "incidentNumber : 583038\npublicationTime : 21/07/2022 13:43:16\nregion : KIMBERLEY\n",
+                "dispatchCount": 0,
+                "currentDispatchCount": 0
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    130.9985,
+                    -12.4751
+                ]
+            },
+            "properties": {
+                "id": 1374171,
+                "url": "https://arena.nafc.org.au/register/api/incidents/1374171?geojson=true",
+                "number": null,
+                "name": "STUART HWY, JOHNSTON",
+                "dataSource": "NT",
+                "classification": "FIRE",
+                "status": "CONTROLLED",
+                "jurisdiction": "NT",
+                "locationText": "STUART HWY, JOHNSTON",
+                "dateCreated": "2022-07-21",
+                "dateClosed": null,
+                "endDate": null,
+                "notes": "Fire Type : Grass and Scrub Fire\nStatus : Closed\n",
+                "dispatchCount": 0,
+                "currentDispatchCount": 0
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    130.9949,
+                    -12.7698
+                ]
+            },
+            "properties": {
+                "id": 1374176,
+                "url": "https://arena.nafc.org.au/register/api/incidents/1374176?geojson=true",
+                "number": null,
+                "name": "OLD BYNOE RD, BERRY SPRINGS",
+                "dataSource": "NT",
+                "classification": "FIRE",
+                "status": "CONTROLLED",
+                "jurisdiction": "NT",
+                "locationText": "OLD BYNOE RD, BERRY SPRINGS",
+                "dateCreated": "2022-07-21",
+                "dateClosed": null,
+                "endDate": null,
+                "notes": "Fire Type : Grass and Scrub Fire\nStatus : Closed\n",
+                "dispatchCount": 0,
+                "currentDispatchCount": 0
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    130.635,
+                    -12.8098
+                ]
+            },
+            "properties": {
+                "id": 1374177,
+                "url": "https://arena.nafc.org.au/register/api/incidents/1374177?geojson=true",
+                "number": null,
+                "name": "FOG BAY RD, BYNOE",
+                "dataSource": "NT",
+                "classification": "FIRE",
+                "status": "CONTROLLED",
+                "jurisdiction": "NT",
+                "locationText": "FOG BAY RD, BYNOE",
+                "dateCreated": "2022-07-21",
+                "dateClosed": null,
+                "endDate": null,
+                "notes": "Fire Type : Grass and Scrub Fire\nStatus : Closed\n",
+                "dispatchCount": 0,
+                "currentDispatchCount": 0
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    131.0075,
+                    -12.7687
+                ]
+            },
+            "properties": {
+                "id": 1374178,
+                "url": "https://arena.nafc.org.au/register/api/incidents/1374178?geojson=true",
+                "number": null,
+                "name": "Old Bynoe Road, BERRY SPRINGS",
+                "dataSource": "NT",
+                "classification": "FIRE",
+                "status": "GOING",
+                "jurisdiction": "NT",
+                "locationText": "Old Bynoe Road, BERRY SPRINGS",
+                "dateCreated": "2022-07-21",
+                "dateClosed": null,
+                "endDate": null,
+                "notes": "Fire Type : Bushfire\nStatus : Going\n",
+                "dispatchCount": 0,
+                "currentDispatchCount": 0
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    130.9271,
+                    -12.4465
+                ]
+            },
+            "properties": {
+                "id": 1374194,
+                "url": "https://arena.nafc.org.au/register/api/incidents/1374194?geojson=true",
+                "number": null,
+                "name": "MARLOW RD, BERRIMAH",
+                "dataSource": "NT",
+                "classification": "FIRE",
+                "status": "CONTROLLED",
+                "jurisdiction": "NT",
+                "locationText": "MARLOW RD, BERRIMAH",
+                "dateCreated": "2022-07-21",
+                "dateClosed": null,
+                "endDate": null,
+                "notes": "Fire Type : Grass and Scrub Fire\nStatus : Closed\n",
+                "dispatchCount": 0,
+                "currentDispatchCount": 0
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    130.8965,
+                    -12.3829
+                ]
+            },
+            "properties": {
+                "id": 1374198,
+                "url": "https://arena.nafc.org.au/register/api/incidents/1374198?geojson=true",
+                "number": null,
+                "name": "VANDERLIN DR, WULAGI",
+                "dataSource": "NT",
+                "classification": "FIRE",
+                "status": "CONTROLLED",
+                "jurisdiction": "NT",
+                "locationText": "VANDERLIN DR, WULAGI",
+                "dateCreated": "2022-07-21",
+                "dateClosed": null,
+                "endDate": null,
+                "notes": "Fire Type : Grass and Scrub Fire\nStatus : Closed\n",
+                "dispatchCount": 0,
+                "currentDispatchCount": 0
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    131.0423,
+                    -12.525
+                ]
+            },
+            "properties": {
+                "id": 1374200,
+                "url": "https://arena.nafc.org.au/register/api/incidents/1374200?geojson=true",
+                "number": null,
+                "name": "HENNING RD, COOLALINGA",
+                "dataSource": "NT",
+                "classification": "FIRE",
+                "status": "CONTROLLED",
+                "jurisdiction": "NT",
+                "locationText": "HENNING RD, COOLALINGA",
+                "dateCreated": "2022-07-21",
+                "dateClosed": null,
+                "endDate": null,
+                "notes": "Fire Type : Grass and Scrub Fire\nStatus : Closed\n",
+                "dispatchCount": 0,
+                "currentDispatchCount": 0
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    124.0506,
+                    -17.4125
+                ]
+            },
+            "properties": {
+                "id": 1374225,
+                "url": "https://arena.nafc.org.au/register/api/incidents/1374225?geojson=true",
+                "number": "2252531",
+                "name": "Bushfire (MEDA, SHIRE OF DERBY/WEST KIMBERLEY,KIMBERLEY,  FCAD: 583050)",
+                "dataSource": "WA",
+                "classification": "FIRE",
+                "status": "OTHER",
+                "jurisdiction": "WA",
+                "locationText": "KIMBERLEY",
+                "dateCreated": "2022-07-21",
+                "dateClosed": null,
+                "endDate": null,
+                "notes": "incidentNumber : 583050\npublicationTime : 22/07/2022 07:29:37\nregion : KIMBERLEY\n",
+                "dispatchCount": 0,
+                "currentDispatchCount": 0
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    131.0305,
+                    -12.5289
+                ]
+            },
+            "properties": {
+                "id": 1374230,
+                "url": "https://arena.nafc.org.au/register/api/incidents/1374230?geojson=true",
+                "number": null,
+                "name": "VIRGINIA RD, VIRGINIA",
+                "dataSource": "NT",
+                "classification": "FIRE",
+                "status": "CONTROLLED",
+                "jurisdiction": "NT",
+                "locationText": "VIRGINIA RD, VIRGINIA",
+                "dateCreated": "2022-07-21",
+                "dateClosed": null,
+                "endDate": null,
+                "notes": "Fire Type : Grass and Scrub Fire\nStatus : Closed\n",
+                "dispatchCount": 0,
+                "currentDispatchCount": 0
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    133.8793,
+                    -23.6898
+                ]
+            },
+            "properties": {
+                "id": 1374248,
+                "url": "https://arena.nafc.org.au/register/api/incidents/1374248?geojson=true",
+                "number": null,
+                "name": "ATYUNPE ST, STUART",
+                "dataSource": "NT",
+                "classification": "FIRE",
+                "status": "CONTROLLED",
+                "jurisdiction": "NT",
+                "locationText": "ATYUNPE ST, STUART",
+                "dateCreated": "2022-07-21",
+                "dateClosed": null,
+                "endDate": null,
+                "notes": "Fire Type : Grass and Scrub Fire\nStatus : Closed\n",
+                "dispatchCount": 0,
+                "currentDispatchCount": 0
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    133.8741,
+                    -23.6851
+                ]
+            },
+            "properties": {
+                "id": 1374266,
+                "url": "https://arena.nafc.org.au/register/api/incidents/1374266?geojson=true",
+                "number": null,
+                "name": "STUART HWY, BRAITLING",
+                "dataSource": "NT",
+                "classification": "FIRE",
+                "status": "CONTROLLED",
+                "jurisdiction": "NT",
+                "locationText": "STUART HWY, BRAITLING",
+                "dateCreated": "2022-07-21",
+                "dateClosed": null,
+                "endDate": null,
+                "notes": "Fire Type : Grass and Scrub Fire\nStatus : Closed\n",
+                "dispatchCount": 0,
+                "currentDispatchCount": 0
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    133.8554,
+                    -23.711
+                ]
+            },
+            "properties": {
+                "id": 1374275,
+                "url": "https://arena.nafc.org.au/register/api/incidents/1374275?geojson=true",
+                "number": null,
+                "name": "BRADSHAW DR, ARALUEN",
+                "dataSource": "NT",
+                "classification": "FIRE",
+                "status": "CONTROLLED",
+                "jurisdiction": "NT",
+                "locationText": "BRADSHAW DR, ARALUEN",
+                "dateCreated": "2022-07-21",
+                "dateClosed": null,
+                "endDate": null,
+                "notes": "Fire Type : Grass and Scrub Fire\nStatus : Closed\n",
+                "dispatchCount": 0,
+                "currentDispatchCount": 0
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    133.8612,
+                    -23.7024
+                ]
+            },
+            "properties": {
+                "id": 1374277,
+                "url": "https://arena.nafc.org.au/register/api/incidents/1374277?geojson=true",
+                "number": null,
+                "name": "LARAPINTA DR, ARALUEN",
+                "dataSource": "NT",
+                "classification": "FIRE",
+                "status": "CONTROLLED",
+                "jurisdiction": "NT",
+                "locationText": "LARAPINTA DR, ARALUEN",
+                "dateCreated": "2022-07-21",
+                "dateClosed": null,
+                "endDate": null,
+                "notes": "Fire Type : Grass and Scrub Fire\nStatus : Closed\n",
+                "dispatchCount": 0,
+                "currentDispatchCount": 0
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    130.9101,
+                    -12.4204
+                ]
+            },
+            "properties": {
+                "id": 1374278,
+                "url": "https://arena.nafc.org.au/register/api/incidents/1374278?geojson=true",
+                "number": null,
+                "name": "AMY JOHNSON AV, BERRIMAH",
+                "dataSource": "NT",
+                "classification": "FIRE",
+                "status": "CONTROLLED",
+                "jurisdiction": "NT",
+                "locationText": "AMY JOHNSON AV, BERRIMAH",
+                "dateCreated": "2022-07-21",
+                "dateClosed": null,
+                "endDate": null,
+                "notes": "Fire Type : Grass and Scrub Fire\nStatus : Closed\n",
+                "dispatchCount": 0,
+                "currentDispatchCount": 0
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    133.8762,
+                    -23.7182
+                ]
+            },
+            "properties": {
+                "id": 1374325,
+                "url": "https://arena.nafc.org.au/register/api/incidents/1374325?geojson=true",
+                "number": null,
+                "name": "SOUTH TCE, DESERT SPRINGS",
+                "dataSource": "NT",
+                "classification": "FIRE",
+                "status": "CONTROLLED",
+                "jurisdiction": "NT",
+                "locationText": "SOUTH TCE, DESERT SPRINGS",
+                "dateCreated": "2022-07-22",
+                "dateClosed": null,
+                "endDate": null,
+                "notes": "Fire Type : Grass and Scrub Fire\nStatus : Closed\n",
+                "dispatchCount": 0,
+                "currentDispatchCount": 0
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    133.8986,
+                    -23.7094
+                ]
+            },
+            "properties": {
+                "id": 1374331,
+                "url": "https://arena.nafc.org.au/register/api/incidents/1374331?geojson=true",
+                "number": null,
+                "name": "EWYENPER ST, SADADEEN",
+                "dataSource": "NT",
+                "classification": "FIRE",
+                "status": "CONTROLLED",
+                "jurisdiction": "NT",
+                "locationText": "EWYENPER ST, SADADEEN",
+                "dateCreated": "2022-07-22",
+                "dateClosed": null,
+                "endDate": null,
+                "notes": "Fire Type : Grass and Scrub Fire\nStatus : Closed\n",
+                "dispatchCount": 0,
+                "currentDispatchCount": 0
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    133.8409,
+                    -23.6968
+                ]
+            },
+            "properties": {
+                "id": 1374334,
+                "url": "https://arena.nafc.org.au/register/api/incidents/1374334?geojson=true",
+                "number": null,
+                "name": "LYNDAVALE DR, LARAPINTA",
+                "dataSource": "NT",
+                "classification": "FIRE",
+                "status": "CONTROLLED",
+                "jurisdiction": "NT",
+                "locationText": "LYNDAVALE DR, LARAPINTA",
+                "dateCreated": "2022-07-22",
+                "dateClosed": null,
+                "endDate": null,
+                "notes": "Fire Type : Grass and Scrub Fire\nStatus : Closed\n",
+                "dispatchCount": 0,
+                "currentDispatchCount": 0
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    133.8409,
+                    -23.6968
+                ]
+            },
+            "properties": {
+                "id": 1374341,
+                "url": "https://arena.nafc.org.au/register/api/incidents/1374341?geojson=true",
+                "number": null,
+                "name": "LYNDAVALE DR, LARAPINTA",
+                "dataSource": "NT",
+                "classification": "FIRE",
+                "status": "CONTROLLED",
+                "jurisdiction": "NT",
+                "locationText": "LYNDAVALE DR, LARAPINTA",
+                "dateCreated": "2022-07-22",
+                "dateClosed": null,
+                "endDate": null,
+                "notes": "Fire Type : Grass and Scrub Fire\nStatus : Closed\n",
+                "dispatchCount": 0,
+                "currentDispatchCount": 0
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    133.8406,
+                    -23.6975
+                ]
+            },
+            "properties": {
+                "id": 1374345,
+                "url": "https://arena.nafc.org.au/register/api/incidents/1374345?geojson=true",
+                "number": null,
+                "name": "LYNDAVALE DR, LARAPINTA",
+                "dataSource": "NT",
+                "classification": "FIRE",
+                "status": "CONTROLLED",
+                "jurisdiction": "NT",
+                "locationText": "LYNDAVALE DR, LARAPINTA",
+                "dateCreated": "2022-07-22",
+                "dateClosed": null,
+                "endDate": null,
+                "notes": "Fire Type : Grass and Scrub Fire\nStatus : Closed\n",
+                "dispatchCount": 0,
+                "currentDispatchCount": 0
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    133.8409,
+                    -23.6968
+                ]
+            },
+            "properties": {
+                "id": 1374349,
+                "url": "https://arena.nafc.org.au/register/api/incidents/1374349?geojson=true",
+                "number": null,
+                "name": "LYNDAVALE DR, LARAPINTA",
+                "dataSource": "NT",
+                "classification": "FIRE",
+                "status": "CONTROLLED",
+                "jurisdiction": "NT",
+                "locationText": "LYNDAVALE DR, LARAPINTA",
+                "dateCreated": "2022-07-22",
+                "dateClosed": null,
+                "endDate": null,
+                "notes": "Fire Type : Grass and Scrub Fire\nStatus : Closed\n",
+                "dispatchCount": 0,
+                "currentDispatchCount": 0
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    133.8409,
+                    -23.6968
+                ]
+            },
+            "properties": {
+                "id": 1374351,
+                "url": "https://arena.nafc.org.au/register/api/incidents/1374351?geojson=true",
+                "number": null,
+                "name": "LYNDAVALE DR, LARAPINTA",
+                "dataSource": "NT",
+                "classification": "FIRE",
+                "status": "CONTROLLED",
+                "jurisdiction": "NT",
+                "locationText": "LYNDAVALE DR, LARAPINTA",
+                "dateCreated": "2022-07-22",
+                "dateClosed": null,
+                "endDate": null,
+                "notes": "Fire Type : Grass and Scrub Fire\nStatus : Closed\n",
+                "dispatchCount": 0,
+                "currentDispatchCount": 0
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    130.9999,
+                    -13.053
+                ]
+            },
+            "properties": {
+                "id": 1374361,
+                "url": "https://arena.nafc.org.au/register/api/incidents/1374361?geojson=true",
+                "number": null,
+                "name": "MENELING RD, FINNISS VALLEY",
+                "dataSource": "NT",
+                "classification": "FIRE",
+                "status": "CONTROLLED",
+                "jurisdiction": "NT",
+                "locationText": "MENELING RD, FINNISS VALLEY",
+                "dateCreated": "2022-07-22",
+                "dateClosed": null,
+                "endDate": null,
+                "notes": "Fire Type : Grass and Scrub Fire\nStatus : Closed\n",
+                "dispatchCount": 0,
+                "currentDispatchCount": 0
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    132.125,
+                    -14.8131
+                ]
+            },
+            "properties": {
+                "id": 1374394,
+                "url": "https://arena.nafc.org.au/register/api/incidents/1374394?geojson=true",
+                "number": null,
+                "name": "Manbulloo Station, Victoria Highway MANBULLOO",
+                "dataSource": "NT",
+                "classification": "FIRE",
+                "status": "GOING",
+                "jurisdiction": "NT",
+                "locationText": "Manbulloo Station, Victoria Highway MANBULLOO",
+                "dateCreated": "2022-07-22",
+                "dateClosed": null,
+                "endDate": null,
+                "notes": "Fire Type : Bushfire\nStatus : Going\n",
+                "dispatchCount": 0,
+                "currentDispatchCount": 0
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    151.303,
+                    -32.8782
+                ]
+            },
+            "properties": {
+                "id": 1374403,
+                "url": "https://arena.nafc.org.au/register/api/incidents/1374403?geojson=true",
+                "number": null,
+                "name": "Assist Resilience",
+                "dataSource": "ICON",
+                "classification": "OTHER",
+                "status": "OTHER",
+                "jurisdiction": "NSW",
+                "locationText": "Cessnock",
+                "dateCreated": "2022-07-22",
+                "dateClosed": null,
+                "endDate": null,
+                "notes": "ALERT LEVEL : Not Applicable\nCOUNCIL AREA : Cessnock\nFIRE : No\nLOCATION : Cessnock\nRESPONSIBLE AGENCY : Rural Fire Service\nSIZE : 0 ha\nSTATUS : Out of control\nTYPE : Assist Other Agency\nUPDATED : 22 Jul 2022 11:54\n",
+                "dispatchCount": 0,
+                "currentDispatchCount": 0
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    151.5737,
+                    -32.7725
+                ]
+            },
+            "properties": {
+                "id": 1374404,
+                "url": "https://arena.nafc.org.au/register/api/incidents/1374404?geojson=true",
+                "number": null,
+                "name": "Assist Resilience",
+                "dataSource": "ICON",
+                "classification": "OTHER",
+                "status": "OTHER",
+                "jurisdiction": "NSW",
+                "locationText": "Maitland",
+                "dateCreated": "2022-07-22",
+                "dateClosed": null,
+                "endDate": null,
+                "notes": "ALERT LEVEL : Not Applicable\nCOUNCIL AREA : Maitland\nFIRE : No\nLOCATION : 110 Mt VIncent Road East Maitland\nRESPONSIBLE AGENCY : Rural Fire Service\nSIZE : 0 ha\nSTATUS : Out of control\nTYPE : Assist Other Agency\nUPDATED : 22 Jul 2022 12:28\n",
+                "dispatchCount": 0,
+                "currentDispatchCount": 0
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    151.2408,
+                    -33.5377
+                ]
+            },
+            "properties": {
+                "id": 1374407,
+                "url": "https://arena.nafc.org.au/register/api/incidents/1374407?geojson=true",
+                "number": null,
+                "name": "Assist Ambulance - Dangar Island",
+                "dataSource": "ICON",
+                "classification": "OTHER",
+                "status": "CONTROLLED",
+                "jurisdiction": "NSW",
+                "locationText": "Hornsby",
+                "dateCreated": "2022-07-22",
+                "dateClosed": null,
+                "endDate": null,
+                "notes": "ALERT LEVEL : Not Applicable\nCOUNCIL AREA : Hornsby\nFIRE : No\nLOCATION : Dangar Island\nRESPONSIBLE AGENCY : NSW Ambulance\nSIZE : 0 ha\nSTATUS : Under control\nTYPE : Assist Other Agency\nUPDATED : 22 Jul 2022 10:04\n",
+                "dispatchCount": 0,
+                "currentDispatchCount": 0
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    145.4853,
+                    -17.656
+                ]
+            },
+            "properties": {
+                "id": 1374408,
+                "url": "https://arena.nafc.org.au/register/api/incidents/1374408?geojson=true",
+                "number": "QF7-22-075053",
+                "name": "Greys Lane",
+                "dataSource": "QFES",
+                "classification": "BURN",
+                "status": "GOING",
+                "jurisdiction": "QLD",
+                "locationText": "RAVENSHOE",
+                "dateCreated": "2022-07-22",
+                "dateClosed": null,
+                "endDate": null,
+                "notes": "CurrentStatus : Going\nGroupedType : FIRE PERMITTED BURN\n",
+                "dispatchCount": 0,
+                "currentDispatchCount": 0
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    137.1718,
+                    -35.7701
+                ]
+            },
+            "properties": {
+                "id": 1374409,
+                "url": "https://arena.nafc.org.au/register/api/incidents/1374409?geojson=true",
+                "number": "1481359",
+                "name": "DUNCAN, MORGANS ROAD",
                 "dataSource": "CFS",
                 "classification": "OTHER",
                 "status": "OTHER",
                 "jurisdiction": "SA",
-                "locationText": "YORKE PENINSULA",
-                "dateCreated": "2022-07-21",
+                "locationText": "KANGAROO ISLAND",
+                "dateCreated": "2022-07-22",
                 "dateClosed": null,
                 "endDate": null,
-                "notes": "Level : 1\nStatus : GOING\nType : Assist Agency\n",
+                "notes": "Level : 1\nStatus : COMPLETE\nType : Vehicle Accident\n",
                 "dispatchCount": 0,
                 "currentDispatchCount": 0
             }
@@ -3802,24 +2635,828 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    138.5972,
-                    -34.6996
+                    138.5461,
+                    -35.0729
                 ]
             },
             "properties": {
-                "id": 1374134,
-                "url": "https://arena.nafc.org.au/register/api/incidents/1374134?geojson=true",
-                "number": "1481286",
-                "name": "PENFIELD, RANGER ROAD",
+                "id": 1374420,
+                "url": "https://arena.nafc.org.au/register/api/incidents/1374420?geojson=true",
+                "number": "1481363",
+                "name": "GLENTHORNE NATIONAL PARK SOUTH WEST CORNER",
+                "dataSource": "CFS",
+                "classification": "BURN",
+                "status": "CONTROLLED",
+                "jurisdiction": "SA",
+                "locationText": "",
+                "dateCreated": "2022-07-22",
+                "dateClosed": null,
+                "endDate": null,
+                "notes": "Level : 1\nStatus : CONTROLLED\nType : Prescribed Burn\n",
+                "dispatchCount": 0,
+                "currentDispatchCount": 0
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    130.8383,
+                    -12.4197
+                ]
+            },
+            "properties": {
+                "id": 1374430,
+                "url": "https://arena.nafc.org.au/register/api/incidents/1374430?geojson=true",
+                "number": null,
+                "name": "WARATAH CR, FANNIE BAY",
+                "dataSource": "NT",
+                "classification": "FIRE",
+                "status": "CONTROLLED",
+                "jurisdiction": "NT",
+                "locationText": "WARATAH CR, FANNIE BAY",
+                "dateCreated": "2022-07-22",
+                "dateClosed": null,
+                "endDate": null,
+                "notes": "Fire Type : Grass and Scrub Fire\nStatus : Closed\n",
+                "dispatchCount": 0,
+                "currentDispatchCount": 0
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    152.1316,
+                    -26.8585
+                ]
+            },
+            "properties": {
+                "id": 1374434,
+                "url": "https://arena.nafc.org.au/register/api/incidents/1374434?geojson=true",
+                "number": "QF4-22-075076",
+                "name": "Packer Rd",
+                "dataSource": "QFES",
+                "classification": "OTHER",
+                "status": "OTHER",
+                "jurisdiction": "QLD",
+                "locationText": "BLACKBUTT NORTH",
+                "dateCreated": "2022-07-22",
+                "dateClosed": null,
+                "endDate": null,
+                "notes": "CurrentStatus : Going\nGroupedType : POWER / GAS ELECTRICAL / POWER\n",
+                "dispatchCount": 0,
+                "currentDispatchCount": 0
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    148.9848,
+                    -35.3436
+                ]
+            },
+            "properties": {
+                "id": 1374439,
+                "url": "https://arena.nafc.org.au/register/api/incidents/1374439?geojson=true",
+                "number": "010618-22072022",
+                "name": "HAZARD REDUCTION BURN - STROMLO",
+                "dataSource": "ACT",
+                "classification": "BURN",
+                "status": "GOING",
+                "jurisdiction": "NSW",
+                "locationText": "STROMLO",
+                "dateCreated": "2022-07-22",
+                "dateClosed": null,
+                "endDate": null,
+                "notes": "Agency : Fire\nIncident : HAZARD REDUCTION BURN - STROMLO\nIncident Number : 010618-22072022\nLocation : FAIRVALE, COTTER ROAD, STROMLO\nStatus : Resource Allocation Pending\nSuburb : STROMLO\nTime of Call : 22 Jul 2022 11:28:28\nType : HAZARD REDUCTION BURN\nUpdated : 22 Jul 2022 11:29:24.917\n",
+                "dispatchCount": 0,
+                "currentDispatchCount": 0
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    128.7439,
+                    -15.7784
+                ]
+            },
+            "properties": {
+                "id": 1374440,
+                "url": "https://arena.nafc.org.au/register/api/incidents/1374440?geojson=true",
+                "number": "2252640",
+                "name": "Bushfire (KUNUNURRA, SHIRE OF WYNDHAM-EAST KIMBERLEY,KIMBERLEY,  FCAD: 583100)",
+                "dataSource": "WA",
+                "classification": "FIRE",
+                "status": "OTHER",
+                "jurisdiction": "WA",
+                "locationText": "KIMBERLEY",
+                "dateCreated": "2022-07-22",
+                "dateClosed": null,
+                "endDate": null,
+                "notes": "incidentNumber : 583100\npublicationTime : 22/07/2022 10:28:39\nregion : KIMBERLEY\n",
+                "dispatchCount": 0,
+                "currentDispatchCount": 0
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    150.133,
+                    -36.2389
+                ]
+            },
+            "properties": {
+                "id": 1374444,
+                "url": "https://arena.nafc.org.au/register/api/incidents/1374444?geojson=true",
+                "number": null,
+                "name": "Princes Hwy, Narooma",
+                "dataSource": "ICON",
+                "classification": "OTHER",
+                "status": "CONTROLLED",
+                "jurisdiction": "NSW",
+                "locationText": "Eurobodalla",
+                "dateCreated": "2022-07-22",
+                "dateClosed": null,
+                "endDate": null,
+                "notes": "ALERT LEVEL : Not Applicable\nCOUNCIL AREA : Eurobodalla\nFIRE : No\nLOCATION : Princes Hwy, Narooma, NSW 2546\nRESPONSIBLE AGENCY : Rural Fire Service\nSIZE : 0 ha\nSTATUS : Under control\nTYPE : MVA/Transport\nUPDATED : 22 Jul 2022 12:24\n",
+                "dispatchCount": 0,
+                "currentDispatchCount": 0
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": null,
+            "properties": {
+                "id": 1374445,
+                "url": "https://arena.nafc.org.au/register/api/incidents/1374445?geojson=true",
+                "number": null,
+                "name": "TE IHU WWAC TRAINING",
+                "dataSource": "ARENA",
+                "classification": "OTHER",
+                "status": "OTHER",
+                "jurisdiction": "NZ",
+                "locationText": "Willowby, South Canterbury",
+                "dateCreated": "2022-07-22",
+                "dateClosed": null,
+                "endDate": null,
+                "notes": null,
+                "dispatchCount": 1,
+                "currentDispatchCount": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    130.8712,
+                    -12.3635
+                ]
+            },
+            "properties": {
+                "id": 1374447,
+                "url": "https://arena.nafc.org.au/register/api/incidents/1374447?geojson=true",
+                "number": null,
+                "name": "MAKRYLLOS CCT, TIWI",
+                "dataSource": "NT",
+                "classification": "FIRE",
+                "status": "CONTROLLED",
+                "jurisdiction": "NT",
+                "locationText": "MAKRYLLOS CCT, TIWI",
+                "dateCreated": "2022-07-22",
+                "dateClosed": null,
+                "endDate": null,
+                "notes": "Fire Type : Grass and Scrub Fire\nStatus : Closed\n",
+                "dispatchCount": 0,
+                "currentDispatchCount": 0
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    130.9953,
+                    -13.0887
+                ]
+            },
+            "properties": {
+                "id": 1374448,
+                "url": "https://arena.nafc.org.au/register/api/incidents/1374448?geojson=true",
+                "number": null,
+                "name": "Miles Rd, FINNIS VALLEY",
+                "dataSource": "NT",
+                "classification": "FIRE",
+                "status": "GOING",
+                "jurisdiction": "NT",
+                "locationText": "Miles Rd, FINNIS VALLEY",
+                "dateCreated": "2022-07-22",
+                "dateClosed": null,
+                "endDate": null,
+                "notes": "Fire Type : Bushfire\nStatus : Being Controlled\n",
+                "dispatchCount": 0,
+                "currentDispatchCount": 0
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    137.4816,
+                    -34.7323
+                ]
+            },
+            "properties": {
+                "id": 1374449,
+                "url": "https://arena.nafc.org.au/register/api/incidents/1374449?geojson=true",
+                "number": "1481369",
+                "name": "BLUFF BEACH, EDWARDS STREET",
                 "dataSource": "CFS",
                 "classification": "FIRE",
                 "status": "GOING",
                 "jurisdiction": "SA",
-                "locationText": "MOUNT LOFTY RANGES",
-                "dateCreated": "2022-07-21",
+                "locationText": "YORKE PENINSULA",
+                "dateCreated": "2022-07-22",
                 "dateClosed": null,
                 "endDate": null,
-                "notes": "Level : 1\nStatus : GOING\nType : Fire Alarm\n",
+                "notes": "Level : 1\nStatus : GOING\nType : Building Fire\n",
+                "dispatchCount": 0,
+                "currentDispatchCount": 0
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    153.3705,
+                    -27.6949
+                ]
+            },
+            "properties": {
+                "id": 1374451,
+                "url": "https://arena.nafc.org.au/register/api/incidents/1374451?geojson=true",
+                "number": "QF5S-22-075085",
+                "name": "COOLABAH ST",
+                "dataSource": "QFES",
+                "classification": "OTHER",
+                "status": "OTHER",
+                "jurisdiction": "QLD",
+                "locationText": "RUSSELL ISLAND",
+                "dateCreated": "2022-07-22",
+                "dateClosed": null,
+                "endDate": null,
+                "notes": "CurrentStatus : Going\nGroupedType : POWER / GAS ELECTRICAL / POWER\n",
+                "dispatchCount": 0,
+                "currentDispatchCount": 0
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    152.5023,
+                    -26.2684
+                ]
+            },
+            "properties": {
+                "id": 1374452,
+                "url": "https://arena.nafc.org.au/register/api/incidents/1374452?geojson=true",
+                "number": "QF4-22-075087",
+                "name": "GLASTONBURY CREEK RD & PORTAS RD",
+                "dataSource": "QFES",
+                "classification": "OTHER",
+                "status": "OTHER",
+                "jurisdiction": "QLD",
+                "locationText": "UPPER GLASTONBURY",
+                "dateCreated": "2022-07-22",
+                "dateClosed": null,
+                "endDate": null,
+                "notes": "CurrentStatus : Going\nGroupedType : RESCUE TECHNICAL\n",
+                "dispatchCount": 0,
+                "currentDispatchCount": 0
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    122.48,
+                    -17.23
+                ]
+            },
+            "properties": {
+                "id": 1374456,
+                "url": "https://arena.nafc.org.au/register/api/incidents/1374456?geojson=true",
+                "number": "2252649",
+                "name": "Burn Off (WATERBANK, SHIRE OF BROOME,KIMBERLEY,  FCAD: 583102)",
+                "dataSource": "WA",
+                "classification": "BURN",
+                "status": "OTHER",
+                "jurisdiction": "WA",
+                "locationText": "KIMBERLEY",
+                "dateCreated": "2022-07-22",
+                "dateClosed": null,
+                "endDate": null,
+                "notes": "incidentNumber : 583102\npublicationTime : 22/07/2022 10:19:29\nregion : KIMBERLEY\n",
+                "dispatchCount": 0,
+                "currentDispatchCount": 0
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    145.464,
+                    -37.9464
+                ]
+            },
+            "properties": {
+                "id": 1374457,
+                "url": "https://arena.nafc.org.au/register/api/incidents/1374457?geojson=true",
+                "number": "1910782",
+                "name": "EMERALD - BEACONSFIELD-EMERALD RD",
+                "dataSource": "VIC",
+                "classification": "FIRE",
+                "status": "CONTROLLED",
+                "jurisdiction": "VIC",
+                "locationText": "Central",
+                "dateCreated": "2022-07-22",
+                "dateClosed": null,
+                "endDate": null,
+                "notes": "category1 : Fire\ncategory2 : Other\nincidentSize : SMALL\noriginStatus : SAFE\n",
+                "dispatchCount": 0,
+                "currentDispatchCount": 0
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    145.4717,
+                    -38.4422
+                ]
+            },
+            "properties": {
+                "id": 1374460,
+                "url": "https://arena.nafc.org.au/register/api/incidents/1374460?geojson=true",
+                "number": "1910783",
+                "name": "CORINELLA - KING RD",
+                "dataSource": "VIC",
+                "classification": "OTHER",
+                "status": "OTHER",
+                "jurisdiction": "VIC",
+                "locationText": "Central",
+                "dateCreated": "2022-07-22",
+                "dateClosed": null,
+                "endDate": null,
+                "notes": "category1 : Other\ncategory2 : Other\nincidentSize : SMALL\noriginStatus : RESPONDING\n",
+                "dispatchCount": 0,
+                "currentDispatchCount": 0
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    150.7617,
+                    -34.1071
+                ]
+            },
+            "properties": {
+                "id": 1374463,
+                "url": "https://arena.nafc.org.au/register/api/incidents/1374463?geojson=true",
+                "number": null,
+                "name": "Hume Mtwy, Menangle Park",
+                "dataSource": "ICON",
+                "classification": "OTHER",
+                "status": "CONTROLLED",
+                "jurisdiction": "NSW",
+                "locationText": "Campbelltown",
+                "dateCreated": "2022-07-22",
+                "dateClosed": null,
+                "endDate": null,
+                "notes": "ALERT LEVEL : Not Applicable\nCOUNCIL AREA : Campbelltown\nFIRE : No\nLOCATION : Hume Mtwy, Menangle Park, NSW 2563\nRESPONSIBLE AGENCY : Rural Fire Service\nSIZE : 0 ha\nSTATUS : Under control\nTYPE : MVA/Transport\nUPDATED : 22 Jul 2022 12:52\n",
+                "dispatchCount": 0,
+                "currentDispatchCount": 0
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    153.0099,
+                    -30.2177
+                ]
+            },
+            "properties": {
+                "id": 1374464,
+                "url": "https://arena.nafc.org.au/register/api/incidents/1374464?geojson=true",
+                "number": null,
+                "name": "Orara Wy, Coramba",
+                "dataSource": "ICON",
+                "classification": "OTHER",
+                "status": "CONTROLLED",
+                "jurisdiction": "NSW",
+                "locationText": "Coffs Harbour",
+                "dateCreated": "2022-07-22",
+                "dateClosed": null,
+                "endDate": null,
+                "notes": "ALERT LEVEL : Not Applicable\nCOUNCIL AREA : Coffs Harbour\nFIRE : No\nLOCATION : Orara Wy, Coramba,  2450\nRESPONSIBLE AGENCY : Rural Fire Service\nSIZE : 0 ha\nSTATUS : Under control\nTYPE : Flood/Storm/Tree Down\nUPDATED : 22 Jul 2022 13:24\n",
+                "dispatchCount": 0,
+                "currentDispatchCount": 0
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    144.6172,
+                    -36.2462
+                ]
+            },
+            "properties": {
+                "id": 1374465,
+                "url": "https://arena.nafc.org.au/register/api/incidents/1374465?geojson=true",
+                "number": "1910787",
+                "name": "BAMAWM - BAMAWM RD",
+                "dataSource": "VIC",
+                "classification": "FIRE",
+                "status": "CONTROLLED",
+                "jurisdiction": "VIC",
+                "locationText": "Northern Country",
+                "dateCreated": "2022-07-22",
+                "dateClosed": null,
+                "endDate": null,
+                "notes": "category1 : Fire\ncategory2 : False Alarm\nincidentSize : SMALL\noriginStatus : SAFE\n",
+                "dispatchCount": 0,
+                "currentDispatchCount": 0
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    141.4348,
+                    -38.3583
+                ]
+            },
+            "properties": {
+                "id": 1374466,
+                "url": "https://arena.nafc.org.au/register/api/incidents/1374466?geojson=true",
+                "number": "1910786",
+                "name": "CAPE BRIDGEWATER",
+                "dataSource": "VIC",
+                "classification": "FIRE",
+                "status": "CONTROLLED",
+                "jurisdiction": "VIC",
+                "locationText": "South West",
+                "dateCreated": "2022-07-22",
+                "dateClosed": null,
+                "endDate": null,
+                "notes": "category1 : Fire\ncategory2 : Other\nincidentSize : SMALL\noriginStatus : SAFE\n",
+                "dispatchCount": 0,
+                "currentDispatchCount": 0
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    138.6417,
+                    -35.2559
+                ]
+            },
+            "properties": {
+                "id": 1374467,
+                "url": "https://arena.nafc.org.au/register/api/incidents/1374467?geojson=true",
+                "number": "1481376",
+                "name": "DINGABLEDINGA, POTTERY ROAD",
+                "dataSource": "CFS",
+                "classification": "OTHER",
+                "status": "OTHER",
+                "jurisdiction": "SA",
+                "locationText": "MOUNT LOFTY RANGES",
+                "dateCreated": "2022-07-22",
+                "dateClosed": null,
+                "endDate": null,
+                "notes": "Level : 1\nStatus : COMPLETE\nType : Tree Down\n",
+                "dispatchCount": 0,
+                "currentDispatchCount": 0
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    115.5193,
+                    -31.2597
+                ]
+            },
+            "properties": {
+                "id": 1374468,
+                "url": "https://arena.nafc.org.au/register/api/incidents/1374468?geojson=true",
+                "number": "2252660",
+                "name": "Burn Off (GABBADAH, SHIRE OF GINGIN,METRO NORTH COASTAL,  FCAD: 583103)",
+                "dataSource": "WA",
+                "classification": "BURN",
+                "status": "OTHER",
+                "jurisdiction": "WA",
+                "locationText": "METRO NORTH COASTAL",
+                "dateCreated": "2022-07-22",
+                "dateClosed": null,
+                "endDate": null,
+                "notes": "incidentNumber : 583103\npublicationTime : 22/07/2022 10:56:50\nregion : METRO NORTH COASTAL\n",
+                "dispatchCount": 0,
+                "currentDispatchCount": 0
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    143.9003,
+                    -37.4227
+                ]
+            },
+            "properties": {
+                "id": 1374470,
+                "url": "https://arena.nafc.org.au/register/api/incidents/1374470?geojson=true",
+                "number": "1910788",
+                "name": "CRESWICK - WATER ST",
+                "dataSource": "VIC",
+                "classification": "FIRE",
+                "status": "CONTROLLED",
+                "jurisdiction": "VIC",
+                "locationText": "Central",
+                "dateCreated": "2022-07-22",
+                "dateClosed": null,
+                "endDate": null,
+                "notes": "category1 : Fire\ncategory2 : Building\nincidentSize : SMALL\noriginStatus : SAFE\n",
+                "dispatchCount": 0,
+                "currentDispatchCount": 0
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    150.1263,
+                    -36.1646
+                ]
+            },
+            "properties": {
+                "id": 1374471,
+                "url": "https://arena.nafc.org.au/register/api/incidents/1374471?geojson=true",
+                "number": null,
+                "name": "Noble Pde, Dalmeny",
+                "dataSource": "ICON",
+                "classification": "OTHER",
+                "status": "GOING",
+                "jurisdiction": "NSW",
+                "locationText": "Eurobodalla",
+                "dateCreated": "2022-07-22",
+                "dateClosed": null,
+                "endDate": null,
+                "notes": "ALERT LEVEL : Not Applicable\nCOUNCIL AREA : Eurobodalla\nFIRE : Yes\nLOCATION : 1 Noble Pde, Dalmeny, NSW 2546\nRESPONSIBLE AGENCY : Rural Fire Service\nSIZE : 0 ha\nSTATUS : Being controlled\nTYPE : Other\nUPDATED : 22 Jul 2022 13:29\n",
+                "dispatchCount": 0,
+                "currentDispatchCount": 0
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    142.7344,
+                    -37.1046
+                ]
+            },
+            "properties": {
+                "id": 1374472,
+                "url": "https://arena.nafc.org.au/register/api/incidents/1374472?geojson=true",
+                "number": "1910789",
+                "name": "BLACK RANGE (STAWELL)",
+                "dataSource": "VIC",
+                "classification": "FIRE",
+                "status": "CONTROLLED",
+                "jurisdiction": "VIC",
+                "locationText": "Wimmera",
+                "dateCreated": "2022-07-22",
+                "dateClosed": null,
+                "endDate": null,
+                "notes": "category1 : Fire\ncategory2 : Bushfire\nincidentSize : SMALL\noriginStatus : CONTROLLED\n",
+                "dispatchCount": 0,
+                "currentDispatchCount": 0
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    153.0176,
+                    -26.4085
+                ]
+            },
+            "properties": {
+                "id": 1374473,
+                "url": "https://arena.nafc.org.au/register/api/incidents/1374473?geojson=true",
+                "number": "QF4-22-075104",
+                "name": "Beckmans Rd",
+                "dataSource": "QFES",
+                "classification": "OTHER",
+                "status": "OTHER",
+                "jurisdiction": "QLD",
+                "locationText": "TEWANTIN",
+                "dateCreated": "2022-07-22",
+                "dateClosed": null,
+                "endDate": null,
+                "notes": "CurrentStatus : Contained\nGroupedType : POWER / GAS ELECTRICAL / POWER\n",
+                "dispatchCount": 0,
+                "currentDispatchCount": 0
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    115.9343,
+                    -31.9921
+                ]
+            },
+            "properties": {
+                "id": 1374474,
+                "url": "https://arena.nafc.org.au/register/api/incidents/1374474?geojson=true",
+                "number": "2252669",
+                "name": "Fire (WELSHPOOL, CITY OF CANNING,METRO SOUTH EAST,  FCAD: 583107)",
+                "dataSource": "WA",
+                "classification": "FIRE",
+                "status": "OTHER",
+                "jurisdiction": "WA",
+                "locationText": "METRO SOUTH EAST",
+                "dateCreated": "2022-07-22",
+                "dateClosed": null,
+                "endDate": null,
+                "notes": "incidentNumber : 583107\npublicationTime : 22/07/2022 11:24:17\nregion : METRO SOUTH EAST\n",
+                "dispatchCount": 0,
+                "currentDispatchCount": 0
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    115.7531,
+                    -32.0575
+                ]
+            },
+            "properties": {
+                "id": 1374475,
+                "url": "https://arena.nafc.org.au/register/api/incidents/1374475?geojson=true",
+                "number": "2252667",
+                "name": "Active Alarm (FREMANTLE, CITY OF FREMANTLE,METRO SOUTH COASTAL,  FCAD: 583105)",
+                "dataSource": "WA",
+                "classification": "OTHER",
+                "status": "OTHER",
+                "jurisdiction": "WA",
+                "locationText": "METRO SOUTH COASTAL",
+                "dateCreated": "2022-07-22",
+                "dateClosed": null,
+                "endDate": null,
+                "notes": "incidentNumber : 583105\npublicationTime : 22/07/2022 11:20:58\nregion : METRO SOUTH COASTAL\n",
+                "dispatchCount": 0,
+                "currentDispatchCount": 0
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    115.8979,
+                    -31.9737
+                ]
+            },
+            "properties": {
+                "id": 1374476,
+                "url": "https://arena.nafc.org.au/register/api/incidents/1374476?geojson=true",
+                "number": "2252668",
+                "name": "Active Alarm (VICTORIA PARK, TOWN OF VICTORIA PARK,METRO SOUTH EAST,  FCAD: 583106)",
+                "dataSource": "WA",
+                "classification": "OTHER",
+                "status": "OTHER",
+                "jurisdiction": "WA",
+                "locationText": "METRO SOUTH EAST",
+                "dateCreated": "2022-07-22",
+                "dateClosed": null,
+                "endDate": null,
+                "notes": "incidentNumber : 583106\npublicationTime : 22/07/2022 11:24:10\nregion : METRO SOUTH EAST\n",
+                "dispatchCount": 0,
+                "currentDispatchCount": 0
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    152.058,
+                    -32.4714
+                ]
+            },
+            "properties": {
+                "id": 1374477,
+                "url": "https://arena.nafc.org.au/register/api/incidents/1374477?geojson=true",
+                "number": null,
+                "name": "Booral Rd, Booral",
+                "dataSource": "ICON",
+                "classification": "OTHER",
+                "status": "GOING",
+                "jurisdiction": "NSW",
+                "locationText": "Mid-Coast",
+                "dateCreated": "2022-07-22",
+                "dateClosed": null,
+                "endDate": null,
+                "notes": "ALERT LEVEL : Not Applicable\nCOUNCIL AREA : Mid-Coast\nFIRE : No\nLOCATION : Booral Rd, Booral,  2425\nRESPONSIBLE AGENCY : Rural Fire Service\nSIZE : 0 ha\nSTATUS : Being controlled\nTYPE : MVA/Transport\nUPDATED : 22 Jul 2022 13:38\n",
+                "dispatchCount": 0,
+                "currentDispatchCount": 0
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    150.9964,
+                    -33.5996
+                ]
+            },
+            "properties": {
+                "id": 1374478,
+                "url": "https://arena.nafc.org.au/register/api/incidents/1374478?geojson=true",
+                "number": null,
+                "name": "Schwebel Lane, Glenorie",
+                "dataSource": "ICON",
+                "classification": "OTHER",
+                "status": "OTHER",
+                "jurisdiction": "NSW",
+                "locationText": "The Hills",
+                "dateCreated": "2022-07-22",
+                "dateClosed": null,
+                "endDate": null,
+                "notes": "ALERT LEVEL : Not Applicable\nCOUNCIL AREA : The Hills\nFIRE : No\nLOCATION : 16 Schwebel Lane, Glenorie, NSW 2157\nRESPONSIBLE AGENCY : Rural Fire Service\nSIZE : 0 ha\nSTATUS : Out of control\nTYPE : Assist Other Agency\nUPDATED : 22 Jul 2022 13:28\n",
+                "dispatchCount": 0,
+                "currentDispatchCount": 0
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    147.0951,
+                    -37.9369
+                ]
+            },
+            "properties": {
+                "id": 1374479,
+                "url": "https://arena.nafc.org.au/register/api/incidents/1374479?geojson=true",
+                "number": "1910790",
+                "name": "STRATFORD - BRIAGOLONG RD",
+                "dataSource": "VIC",
+                "classification": "FIRE",
+                "status": "GOING",
+                "jurisdiction": "VIC",
+                "locationText": "West And South Gippsland",
+                "dateCreated": "2022-07-22",
+                "dateClosed": null,
+                "endDate": null,
+                "notes": "category1 : Fire\ncategory2 : Bushfire\nincidentSize : SMALL\noriginStatus : RESPONDING\n",
                 "dispatchCount": 0,
                 "currentDispatchCount": 0
             }

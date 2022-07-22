@@ -1,0 +1,24 @@
+{{#if showContact}}
+  <div class="subsection-heading">Dispatch Contact:</div>
+  <div class="subsection">
+      <div>{{contactName}}</div>
+    <div class="contact">
+      <div>{{phone}}</div>
+      {{#if phoneIntegration}}
+        <div class="callto"><a href="{{{phoneIntegration}}}">
+          <i class="fa fa-phone"></i> Call</a>
+        </div>
+      {{/if}}
+    </div>
+    {{#if altPhone}}
+      <div class="contact">
+        <div>(Alt) {{altPhone}}</div>
+        {{#if altPhoneIntegration}}
+          <div class="callto"><a href="{{{altPhoneIntegration}}}">
+            <i class="fa fa-phone"></i> Call</a>
+          </div>
+        {{/if}}
+      </div>
+    {{/if}}
+  </div>
+{{/if}}

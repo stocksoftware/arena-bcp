@@ -6,7 +6,6 @@ const stores = {};
 const mapStore = new MapStore();
 stores.mapStore = mapStore;
 
-
 const storesContext = React.createContext({
   mapStore
 });

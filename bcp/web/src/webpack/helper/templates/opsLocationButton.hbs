@@ -1,0 +1,11 @@
+<div class="section opsOnly">
+  <div class="action-buttons opsButtons">
+    <a href="{{location.editUrl}}" title="Edit Location" target="register" class="btn viewLocationBtn"><i></i></a>
+    {{#unless primary}}
+      {{#if added}}
+        <a title="Remove Location from Operational Area" data-locationid="{{location.id}}" class="btn removeLocationBtn"><i class="fa fa-minus"></i></a>
+      {{else}}
+        <a title="Add Location to Operational Area" data-locationid="{{location.id}}" class="btn addLocationBtn"><i class="fa fa-plus"></i></a>{{/if}}
+    {{/unless}}
+  </div>
+</div>

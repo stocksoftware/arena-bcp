@@ -1,0 +1,20 @@
+{{#if unknown}}
+  <div class="emphasis">State: <span class="tblWarning">{{stateText}}</span></div>
+  <div class="tblWarning">The {{assetLabel}} was last known to be flying but has not reported a landing or reported recently.</div>
+{{else}}
+  <div><span class="emphasis">State:</span> {{stateText}}</div>
+{{/if}}
+{{#if locationFeature}}
+  <div><span class="emphasis">Coords:</span> {{func locationFeature.geometry.coordinates.[1] 'toFixed' 3}},{{func locationFeature.geometry.coordinates.[0] 'toFixed' 3}}</div>
+  {{#if moving}}
+    <div><span class="emphasis">Speed:</span> {{locationFeature.properties.speed}} km/h</div>
+    <div><span class="emphasis">Track:</span> {{locationFeature.properties.track}} &deg;</div>
+  {{/if}}
+{{/if}}
+<div><span class="emphasis">Altitude:</span> {{altitude}} ft</div>
+<div class="emphasis">Location:</div>
+<div class="location1">Loading ...</div>
+<div class="location2"></div>
+<div class="emphasis">Last Seen:</div>
+<div>{{lastSeen}}</div>
+<div class="popupMapHolder"></div>
