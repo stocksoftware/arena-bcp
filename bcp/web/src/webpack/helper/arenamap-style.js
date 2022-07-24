@@ -3,7 +3,7 @@ import {MAP_CONSTANTS} from "../constant";
 import 'leaflet-extra-markers';
 import 'leaflet-rotatedmarker';
 import * as AMFUNC_MATH from './arenamap-math';
-import $ from 'jquery';
+// import $ from 'jquery';
 import moment from 'moment-timezone';
 import '../css/thirdparty/leaflet.label';
 import '../css/thirdparty/leaflet.label.css';
@@ -69,20 +69,22 @@ function buildPopUpOtherAssetContent(feature) {
     popupContent += 'Asset not found in ARENA<br/><br/>';
     if (feature.properties) {
         const out = [];
-        $.each(feature.properties, function(key, value) {
-            if (key !== 'url' && key !== 'unparseableTrackingRego' && value) {
-                out.push('<span class=\'popupKey\'>' + key + ':</span> ' + value);
-            }
-            if (key === 'transmitted') {
-                // convert tracking date to a moment
-                const t = moment(value);
-                // get current date time
-                const d = moment();
-                // calculate the duration
-                const dh = moment.duration(t.diff(d)).humanize(true);
-                out.push('<span class=\'popupKey\'>Last seen:</span> ' + dh);
-            }
-        });
+        Object.entries(feature.properties).forEach(entry => {
+            const [key, value] = entry;
+                if (key !== 'url' && key !== 'unparseableTrackingRego' && value) {
+                    out.push('<span class=\'popupKey\'>' + key + ':</span> ' + value);
+                }
+                if (key === 'transmitted') {
+                    // convert tracking date to a moment
+                    const t = moment(value);
+                    // get current date time
+                    const d = moment();
+                    // calculate the duration
+                    const dh = moment.duration(t.diff(d)).humanize(true);
+                    out.push('<span class=\'popupKey\'>Last seen:</span> ' + dh);
+                }
+        }
+            )
         popupContent += out.join('<br/>');
     }
     return popupContent;
@@ -268,7 +270,8 @@ export const renderIncidentPopup = function(feature) {
         if (currentDate < startDate) {
             out.push('<h5 class="planned">Planned Event</h5>');
         }
-        $.each(feature.properties, function(key, value) {
+        Object.entries(feature.properties).forEach(entry => {
+            const [key, value] = entry;
             if (includePopupKey(key)) {
                 const valueString = formatNullToString(value);
                 if (key === 'dispatchCount') {
