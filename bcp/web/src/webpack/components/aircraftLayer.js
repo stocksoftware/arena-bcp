@@ -1,19 +1,23 @@
 import React, {useEffect, useState} from 'react';
+import L from "leaflet";
 import DataLayer from "./dataLayer";
-import { generateGeoJSON} from "../helper/toGeoJSON";
+import {generateGeoJSON} from "../helper/toGeoJSON";
 import {styleAssetMarker,buildPopUpEquipmentContent} from "../helper/arenamap-style";
 
-const EquipmentLayer =()=>{
+const AircraftLayer =()=>{
     const [data,setData] = useState(null);
     useEffect(()=>{
-        generateGeoJSON('equipment').then(setData);
+        generateGeoJSON('aircraft').then(setData);
     },[]);
+    console.log('data', data);
     const pointToLayer = function(feature, latlng){
         return styleAssetMarker(feature, latlng);
     };
     const onEachFeature = function (feature, layer) {
         if (feature.properties) {
-            layer.bindPopup(buildPopUpEquipmentContent(feature));
+            // layer.bindPopup(buildPopUpEquipmentContent(feature));
+            layer.bindPopup("aircraft pop up");
+
         }
     };
     return(
@@ -22,4 +26,4 @@ const EquipmentLayer =()=>{
 };
 
 
-export default EquipmentLayer;
+export default AircraftLayer;

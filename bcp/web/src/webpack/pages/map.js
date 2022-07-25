@@ -4,6 +4,7 @@ import {
 } from "react-leaflet";
 import IncidentLayer from "../components/incidentLayer";
 import EquipmentLayer from "../components/equipmentLayer";
+import AircraftLayer from "../components/aircraftLayer";
 import {MAP_CONFIG, ASSET_MODE} from "../constant";
 import useStores from "../hooks/use-stores";
 import {observer} from "mobx-react";
@@ -28,11 +29,16 @@ const Map = observer(() => {
                 <LayersControl.Overlay name="Incident">
                     <IncidentLayer/>
                 </LayersControl.Overlay>
-                {asset === ASSET_MODE.EQUIPMENT &&
+                {asset === ASSET_MODE.EQUIPMENT ?
                     <LayersControl.Overlay name="Equipment" checked>
                         <EquipmentLayer/>
                     </LayersControl.Overlay>
+                    :
+                    <LayersControl.Overlay name="Aircraft" checked>
+                        <AircraftLayer/>
+                    </LayersControl.Overlay>
                 }
+
             </LayersControl>
         </MapContainer>
     );

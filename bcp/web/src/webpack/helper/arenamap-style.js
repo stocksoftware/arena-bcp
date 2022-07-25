@@ -9,15 +9,24 @@ import '../css/thirdparty/leaflet.label';
 import '../css/thirdparty/leaflet.label.css';
 import * as AMFUNC_DISP from './arenamap-funcs-disp';
 import * as AM_FILTER from './arenamap-filters';
-let _equipmentImeiMap={};
+
+let _equipmentImeiMap = {};
 
 export function buildPopUpEquipmentContent(feature) {
     let popupContent = '';
     const equipmentFromFeature = getEquipmentDetailsForFeature(feature);
+    // console.log("equipmentFromFeature", feature, equipmentFromFeature);
+    if (feature.properties && feature.properties.imeiMatch) {
+        // Arena Equipment Pop Up
+        // console.log('imeiMatch');
+
+
+    }
     if (equipmentFromFeature.length) {
         // Ensure popups are styled the same as tables.
         popupContent += '<div class="arena-map-table">';
         if (equipmentFromFeature.length > 1) {
+            console.log("equipmentFromFeature.length", equipmentFromFeature.length)
             popupContent += buildPopUpEquipmentCommonContent(equipmentFromFeature[0], true);
             const tabsId = ('tabs-' + cleanNonAlphaNumericCharacters(equipmentFromFeature[0].registration));
             popupContent +=
@@ -64,13 +73,14 @@ export function buildPopUpEquipmentContent(feature) {
     }
     return popupContent;
 }
+
 function buildPopUpOtherAssetContent(feature) {
     let popupContent = '<strong>OTHER ASSET</strong><br/>';
     popupContent += 'Asset not found in ARENA<br/><br/>';
     if (feature.properties) {
         const out = [];
         Object.entries(feature.properties).forEach(entry => {
-            const [key, value] = entry;
+                const [key, value] = entry;
                 if (key !== 'url' && key !== 'unparseableTrackingRego' && value) {
                     out.push('<span class=\'popupKey\'>' + key + ':</span> ' + value);
                 }
@@ -83,14 +93,15 @@ function buildPopUpOtherAssetContent(feature) {
                     const dh = moment.duration(t.diff(d)).humanize(true);
                     out.push('<span class=\'popupKey\'>Last seen:</span> ' + dh);
                 }
-        }
-            )
+            }
+        )
         popupContent += out.join('<br/>');
     }
     return popupContent;
 }
+
 function buildPopUpEquipmentCommonContent(equipment, includeTitle) {
-    const equipmentData = { includeTitle: includeTitle };
+    const equipmentData = {includeTitle: includeTitle};
     if (includeTitle) {
         equipmentData.title = AMFUNC_DISP.getAssetTitle(equipment);
     }
@@ -156,7 +167,6 @@ export function styleAssetMarker(feature, latlng, historicViewDate) {
     // append file extension
     icon = icon + '.png';
     // rotate marker by reported track
-    console.log( feature.properties.track);
     const marker = L.marker(latlng, {
         rotationAngle: feature.properties.track,
         rotationOrigin: 'center center',
@@ -169,14 +179,15 @@ export function styleAssetMarker(feature, latlng, historicViewDate) {
     return marker;
 
 }
+
 export function getAircraftDetailsForFeature(feature) {
     let aircraft = null;
-    // if (feature && feature.properties && feature.properties.asset_id && !feature.properties.is_equipment) {
-    //     aircraft = _aircraftIdMap[feature.properties.asset_id];
-    // } else if (feature && feature.properties && feature.properties.imei) {
-    //     aircraft = _aircraftImeiMap[feature.properties.imei];
-    // }
-    // // Always returns an array, possibly empty
+    if (feature && feature.properties && feature.properties.asset_id && !feature.properties.is_equipment) {
+        aircraft = _aircraftIdMap[feature.properties.asset_id];
+    } else if (feature && feature.properties && feature.properties.imei) {
+        aircraft = _aircraftImeiMap[feature.properties.imei];
+    }
+    // Always returns an array, possibly empty
     return aircraft ? _.flatten([aircraft]) : [];
 }
 
@@ -194,6 +205,7 @@ export function getEquipmentDetailsForFeature(feature) {
     // Always returns an array, possibly empty
     return equipment ? _.flatten([equipment]) : [];
 }
+
 function getAircraftLabel(callsign, regLabel) {
     let labelTxt = callsign || regLabel;
     if (labelTxt) {
@@ -210,6 +222,7 @@ function getAircraftLabel(callsign, regLabel) {
     }
     return labelTxt;
 }
+
 export function getIconForIncident(feature) {
     // TODO process Incident data to render markers in standard 'fire' icons rather than these off the shelf ones
     const dispatchCount = feature.properties.currentDispatchCount ?
@@ -219,7 +232,7 @@ export function getIconForIncident(feature) {
     const startDate = new Date(feature.properties.startDate);
 
     let borderColour;
-    let fillColour ='#ccc';
+    let fillColour = '#ccc';
     let iconColour = 'white';
 
     // Determine Border Colour
@@ -241,27 +254,27 @@ export function getIconForIncident(feature) {
                 // leave as default
                 break;
             case 'CONTAINED':
-                iconColour='#ef9227';
+                iconColour = '#ef9227';
                 break;
             case 'CONTROLLED':
-                iconColour='#211c1d';
+                iconColour = '#211c1d';
                 break;
             case 'OTHER':
-                iconColour='#d3d3de';
+                iconColour = '#d3d3de';
                 break;
             default:
-                fillColour='#ccc';
+                fillColour = '#ccc';
                 break;
         }
     }
-    
+
     // none of the above
     return buildIncidentIcon(dispatchCount, fillColour, iconColour, borderColour);
 }
-export const renderIncidentPopup = function(feature) {
+
+export const renderIncidentPopup = function (feature) {
     // let addDisatchBoardButton = false;
     parseNotesField(feature);
-    // console.log(feature)
     let showCurrentDispatchCountEvenIfZero = false;
     const out = [];
     const currentDate = new Date();
@@ -304,7 +317,6 @@ export const renderIncidentPopup = function(feature) {
             ' )');
 
 
-
         let popupContent = '<div class="arena-map-table">';
         popupContent += out.join('<br>');
         popupContent += '</div>';
@@ -315,7 +327,7 @@ const formatNullToString = function (value) {
     return value === null ? '' : `${value}`;
 };
 
-const formatPopupKey = function(key) {
+const formatPopupKey = function (key) {
     if (key.match(/^[A-Z _]*$/)) {
         key = key.replace(/_/g, ' ').toLowerCase();
     }
@@ -336,7 +348,7 @@ const formatPopupKey = function(key) {
 
     return key;
 };
-const includePopupKey = function(key) {
+const includePopupKey = function (key) {
     return key !== 'event_type' && key !== 'Data' &&
         key !== 'url' &&
         key !== 'id' &&
@@ -344,7 +356,7 @@ const includePopupKey = function(key) {
         key !== 'dateCreated' &&
         key !== 'unparseableTrackingRego';
 };
-const parseNotesField = function(feature) {
+const parseNotesField = function (feature) {
     const props = feature.properties;
     const notes = props.notes;
     if (notes) {
@@ -357,7 +369,6 @@ const parseNotesField = function(feature) {
         delete props.notes;
     }
 };
-
 
 
 export function toShortCallsign(callsign) {
@@ -374,6 +385,7 @@ export function toShortCallsign(callsign) {
 
     return result;
 }
+
 function cleanNonAlphaNumericCharacters(string) {
     if (!string) {
         return '';

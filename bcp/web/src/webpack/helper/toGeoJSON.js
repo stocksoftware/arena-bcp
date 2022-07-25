@@ -1,38 +1,72 @@
 import $ from 'jquery';
 
-export const generateEquipmentGeoJSON = async () => {
-    const {equipment} = await $.getJSON('/equipment.json');
+export const generateGeoJSON = async (fileName) => {
+    const data= await $.getJSON(`/${fileName}.json`);
     const {currentLocations} = await $.getJSON('./currentLocations.json');
-    const equipmentGeodata = {
+    const geoData = {
         type: 'FeatureCollection',
         features: []
     };
-    console.log(equipment.length, currentLocations.length);
-    equipment.forEach((eq) => {
-        const matchedResult = currentLocations.find(location => location.imei === eq.imei);
-        if (matchedResult) {
-         equipmentGeodata.features.push(
-             {
-                type: "Feature",
-                geometry: {
-                    type: "Point",
-                    coordinates: [
-                        matchedResult.longitude,
-                        matchedResult.latitude
-                    ]
-                },
-                properties: {
-                    ...matchedResult,
-                    searchText: createSearchText(eq),
-                    callsign: eq.callsign,
-                    registration: eq.registration,
-                    operator: eq.operator.name
-                }
-            }
-         );
-        }
-    });
-    return equipmentGeodata;
+   currentLocations.forEach(location=>{
+       if(location.imei){
+           const arenaAsset = Object.values(data)[0].find(element=>element.imei === location.imei);
+           if(arenaAsset){
+               // arena asset
+               let properties = {};
+               if(fileName==='aircraft'){
+                   properties={
+                       airframe: value.airframe
+                   }
+               }
+               geoData.features.push(
+                   {
+                       type: "Feature",
+                       geometry: {
+                           type: "Point",
+                           coordinates: [
+                               location.longitude,
+                               location.latitude
+                           ]
+                       },
+                       properties: {
+                           ...location,
+                           ...properties,
+                           imeiMatch: arenaAsset.imei,
+                           searchText: createSearchText(arenaAsset),
+                           callsign: arenaAsset.callsign,
+                           registration: arenaAsset.registration,
+                           operator: arenaAsset.operator.name
+                       }
+                   }
+               );
+
+           }else{
+               let properties = {};
+
+               geoData.features.push(
+                   {
+                       type: "Feature",
+                       geometry: {
+                           type: "Point",
+                           coordinates: [
+                               location.longitude,
+                               location.latitude
+                           ]
+                       },
+                       properties: {
+                           ...location,
+                           ...properties,
+                           imeiMatch: false,
+                           searchText: createSearchText(location),
+                       }
+                   }
+               );
+
+           }
+       }
+   })
+
+    return geoData;
 };
 
 const createSearchText = function (asset) {
@@ -60,5 +94,19 @@ function safeString(string) {
     }
     let result = string.replace(/'/g, '&#39');
     result = result.replace(/"/g, '&#34');
+    return result;
+}
+function toShortCallsign(callsign) {
+    let result = callsign.replace(/ /g, '');
+    result = result.replace(/firebird/i, 'FB');
+    result = result.replace(/lifesaver/i, 'LS');
+    result = result.replace(/helitak/i, 'HT');
+    result = result.replace(/helitack/i, 'HT');
+    result = result.replace(/bomber/i, 'B');
+    result = result.replace(/birddog/i, 'BD');
+    result = result.replace(/birdog/i, 'BD');
+    result = result.replace(/firescan/i, 'FS');
+    result = result.replace(/firespotter/i, 'SP');
+
     return result;
 }
