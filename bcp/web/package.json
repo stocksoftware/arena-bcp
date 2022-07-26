@@ -15,7 +15,7 @@
     "leaflet-rotatedmarker": "0.2.0",
     "leaflet.control.layers.tree": "1.0.2",
     "mobx": "6.1.8",
-    "mobx-react": "7.4.0",
+    "mobx-react": "^7.4.0",
     "moment-timezone": "^0.5.34",
     "react": "^18.2.0",
     "react-bootstrap": "^2.4.0",

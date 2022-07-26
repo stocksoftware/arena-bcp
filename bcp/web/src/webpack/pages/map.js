@@ -1,13 +1,13 @@
 import React from 'react';
 
 
-const Map = observer(() => {
+const Map = () => {
 
     return (
         <div>
             Map
         </div>
     );
-});
+};
 
 export default Map;
