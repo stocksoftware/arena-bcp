@@ -46,8 +46,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "./node_modules/.bin/cross-env NODE_ENV=production ../web/src/webpack --config ../web/config/webpack.prod.js",
-    "start": "./node_modules/.bin/cross-env NODE_ENV=development webpack-dev-server --config ../web/config/webpack.dev.js",
+    "build": "cross-env NODE_ENV=production webpack --config ../web/config/webpack.prod.js",
+    "start": "cross-env NODE_ENV=development webpack-dev-server --config ../web/config/webpack.dev.js",
     "format": "npx eslint src/webpack --fix"
   },
   "keywords": [],
