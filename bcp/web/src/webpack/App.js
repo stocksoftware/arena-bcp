@@ -6,6 +6,7 @@ import './less/app.less';
 import {ASSET_MODE} from "./constant";
 import { observer } from "mobx-react";
 import useStores from "./hooks/use-stores";
+import './css/thirdparty/font-awesome/css/font-awesome.css';
 
 const App = observer(() => {
     const [key, setKey] = useState('map');

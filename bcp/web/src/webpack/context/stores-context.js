@@ -1,6 +1,5 @@
 import React from "react";
 import MapStore from "../store/mapStore";
-
 const stores = {};
 
 const mapStore = new MapStore();

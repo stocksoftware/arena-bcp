@@ -3,5 +3,6 @@
 /vendor/bundle
 reports
 bcp/root
+bcp/data
 bcp/node_modules
 bcp/web/node_modules

@@ -1,13 +1,31 @@
-import React from 'react';
-
-
-const Map = () => {
-
+import React,{useState} from 'react';
+import { observer } from "mobx-react";
+import {MAP_CONFIG, ASSET_MODE} from "../constant";
+import useStores from "../hooks/use-stores";
+import {MapContainer, TileLayer, LayersControl} from "react-leaflet";
+import IncidentLayer from "../components/incidentLayer";
+const Map = observer(() => {
+    const position = [-27, 130];
+    const {mapStore} = useStores();
+    const asset = mapStore.assetType;
     return (
-        <div>
-            Map
-        </div>
+        <MapContainer
+            center={position}
+            zoom={5}
+            scrollWheelZoom={false}
+            id="map"
+        >
+            <TileLayer
+                attribution='Tiles &copy; Esri'
+                url={MAP_CONFIG.ESRItopoURL}
+            />
+            <LayersControl>
+                <LayersControl.Overlay name="Incident">
+                    <IncidentLayer/>
+                </LayersControl.Overlay>
+            </LayersControl>
+        </MapContainer>
     );
-};
+});
 
 export default Map;

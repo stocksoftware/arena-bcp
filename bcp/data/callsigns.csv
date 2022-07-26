@@ -1,0 +1,878 @@
+id,url,airframe,make,model,category,categoryReadable,callsign,registration,operatorId,operatorName
+1949,https://arena.nafc.org.au/resource/api/ext/aircraft/1949,FIXED_WING,CESSNA AIRCRAFT COMPANY,525,FixAas,FW - AAS / Recce,BIRDDOG 123,VH-RMB,153,AGAIR Response
+1969,https://arena.nafc.org.au/resource/api/ext/aircraft/1969,FIXED_WING,GULFSTREAM AEROSPACE CORP,695-A,FixAas,FW - AAS / Recce,BIRDDOG 125,VH-LMC,153,AGAIR Response
+483,https://arena.nafc.org.au/resource/api/ext/aircraft/483,FIXED_WING,ROCKWELL INTERNATIONAL,690-B,FixAas,FW - AAS / Recce,BIRDDOG 273,VH-LVG,153,AGAIR Response
+569,https://arena.nafc.org.au/resource/api/ext/aircraft/569,FIXED_WING,AERO COMMANDER,690-A,FixAas,FW - AAS / Recce,BIRDDOG 370,VH-ATF,153,AGAIR Response
+482,https://arena.nafc.org.au/resource/api/ext/aircraft/482,FIXED_WING,CESSNA AIRCRAFT COMPANY,337G,FixAas,FW - AAS / Recce,BIRDDOG 372,VH-IOK,153,AGAIR Response
+810,https://arena.nafc.org.au/resource/api/ext/aircraft/810,FIXED_WING,CESSNA AIRCRAFT COMPANY,208B,FixAas,FW - AAS / Recce,BIRDDOG 373,VH-POV,265,Vortex Air Pty Ltd
+1818,https://arena.nafc.org.au/resource/api/ext/aircraft/1818,FIXED_WING,CESSNA AIRCRAFT COMPANY,208B,FixAas,FW - AAS / Recce,BIRDDOG 373,VH-POV,60,PAY'S AIR SERVICE PTY LTD
+2831,https://arena.nafc.org.au/resource/api/ext/aircraft/2831,FIXED_WING,CESSNA AIRCRAFT COMPANY,208B,FixAas,FW - AAS / Recce,BIRDDOG 373,VH-POV,604,Air Kimberley
+1857,https://arena.nafc.org.au/resource/api/ext/aircraft/1857,FIXED_WING,CESSNA AIRCRAFT COMPANY,208B,FixAas,FW - AAS / Recce,BIRDDOG 375,VH-SHW,96,Australia by Air
+2010,https://arena.nafc.org.au/resource/api/ext/aircraft/2010,FIXED_WING,CESSNA AIRCRAFT COMPANY,208B,FixAas,FW - AAS / Recce,BIRDDOG 375,VH-SHW,429,Blue Sky Airways
+2356,https://arena.nafc.org.au/resource/api/ext/aircraft/2356,FIXED_WING,CESSNA AIRCRAFT COMPANY,208B,FixAas,FW - AAS / Recce,BIRDDOG 375,VH-SHW,542,TrackAir Tasmania
+2862,https://arena.nafc.org.au/resource/api/ext/aircraft/2862,FIXED_WING,CESSNA AIRCRAFT COMPANY,208B,FixAas,FW - AAS / Recce,BIRDDOG 375,VH-SHW,60,PAY'S AIR SERVICE PTY LTD
+704,https://arena.nafc.org.au/resource/api/ext/aircraft/704,FIXED_WING,GULFSTREAM AMERICAN CORPORATION,695A,FixAas,FW - AAS / Recce,BIRDDOG 376,VH-HPY,153,AGAIR Response
+2769,https://arena.nafc.org.au/resource/api/ext/aircraft/2769,FIXED_WING,GULFSTREAM AMERICAN CORPORATION,695A,FixAas,FW - AAS / Recce,BIRDDOG 376,VH-HPY,1,Stock Software (Testing Op)
+795,https://arena.nafc.org.au/resource/api/ext/aircraft/795,FIXED_WING,PARTENAVIA COSTRUZIONI AERONAUTICHE SPA,P.68C,FixAas,FW - AAS / Recce,BIRDDOG 377,VH-ILM,251,Royal Victorian Aero Club
+422,https://arena.nafc.org.au/resource/api/ext/aircraft/422,FIXED_WING,CESSNA AIRCRAFT COMPANY,337G,FixAas,FW - AAS / Recce,BIRDDOG 378,VH-ZEV,140,AeroVision
+802,https://arena.nafc.org.au/resource/api/ext/aircraft/802,FIXED_WING,AERO COMMANDER,500-S,FixAas,FW - AAS / Recce,BIRDDOG 379,VH-LET,264,Melton Air Services
+359,https://arena.nafc.org.au/resource/api/ext/aircraft/359,FIXED_WING,CESSNA AIRCRAFT COMPANY,337H,FixAas,FW - AAS / Recce,BIRDDOG 380,VH-LSZ,119,Bairnsdale Air Charter	 Australian Aviation Network (AAN)
+573,https://arena.nafc.org.au/resource/api/ext/aircraft/573,FIXED_WING,CESSNA AIRCRAFT COMPANY,337G,FixAas,FW - AAS / Recce,BIRDDOG 381,VH-AEV,140,AeroVision
+809,https://arena.nafc.org.au/resource/api/ext/aircraft/809,FIXED_WING,PARTENAVIA COSTRUZIONI AERONAUTICHE SPA,P.68B,FixAas,FW - AAS / Recce,BIRDDOG 383,VH-LJR,265,Vortex Air Pty Ltd
+835,https://arena.nafc.org.au/resource/api/ext/aircraft/835,FIXED_WING,AERO COMMANDER,500-S,FixAas,FW - AAS / Recce,BIRDDOG 384,VH-UJR,256,Ramair Flying Services
+360,https://arena.nafc.org.au/resource/api/ext/aircraft/360,FIXED_WING,PIPER AIRCRAFT CORP,PA-34-220T,FixOther,FW - Other,BIRDDOG 386,VH-FFG,119,Bairnsdale Air Charter	 Australian Aviation Network (AAN)
+607,https://arena.nafc.org.au/resource/api/ext/aircraft/607,FIXED_WING,AERO COMMANDER,690-A,FixAas,FW - AAS / Recce,BIRDDOG 387,VH-CLT,153,AGAIR Response
+2660,https://arena.nafc.org.au/resource/api/ext/aircraft/2660,FIXED_WING,AERO COMMANDER,690-A,FixAas,FW - AAS / Recce,BIRDDOG 387,VH-CLT,580,Southern Airlines
+2662,https://arena.nafc.org.au/resource/api/ext/aircraft/2662,FIXED_WING,AERO COMMANDER,690-A,FixAas,FW - AAS / Recce,BIRDDOG 387,VH-CLT,265,Vortex Air Pty Ltd
+822,https://arena.nafc.org.au/resource/api/ext/aircraft/822,FIXED_WING,TED SMITH AEROSTAR CORP.,PA-60-600 (AEROSTAR 600),FixAas,FW - AAS / Recce,BIRDDOG 390,VH-LJT,255,Wrightsair
+801,https://arena.nafc.org.au/resource/api/ext/aircraft/801,FIXED_WING,AERO COMMANDER,500-A,FixAas,FW - AAS / Recce,BIRDDOG 392,VH-IOE,264,Melton Air Services
+818,https://arena.nafc.org.au/resource/api/ext/aircraft/818,FIXED_WING,PILATUS BRITTEN-NORMAN LTD,BN2B-26,FixAas,FW - AAS / Recce,BIRDDOG 393,VH-MGJ,134,Alpine Airwork
+849,https://arena.nafc.org.au/resource/api/ext/aircraft/849,FIXED_WING,CESSNA AIRCRAFT COMPANY,208B,FixAas,FW - AAS / Recce,BIRDDOG 396,VH-TLD,270,Broome Aviation
+1068,https://arena.nafc.org.au/resource/api/ext/aircraft/1068,FIXED_WING,CESSNA AIRCRAFT COMPANY,208B,FixAas,FW - AAS / Recce,BIRDDOG 396,VH-TLD,255,Wrightsair
+1747,https://arena.nafc.org.au/resource/api/ext/aircraft/1747,FIXED_WING,CESSNA AIRCRAFT COMPANY,208B,FixAas,FW - AAS / Recce,BIRDDOG 398,VH-OZH,255,Wrightsair
+736,https://arena.nafc.org.au/resource/api/ext/aircraft/736,FIXED_WING,CESSNA AIRCRAFT COMPANY,337G,FixAas,FW - AAS / Recce,BIRDDOG 402,VH-JOC,241,Flight Dynamics Pty Ltd
+791,https://arena.nafc.org.au/resource/api/ext/aircraft/791,FIXED_WING,PARTENAVIA COSTRUZIONI AERONAUTICHE SPA,P.68C,FixAas,FW - AAS / Recce,BIRDDOG 416,VH-PNW,87,Liddles Air Service
+829,https://arena.nafc.org.au/resource/api/ext/aircraft/829,FIXED_WING,VULCANAIR S.P.A.,P.68C,null,Unspecified,BIRDDOG 428,VH-VMV,148,Queensland Aircraft Charter
+1476,https://arena.nafc.org.au/resource/api/ext/aircraft/1476,FIXED_WING,AERO COMMANDER,500-S,FixAas,FW - AAS / Recce,BIRDDOG 433,VH-JAJ,5,Kennedy Air Ag Pty Ltd
+2597,https://arena.nafc.org.au/resource/api/ext/aircraft/2597,FIXED_WING,AERO COMMANDER,500-S,FixAas,FW - AAS / Recce,BIRDDOG 433,VH-JAJ,570,ImageAir
+1116,https://arena.nafc.org.au/resource/api/ext/aircraft/1116,FIXED_WING,AERO COMMANDER,500-S,FixAas,FW - AAS / Recce,BIRDDOG 444,VH-XAS,5,Kennedy Air Ag Pty Ltd
+334,https://arena.nafc.org.au/resource/api/ext/aircraft/334,FIXED_WING,CESSNA AIRCRAFT COMPANY,208B,FixAas,FW - AAS / Recce,BIRDDOG 500,VH-ODU,110,Aerotech 1st Response
+305,https://arena.nafc.org.au/resource/api/ext/aircraft/305,FIXED_WING,CESSNA AIRCRAFT COMPANY,337G,FixAas,FW - AAS / Recce,BIRDOG 410,VH-JOE,97,R-MACH Aviation Pty Ltd
+1967,https://arena.nafc.org.au/resource/api/ext/aircraft/1967,FIXED_WING,MCDONNELL DOUGLAS CORP.,MD-87,FixType1,FW - Type 1 MEAT,BOMBER 102,N292EA,419,Erickson Aero Tankers Australia Pty Limited
+1968,https://arena.nafc.org.au/resource/api/ext/aircraft/1968,FIXED_WING,MCDONNELL DOUGLAS CORP.,MD-87,FixType1,FW - Type 1 MEAT,BOMBER 103,N293EA,419,Erickson Aero Tankers Australia Pty Limited
+374,https://arena.nafc.org.au/resource/api/ext/aircraft/374,FIXED_WING,LOCKHEED AIRCRAFT CORP,C130Q,FixType1,FW - Type 1 MEAT,BOMBER 131,N131CG,118,Coulson Aviation (Australia) Pty
+2508,https://arena.nafc.org.au/resource/api/ext/aircraft/2508,FIXED_WING,LOCKHEED AIRCRAFT CORP,C130H,FixType1,FW - Type 1 MEAT,BOMBER 132,N132CG,118,Coulson Aviation (Australia) Pty
+1462,https://arena.nafc.org.au/resource/api/ext/aircraft/1462,FIXED_WING,THE BOEING COMPANY,737-3H4,FixType1,FW - Type 1 MEAT,BOMBER 137,N137CG,118,Coulson Aviation (Australia) Pty
+1534,https://arena.nafc.org.au/resource/api/ext/aircraft/1534,FIXED_WING,BRITISH AEROSPACE REGIONAL AIRCRAFT LIMITED,AVRO 146-RJ85,FixType1,FW - Type 1 MEAT,BOMBER 163,N366AC,77,Field Air
+1531,https://arena.nafc.org.au/resource/api/ext/aircraft/1531,FIXED_WING,BRITISH AEROSPACE REGIONAL AIRCRAFT LIMITED,AVRO 146-RJ85,FixType1,FW - Type 1 MEAT,BOMBER 166,C-GVFT,77,Field Air
+1740,https://arena.nafc.org.au/resource/api/ext/aircraft/1740,FIXED_WING,THE BOEING COMPANY,737-3H4,FixType1,FW - Type 1 MEAT,BOMBER 210,N138CG,118,Coulson Aviation (Australia) Pty
+224,https://arena.nafc.org.au/resource/api/ext/aircraft/224,FIXED_WING,PZL "WARSZAWA-OKECIE",M-18T,FixType4,FW - Type 4 SEAT,BOMBER 212,VH-OOW,78,Col Adams Aerial Services
+105,https://arena.nafc.org.au/resource/api/ext/aircraft/105,FIXED_WING,AIR TRACTOR INC,AT-802,FixType4,FW - Type 4 SEAT,BOMBER 218,VH-FBZ,60,PAY'S AIR SERVICE PTY LTD
+1816,https://arena.nafc.org.au/resource/api/ext/aircraft/1816,FIXED_WING,AIR TRACTOR INC,AT-802A,FixType4,FW - Type 4 SEAT,BOMBER 219,VH-FNA,60,PAY'S AIR SERVICE PTY LTD
+2502,https://arena.nafc.org.au/resource/api/ext/aircraft/2502,FIXED_WING,AIR TRACTOR INC,AT-802A,FixType4,FW - Type 4 SEAT,BOMBER 219,VH-FNA,65,Precision Aerial Meandarra
+113,https://arena.nafc.org.au/resource/api/ext/aircraft/113,FIXED_WING,AIR TRACTOR INC,AT-802,FixType4,FW - Type 4 SEAT,BOMBER 220,VH-LIH,60,PAY'S AIR SERVICE PTY LTD
+2869,https://arena.nafc.org.au/resource/api/ext/aircraft/2869,FIXED_WING,AIR TRACTOR INC,AT-802,FixType4,FW - Type 4 SEAT,BOMBER 220,VH-LIH,77,Field Air
+2764,https://arena.nafc.org.au/resource/api/ext/aircraft/2764,FIXED_WING,AIR TRACTOR INC,AT-802,FixType4,FW - Type 4 SEAT,BOMBER 221,VH-FBY,60,PAY'S AIR SERVICE PTY LTD
+93,https://arena.nafc.org.au/resource/api/ext/aircraft/93,FIXED_WING,AIR TRACTOR INC,AT-802,FixType4,FW - Type 4 SEAT,BOMBER 222,VH-FEP,47,FRED FAHEY AERIAL SERVICES
+73,https://arena.nafc.org.au/resource/api/ext/aircraft/73,FIXED_WING,AIR TRACTOR INC,AT-802,FixType4,FW - Type 4 SEAT,BOMBER 223,VH-CVF,47,FRED FAHEY AERIAL SERVICES
+94,https://arena.nafc.org.au/resource/api/ext/aircraft/94,FIXED_WING,AIR TRACTOR INC,AT-602,FixType4,FW - Type 4 SEAT,BOMBER 225,VH-FHA,47,FRED FAHEY AERIAL SERVICES
+115,https://arena.nafc.org.au/resource/api/ext/aircraft/115,FIXED_WING,AIR TRACTOR INC,AT-802,FixType4,FW - Type 4 SEAT,BOMBER 227,VH-LIS,60,PAY'S AIR SERVICE PTY LTD
+117,https://arena.nafc.org.au/resource/api/ext/aircraft/117,FIXED_WING,AIR TRACTOR INC,AT-802A,FixType4,FW - Type 4 SEAT,BOMBER 228,VH-LII,60,PAY'S AIR SERVICE PTY LTD
+63,https://arena.nafc.org.au/resource/api/ext/aircraft/63,FIXED_WING,AIR TRACTOR INC,AT-802A,FixType4,FW - Type 4 SEAT,BOMBER 229,VH-AQH,26,Quirindi Air
+2278,https://arena.nafc.org.au/resource/api/ext/aircraft/2278,FIXED_WING,AIR TRACTOR INC,AT-802A,FixType4,FW - Type 4 SEAT,BOMBER 230,VH-NIP,26,Quirindi Air
+68,https://arena.nafc.org.au/resource/api/ext/aircraft/68,FIXED_WING,AIR TRACTOR INC,AT-802A,FixType4,FW - Type 4 SEAT,BOMBER 232,VH-KDS,29,AgForce
+59,https://arena.nafc.org.au/resource/api/ext/aircraft/59,FIXED_WING,AIR TRACTOR INC,AT-802,FixType4,FW - Type 4 SEAT,BOMBER 233,VH-YDS,29,AgForce
+189,https://arena.nafc.org.au/resource/api/ext/aircraft/189,FIXED_WING,AIR TRACTOR INC,AT-802A,FixType4,FW - Type 4 SEAT,BOMBER 241,VH-PCD,72,Skycroppers
+194,https://arena.nafc.org.au/resource/api/ext/aircraft/194,FIXED_WING,AIR TRACTOR INC,AT-504,FixType4,FW - Type 4 SEAT,BOMBER 242,VH-UHN,72,Skycroppers
+64,https://arena.nafc.org.au/resource/api/ext/aircraft/64,FIXED_WING,AIR TRACTOR INC,AT-802,FixType4,FW - Type 4 SEAT,BOMBER 251,VH-WTJ,33,Aircair Aviation Operations Pty Ltd
+65,https://arena.nafc.org.au/resource/api/ext/aircraft/65,FIXED_WING,AIR TRACTOR INC,AT-802,FixType4,FW - Type 4 SEAT,BOMBER 252,VH-WXF,33,Aircair Aviation Operations Pty Ltd
+66,https://arena.nafc.org.au/resource/api/ext/aircraft/66,FIXED_WING,AIR TRACTOR INC,AT-802,FixType4,FW - Type 4 SEAT,BOMBER 253,VH-WXH,33,Aircair Aviation Operations Pty Ltd
+71,https://arena.nafc.org.au/resource/api/ext/aircraft/71,FIXED_WING,AIR TRACTOR INC,AT-802,FixType4,FW - Type 4 SEAT,BOMBER 254,VH-LIC,33,Aircair Aviation Operations Pty Ltd
+1785,https://arena.nafc.org.au/resource/api/ext/aircraft/1785,FIXED_WING,AIR TRACTOR INC,AT-802,FixType4,FW - Type 4 SEAT,BOMBER 256,VH-XWH,191,South East Air Ag
+34,https://arena.nafc.org.au/resource/api/ext/aircraft/34,FIXED_WING,AIR TRACTOR INC,AT-802,FixType4,FW - Type 4 SEAT,BOMBER 266,VH-XAV,5,Kennedy Air Ag Pty Ltd
+308,https://arena.nafc.org.au/resource/api/ext/aircraft/308,FIXED_WING,AIR TRACTOR INC,AT-802,FixType4,FW - Type 4 SEAT,BOMBER 274,VH-EDG,56,Rebel Ag Pty Ltd
+1510,https://arena.nafc.org.au/resource/api/ext/aircraft/1510,FIXED_WING,AIR TRACTOR INC,AT-802,FixType4,FW - Type 4 SEAT,BOMBER 274,VH-EDG,338,Ashby Aviation PTY LTD
+1828,https://arena.nafc.org.au/resource/api/ext/aircraft/1828,FIXED_WING,AIR TRACTOR INC,AT-802,FixType4,FW - Type 4 SEAT,BOMBER 274,VH-EDG,33,Aircair Aviation Operations Pty Ltd
+35,https://arena.nafc.org.au/resource/api/ext/aircraft/35,FIXED_WING,AIR TRACTOR INC,AT-802,FixType4,FW - Type 4 SEAT,BOMBER 277,VH-XAW,5,Kennedy Air Ag Pty Ltd
+2797,https://arena.nafc.org.au/resource/api/ext/aircraft/2797,FIXED_WING,AIR TRACTOR INC,AT-802,FixType4,FW - Type 4 SEAT,BOMBER 277,VH-XAW,338,Ashby Aviation PTY LTD
+681,https://arena.nafc.org.au/resource/api/ext/aircraft/681,FIXED_WING,AIR TRACTOR INC,AT-802A,FixType4,FW - Type 4 SEAT,BOMBER 288,VH-XAT,5,Kennedy Air Ag Pty Ltd
+36,https://arena.nafc.org.au/resource/api/ext/aircraft/36,FIXED_WING,AIR TRACTOR INC,AT-802,FixType4,FW - Type 4 SEAT,BOMBER 299,VH-XAY,5,Kennedy Air Ag Pty Ltd
+2670,https://arena.nafc.org.au/resource/api/ext/aircraft/2670,FIXED_WING,AIR TRACTOR INC,AT-802,FixType4,FW - Type 4 SEAT,BOMBER 299,VH-XAY,338,Ashby Aviation PTY LTD
+480,https://arena.nafc.org.au/resource/api/ext/aircraft/480,FIXED_WING,AIR TRACTOR INC,AT-802,FixType4,FW - Type 4 SEAT,BOMBER 350,VH-YRY,153,AGAIR Response
+744,https://arena.nafc.org.au/resource/api/ext/aircraft/744,FIXED_WING,AIR TRACTOR INC,AT-802,FixType4,FW - Type 4 SEAT,BOMBER 351,VH-ARA,153,AGAIR Response
+225,https://arena.nafc.org.au/resource/api/ext/aircraft/225,FIXED_WING,AIR TRACTOR INC,AT-802,FixType4,FW - Type 4 SEAT,BOMBER 352,VH-FFM,77,Field Air
+377,https://arena.nafc.org.au/resource/api/ext/aircraft/377,FIXED_WING,AIR TRACTOR INC,AT-802A,FixType4,FW - Type 4 SEAT,BOMBER 353,VH-FZU,77,Field Air
+472,https://arena.nafc.org.au/resource/api/ext/aircraft/472,FIXED_WING,AIR TRACTOR INC,AT-802,FixType4,FW - Type 4 SEAT,BOMBER 354,VH-VBV,153,AGAIR Response
+481,https://arena.nafc.org.au/resource/api/ext/aircraft/481,FIXED_WING,AIR TRACTOR INC,AT-802,FixType4,FW - Type 4 SEAT,BOMBER 355,VH-ZJZ,153,AGAIR Response
+2633,https://arena.nafc.org.au/resource/api/ext/aircraft/2633,FIXED_WING,AIR TRACTOR INC,AT-802,FixType4,FW - Type 4 SEAT,BOMBER 356,VH-SQS,153,AGAIR Response
+471,https://arena.nafc.org.au/resource/api/ext/aircraft/471,FIXED_WING,AIR TRACTOR INC,AT-802,FixType4,FW - Type 4 SEAT,BOMBER 357,VH-EJK,153,AGAIR Response
+114,https://arena.nafc.org.au/resource/api/ext/aircraft/114,FIXED_WING,AIR TRACTOR INC,AT-802,FixType4,FW - Type 4 SEAT,BOMBER 358,VH-LIM,60,PAY'S AIR SERVICE PTY LTD
+435,https://arena.nafc.org.au/resource/api/ext/aircraft/435,FIXED_WING,PZL "WARSZAWA-OKECIE",M-18T,FixType4,FW - Type 4 SEAT,BOMBER 359,VH-VWF,134,Alpine Airwork
+613,https://arena.nafc.org.au/resource/api/ext/aircraft/613,FIXED_WING,AIR TRACTOR INC,AT-802A,FixType4,FW - Type 4 SEAT,BOMBER 360,VH-FBX,60,PAY'S AIR SERVICE PTY LTD
+2503,https://arena.nafc.org.au/resource/api/ext/aircraft/2503,FIXED_WING,AIR TRACTOR INC,AT-802A,FixType4,FW - Type 4 SEAT,BOMBER 360,VH-FBX,65,Precision Aerial Meandarra
+364,https://arena.nafc.org.au/resource/api/ext/aircraft/364,FIXED_WING,AIR TRACTOR INC,AT-802,FixType4,FW - Type 4 SEAT,BOMBER 361,VH-FFB,77,Field Air
+365,https://arena.nafc.org.au/resource/api/ext/aircraft/365,FIXED_WING,AIR TRACTOR INC,AT-802A,FixType4,FW - Type 4 SEAT,BOMBER 362,VH-FZX,77,Field Air
+396,https://arena.nafc.org.au/resource/api/ext/aircraft/396,FIXED_WING,PZL "WARSZAWA-OKECIE",M-18T,FixType4,FW - Type 4 SEAT,BOMBER 363,VH-JRN,134,Alpine Airwork
+1654,https://arena.nafc.org.au/resource/api/ext/aircraft/1654,FIXED_WING,AIR TRACTOR INC,AT-802A,FixType4,FW - Type 4 SEAT,BOMBER 364,VH-RFM,77,Field Air
+2274,https://arena.nafc.org.au/resource/api/ext/aircraft/2274,FIXED_WING,BOMBARDIER INC,DHC-8-402,FixType1,FW - Type 1 MEAT,BOMBER 390,C-FFQE,77,Field Air
+682,https://arena.nafc.org.au/resource/api/ext/aircraft/682,FIXED_WING,BRITISH AEROSPACE REGIONAL AIRCRAFT LIMITED,AVRO 146-RJ85,FixType1,FW - Type 1 MEAT,BOMBER 391,C-GVFK,77,Field Air
+1553,https://arena.nafc.org.au/resource/api/ext/aircraft/1553,FIXED_WING,THRUSH AIRCRAFT	 INC.,S2R-H80,null,Unspecified,BOMBER 400,VH-NTV,144,Atherton Tableland Air Service
+2745,https://arena.nafc.org.au/resource/api/ext/aircraft/2745,FIXED_WING,AIR TRACTOR INC,AT-802,FixType4,FW - Type 4 SEAT,BOMBER 401,VH-LIR,144,Atherton Tableland Air Service
+304,https://arena.nafc.org.au/resource/api/ext/aircraft/304,FIXED_WING,PZL "WARSZAWA-OKECIE",M-18B,FixType4,FW - Type 4 SEAT,BOMBER 402,VH-MDR,97,R-MACH Aviation Pty Ltd
+1869,https://arena.nafc.org.au/resource/api/ext/aircraft/1869,FIXED_WING,THRUSH AIRCRAFT	 INC.,S2R-T660,FixType4,FW - Type 4 SEAT,BOMBER 404,VH-HWQ,402,Aero Professional Services Emerald pty Ltd
+306,https://arena.nafc.org.au/resource/api/ext/aircraft/306,FIXED_WING,AYRES CORPORATION,S2R-G10,FixType4,FW - Type 4 SEAT,BOMBER 407,VH-NFF,97,R-MACH Aviation Pty Ltd
+201,https://arena.nafc.org.au/resource/api/ext/aircraft/201,FIXED_WING,AIR TRACTOR INC,AT-802A,FixType4,FW - Type 4 SEAT,BOMBER 410,VH-ZED,13,Jones Air
+203,https://arena.nafc.org.au/resource/api/ext/aircraft/203,FIXED_WING,AIR TRACTOR INC,AT-802A,FixType4,FW - Type 4 SEAT,BOMBER 410,VH-ZED,27,R&M Aviation Pty Ltd
+2799,https://arena.nafc.org.au/resource/api/ext/aircraft/2799,FIXED_WING,THRUSH AIRCRAFT	 INC.,S2R-T660,FixType4,FW - Type 4 SEAT,BOMBER 411,VH-FVO,120,South Burnett Air Services Pty Ltd
+1040,https://arena.nafc.org.au/resource/api/ext/aircraft/1040,FIXED_WING,THRUSH AIRCRAFT	 INC.,S2R-T660,FixType4,FW - Type 4 SEAT,BOMBER 412,VH-FNV,120,South Burnett Air Services Pty Ltd
+362,https://arena.nafc.org.au/resource/api/ext/aircraft/362,FIXED_WING,AYRES CORPORATION,S2R-T34,FixType4,FW - Type 4 SEAT,BOMBER 413,VH-NCJ,120,South Burnett Air Services Pty Ltd
+363,https://arena.nafc.org.au/resource/api/ext/aircraft/363,FIXED_WING,AYRES CORPORATION,S2R-T34,FixType4,FW - Type 4 SEAT,BOMBER 414,VH-OKW,120,South Burnett Air Services Pty Ltd
+254,https://arena.nafc.org.au/resource/api/ext/aircraft/254,FIXED_WING,AYRES CORPORATION,S2R-G1,FixType4,FW - Type 4 SEAT,BOMBER 415,VH-NFS,87,Liddles Air Service
+199,https://arena.nafc.org.au/resource/api/ext/aircraft/199,FIXED_WING,AIR TRACTOR INC,AT-802,FixType4,FW - Type 4 SEAT,BOMBER 424,VH-SDJ,13,Jones Air
+816,https://arena.nafc.org.au/resource/api/ext/aircraft/816,FIXED_WING,AIR TRACTOR INC,AT-802,FixType4,FW - Type 4 SEAT,BOMBER 424,VH-SDJ,65,Precision Aerial Meandarra
+262,https://arena.nafc.org.au/resource/api/ext/aircraft/262,FIXED_WING,AIR TRACTOR INC,AT-802A,FixType4,FW - Type 4 SEAT,BOMBER 425,VH-ZRO,13,Jones Air
+817,https://arena.nafc.org.au/resource/api/ext/aircraft/817,FIXED_WING,AIR TRACTOR INC,AT-802A,FixType4,FW - Type 4 SEAT,BOMBER 425,VH-ZRO,65,Precision Aerial Meandarra
+154,https://arena.nafc.org.au/resource/api/ext/aircraft/154,FIXED_WING,AIR TRACTOR INC,AT-802A,FixType4,FW - Type 4 SEAT,BOMBER 426,VH-NFY,65,Precision Aerial Meandarra
+220,https://arena.nafc.org.au/resource/api/ext/aircraft/220,FIXED_WING,AIR TRACTOR INC,AT-802A,FixType4,FW - Type 4 SEAT,BOMBER 427,VH-BQE,65,Precision Aerial Meandarra
+221,https://arena.nafc.org.au/resource/api/ext/aircraft/221,FIXED_WING,AIR TRACTOR INC,AT-802A,FixType4,FW - Type 4 SEAT,BOMBER 428,VH-LHW,65,Precision Aerial Meandarra
+219,https://arena.nafc.org.au/resource/api/ext/aircraft/219,FIXED_WING,AIR TRACTOR INC,AT-802A,FixType4,FW - Type 4 SEAT,BOMBER 429,VH-NFD,65,Precision Aerial Meandarra
+2632,https://arena.nafc.org.au/resource/api/ext/aircraft/2632,FIXED_WING,THRUSH AIRCRAFT	 INC.,S2R-T660,FixType4,FW - Type 4 SEAT,BOMBER 434,VH-OUY,165,CENTRAL HIGHLANDS AERIAL SERVICES PTY LTD
+2631,https://arena.nafc.org.au/resource/api/ext/aircraft/2631,FIXED_WING,AIR TRACTOR INC,AT-802A,FixType4,FW - Type 4 SEAT,BOMBER 435,VH-FZV,165,CENTRAL HIGHLANDS AERIAL SERVICES PTY LTD
+2840,https://arena.nafc.org.au/resource/api/ext/aircraft/2840,FIXED_WING,AIR TRACTOR INC,AT-802A,FixType4,FW - Type 4 SEAT,BOMBER 435,VH-FZV,27,R&M Aviation Pty Ltd
+97,https://arena.nafc.org.au/resource/api/ext/aircraft/97,FIXED_WING,AIR TRACTOR INC,AT-802A,FixType4,FW - Type 4 SEAT,BOMBER 436,VH-JQW,56,Rebel Ag Pty Ltd
+1917,https://arena.nafc.org.au/resource/api/ext/aircraft/1917,FIXED_WING,AIR TRACTOR INC,AT-802A,FixType4,FW - Type 4 SEAT,BOMBER 436,VH-JQW,165,CENTRAL HIGHLANDS AERIAL SERVICES PTY LTD
+1942,https://arena.nafc.org.au/resource/api/ext/aircraft/1942,FIXED_WING,AIR TRACTOR INC,AT-802A,FixType4,FW - Type 4 SEAT,BOMBER 436,VH-JQW,27,R&M Aviation Pty Ltd
+1649,https://arena.nafc.org.au/resource/api/ext/aircraft/1649,FIXED_WING,AIR TRACTOR INC,AT-802A,FixType4,FW - Type 4 SEAT,BOMBER 455,VH-XAJ,5,Kennedy Air Ag Pty Ltd
+344,https://arena.nafc.org.au/resource/api/ext/aircraft/344,FIXED_WING,AIR TRACTOR INC,AT-802A,FixType4,FW - Type 4 SEAT,BOMBER 580,VH-ODX,110,Aerotech 1st Response
+388,https://arena.nafc.org.au/resource/api/ext/aircraft/388,FIXED_WING,AIR TRACTOR INC,AT-802A,FixType4,FW - Type 4 SEAT,BOMBER 581,VH-OUF,110,Aerotech 1st Response
+347,https://arena.nafc.org.au/resource/api/ext/aircraft/347,FIXED_WING,AIR TRACTOR INC,AT-802,FixType4,FW - Type 4 SEAT,BOMBER 582,VH-ODH,110,Aerotech 1st Response
+338,https://arena.nafc.org.au/resource/api/ext/aircraft/338,FIXED_WING,AIR TRACTOR INC,AT-802,FixType4,FW - Type 4 SEAT,BOMBER 583,VH-ODW,110,Aerotech 1st Response
+341,https://arena.nafc.org.au/resource/api/ext/aircraft/341,FIXED_WING,AIR TRACTOR INC,AT-802A,FixType4,FW - Type 4 SEAT,BOMBER 586,VH-OUB,110,Aerotech 1st Response
+343,https://arena.nafc.org.au/resource/api/ext/aircraft/343,FIXED_WING,AIR TRACTOR INC,AT-802A,FixType4,FW - Type 4 SEAT,BOMBER 587,VH-OUJ,110,Aerotech 1st Response
+345,https://arena.nafc.org.au/resource/api/ext/aircraft/345,FIXED_WING,AIR TRACTOR INC,AT-802A,FixType4,FW - Type 4 SEAT,BOMBER 588,VH-OUE,110,Aerotech 1st Response
+342,https://arena.nafc.org.au/resource/api/ext/aircraft/342,FIXED_WING,AIR TRACTOR INC,AT-802A,FixType4,FW - Type 4 SEAT,BOMBER 589,VH-OUC,110,Aerotech 1st Response
+340,https://arena.nafc.org.au/resource/api/ext/aircraft/340,FIXED_WING,AIR TRACTOR INC,AT-802A,FixType4,FW - Type 4 SEAT,BOMBER 591,VH-ODP,110,Aerotech 1st Response
+348,https://arena.nafc.org.au/resource/api/ext/aircraft/348,FIXED_WING,AIR TRACTOR INC,AT-802A,FixType4,FW - Type 4 SEAT,BOMBER 595,VH-ODV,110,Aerotech 1st Response
+349,https://arena.nafc.org.au/resource/api/ext/aircraft/349,FIXED_WING,AIR TRACTOR INC,AT-802A,FixType4,FW - Type 4 SEAT,BOMBER 596,VH-ODZ,110,Aerotech 1st Response
+373,https://arena.nafc.org.au/resource/api/ext/aircraft/373,FIXED_WING,AIR TRACTOR INC,AT-802,FixType4,FW - Type 4 SEAT,BOMBER 601,VH-DUQ,123,Dunn Aviation Pty Ltd
+1276,https://arena.nafc.org.au/resource/api/ext/aircraft/1276,FIXED_WING,AIR TRACTOR INC,AT-802A,FixType4,FW - Type 4 SEAT,BOMBER 604,VH-DUN,123,Dunn Aviation Pty Ltd
+372,https://arena.nafc.org.au/resource/api/ext/aircraft/372,FIXED_WING,AIR TRACTOR INC,AT-802,FixType4,FW - Type 4 SEAT,BOMBER 607,VH-DUJ,123,Dunn Aviation Pty Ltd
+1295,https://arena.nafc.org.au/resource/api/ext/aircraft/1295,FIXED_WING,AIR TRACTOR INC,AT-802,FixType4,FW - Type 4 SEAT,BOMBER 610,VH-JID,123,Dunn Aviation Pty Ltd
+56,https://arena.nafc.org.au/resource/api/ext/aircraft/56,FIXED_WING,AIR TRACTOR INC,AT-802A,FixType4,FW - Type 4 SEAT,BOMBER 716,VH-IWU,27,R&M Aviation Pty Ltd
+58,https://arena.nafc.org.au/resource/api/ext/aircraft/58,FIXED_WING,AIR TRACTOR INC,AT-802A,FixType4,FW - Type 4 SEAT,BOMBER 717,VH-NWU,27,R&M Aviation Pty Ltd
+55,https://arena.nafc.org.au/resource/api/ext/aircraft/55,FIXED_WING,AIR TRACTOR INC,AT-802,FixType4,FW - Type 4 SEAT,BOMBER 718,VH-AWU,27,R&M Aviation Pty Ltd
+1707,https://arena.nafc.org.au/resource/api/ext/aircraft/1707,FIXED_WING,AIR TRACTOR INC,AT-802A,FixType4,FW - Type 4 SEAT,BOMBER 733,VH-DUW,123,Dunn Aviation Pty Ltd
+2504,https://arena.nafc.org.au/resource/api/ext/aircraft/2504,FIXED_WING,AIR TRACTOR INC,AT-802A,FixType4,FW - Type 4 SEAT,BOMBER 733,VH-DUW,5,Kennedy Air Ag Pty Ltd
+2648,https://arena.nafc.org.au/resource/api/ext/aircraft/2648,FIXED_WING,AIR TRACTOR INC,AT-802A,FixType4,FW - Type 4 SEAT,BOMBER 751,VH-WDG,77,Field Air
+2771,https://arena.nafc.org.au/resource/api/ext/aircraft/2771,FIXED_WING,AIR TRACTOR	 INC.,AT-802A,FixType4,FW - Type 4 SEAT,BOMBER 799,VH-AKZ,5,Kennedy Air Ag Pty Ltd
+2846,https://arena.nafc.org.au/resource/api/ext/aircraft/2846,FIXED_WING,FOKKER AIRCRAFT B.V.,F28 MK 0100,null,Unspecified,BOMBER 858,VH-FZO,165,CENTRAL HIGHLANDS AERIAL SERVICES PTY LTD
+2843,https://arena.nafc.org.au/resource/api/ext/aircraft/2843,FIXED_WING,AIR TRACTOR INC,AT-802,FixType4,FW - Type 4 SEAT,BOMBER 881,VH-XPB,110,Aerotech 1st Response
+2861,https://arena.nafc.org.au/resource/api/ext/aircraft/2861,FIXED_WING,AIR TRACTOR INC,AT-802A,FixType4,FW - Type 4 SEAT,BOMBER 881,VH-XPB,159,XO Aviation Pty Ltd
+957,https://arena.nafc.org.au/resource/api/ext/aircraft/957,FIXED_WING,AIR TRACTOR INC,AT-802,FixType4,FW - Type 4 SEAT,BOMBER 882,VH-ZBI,159,XO Aviation Pty Ltd
+961,https://arena.nafc.org.au/resource/api/ext/aircraft/961,FIXED_WING,AIR TRACTOR INC,AT-802,FixType4,FW - Type 4 SEAT,BOMBER 882,VH-ZBI,110,Aerotech 1st Response
+1482,https://arena.nafc.org.au/resource/api/ext/aircraft/1482,FIXED_WING,AIR TRACTOR INC,AT-802A,FixType4,FW - Type 4 SEAT,BOMBER 883,VH-OUM,110,Aerotech 1st Response
+2306,https://arena.nafc.org.au/resource/api/ext/aircraft/2306,FIXED_WING,AIR TRACTOR INC,AT-802A,FixType4,FW - Type 4 SEAT,BOMBER 883,VH-OUM,159,XO Aviation Pty Ltd
+2833,https://arena.nafc.org.au/resource/api/ext/aircraft/2833,FIXED_WING,AIR TRACTOR	 INC.,AT-802A,FixType4,FW - Type 4 SEAT,BOMBER 884,VH-OUG,110,Aerotech 1st Response
+2924,https://arena.nafc.org.au/resource/api/ext/aircraft/2924,FIXED_WING,AIR TRACTOR	 INC.,AT-802A,FixType4,FW - Type 4 SEAT,BOMBER 884,VH-OUG,159,XO Aviation Pty Ltd
+346,https://arena.nafc.org.au/resource/api/ext/aircraft/346,FIXED_WING,AIR TRACTOR INC,AT-802,FixType4,FW - Type 4 SEAT,BOMBER 885,VH-ODQ,110,Aerotech 1st Response
+475,https://arena.nafc.org.au/resource/api/ext/aircraft/475,FIXED_WING,AIR TRACTOR INC,AT-802,FixType4,FW - Type 4 SEAT,BOMBER 885,VH-ODQ,159,XO Aviation Pty Ltd
+1038,https://arena.nafc.org.au/resource/api/ext/aircraft/1038,FIXED_WING,AIR TRACTOR INC,AT-802A,FixType4,FW - Type 4 SEAT,BOMBER 886,VH-OUN,110,Aerotech 1st Response
+570,https://arena.nafc.org.au/resource/api/ext/aircraft/570,FIXED_WING,MCDONNELL DOUGLAS CORP.,DC-10-30,FixType1,FW - Type 1 MEAT,BOMBER 910,N612AX,153,AGAIR Response
+1853,https://arena.nafc.org.au/resource/api/ext/aircraft/1853,FIXED_WING,MCDONNELL DOUGLAS CORP.,DC-10-30,FixType1,FW - Type 1 MEAT,BOMBER 911,N17085,153,AGAIR Response
+1448,https://arena.nafc.org.au/resource/api/ext/aircraft/1448,FIXED_WING,MCDONNELL DOUGLAS CORP.,DC-10-30,FixType1,FW - Type 1 MEAT,BOMBER 912,N522AX,153,AGAIR Response
+1981,https://arena.nafc.org.au/resource/api/ext/aircraft/1981,FIXED_WING,MCDONNELL DOUGLAS CORP.,DC-10-30,FixType1,FW - Type 1 MEAT,BOMBER 914,N603AX,153,AGAIR Response
+2096,https://arena.nafc.org.au/resource/api/ext/aircraft/2096,FIXED_WING,CESSNA AIRCRAFT COMPANY,185,FixAas,FW - AAS / Recce,DPE-(F/W-185),ZK-DPE,457,Canterbury Aviation
+2115,https://arena.nafc.org.au/resource/api/ext/aircraft/2115,FIXED_WING,BEECH AIRCRAFT CORP,C90,FixOther,FW - Other,FDN-(F/W) AIR AMB,ZK-FDN,461,GCH Aviation
+2114,https://arena.nafc.org.au/resource/api/ext/aircraft/2114,FIXED_WING,BEECH AIRCRAFT CORP,200C,FixOther,FW - Other,FDR-(F/W) AIR AMB,ZK-FDR,461,GCH Aviation
+2113,https://arena.nafc.org.au/resource/api/ext/aircraft/2113,FIXED_WING,BEECH AIRCRAFT CORP,200C,FixOther,FW - Other,FDS-(F/W) AIR AMB,ZK-FDS,461,GCH Aviation
+1614,https://arena.nafc.org.au/resource/api/ext/aircraft/1614,FIXED_WING,PIPER AIRCRAFT CORP,PA-31,FixOther,FW - Other,FIRE SPOTTER 791,VH-BTI,176,Par Avion
+1836,https://arena.nafc.org.au/resource/api/ext/aircraft/1836,FIXED_WING,CESSNA AIRCRAFT COMPANY,404,FixOther,FW - Other,FIRE SPOTTER 792,VH-WZM,176,Par Avion
+577,https://arena.nafc.org.au/resource/api/ext/aircraft/577,FIXED_WING,CESSNA AIRCRAFT COMPANY,404,FixOther,FW - Other,FIRE SPOTTER 793,VH-CCN,176,Par Avion
+1556,https://arena.nafc.org.au/resource/api/ext/aircraft/1556,HELICOPTER,EUROCOPTER FRANCE,AS.350B3,RotType3,RW - Type 3 Light,FIREBIRD 100,VH-XXU,3,Microflite Helicopter Services
+2770,https://arena.nafc.org.au/resource/api/ext/aircraft/2770,HELICOPTER,EUROCOPTER FRANCE,AS.350B3,RotType3,RW - Type 3 Light,FIREBIRD 100,VH-XXU,1,Stock Software (Testing Op)
+1486,https://arena.nafc.org.au/resource/api/ext/aircraft/1486,HELICOPTER,AEROSPATIALE INDUSTRIES,AS.350B2,RotType3,RW - Type 3 Light,FIREBIRD 200,VH-NFO,330,CareFlight
+21,https://arena.nafc.org.au/resource/api/ext/aircraft/21,HELICOPTER,BELL HELICOPTER CO,206B (III),RotType3,RW - Type 3 Light,FIREBIRD 207,VH-ONT,4,Fleet Helicopters
+177,https://arena.nafc.org.au/resource/api/ext/aircraft/177,HELICOPTER,BELL HELICOPTER CO,206B (III),RotType3,RW - Type 3 Light,FIREBIRD 207,VH-ONT,23,Commercial Helicopters (Aust) Pty Ltd
+133,https://arena.nafc.org.au/resource/api/ext/aircraft/133,HELICOPTER,BELL HELICOPTER CO,206L-1,RotType3,RW - Type 3 Light,FIREBIRD 210,VH-JOW,23,Commercial Helicopters (Aust) Pty Ltd
+172,https://arena.nafc.org.au/resource/api/ext/aircraft/172,HELICOPTER,BELL HELICOPTER CO,206L-1,RotType3,RW - Type 3 Light,FIREBIRD 210,VH-JOW,4,Fleet Helicopters
+2792,https://arena.nafc.org.au/resource/api/ext/aircraft/2792,HELICOPTER,EUROCOPTER,AS.350B2,RotType3,RW - Type 3 Light,FIREBIRD 212,VH-IQB,597,Pays Helicopters PTY LTD
+2793,https://arena.nafc.org.au/resource/api/ext/aircraft/2793,HELICOPTER,BELL HELICOPTER CO,206B,RotType3,RW - Type 3 Light,FIREBIRD 213,VH-UTG,597,Pays Helicopters PTY LTD
+151,https://arena.nafc.org.au/resource/api/ext/aircraft/151,HELICOPTER,AEROSPATIALE INDUSTRIES,AS.350B2,RotType3,RW - Type 3 Light,FIREBIRD 219,VH-THV,63,Aero Logistics Helicopters
+2813,https://arena.nafc.org.au/resource/api/ext/aircraft/2813,HELICOPTER,BELL HELICOPTER TEXTRON,206L-3,RotType3,RW - Type 3 Light,FIREBIRD 220,VH-UTJ,597,Pays Helicopters PTY LTD
+1625,https://arena.nafc.org.au/resource/api/ext/aircraft/1625,HELICOPTER,EUROCOPTER,AS 350 B2,RotType3,RW - Type 3 Light,FIREBIRD 221,VH-ONS,4,Fleet Helicopters
+1792,https://arena.nafc.org.au/resource/api/ext/aircraft/1792,HELICOPTER,EUROCOPTER,AS 350 B2,RotType3,RW - Type 3 Light,FIREBIRD 221,VH-ONS,23,Commercial Helicopters (Aust) Pty Ltd
+2853,https://arena.nafc.org.au/resource/api/ext/aircraft/2853,HELICOPTER,BELL HELICOPTER TEXTRON CANADA LIMITED,206L-4,RotType3,RW - Type 3 Light,FIREBIRD 222,VH-HEH,287,AIR CBR
+1459,https://arena.nafc.org.au/resource/api/ext/aircraft/1459,HELICOPTER,AEROSPATIALE INDUSTRIES,AS.350D,RotType3,RW - Type 3 Light,FIREBIRD 223,VH-JWD,66,Heli Surveys
+184,https://arena.nafc.org.au/resource/api/ext/aircraft/184,HELICOPTER,EUROCOPTER,AS.350B2,RotType3,RW - Type 3 Light,FIREBIRD 224,VH-AGL,71,Touchdown Helicopters Pty Limited
+584,https://arena.nafc.org.au/resource/api/ext/aircraft/584,HELICOPTER,MCDONNELL DOUGLAS HELICOPTER COMPANY,369E,RotType3,RW - Type 3 Light,FIREBIRD 225,VH-MDE,51,Black Ops Helicopters
+60,https://arena.nafc.org.au/resource/api/ext/aircraft/60,HELICOPTER,BELL HELICOPTER CO,206L-1,RotType3,RW - Type 3 Light,FIREBIRD 226,VH-IHC,25,Air T&G Pty Ltd
+694,https://arena.nafc.org.au/resource/api/ext/aircraft/694,HELICOPTER,EUROCOPTER,AS 350 BA,RotType3,RW - Type 3 Light,FIREBIRD 227,VH-TSV,71,Touchdown Helicopters Pty Limited
+1054,https://arena.nafc.org.au/resource/api/ext/aircraft/1054,HELICOPTER,EUROCOPTER FRANCE,AS.350B2,RotType3,RW - Type 3 Light,FIREBIRD 230,VH-CHO,4,Fleet Helicopters
+1056,https://arena.nafc.org.au/resource/api/ext/aircraft/1056,HELICOPTER,EUROCOPTER FRANCE,AS.350B2,RotType3,RW - Type 3 Light,FIREBIRD 230,VH-CHO,23,Commercial Helicopters (Aust) Pty Ltd
+286,https://arena.nafc.org.au/resource/api/ext/aircraft/286,HELICOPTER,BELL HELICOPTER CO,206B (II),RotType3,RW - Type 3 Light,FIREBIRD 231,VH-BLR,95,Project Guardian Aviation Pty Ltd
+383,https://arena.nafc.org.au/resource/api/ext/aircraft/383,HELICOPTER,BELL HELICOPTER CO,206B (II),RotType3,RW - Type 3 Light,FIREBIRD 231,VH-BLR,128,Blue Tongue Helicopter Services
+1055,https://arena.nafc.org.au/resource/api/ext/aircraft/1055,HELICOPTER,BELL HELICOPTER CO,206B (II),RotType3,RW - Type 3 Light,FIREBIRD 231,VH-BLR,10,Sydney Helicopters
+28,https://arena.nafc.org.au/resource/api/ext/aircraft/28,HELICOPTER,BELL HELICOPTER CO,206L-3,RotType3,RW - Type 3 Light,FIREBIRD 233,VH-ONR,4,Fleet Helicopters
+182,https://arena.nafc.org.au/resource/api/ext/aircraft/182,HELICOPTER,BELL HELICOPTER CO,206L-3,RotType3,RW - Type 3 Light,FIREBIRD 233,VH-ONR,23,Commercial Helicopters (Aust) Pty Ltd
+57,https://arena.nafc.org.au/resource/api/ext/aircraft/57,HELICOPTER,AEROSPATIALE INDUSTRIES,AS350 FX2,RotType3,RW - Type 3 Light,FIREBIRD 234,VH-ENX,10,Sydney Helicopters
+48,https://arena.nafc.org.au/resource/api/ext/aircraft/48,HELICOPTER,BELL HELICOPTER CO,206B (III),RotType3,RW - Type 3 Light,FIREBIRD 235,VH-FIP,23,Commercial Helicopters (Aust) Pty Ltd
+166,https://arena.nafc.org.au/resource/api/ext/aircraft/166,HELICOPTER,BELL HELICOPTER CO,206B (III),RotType3,RW - Type 3 Light,FIREBIRD 235,VH-FIP,4,Fleet Helicopters
+1159,https://arena.nafc.org.au/resource/api/ext/aircraft/1159,HELICOPTER,BELL HELICOPTER TEXTRON CANADA LIMITED,206L-4,RotType3,RW - Type 3 Light,FIREBIRD 237,VH-SKU,79,Skyline Helicopters
+2505,https://arena.nafc.org.au/resource/api/ext/aircraft/2505,HELICOPTER,BELL HELICOPTER TEXTRON CANADA LIMITED,206L-4,RotType3,RW - Type 3 Light,FIREBIRD 237,VH-SKU,103,Orange Helicopters
+1297,https://arena.nafc.org.au/resource/api/ext/aircraft/1297,HELICOPTER,BELL HELICOPTER CO,206L-3,RotType3,RW - Type 3 Light,FIREBIRD 238,VH-BHO,190,Heliwest
+25,https://arena.nafc.org.au/resource/api/ext/aircraft/25,HELICOPTER,BELL HELICOPTER CO,206B (III),RotType3,RW - Type 3 Light,FIREBIRD 239,VH-JWF,4,Fleet Helicopters
+180,https://arena.nafc.org.au/resource/api/ext/aircraft/180,HELICOPTER,BELL HELICOPTER CO,206B (III),RotType3,RW - Type 3 Light,FIREBIRD 239,VH-JWF,23,Commercial Helicopters (Aust) Pty Ltd
+2331,https://arena.nafc.org.au/resource/api/ext/aircraft/2331,HELICOPTER,BELL HELICOPTER TEXTRON CANADA LTD,429,RotType3,RW - Type 3 Light,FIREBIRD 240,VH-MJI,526,Borg Fleet Management P/L
+1129,https://arena.nafc.org.au/resource/api/ext/aircraft/1129,HELICOPTER,AEROSPATIALE INDUSTRIES,AS.350BA,RotType3,RW - Type 3 Light,FIREBIRD 242,VH-UTM,35,United Aero Helicopters
+2647,https://arena.nafc.org.au/resource/api/ext/aircraft/2647,HELICOPTER,AEROSPATIALE INDUSTRIES,AS.350BA,RotType3,RW - Type 3 Light,FIREBIRD 242,VH-UTM,581,THOMSON AIRBORNE PTY LTD
+1944,https://arena.nafc.org.au/resource/api/ext/aircraft/1944,HELICOPTER,EUROCOPTER,AS.350B3,RotType3,RW - Type 3 Light,FIREBIRD 243,VH-VTN,66,Heli Surveys
+2467,https://arena.nafc.org.au/resource/api/ext/aircraft/2467,HELICOPTER,EUROCOPTER,AS 350 B2,RotType3,RW - Type 3 Light,FIREBIRD 244,VH-ZHW,190,Heliwest
+2616,https://arena.nafc.org.au/resource/api/ext/aircraft/2616,HELICOPTER,EUROCOPTER,AS 350 B2,RotType3,RW - Type 3 Light,FIREBIRD 244,VH-ZHW,303,Hunter Valley Helicopters
+1802,https://arena.nafc.org.au/resource/api/ext/aircraft/1802,HELICOPTER,EUROCOPTER,AS 350 B3,RotType3,RW - Type 3 Light,FIREBIRD 245,VH-DVM,103,Orange Helicopters
+215,https://arena.nafc.org.au/resource/api/ext/aircraft/215,HELICOPTER,EUROCOPTER,AS.350B3,RotType3,RW - Type 3 Light,FIREBIRD 249,VH-UAZ,35,United Aero Helicopters
+2625,https://arena.nafc.org.au/resource/api/ext/aircraft/2625,HELICOPTER,EUROCOPTER,AS 350 B3,RotType3,RW - Type 3 Light,FIREBIRD 250,VH-UAK,35,United Aero Helicopters
+2264,https://arena.nafc.org.au/resource/api/ext/aircraft/2264,HELICOPTER,EUROCOPTER,AS 350 B3,RotType3,RW - Type 3 Light,FIREBIRD 254,VH-THY,63,Aero Logistics Helicopters
+274,https://arena.nafc.org.au/resource/api/ext/aircraft/274,HELICOPTER,BELL HELICOPTER CO,206L-3,RotType3,RW - Type 3 Light,FIREBIRD 255,VH-UAI,35,United Aero Helicopters
+1560,https://arena.nafc.org.au/resource/api/ext/aircraft/1560,HELICOPTER,BELL HELICOPTER TEXTRON CANADA LIMITED,427,RotType3,RW - Type 3 Light,FIREBIRD 257,VH-DMX,193,NSW Helicopters
+228,https://arena.nafc.org.au/resource/api/ext/aircraft/228,HELICOPTER,EUROCOPTER,AS.350B2,RotType3,RW - Type 3 Light,FIREBIRD 258,VH-LZH,80,Eagle Helicopters Pty Ltd
+589,https://arena.nafc.org.au/resource/api/ext/aircraft/589,HELICOPTER,BELL HELICOPTER TEXTRON CANADA LTD,206L-3,RotType3,RW - Type 3 Light,FIREBIRD 259,VH-HTU,4,Fleet Helicopters
+598,https://arena.nafc.org.au/resource/api/ext/aircraft/598,HELICOPTER,BELL HELICOPTER TEXTRON CANADA LTD,206L-3,RotType3,RW - Type 3 Light,FIREBIRD 259,VH-HTU,23,Commercial Helicopters (Aust) Pty Ltd
+980,https://arena.nafc.org.au/resource/api/ext/aircraft/980,HELICOPTER,AEROSPATIALE INDUSTRIES,AS350 SD2,RotType3,RW - Type 3 Light,FIREBIRD 260,VH-ZHM,70,Heli-Central Pty Ltd
+379,https://arena.nafc.org.au/resource/api/ext/aircraft/379,HELICOPTER,BELL HELICOPTER CO,206B (III),RotType3,RW - Type 3 Light,FIREBIRD 261,VH-JOA,16,Precision Helicopters
+253,https://arena.nafc.org.au/resource/api/ext/aircraft/253,HELICOPTER,BELL HELICOPTER CO,222U,RotType3,RW - Type 3 Light,FIREBIRD 262,VH-JQB,85,National Helicopters Pty Ltd
+314,https://arena.nafc.org.au/resource/api/ext/aircraft/314,HELICOPTER,BELL HELICOPTER CO,206B (II),RotType3,RW - Type 3 Light,FIREBIRD 264,VH-HKB,15,Forest Air Helicopters (Aust) Pty Ltd
+2719,https://arena.nafc.org.au/resource/api/ext/aircraft/2719,HELICOPTER,BELL HELICOPTER CO,206L-1,RotType3,RW - Type 3 Light,FIREBIRD 266,VH-XAB,134,Alpine Airwork
+109,https://arena.nafc.org.au/resource/api/ext/aircraft/109,HELICOPTER,BELL HELICOPTER CO,206B (III),RotType3,RW - Type 3 Light,FIREBIRD 268,VH-OMR,23,Commercial Helicopters (Aust) Pty Ltd
+174,https://arena.nafc.org.au/resource/api/ext/aircraft/174,HELICOPTER,BELL HELICOPTER CO,206B (III),RotType3,RW - Type 3 Light,FIREBIRD 268,VH-OMR,4,Fleet Helicopters
+131,https://arena.nafc.org.au/resource/api/ext/aircraft/131,HELICOPTER,BELL HELICOPTER CO,206B (III),RotType3,RW - Type 3 Light,FIREBIRD 269,VH-JAK,23,Commercial Helicopters (Aust) Pty Ltd
+170,https://arena.nafc.org.au/resource/api/ext/aircraft/170,HELICOPTER,BELL HELICOPTER CO,206B (III),RotType3,RW - Type 3 Light,FIREBIRD 269,VH-JAK,4,Fleet Helicopters
+50,https://arena.nafc.org.au/resource/api/ext/aircraft/50,HELICOPTER,AEROSPATIALE INDUSTRIES,AS350 FX2,RotType3,RW - Type 3 Light,FIREBIRD 270,VH-HVK,10,Sydney Helicopters
+24,https://arena.nafc.org.au/resource/api/ext/aircraft/24,HELICOPTER,AEROSPATIALE INDUSTRIES,AS350 FX2,RotType3,RW - Type 3 Light,FIREBIRD 271,VH-ENC,10,Sydney Helicopters
+335,https://arena.nafc.org.au/resource/api/ext/aircraft/335,HELICOPTER,EUROCOPTER,AS 350 BA,RotType3,RW - Type 3 Light,FIREBIRD 272,VH-JVS,10,Sydney Helicopters
+2653,https://arena.nafc.org.au/resource/api/ext/aircraft/2653,HELICOPTER,AIRBUS HELICOPTERS,AS 350 B3E,RotType3,RW - Type 3 Light,FIREBIRD 273,VH-YOS,127,Rotor Solutions Australia Pty Ltd
+366,https://arena.nafc.org.au/resource/api/ext/aircraft/366,HELICOPTER,BELL HELICOPTER CO,206B (III),RotType3,RW - Type 3 Light,FIREBIRD 276,VH-TBP,16,Precision Helicopters
+1522,https://arena.nafc.org.au/resource/api/ext/aircraft/1522,HELICOPTER,BELL HELICOPTER TEXTRON,206B,RotType3,RW - Type 3 Light,FIREBIRD 277,VH-ONM,4,Fleet Helicopters
+1523,https://arena.nafc.org.au/resource/api/ext/aircraft/1523,HELICOPTER,BELL HELICOPTER TEXTRON,206B,RotType3,RW - Type 3 Light,FIREBIRD 277,VH-ONM,23,Commercial Helicopters (Aust) Pty Ltd
+128,https://arena.nafc.org.au/resource/api/ext/aircraft/128,HELICOPTER,BELL HELICOPTER CO,206L-3,RotType3,RW - Type 3 Light,FIREBIRD 278,VH-OZC,23,Commercial Helicopters (Aust) Pty Ltd
+175,https://arena.nafc.org.au/resource/api/ext/aircraft/175,HELICOPTER,BELL HELICOPTER CO,206L-3,RotType3,RW - Type 3 Light,FIREBIRD 278,VH-OZC,4,Fleet Helicopters
+1790,https://arena.nafc.org.au/resource/api/ext/aircraft/1790,HELICOPTER,BELL HELICOPTER TEXTRON CANADA LIMITED,206L-3,null,Unspecified,FIREBIRD 278,VH-OZC,323,Stock & Station Aviation PTY Ltd
+259,https://arena.nafc.org.au/resource/api/ext/aircraft/259,HELICOPTER,BELL HELICOPTER CO,206L-3,RotType3,RW - Type 3 Light,FIREBIRD 281,VH-NHT,85,National Helicopters Pty Ltd
+150,https://arena.nafc.org.au/resource/api/ext/aircraft/150,HELICOPTER,EUROCOPTER FRANCE,AS.350B3,RotType3,RW - Type 3 Light,FIREBIRD 283,VH-XGC,63,Aero Logistics Helicopters
+466,https://arena.nafc.org.au/resource/api/ext/aircraft/466,HELICOPTER,EUROCOPTER,AS.350B3,RotType3,RW - Type 3 Light,FIREBIRD 284,VH-ELC,146,Specialist Helicopters
+1789,https://arena.nafc.org.au/resource/api/ext/aircraft/1789,HELICOPTER,EUROCOPTER,AS.350B3,RotType3,RW - Type 3 Light,FIREBIRD 284,VH-ELC,66,Heli Surveys
+1519,https://arena.nafc.org.au/resource/api/ext/aircraft/1519,HELICOPTER,AEROSPATIALE INDUSTRIES,AS.350BA,RotType3,RW - Type 3 Light,FIREBIRD 285,VH-EGJ,79,Skyline Helicopters
+1197,https://arena.nafc.org.au/resource/api/ext/aircraft/1197,HELICOPTER,AEROSPATIALE INDUSTRIES,AS.350BA,RotType3,RW - Type 3 Light,FIREBIRD 287,VH-BUK,63,Aero Logistics Helicopters
+69,https://arena.nafc.org.au/resource/api/ext/aircraft/69,HELICOPTER,EUROCOPTER,AS.350B2,RotType3,RW - Type 3 Light,FIREBIRD 288,VH-ICM,38,Lake Macquarie Helicopters
+258,https://arena.nafc.org.au/resource/api/ext/aircraft/258,HELICOPTER,EUROCOPTER FRANCE,AS.350B2,RotType3,RW - Type 3 Light,FIREBIRD 289,VH-JFN,85,National Helicopters Pty Ltd
+1490,https://arena.nafc.org.au/resource/api/ext/aircraft/1490,HELICOPTER,AEROSPATIALE INDUSTRIES,AS.350BA,RotType3,RW - Type 3 Light,FIREBIRD 290,VH-YAS,127,Rotor Solutions Australia Pty Ltd
+470,https://arena.nafc.org.au/resource/api/ext/aircraft/470,HELICOPTER,BELL HELICOPTER CO,206B (II),RotType3,RW - Type 3 Light,FIREBIRD 291,VH-YAM,35,United Aero Helicopters
+2328,https://arena.nafc.org.au/resource/api/ext/aircraft/2328,HELICOPTER,EUROCOPTER,AS 350 B2,RotType3,RW - Type 3 Light,FIREBIRD 292,VH-VTY,66,Heli Surveys
+214,https://arena.nafc.org.au/resource/api/ext/aircraft/214,HELICOPTER,BELL HELICOPTER CO,407,RotType3,RW - Type 3 Light,FIREBIRD 293,VH-DKG,76,Truenorth Helicopters
+2900,https://arena.nafc.org.au/resource/api/ext/aircraft/2900,HELICOPTER,BELL HELICOPTER TEXTRON CANADA LIMITED,206L-4,RotType3,RW - Type 3 Light,FIREBIRD 295,VH-FHS,76,Truenorth Helicopters
+1211,https://arena.nafc.org.au/resource/api/ext/aircraft/1211,HELICOPTER,EUROCOPTER FRANCE,AS.350B3,RotType3,RW - Type 3 Light,FIREBIRD 296,VH-ZMH,66,Heli Surveys
+699,https://arena.nafc.org.au/resource/api/ext/aircraft/699,HELICOPTER,BELL HELICOPTER TEXTRON CANADA LTD,206L-3,RotType3,RW - Type 3 Light,FIREBIRD 297,VH-ANC,16,Precision Helicopters
+156,https://arena.nafc.org.au/resource/api/ext/aircraft/156,HELICOPTER,BELL HELICOPTER CO,206L-1,RotType3,RW - Type 3 Light,FIREBIRD 298,VH-BHF,66,Heli Surveys
+61,https://arena.nafc.org.au/resource/api/ext/aircraft/61,HELICOPTER,EUROCOPTER,EC130B4,RotType3,RW - Type 3 Light,FIREBIRD 299,VH-VRD,32,Skyhook Helicopters
+614,https://arena.nafc.org.au/resource/api/ext/aircraft/614,HELICOPTER,AIRBUS HELICOPTERS,AS 350 B3E,RotType3,RW - Type 3 Light,FIREBIRD 300,VH-XXW,3,Microflite Helicopter Services
+834,https://arena.nafc.org.au/resource/api/ext/aircraft/834,HELICOPTER,AEROSPATIALE INDUSTRIES,AS350 SD1,RotType3,RW - Type 3 Light,FIREBIRD 301,VH-BLA,89,Professional Helicopter Services (PHS)
+944,https://arena.nafc.org.au/resource/api/ext/aircraft/944,HELICOPTER,AEROSPATIALE INDUSTRIES,AS350 FX2,RotType3,RW - Type 3 Light,FIREBIRD 302,VH-NDO,89,Professional Helicopter Services (PHS)
+51,https://arena.nafc.org.au/resource/api/ext/aircraft/51,HELICOPTER,AIRBUS HELICOPTERS,AS 350 B3,RotType3,RW - Type 3 Light,FIREBIRD 303,VH-PXX,3,Microflite Helicopter Services
+54,https://arena.nafc.org.au/resource/api/ext/aircraft/54,HELICOPTER,AIRBUS HELICOPTERS,AS 350 B3,RotType3,RW - Type 3 Light,FIREBIRD 304,VH-YXX,3,Microflite Helicopter Services
+1571,https://arena.nafc.org.au/resource/api/ext/aircraft/1571,HELICOPTER,AEROSPATIALE INDUSTRIES,AS350 FX2,RotType3,RW - Type 3 Light,FIREBIRD 305,VH-AWK,89,Professional Helicopter Services (PHS)
+1974,https://arena.nafc.org.au/resource/api/ext/aircraft/1974,HELICOPTER,AEROSPATIALE INDUSTRIES,AS.350BA,RotType3,RW - Type 3 Light,FIREBIRD 305,VH-AWK,373,TracPlus Global Ltd
+10,https://arena.nafc.org.au/resource/api/ext/aircraft/10,HELICOPTER,AIRBUS HELICOPTERS,AS 350 B3E,RotType3,RW - Type 3 Light,FIREBIRD 306,VH-YJB,3,Microflite Helicopter Services
+756,https://arena.nafc.org.au/resource/api/ext/aircraft/756,HELICOPTER,EUROCOPTER,AS.350B2,RotType3,RW - Type 3 Light,FIREBIRD 307,VH-LSR,3,Microflite Helicopter Services
+1825,https://arena.nafc.org.au/resource/api/ext/aircraft/1825,HELICOPTER,AIRBUS HELICOPTERS DEUTSCHLAND GMBH,EC135 P3,null,Unspecified,FIREBIRD 308,VH-UJB,3,Microflite Helicopter Services
+15,https://arena.nafc.org.au/resource/api/ext/aircraft/15,HELICOPTER,EUROCOPTER,EC120B,RotType3,RW - Type 3 Light,FIREBIRD 309,VH-ECP,3,Microflite Helicopter Services
+865,https://arena.nafc.org.au/resource/api/ext/aircraft/865,HELICOPTER,AEROSPATIALE INDUSTRIES,AS350 FX2,RotType3,RW - Type 3 Light,FIREBIRD 310,VH-SCO,89,Professional Helicopter Services (PHS)
+1830,https://arena.nafc.org.au/resource/api/ext/aircraft/1830,HELICOPTER,AEROSPATIALE INDUSTRIES,AS350 FX2,RotType3,RW - Type 3 Light,FIREBIRD 311,VH-HVY,182,Paton Air Pty Ltd
+322,https://arena.nafc.org.au/resource/api/ext/aircraft/322,HELICOPTER,BELL HELICOPTER TEXTRON,206L-3,RotType3,RW - Type 3 Light,FIREBIRD 314,VH-JSU,15,Forest Air Helicopters (Aust) Pty Ltd
+478,https://arena.nafc.org.au/resource/api/ext/aircraft/478,HELICOPTER,AEROSPATIALE INDUSTRIES,AS.350BA,RotType3,RW - Type 3 Light,FIREBIRD 315,VH-UAS,160,Contract Helis
+1454,https://arena.nafc.org.au/resource/api/ext/aircraft/1454,HELICOPTER,AEROSPATIALE INDUSTRIES,AS.350BA,RotType3,RW - Type 3 Light,FIREBIRD 315,VH-UAS,182,Paton Air Pty Ltd
+804,https://arena.nafc.org.au/resource/api/ext/aircraft/804,HELICOPTER,AEROSPATIALE INDUSTRIES,AS 355 F2,RotType3,RW - Type 3 Light,FIREBIRD 318,VH-PHN,89,Professional Helicopter Services (PHS)
+2814,https://arena.nafc.org.au/resource/api/ext/aircraft/2814,HELICOPTER,AEROSPATIALE INDUSTRIES,AS.350BA,RotType3,RW - Type 3 Light,FIREBIRD 321,VH-IDG,89,Professional Helicopter Services (PHS)
+593,https://arena.nafc.org.au/resource/api/ext/aircraft/593,HELICOPTER,AEROSPATIALE INDUSTRIES,AS.350B2,RotType3,RW - Type 3 Light,FIREBIRD 322,VH-LED,4,Fleet Helicopters
+661,https://arena.nafc.org.au/resource/api/ext/aircraft/661,HELICOPTER,AEROSPATIALE INDUSTRIES,AS.350B2,RotType3,RW - Type 3 Light,FIREBIRD 322,VH-LED,189,Leading Edge Helicopters
+2573,https://arena.nafc.org.au/resource/api/ext/aircraft/2573,HELICOPTER,AEROSPATIALE INDUSTRIES,AS.350B2,RotType3,RW - Type 3 Light,FIREBIRD 322,VH-LED,15,Forest Air Helicopters (Aust) Pty Ltd
+815,https://arena.nafc.org.au/resource/api/ext/aircraft/815,HELICOPTER,EUROCOPTER,AS 350 BA,RotType3,RW - Type 3 Light,FIREBIRD 323,VH-PHU,89,Professional Helicopter Services (PHS)
+754,https://arena.nafc.org.au/resource/api/ext/aircraft/754,HELICOPTER,EUROCOPTER,EC 130 T2,RotType3,RW - Type 3 Light,FIREBIRD 324,VH-JBQ,3,Microflite Helicopter Services
+147,https://arena.nafc.org.au/resource/api/ext/aircraft/147,HELICOPTER,EUROCOPTER,AS355NP,RotType3,RW - Type 3 Light,FIREBIRD 325,VH-ZXX,3,Microflite Helicopter Services
+604,https://arena.nafc.org.au/resource/api/ext/aircraft/604,HELICOPTER,AEROSPATIALE INDUSTRIES,AS.350B2,RotType3,RW - Type 3 Light,FIREBIRD 326,VH-LEY,15,Forest Air Helicopters (Aust) Pty Ltd
+895,https://arena.nafc.org.au/resource/api/ext/aircraft/895,HELICOPTER,EUROCOPTER,AS.350B3,RotType3,RW - Type 3 Light,FIREBIRD 327,VH-ZHS,3,Microflite Helicopter Services
+2757,https://arena.nafc.org.au/resource/api/ext/aircraft/2757,HELICOPTER,EUROCOPTER,AS 350 B3,RotType3,RW - Type 3 Light,FIREBIRD 328,VH-YHQ,182,Paton Air Pty Ltd
+1058,https://arena.nafc.org.au/resource/api/ext/aircraft/1058,HELICOPTER,AIRBUS HELICOPTERS,AS 350 B3,RotType3,RW - Type 3 Light,FIREBIRD 329,VH-NYX,170,Osborne Aviation Services Pty Ltd
+161,https://arena.nafc.org.au/resource/api/ext/aircraft/161,HELICOPTER,AGUSTA	 SPA	 CONSTRUZIONI AERONAUTICHE,206B,RotType3,RW - Type 3 Light,FIREBIRD 401,VH-JZB,68,Omni
+825,https://arena.nafc.org.au/resource/api/ext/aircraft/825,HELICOPTER,AEROSPATIALE,AS 350 B2,RotType3,RW - Type 3 Light,FIREBIRD 402,VH-ICY,133,GBR Helicopters Pty Ltd
+688,https://arena.nafc.org.au/resource/api/ext/aircraft/688,HELICOPTER,EUROCOPTER,EC130B4,RotType3,RW - Type 3 Light,FIREBIRD 404,VH-EHY,205,Executive Helicopters
+1599,https://arena.nafc.org.au/resource/api/ext/aircraft/1599,HELICOPTER,AIRBUS HELICOPTERS,AS 350 B3,RotType3,RW - Type 3 Light,FIREBIRD 405,VH-PKU,277,HeliSpirit
+1826,https://arena.nafc.org.au/resource/api/ext/aircraft/1826,HELICOPTER,EUROCOPTER,AS 350 B3,RotType3,RW - Type 3 Light,FIREBIRD 405,VH-PKU,70,Heli-Central Pty Ltd
+935,https://arena.nafc.org.au/resource/api/ext/aircraft/935,HELICOPTER,BELL HELICOPTER CO,206L-3,RotType3,RW - Type 3 Light,FIREBIRD 406,VH-LCN,277,HeliSpirit
+2299,https://arena.nafc.org.au/resource/api/ext/aircraft/2299,HELICOPTER,BELL HELICOPTER CO,206L-3,RotType3,RW - Type 3 Light,FIREBIRD 406,VH-LCN,70,Heli-Central Pty Ltd
+689,https://arena.nafc.org.au/resource/api/ext/aircraft/689,HELICOPTER,EUROCOPTER,EC120B,RotType3,RW - Type 3 Light,FIREBIRD 407,VH-EHA,205,Executive Helicopters
+162,https://arena.nafc.org.au/resource/api/ext/aircraft/162,HELICOPTER,BELL HELICOPTER CO,206B,RotType3,RW - Type 3 Light,FIREBIRD 409,VH-JZQ,68,Omni
+1617,https://arena.nafc.org.au/resource/api/ext/aircraft/1617,HELICOPTER,AEROSPATIALE INDUSTRIES,AS.350BA,RotType3,RW - Type 3 Light,FIREBIRD 410,VH-WMW,209,Elite Helicopters
+502,https://arena.nafc.org.au/resource/api/ext/aircraft/502,HELICOPTER,EUROCOPTER,AS.350B2,RotType3,RW - Type 3 Light,FIREBIRD 411,VH-DBJ,167,Whitsunday Helicopter Group Pty. Ltd.
+695,https://arena.nafc.org.au/resource/api/ext/aircraft/695,HELICOPTER,AEROSPATIALE INDUSTRIES,AS 350 B2,RotType3,RW - Type 3 Light,FIREBIRD 412,VH-MHE,214,Meridian Helicopters
+1509,https://arena.nafc.org.au/resource/api/ext/aircraft/1509,HELICOPTER,EUROCOPTER DEUTSCHLAND GMBH,EC135 T2,RotType3,RW - Type 3 Light,FIREBIRD 413,VH-MVY,214,Meridian Helicopters
+504,https://arena.nafc.org.au/resource/api/ext/aircraft/504,HELICOPTER,EUROCOPTER,AS.350B2,RotType3,RW - Type 3 Light,FIREBIRD 414,VH-DKA,167,Whitsunday Helicopter Group Pty. Ltd.
+1739,https://arena.nafc.org.au/resource/api/ext/aircraft/1739,HELICOPTER,AEROSPATIALE,AS 350 B2,RotType3,RW - Type 3 Light,FIREBIRD 415,VH-XCO,133,GBR Helicopters Pty Ltd
+2267,https://arena.nafc.org.au/resource/api/ext/aircraft/2267,HELICOPTER,AEROSPATIALE,AS 350 B2,RotType3,RW - Type 3 Light,FIREBIRD 415,VH-XCO,209,Elite Helicopters
+1687,https://arena.nafc.org.au/resource/api/ext/aircraft/1687,HELICOPTER,EUROCOPTER,AS 350 B3,RotType3,RW - Type 3 Light,FIREBIRD 417,VH-XBO,200,Stirling Helicopters Pty Ltd
+446,https://arena.nafc.org.au/resource/api/ext/aircraft/446,HELICOPTER,BELL HELICOPTER CO,206L-3,RotType3,RW - Type 3 Light,FIREBIRD 419,VH-JZN,68,Omni
+970,https://arena.nafc.org.au/resource/api/ext/aircraft/970,HELICOPTER,EUROCOPTER,AS.350BA,RotType3,RW - Type 3 Light,FIREBIRD 421,VH-WHW,200,Stirling Helicopters Pty Ltd
+1532,https://arena.nafc.org.au/resource/api/ext/aircraft/1532,HELICOPTER,BELL HELICOPTER CO,206B (III),RotType3,RW - Type 3 Light,FIREBIRD 422,VH-AYP,61,Dwyer Aviation Services
+2901,https://arena.nafc.org.au/resource/api/ext/aircraft/2901,HELICOPTER,EUROCOPTER,AS 350 B2,RotType3,RW - Type 3 Light,FIREBIRD 423,VH-LBT,200,Stirling Helicopters Pty Ltd
+218,https://arena.nafc.org.au/resource/api/ext/aircraft/218,HELICOPTER,AEROSPATIALE INDUSTRIES,AS.350BA,RotType3,RW - Type 3 Light,FIREBIRD 424,VH-WEB,52,Calibre Aviation
+1524,https://arena.nafc.org.au/resource/api/ext/aircraft/1524,HELICOPTER,BELL HELICOPTER CO,206L-1,RotType3,RW - Type 3 Light,FIREBIRD 425,VH-HJG,52,Calibre Aviation
+2718,https://arena.nafc.org.au/resource/api/ext/aircraft/2718,HELICOPTER,BELL HELICOPTER TEXTRON CANADA LIMITED,407,null,Unspecified,FIREBIRD 426,VH-XFN,52,Calibre Aviation
+2747,https://arena.nafc.org.au/resource/api/ext/aircraft/2747,HELICOPTER,BELL HELICOPTER TEXTRON CANADA LIMITED,407,null,Unspecified,FIREBIRD 426,VH-XFN,61,Dwyer Aviation Services
+500,https://arena.nafc.org.au/resource/api/ext/aircraft/500,HELICOPTER,AGUSTA	 SPA	 CONSTRUZIONI AERONAUTICHE,A109E,RotType3,RW - Type 3 Light,FIREBIRD 427,VH-KZD,167,Whitsunday Helicopter Group Pty. Ltd.
+2496,https://arena.nafc.org.au/resource/api/ext/aircraft/2496,HELICOPTER,AIRBUS HELICOPTERS,AS 350 B3E,RotType3,RW - Type 3 Light,FIREBIRD 429,VH-EUM,200,Stirling Helicopters Pty Ltd
+670,https://arena.nafc.org.au/resource/api/ext/aircraft/670,HELICOPTER,AIRBUS HELICOPTERS,EC 130 T2,RotType3,RW - Type 3 Light,FIREBIRD 431,VHZVO,136,Nautilus Aviation
+160,https://arena.nafc.org.au/resource/api/ext/aircraft/160,HELICOPTER,EUROCOPTER,AS.355F2,RotType3,RW - Type 3 Light,FIREBIRD 432,VH-JZX,68,Omni
+546,https://arena.nafc.org.au/resource/api/ext/aircraft/546,HELICOPTER,BELL HELICOPTER TEXTRON CANADA LTD,206B,RotType3,RW - Type 3 Light,FIREBIRD 433,VH-HFG,175,Heliservices Queensland Pty Ltd
+545,https://arena.nafc.org.au/resource/api/ext/aircraft/545,HELICOPTER,BELL HELICOPTER TEXTRON,206L-3,RotType3,RW - Type 3 Light,FIREBIRD 434,VH-HHU,175,Heliservices Queensland Pty Ltd
+969,https://arena.nafc.org.au/resource/api/ext/aircraft/969,HELICOPTER,BELL HELICOPTER CO,206B (II),RotType3,RW - Type 3 Light,FIREBIRD 435,VH-JAQ,200,Stirling Helicopters Pty Ltd
+256,https://arena.nafc.org.au/resource/api/ext/aircraft/256,HELICOPTER,BELL HELICOPTER CO,206B,RotType3,RW - Type 3 Light,FIREBIRD 436,VH-AJU,87,Liddles Air Service
+2931,https://arena.nafc.org.au/resource/api/ext/aircraft/2931,HELICOPTER,BELL HELICOPTER TEXTRON CANADA LIMITED,206L-3,null,Unspecified,FIREBIRD 437,VH-JMM,136,Nautilus Aviation
+1849,https://arena.nafc.org.au/resource/api/ext/aircraft/1849,HELICOPTER,AIRBUS HELICOPTERS,EC 130 T2,RotType3,RW - Type 3 Light,FIREBIRD 440,VH-ZPH,136,Nautilus Aviation
+406,https://arena.nafc.org.au/resource/api/ext/aircraft/406,HELICOPTER,BELL HELICOPTER CO,206L-4,RotType3,RW - Type 3 Light,FIREBIRD 441,VH-NAU,136,Nautilus Aviation
+411,https://arena.nafc.org.au/resource/api/ext/aircraft/411,HELICOPTER,BELL HELICOPTER TEXTRON CANADA LTD,407,RotType3,RW - Type 3 Light,FIREBIRD 442,VH-VHU,136,Nautilus Aviation
+403,https://arena.nafc.org.au/resource/api/ext/aircraft/403,HELICOPTER,BELL HELICOPTER CO,206B (III),RotType3,RW - Type 3 Light,FIREBIRD 444,VH-CHV,136,Nautilus Aviation
+413,https://arena.nafc.org.au/resource/api/ext/aircraft/413,HELICOPTER,AIRBUS HELICOPTERS,EC 130 T2,RotType3,RW - Type 3 Light,FIREBIRD 445,VH-ZVY,136,Nautilus Aviation
+412,https://arena.nafc.org.au/resource/api/ext/aircraft/412,HELICOPTER,EUROCOPTER,EC130B4,RotType3,RW - Type 3 Light,FIREBIRD 446,VH-ZVX,136,Nautilus Aviation
+474,https://arena.nafc.org.au/resource/api/ext/aircraft/474,HELICOPTER,AIRBUS HELICOPTERS,AS 350 B3,RotType3,RW - Type 3 Light,FIREBIRD 447,VH-ZDM,136,Nautilus Aviation
+1741,https://arena.nafc.org.au/resource/api/ext/aircraft/1741,HELICOPTER,AEROSPATIALE INDUSTRIES,AS355F1,RotType3,RW - Type 3 Light,FIREBIRD 448,VH-YUG,48,McDermott Aviation Pty Ltd
+188,https://arena.nafc.org.au/resource/api/ext/aircraft/188,HELICOPTER,AEROSPATIALE INDUSTRIES,AS.355F1,RotType3,RW - Type 3 Light,FIREBIRD 450,VH-YUR,48,McDermott Aviation Pty Ltd
+1848,https://arena.nafc.org.au/resource/api/ext/aircraft/1848,HELICOPTER,AIRBUS HELICOPTERS,EC 130 T2,RotType3,RW - Type 3 Light,FIREBIRD 451,VH-ZPI,136,Nautilus Aviation
+405,https://arena.nafc.org.au/resource/api/ext/aircraft/405,HELICOPTER,BELL HELICOPTER CO,206B (III),RotType3,RW - Type 3 Light,FIREBIRD 453,VH-HHF,136,Nautilus Aviation
+2630,https://arena.nafc.org.au/resource/api/ext/aircraft/2630,HELICOPTER,EUROCOPTER FRANCE,AS 350 B2,null,Unspecified,FIREBIRD 454,VH-DIC,326,Townsville Helicopters
+473,https://arena.nafc.org.au/resource/api/ext/aircraft/473,HELICOPTER,BELL HELICOPTER CO,206L-4,RotType3,RW - Type 3 Light,FIREBIRD 455,VH-EGD,136,Nautilus Aviation
+1416,https://arena.nafc.org.au/resource/api/ext/aircraft/1416,HELICOPTER,BELL HELICOPTER CO,206B,RotType3,RW - Type 3 Light,FIREBIRD 456,VH-XWX,87,Liddles Air Service
+1473,https://arena.nafc.org.au/resource/api/ext/aircraft/1473,HELICOPTER,AEROSPATIALE INDUSTRIES,AS350 SD1,RotType3,RW - Type 3 Light,FIREBIRD 457,VH-EGI,326,Townsville Helicopters
+1471,https://arena.nafc.org.au/resource/api/ext/aircraft/1471,HELICOPTER,BELL HELICOPTER TEXTRON CANADA LIMITED,505,RotType3,RW - Type 3 Light,FIREBIRD 458,VH-VTB,136,Nautilus Aviation
+1470,https://arena.nafc.org.au/resource/api/ext/aircraft/1470,HELICOPTER,BELL HELICOPTER TEXTRON CANADA LIMITED,505,RotType3,RW - Type 3 Light,FIREBIRD 459,VH-VSB,136,Nautilus Aviation
+1804,https://arena.nafc.org.au/resource/api/ext/aircraft/1804,HELICOPTER,AEROSPATIALE INDUSTRIES,AS.355F1,RotType3,RW - Type 3 Light,FIREBIRD 460,VH-RLR,48,McDermott Aviation Pty Ltd
+1689,https://arena.nafc.org.au/resource/api/ext/aircraft/1689,HELICOPTER,BELL HELICOPTER CO,206L-1,RotType3,RW - Type 3 Light,FIREBIRD 461,VH-YBO,48,McDermott Aviation Pty Ltd
+1860,https://arena.nafc.org.au/resource/api/ext/aircraft/1860,HELICOPTER,AEROSPATIALE INDUSTRIES,AS355F1,RotType3,RW - Type 3 Light,FIREBIRD 464,VH-YEU,48,McDermott Aviation Pty Ltd
+1215,https://arena.nafc.org.au/resource/api/ext/aircraft/1215,HELICOPTER,EUROCOPTER,AS.350B2,RotType3,RW - Type 3 Light,FIREBIRD 465,VH-LGG,298,Helicopter Logistics
+2907,https://arena.nafc.org.au/resource/api/ext/aircraft/2907,HELICOPTER,EUROCOPTER,AS.350B2,RotType3,RW - Type 3 Light,FIREBIRD 465,VH-LGG,200,Stirling Helicopters Pty Ltd
+1794,https://arena.nafc.org.au/resource/api/ext/aircraft/1794,HELICOPTER,AEROSPATIALE INDUSTRIES,AS.350D,RotType3,RW - Type 3 Light,FIREBIRD 471,VH-PIH,391,Ghost Air
+1847,https://arena.nafc.org.au/resource/api/ext/aircraft/1847,HELICOPTER,BELL HELICOPTER CO,206B,RotType3,RW - Type 3 Light,FIREBIRD 472,VH-NDL,397,coral coast helicopters
+257,https://arena.nafc.org.au/resource/api/ext/aircraft/257,HELICOPTER,AEROSPATIALE INDUSTRIES,AS.355F1,RotType3,RW - Type 3 Light,FIREBIRD 474,VH-HRU,48,McDermott Aviation Pty Ltd
+645,https://arena.nafc.org.au/resource/api/ext/aircraft/645,HELICOPTER,BELL HELICOPTER CO,206B,RotType3,RW - Type 3 Light,FIREBIRD 485,VH-YEC,133,GBR Helicopters Pty Ltd
+671,https://arena.nafc.org.au/resource/api/ext/aircraft/671,HELICOPTER,EUROCOPTER,AS.350B2,RotType3,RW - Type 3 Light,FIREBIRD 487,VH-LFD,189,Leading Edge Helicopters
+2810,https://arena.nafc.org.au/resource/api/ext/aircraft/2810,HELICOPTER,EUROCOPTER,AS 350 B3,RotType3,RW - Type 3 Light,FIREBIRD 488,VH-LDH,189,Leading Edge Helicopters
+2558,https://arena.nafc.org.au/resource/api/ext/aircraft/2558,HELICOPTER,EUROCOPTER,AS 350 B2,RotType3,RW - Type 3 Light,FIREBIRD 490,VH-RDA,152,Rotorwing Helicopters Pty. Ltd.
+1938,https://arena.nafc.org.au/resource/api/ext/aircraft/1938,HELICOPTER,EUROCOPTER,AS 350 B3,RotType3,RW - Type 3 Light,FIREBIRD 491,VH-DTS,197,Helipower
+2524,https://arena.nafc.org.au/resource/api/ext/aircraft/2524,HELICOPTER,BELL HELICOPTER TEXTRON CANADA LIMITED,407,null,Unspecified,FIREBIRD 492,VH-DMF,197,Helipower
+2874,https://arena.nafc.org.au/resource/api/ext/aircraft/2874,HELICOPTER,BELL HELICOPTER TEXTRON CANADA LIMITED,407,null,Unspecified,FIREBIRD 495,VH-DKU,197,Helipower
+2803,https://arena.nafc.org.au/resource/api/ext/aircraft/2803,HELICOPTER,BELL HELICOPTER CO,407,RotType3,RW - Type 3 Light,FIREBIRD 496,VH-VOT,103,Orange Helicopters
+229,https://arena.nafc.org.au/resource/api/ext/aircraft/229,HELICOPTER,BELL HELICOPTER TEXTRON CANADA LTD,206L-3,RotType3,RW - Type 3 Light,FIREBIRD 497,VH-KHQ,17,Kestrel Aviation P/L
+2011,https://arena.nafc.org.au/resource/api/ext/aircraft/2011,HELICOPTER,BELL HELICOPTER CO,206B,RotType3,RW - Type 3 Light,FIREBIRD 498,VH-JZH,430,Airborne Solutions
+897,https://arena.nafc.org.au/resource/api/ext/aircraft/897,HELICOPTER,AIRBUS HELICOPTERS,AS 350 B3,RotType3,RW - Type 3 Light,FIREBIRD 501,VH-HBB,131,Aerotech Helicopters
+652,https://arena.nafc.org.au/resource/api/ext/aircraft/652,HELICOPTER,AIRBUS HELICOPTERS,AS 350 B3,RotType3,RW - Type 3 Light,FIREBIRD 504,VH-HRG,131,Aerotech Helicopters
+479,https://arena.nafc.org.au/resource/api/ext/aircraft/479,HELICOPTER,EUROCOPTER FRANCE,AS.350BA,RotType3,RW - Type 3 Light,FIREBIRD 505,VH-FMF,161,Helifarm Pty Ltd
+2866,https://arena.nafc.org.au/resource/api/ext/aircraft/2866,HELICOPTER,EUROCOPTER FRANCE,AS.350BA,RotType3,RW - Type 3 Light,FIREBIRD 505,VH-FMF,131,Aerotech Helicopters
+272,https://arena.nafc.org.au/resource/api/ext/aircraft/272,HELICOPTER,AEROSPATIALE INDUSTRIES,AS.350BA,RotType3,RW - Type 3 Light,FIREBIRD 506,VH-UVA,35,United Aero Helicopters
+1962,https://arena.nafc.org.au/resource/api/ext/aircraft/1962,HELICOPTER,BELL HELICOPTER TEXTRON CANADA LIMITED,206L-3,null,Unspecified,FIREBIRD 509,VH-FXF,161,Helifarm Pty Ltd
+1570,https://arena.nafc.org.au/resource/api/ext/aircraft/1570,HELICOPTER,AEROSPATIALE INDUSTRIES,AS.350BA,RotType3,RW - Type 3 Light,FIREBIRD 510,VH-SGK,161,Helifarm Pty Ltd
+2881,https://arena.nafc.org.au/resource/api/ext/aircraft/2881,HELICOPTER,AEROSPATIALE INDUSTRIES,AS.350BA,RotType3,RW - Type 3 Light,FIREBIRD 510,VH-SGK,131,Aerotech Helicopters
+1326,https://arena.nafc.org.au/resource/api/ext/aircraft/1326,HELICOPTER,AEROSPATIALE INDUSTRIES,AS.350BA,RotType3,RW - Type 3 Light,FIREBIRD 512,VH-TVG,35,United Aero Helicopters
+2868,https://arena.nafc.org.au/resource/api/ext/aircraft/2868,HELICOPTER,EUROCOPTER,AS 350 B2,RotType3,RW - Type 3 Light,FIREBIRD 515,VH-VLU,161,Helifarm Pty Ltd
+1552,https://arena.nafc.org.au/resource/api/ext/aircraft/1552,HELICOPTER,BELL HELICOPTER TEXTRON CANADA LIMITED,427,RotType3,RW - Type 3 Light,FIREBIRD 524,VH-TOR,28,Becker Helicopter Services Pty Ltd
+252,https://arena.nafc.org.au/resource/api/ext/aircraft/252,HELICOPTER,AEROSPATIALE INDUSTRIES,AS.355F1,RotType3,RW - Type 3 Light,FIREBIRD 623,VH-YUQ,48,McDermott Aviation Pty Ltd
+656,https://arena.nafc.org.au/resource/api/ext/aircraft/656,HELICOPTER,EUROCOPTER FRANCE,AS.365N3,RotType2,RW - Type 2 Medium,FIREBIRD 661,N82MD,48,McDermott Aviation Pty Ltd
+1696,https://arena.nafc.org.au/resource/api/ext/aircraft/1696,HELICOPTER,EUROCOPTER FRANCE,AS.365N3,RotType2,RW - Type 2 Medium,FIREBIRD 662,N97MD,48,McDermott Aviation Pty Ltd
+171,https://arena.nafc.org.au/resource/api/ext/aircraft/171,HELICOPTER,EUROCOPTER FRANCE,AS.365N2,RotType2,RW - Type 2 Medium,FIREBIRD 663,N365JL,48,McDermott Aviation Pty Ltd
+1538,https://arena.nafc.org.au/resource/api/ext/aircraft/1538,HELICOPTER,EUROCOPTER FRANCE,AS.350B2,RotType3,RW - Type 3 Light,FIREBIRD 700,VH-XXM,3,Microflite Helicopter Services
+497,https://arena.nafc.org.au/resource/api/ext/aircraft/497,HELICOPTER,AEROSPATIALE INDUSTRIES,AS.350B2,RotType3,RW - Type 3 Light,FIREBIRD 701,VH-HRD,155,Helicopter Resources pty ltd
+465,https://arena.nafc.org.au/resource/api/ext/aircraft/465,HELICOPTER,EUROCOPTER,AS.350B3,RotType3,RW - Type 3 Light,FIREBIRD 704,VH-UUF,155,Helicopter Resources pty ltd
+534,https://arena.nafc.org.au/resource/api/ext/aircraft/534,HELICOPTER,AEROSPATIALE INDUSTRIES,AS.355F1,RotType3,RW - Type 3 Light,FIREBIRD 705,VH-ELP,173,Rotorlift Pty Ltd
+519,https://arena.nafc.org.au/resource/api/ext/aircraft/519,HELICOPTER,BELL HELICOPTER CO,206L-3,RotType3,RW - Type 3 Light,FIREBIRD 706,VH-OSS,170,Osborne Aviation Services Pty Ltd
+514,https://arena.nafc.org.au/resource/api/ext/aircraft/514,HELICOPTER,BELL HELICOPTER CO,206L-3,RotType3,RW - Type 3 Light,FIREBIRD 708,VH-OAS,170,Osborne Aviation Services Pty Ltd
+521,https://arena.nafc.org.au/resource/api/ext/aircraft/521,HELICOPTER,BELL HELICOPTER CO,206L-1,RotType3,RW - Type 3 Light,FIREBIRD 709,VH-OSL,170,Osborne Aviation Services Pty Ltd
+532,https://arena.nafc.org.au/resource/api/ext/aircraft/532,HELICOPTER,BELL HELICOPTER CO,206B,RotType3,RW - Type 3 Light,FIREBIRD 710,VH-ELF,173,Rotorlift Pty Ltd
+1375,https://arena.nafc.org.au/resource/api/ext/aircraft/1375,HELICOPTER,KAWASAKI HEAVY INDUSTRIES,BK117 B-2,RotType2,RW - Type 2 Medium,FIREBIRD 711,VH-HRT,173,Rotorlift Pty Ltd
+557,https://arena.nafc.org.au/resource/api/ext/aircraft/557,HELICOPTER,BELL HELICOPTER CO,206B,RotType3,RW - Type 3 Light,FIREBIRD 712,VH-SRN,30,Tasmanian Helicopters Pty Ltd
+1827,https://arena.nafc.org.au/resource/api/ext/aircraft/1827,HELICOPTER,AEROSPATIALE,355F1,RotType3,RW - Type 3 Light,FIREBIRD 713,VH-RLC,173,Rotorlift Pty Ltd
+77,https://arena.nafc.org.au/resource/api/ext/aircraft/77,HELICOPTER,AIRBUS HELICOPTERS,AS 350 B3,RotType3,RW - Type 3 Light,FIREBIRD 715,VH-ZAT,30,Tasmanian Helicopters Pty Ltd
+555,https://arena.nafc.org.au/resource/api/ext/aircraft/555,HELICOPTER,AIRBUS HELICOPTERS,AS 350 B2,RotType3,RW - Type 3 Light,FIREBIRD 717,VH-DKT,30,Tasmanian Helicopters Pty Ltd
+558,https://arena.nafc.org.au/resource/api/ext/aircraft/558,HELICOPTER,AIRBUS HELICOPTERS,AS 350 B2,RotType3,RW - Type 3 Light,FIREBIRD 719,VH-ZST,30,Tasmanian Helicopters Pty Ltd
+651,https://arena.nafc.org.au/resource/api/ext/aircraft/651,HELICOPTER,BELL HELICOPTER CO,206B,RotType3,RW - Type 3 Light,FIREBIRD 720,VH-UHV,173,Rotorlift Pty Ltd
+1478,https://arena.nafc.org.au/resource/api/ext/aircraft/1478,HELICOPTER,EUROCOPTER,AS 350 B3,RotType3,RW - Type 3 Light,FIREBIRD 721,VH-NFL,173,Rotorlift Pty Ltd
+650,https://arena.nafc.org.au/resource/api/ext/aircraft/650,HELICOPTER,EUROCOPTER,EC 130 B4,RotType3,RW - Type 3 Light,FIREBIRD 722,VH-BAA,173,Rotorlift Pty Ltd
+1374,https://arena.nafc.org.au/resource/api/ext/aircraft/1374,HELICOPTER,KAWASAKI HEAVY INDUSTRIES,BK117 B-2,RotType2,RW - Type 2 Medium,FIREBIRD 723,VH-EMS,173,Rotorlift Pty Ltd
+512,https://arena.nafc.org.au/resource/api/ext/aircraft/512,HELICOPTER,EUROCOPTER,AS.350B3,RotType3,RW - Type 3 Light,FIREBIRD 725,VH-UUH,155,Helicopter Resources pty ltd
+463,https://arena.nafc.org.au/resource/api/ext/aircraft/463,HELICOPTER,EUROCOPTER,AS.350B3,RotType3,RW - Type 3 Light,FIREBIRD 726,VH-UUG,155,Helicopter Resources pty ltd
+556,https://arena.nafc.org.au/resource/api/ext/aircraft/556,HELICOPTER,BELL HELICOPTER CO,206B,RotType3,RW - Type 3 Light,FIREBIRD 728,VH-ZDT,30,Tasmanian Helicopters Pty Ltd
+505,https://arena.nafc.org.au/resource/api/ext/aircraft/505,HELICOPTER,EUROCOPTER,AS.350B3,RotType3,RW - Type 3 Light,FIREBIRD 729,VH-UUI,155,Helicopter Resources pty ltd
+527,https://arena.nafc.org.au/resource/api/ext/aircraft/527,HELICOPTER,KAWASAKI HEAVY INDUSTRIES,BK117 B-2,RotType2,RW - Type 2 Medium,FIREBIRD 731,VH-RSQ,173,Rotorlift Pty Ltd
+496,https://arena.nafc.org.au/resource/api/ext/aircraft/496,HELICOPTER,AEROSPATIALE INDUSTRIES,AS.350B2,RotType3,RW - Type 3 Light,FIREBIRD 732,VH-SRB,155,Helicopter Resources pty ltd
+78,https://arena.nafc.org.au/resource/api/ext/aircraft/78,HELICOPTER,AIRBUS HELICOPTERS,AS 350 B3E,RotType3,RW - Type 3 Light,FIREBIRD 734,VH-ULT,30,Tasmanian Helicopters Pty Ltd
+1595,https://arena.nafc.org.au/resource/api/ext/aircraft/1595,HELICOPTER,AIRBUS HELICOPTERS,AS 350 B3E,RotType3,RW - Type 3 Light,FIREBIRD 735,VH-UWT,30,Tasmanian Helicopters Pty Ltd
+523,https://arena.nafc.org.au/resource/api/ext/aircraft/523,HELICOPTER,AIRBUS HELICOPTERS,AS 350 B2,RotType3,RW - Type 3 Light,FIREBIRD 740,VH-NYC,170,Osborne Aviation Services Pty Ltd
+1705,https://arena.nafc.org.au/resource/api/ext/aircraft/1705,HELICOPTER,AIRBUS HELICOPTERS,AS 350 B3,RotType3,RW - Type 3 Light,FIREBIRD 742,VH-NYZ,170,Osborne Aviation Services Pty Ltd
+2863,https://arena.nafc.org.au/resource/api/ext/aircraft/2863,HELICOPTER,AIRBUS HELICOPTERS,AS 350 B3E,RotType3,RW - Type 3 Light,FIREBIRD 745,VH-ZGT,30,Tasmanian Helicopters Pty Ltd
+387,https://arena.nafc.org.au/resource/api/ext/aircraft/387,HELICOPTER,EUROCOPTER,AS 350 BA,RotType3,RW - Type 3 Light,FIREBIRD 801,VH-HQO,131,Aerotech Helicopters
+1559,https://arena.nafc.org.au/resource/api/ext/aircraft/1559,HELICOPTER,EUROCOPTER,EC 130 B4,RotType3,RW - Type 3 Light,FIREBIRD 802,VH-HQL,131,Aerotech Helicopters
+2811,https://arena.nafc.org.au/resource/api/ext/aircraft/2811,HELICOPTER,BELL HELICOPTER CO,206B,RotType3,RW - Type 3 Light,FIREBIRD 807,VH-NDY,430,Airborne Solutions
+2342,https://arena.nafc.org.au/resource/api/ext/aircraft/2342,HELICOPTER,EUROCOPTER,AS 350 B3,RotType3,RW - Type 3 Light,FIREBIRD 831,VH-UHL,531,HM Air Services
+2261,https://arena.nafc.org.au/resource/api/ext/aircraft/2261,HELICOPTER,EUROCOPTER FRANCE,AS.350B2,RotType3,RW - Type 3 Light,FIREBIRD 856,VH-MHW,510,Remote Helicopters Australia
+1648,https://arena.nafc.org.au/resource/api/ext/aircraft/1648,HELICOPTER,EUROCOPTER,AS350B2,RotType3,RW - Type 3 Light,FIREBIRD 870,VH-JRU,9,Jayrow Helicopters Pty. Ltd.
+603,https://arena.nafc.org.au/resource/api/ext/aircraft/603,FIXED_WING,GATES LEARJET CORP,35A,FixOther,FW - Other,FIRESCAN 121,VH-LRX,62,Air Affairs Australia Pty Ltd
+2381,https://arena.nafc.org.au/resource/api/ext/aircraft/2381,FIXED_WING,GATES LEARJET CORP,36A,FixOther,FW - Other,FIRESCAN 122,VH-LJA,62,Air Affairs Australia Pty Ltd
+1021,https://arena.nafc.org.au/resource/api/ext/aircraft/1021,FIXED_WING,GATES LEARJET CORP,35A,FixOther,FW - Other,FIRESCAN 123,VH-LJJ,62,Air Affairs Australia Pty Ltd
+1436,https://arena.nafc.org.au/resource/api/ext/aircraft/1436,FIXED_WING,GATES LEARJET CORP,36A,FixOther,FW - Other,FIRESCAN 124,VH-SLF,62,Air Affairs Australia Pty Ltd
+148,https://arena.nafc.org.au/resource/api/ext/aircraft/148,FIXED_WING,BEECH AIRCRAFT CORP,B200T,FixOther,FW - Other,FIRESCAN 125,VH-LAB,62,Air Affairs Australia Pty Ltd
+1955,https://arena.nafc.org.au/resource/api/ext/aircraft/1955,FIXED_WING,BEECH AIRCRAFT CORP,200,FixOther,FW - Other,FIRESCAN 126,VH-ZMP,62,Air Affairs Australia Pty Ltd
+2608,https://arena.nafc.org.au/resource/api/ext/aircraft/2608,FIXED_WING,GATES LEARJET CORP,35A,FixOther,FW - Other,FIRESCAN 127,VH-LJQ,62,Air Affairs Australia Pty Ltd
+2000,https://arena.nafc.org.au/resource/api/ext/aircraft/2000,FIXED_WING,CESSNA AIRCRAFT COMPANY,560,FixOther,FW - Other,FIRESCAN 200,N135CG,93,NSW Rural Fire Service - State Air Desk
+2347,https://arena.nafc.org.au/resource/api/ext/aircraft/2347,FIXED_WING,CESSNA AIRCRAFT COMPANY,560,FixOther,FW - Other,FIRESCAN 200,VH-VJT,118,Coulson Aviation (Australia) Pty
+1999,https://arena.nafc.org.au/resource/api/ext/aircraft/1999,FIXED_WING,CESSNA AIRCRAFT COMPANY,560,FixOther,FW - Other,FIRESCAN 201,N40HT,93,NSW Rural Fire Service - State Air Desk
+2353,https://arena.nafc.org.au/resource/api/ext/aircraft/2353,FIXED_WING,CESSNA AIRCRAFT COMPANY,560,FixOther,FW - Other,FIRESCAN 201,VH-VJO,118,Coulson Aviation (Australia) Pty
+2506,https://arena.nafc.org.au/resource/api/ext/aircraft/2506,FIXED_WING,CESSNA AIRCRAFT COMPANY,550,FixOther,FW - Other,FIRESCAN 207,N550CG,118,Coulson Aviation (Australia) Pty
+2611,https://arena.nafc.org.au/resource/api/ext/aircraft/2611,FIXED_WING,CESSNA AIRCRAFT COMPANY,550,FixOther,FW - Other,FIRESCAN 208,N552CG,118,Coulson Aviation (Australia) Pty
+425,https://arena.nafc.org.au/resource/api/ext/aircraft/425,FIXED_WING,CESSNA AIRCRAFT COMPANY,R172K,FixAas,FW - AAS / Recce,FIRESPOTTER 207,VH-BGD,142,Merit Aviation
+30,https://arena.nafc.org.au/resource/api/ext/aircraft/30,FIXED_WING,CESSNA AIRCRAFT COMPANY,182N,FixAas,FW - AAS / Recce,FIRESPOTTER 211,VH-EIP,4,Fleet Helicopters
+261,https://arena.nafc.org.au/resource/api/ext/aircraft/261,FIXED_WING,CESSNA AIRCRAFT COMPANY,172RG,FixAas,FW - AAS / Recce,FIRESPOTTER 217,VH-BOY,88,Merimbula Air Services
+260,https://arena.nafc.org.au/resource/api/ext/aircraft/260,FIXED_WING,PIPER AIRCRAFT CORP,PA-32-300,FixOther,FW - Other,FIRESPOTTER 218,VH-LFX,88,Merimbula Air Services
+204,https://arena.nafc.org.au/resource/api/ext/aircraft/204,FIXED_WING,PARTENAVIA COSTRUZIONI AERONAUTICHE SPA,P.68 OBSERVER,FixAas,FW - AAS / Recce,FIRESPOTTER 222,VH-PGN,73,Observe Air Pty Ltd
+197,https://arena.nafc.org.au/resource/api/ext/aircraft/197,FIXED_WING,GIPPSLAND AERONAUTICS PTY LTD,GA-8,FixAas,FW - AAS / Recce,FIRESPOTTER 239,VH-VEX,72,Skycroppers
+2376,https://arena.nafc.org.au/resource/api/ext/aircraft/2376,FIXED_WING,CESSNA AIRCRAFT COMPANY,182S,FixAas,FW - AAS / Recce,FIRESPOTTER 240,VH-UPT,142,Merit Aviation
+2752,https://arena.nafc.org.au/resource/api/ext/aircraft/2752,FIXED_WING,CESSNA AIRCRAFT COMPANY,182S,FixAas,FW - AAS / Recce,FIRESPOTTER 240,VH-UPT,592,Learn2Fly	 CromAir
+368,https://arena.nafc.org.au/resource/api/ext/aircraft/368,FIXED_WING,CESSNA AIRCRAFT COMPANY,206H,FixAas,FW - AAS / Recce,FIRESPOTTER 250,VH-TAW,96,Australia by Air
+13,https://arena.nafc.org.au/resource/api/ext/aircraft/13,FIXED_WING,CESSNA AIRCRAFT COMPANY,182T,FixAas,FW - AAS / Recce,FIRESPOTTER 265,VH-BXO,7,Curtis Aviation (NSW) Pty Limited
+49,https://arena.nafc.org.au/resource/api/ext/aircraft/49,FIXED_WING,CESSNA AIRCRAFT COMPANY,182T,FixAas,FW - AAS / Recce,FIRESPOTTER 268,VH-BMX,7,Curtis Aviation (NSW) Pty Limited
+424,https://arena.nafc.org.au/resource/api/ext/aircraft/424,FIXED_WING,CESSNA AIRCRAFT COMPANY,172N,FixAas,FW - AAS / Recce,FIRESPOTTER 274,VH-FLW,101,Inverell Aviation
+122,https://arena.nafc.org.au/resource/api/ext/aircraft/122,FIXED_WING,CESSNA AIRCRAFT COMPANY,182K,FixAas,FW - AAS / Recce,FIRESPOTTER 279,VH-KON,60,PAY'S AIR SERVICE PTY LTD
+679,https://arena.nafc.org.au/resource/api/ext/aircraft/679,FIXED_WING,CESSNA AIRCRAFT COMPANY,182P,FixAas,FW - AAS / Recce,FIRESPOTTER 290,VH-HXI,202,Thomas Aviation
+2012,https://arena.nafc.org.au/resource/api/ext/aircraft/2012,FIXED_WING,CESSNA AIRCRAFT COMPANY,182Q,FixAas,FW - AAS / Recce,FIRESPOTTER 291,VH-TXP,202,Thomas Aviation
+767,https://arena.nafc.org.au/resource/api/ext/aircraft/767,FIXED_WING,CESSNA AIRCRAFT COMPANY,210L,FixAas,FW - AAS / Recce,FIRESPOTTER 385,VH-YEF,256,Ramair Flying Services
+793,https://arena.nafc.org.au/resource/api/ext/aircraft/793,FIXED_WING,CESSNA AIRCRAFT COMPANY,172N,FixAas,FW - AAS / Recce,FIRESPOTTER 386,VH-ITY,249,Air Charter Today
+745,https://arena.nafc.org.au/resource/api/ext/aircraft/745,FIXED_WING,CESSNA AIRCRAFT COMPANY,R182,FixAas,FW - AAS / Recce,FIRESPOTTER 388,VH-HWV,249,Air Charter Today
+575,https://arena.nafc.org.au/resource/api/ext/aircraft/575,FIXED_WING,CESSNA AIRCRAFT COMPANY,R182,FixAas,FW - AAS / Recce,FIRESPOTTER 395,VH-TSX,140,AeroVision
+752,https://arena.nafc.org.au/resource/api/ext/aircraft/752,FIXED_WING,CESSNA AIRCRAFT COMPANY,210R,FixAas,FW - AAS / Recce,FIRESPOTTER 397,VH-JGU,255,Wrightsair
+1028,https://arena.nafc.org.au/resource/api/ext/aircraft/1028,FIXED_WING,CESSNA AIRCRAFT COMPANY,182D,FixAas,FW - AAS / Recce,FIRESPOTTER 403,VH-RDQ,97,R-MACH Aviation Pty Ltd
+2623,https://arena.nafc.org.au/resource/api/ext/aircraft/2623,FIXED_WING,CESSNA AIRCRAFT COMPANY,185A,FixAas,FW - AAS / Recce,FIRESPOTTER 404,VH-YME,97,R-MACH Aviation Pty Ltd
+2260,https://arena.nafc.org.au/resource/api/ext/aircraft/2260,FIXED_WING,CESSNA AIRCRAFT COMPANY,R182,FixAas,FW - AAS / Recce,FIRESPOTTER 405,VH-EHM,205,Executive Helicopters
+276,https://arena.nafc.org.au/resource/api/ext/aircraft/276,FIXED_WING,CESSNA AIRCRAFT COMPANY,210-5,FixAas,FW - AAS / Recce,FIRESPOTTER 407,VH-CWL,94,Smart Air Services
+384,https://arena.nafc.org.au/resource/api/ext/aircraft/384,FIXED_WING,CESSNA AIRCRAFT COMPANY,180H,FixAas,FW - AAS / Recce,FIRESPOTTER 409,VH-WSD,13,Jones Air
+428,https://arena.nafc.org.au/resource/api/ext/aircraft/428,FIXED_WING,CESSNA AIRCRAFT COMPANY,210M,FixAas,FW - AAS / Recce,FIRESPOTTER 416,VH-KSE,92,South West Air Service Pty Ltd
+586,https://arena.nafc.org.au/resource/api/ext/aircraft/586,FIXED_WING,CESSNA AIRCRAFT COMPANY,182R,FixAas,FW - AAS / Recce,FIRESPOTTER 417,VHJCU,179,Darling Downs Aero Club Limited
+273,https://arena.nafc.org.au/resource/api/ext/aircraft/273,FIXED_WING,CESSNA AIRCRAFT COMPANY,A185F,FixAas,FW - AAS / Recce,FIRESPOTTER 418,VH-CWH,92,South West Air Service Pty Ltd
+438,https://arena.nafc.org.au/resource/api/ext/aircraft/438,FIXED_WING,CESSNA AIRCRAFT COMPANY,U206G,FixAas,FW - AAS / Recce,FIRESPOTTER 420,VH-SSS,92,South West Air Service Pty Ltd
+2796,https://arena.nafc.org.au/resource/api/ext/aircraft/2796,FIXED_WING,TEXTRON AVIATION INC.,208,null,Unspecified,FIRESPOTTER 422,VH-NPZ,570,ImageAir
+2800,https://arena.nafc.org.au/resource/api/ext/aircraft/2800,FIXED_WING,TEXTRON AVIATION INC.,208,null,Unspecified,FIRESPOTTER 422,VH-NPZ,5,Kennedy Air Ag Pty Ltd
+455,https://arena.nafc.org.au/resource/api/ext/aircraft/455,FIXED_WING,CESSNA AIRCRAFT COMPANY,182Q,FixAas,FW - AAS / Recce,FIRESPOTTER 432,VH-TRE,148,Queensland Aircraft Charter
+332,https://arena.nafc.org.au/resource/api/ext/aircraft/332,FIXED_WING,CESSNA AIRCRAFT COMPANY,210H,FixAas,FW - AAS / Recce,FIRESPOTTER 436,VH-LWH,65,Precision Aerial Meandarra
+2271,https://arena.nafc.org.au/resource/api/ext/aircraft/2271,FIXED_WING,CESSNA AIRCRAFT COMPANY,208,FixAas,FW - AAS / Recce,FIRESPOTTER 437,VH-LMZ,165,CENTRAL HIGHLANDS AERIAL SERVICES PTY LTD
+2646,https://arena.nafc.org.au/resource/api/ext/aircraft/2646,FIXED_WING,CESSNA AIRCRAFT COMPANY,208,FixAas,FW - AAS / Recce,FIRESPOTTER 437,VH-LMZ,581,THOMSON AIRBORNE PTY LTD
+367,https://arena.nafc.org.au/resource/api/ext/aircraft/367,FIXED_WING,CESSNA AIRCRAFT COMPANY,182N,FixAas,FW - AAS / Recce,FIRESPOTTER 506,VH-LMG,122,Lincoln Air Charter
+337,https://arena.nafc.org.au/resource/api/ext/aircraft/337,FIXED_WING,CESSNA AIRCRAFT COMPANY,182S,FixAas,FW - AAS / Recce,FIRESPOTTER 510,VH-CXZ,110,Aerotech 1st Response
+395,https://arena.nafc.org.au/resource/api/ext/aircraft/395,FIXED_WING,CESSNA AIRCRAFT COMPANY,208B,FixAas,FW - AAS / Recce,FIRESPOTTER 555,VH-TWX,60,PAY'S AIR SERVICE PTY LTD
+863,https://arena.nafc.org.au/resource/api/ext/aircraft/863,FIXED_WING,CESSNA AIRCRAFT COMPANY,208B,FixAas,FW - AAS / Recce,FIRESPOTTER 555,VH-TWX,270,Broome Aviation
+1914,https://arena.nafc.org.au/resource/api/ext/aircraft/1914,FIXED_WING,CESSNA AIRCRAFT COMPANY,208B,FixAas,FW - AAS / Recce,FIRESPOTTER 555,VH-TWX,265,Vortex Air Pty Ltd
+2832,https://arena.nafc.org.au/resource/api/ext/aircraft/2832,FIXED_WING,CESSNA AIRCRAFT COMPANY,208B,FixAas,FW - AAS / Recce,FIRESPOTTER 555,VH-TWX,110,Aerotech 1st Response
+2851,https://arena.nafc.org.au/resource/api/ext/aircraft/2851,FIXED_WING,GIPPSLAND AERONAUTICS PTY. LTD.,GA8 ,FixAas,FW - AAS / Recce,FSR-(F/W),ZK-FSR,493,South Pacific Helicopters/Wings over Whales
+2512,https://arena.nafc.org.au/resource/api/ext/aircraft/2512,HELICOPTER,EUROCOPTER,AS 350 B2,RotType3,RW - Type 3 Light,HAA-(B2),ZK-HAA,496,Wanaka Helicopters Limited
+2514,https://arena.nafc.org.au/resource/api/ext/aircraft/2514,HELICOPTER,MCDONNELL DOUGLAS HELICOPTER COMPANY,369E,RotType3,RW - Type 3 Light,HAC-(500),ZK-HAC,496,Wanaka Helicopters Limited
+2087,https://arena.nafc.org.au/resource/api/ext/aircraft/2087,HELICOPTER,EUROCOPTER,AS 350 B2,RotType3,RW - Type 3 Light,HAH-(B2),ZK-HAH,455,Aspiring Helicopters Limited
+2073,https://arena.nafc.org.au/resource/api/ext/aircraft/2073,HELICOPTER,MCDONNELL DOUGLAS HELICOPTER COMPANY,MD530F,RotType3,RW - Type 3 Light,HAS-(500),ZK-HAS,451,Air West Helicopters Limited
+2530,https://arena.nafc.org.au/resource/api/ext/aircraft/2530,HELICOPTER,EUROCOPTER,AS 350 B2,RotType3,RW - Type 3 Light,HBA-(B2),ZK-HBA,466,Helicopters Hawkes Bay
+2202,https://arena.nafc.org.au/resource/api/ext/aircraft/2202,HELICOPTER,EUROCOPTER,EC 130 B4,RotType3,RW - Type 3 Light,HBE-(EC130),ZK-HBE,493,South Pacific Helicopters/Wings over Whales
+2127,https://arena.nafc.org.au/resource/api/ext/aircraft/2127,HELICOPTER,BELL HELICOPTER CO,206B,RotType3,RW - Type 3 Light,HBJ-(JR),ZK-HBJ,466,Helicopters Hawkes Bay
+2576,https://arena.nafc.org.au/resource/api/ext/aircraft/2576,HELICOPTER,KAWASAKI HEAVY INDUSTRIES	 LTD.,BK117 B-2,RotType2,RW - Type 2 Medium,HBK-(BK),ZK-HBK,532,Helisika Helicopters
+2076,https://arena.nafc.org.au/resource/api/ext/aircraft/2076,HELICOPTER,EUROCOPTER,AS 350 B2,RotType3,RW - Type 3 Light,HBN-(B2),ZK-HBN,452,Alpine Helicopters
+2239,https://arena.nafc.org.au/resource/api/ext/aircraft/2239,HELICOPTER,EUROCOPTER,AS 350 B2,RotType3,RW - Type 3 Light,HBT-(B2),ZK-HBT,503,High Country Helicopters Limited
+2237,https://arena.nafc.org.au/resource/api/ext/aircraft/2237,HELICOPTER,BELL HELICOPTER CO,206B (III),RotType3,RW - Type 3 Light,HCH-(JR),ZK-HCH,502,Heli Resources 2012 Limited
+2240,https://arena.nafc.org.au/resource/api/ext/aircraft/2240,HELICOPTER,HUGHES HELICOPTERS,369D,RotType3,RW - Type 3 Light,HCM-(500),ZK-HCM,503,High Country Helicopters Limited
+2740,https://arena.nafc.org.au/resource/api/ext/aircraft/2740,HELICOPTER,EUROCOPTER,AS 350 B2,RotType3,RW - Type 3 Light,HCP-(B2),ZK-HCP,496,Wanaka Helicopters Limited
+2083,https://arena.nafc.org.au/resource/api/ext/aircraft/2083,HELICOPTER,EUROCOPTER,AS 350 B3,RotType3,RW - Type 3 Light,HCQ-(B3),ZK-HCQ,454,Anderson Helicopters Limited
+2537,https://arena.nafc.org.au/resource/api/ext/aircraft/2537,HELICOPTER,EUROCOPTER,AS 350 B2,RotType3,RW - Type 3 Light,HCW-(B2),ZK-HCW,563,Advanced Flight Limited
+2098,https://arena.nafc.org.au/resource/api/ext/aircraft/2098,HELICOPTER,EUROCOPTER,AS 350 BA,RotType3,RW - Type 3 Light,HDB-(BA),ZK-HDB,458,Central South Island Helicopters Limited
+2368,https://arena.nafc.org.au/resource/api/ext/aircraft/2368,HELICOPTER,EUROCOPTER,AS.350B2,RotType3,RW - Type 3 Light,HDL-(B2),ZK-HDL,549,MacKenzie Helicopters Limited
+2099,https://arena.nafc.org.au/resource/api/ext/aircraft/2099,HELICOPTER,MCDONNELL DOUGLAS HELICOPTER COMPANY,520N,RotType3,RW - Type 3 Light,HDN-(520N),ZK-HDN,458,Central South Island Helicopters Limited
+1503,https://arena.nafc.org.au/resource/api/ext/aircraft/1503,HELICOPTER,BELL HELICOPTER CO,206B,RotType3,RW - Type 3 Light,HDU-(JR),ZK-HDU,1,Stock Software (Testing Op)
+2094,https://arena.nafc.org.au/resource/api/ext/aircraft/2094,HELICOPTER,BELL HELICOPTER CO,206B,RotType3,RW - Type 3 Light,HDU-(JR),ZK-HDU,456,Beck Helicopters Limited
+2100,https://arena.nafc.org.au/resource/api/ext/aircraft/2100,HELICOPTER,MCDONNELL DOUGLAS HELICOPTER COMPANY,520N,RotType3,RW - Type 3 Light,HDW-(520N),ZK-HDW,458,Central South Island Helicopters Limited
+2199,https://arena.nafc.org.au/resource/api/ext/aircraft/2199,HELICOPTER,AIRBUS HELICOPTERS,AS 350 B3,RotType3,RW - Type 3 Light,HEE-(B3),ZK-HEE,492,Skywork Helicopters Limited
+316,https://arena.nafc.org.au/resource/api/ext/aircraft/316,HELICOPTER,BELL HELICOPTER CO,412 SP,RotType2,RW - Type 2 Medium,HELITAK 101,C-GBND,35,United Aero Helicopters
+295,https://arena.nafc.org.au/resource/api/ext/aircraft/295,HELICOPTER,BELL HELICOPTER CO,412,RotType2,RW - Type 2 Medium,HELITAK 102,C-FWTY,35,United Aero Helicopters
+2385,https://arena.nafc.org.au/resource/api/ext/aircraft/2385,HELICOPTER,SIKORSKY AIRCRAFT,UH-60A,RotType1,RW - Type 1 Heavy,HELITAK 125,N125FH,17,Kestrel Aviation P/L
+1484,https://arena.nafc.org.au/resource/api/ext/aircraft/1484,HELICOPTER,KAWASAKI HEAVY INDUSTRIES,BK117 B-2,RotType2,RW - Type 2 Medium,HELITAK 201,VH-VRP,330,CareFlight
+1485,https://arena.nafc.org.au/resource/api/ext/aircraft/1485,HELICOPTER,KAWASAKI HEAVY INDUSTRIES,BK117 B-2,RotType2,RW - Type 2 Medium,HELITAK 202,VH-VRQ,330,CareFlight
+2280,https://arena.nafc.org.au/resource/api/ext/aircraft/2280,HELICOPTER,BELL HELICOPTER TEXTRON CANADA LIMITED,412EP,RotType2,RW - Type 2 Medium,HELITAK 203,VH-VJD,118,Coulson Aviation (Australia) Pty
+2358,https://arena.nafc.org.au/resource/api/ext/aircraft/2358,HELICOPTER,BELL HELICOPTER TEXTRON CANADA LIMITED,412EP,RotType2,RW - Type 2 Medium,HELITAK 204,VH-VJF,118,Coulson Aviation (Australia) Pty
+2830,https://arena.nafc.org.au/resource/api/ext/aircraft/2830,HELICOPTER,BELL HELICOPTER TEXTRON CANADA LIMITED,412EP,RotType2,RW - Type 2 Medium,HELITAK 205,VH-NPV,330,CareFlight
+2013,https://arena.nafc.org.au/resource/api/ext/aircraft/2013,HELICOPTER,BELL HELICOPTER CO,212,RotType2,RW - Type 2 Medium,HELITAK 212,VH-NBN,4,Fleet Helicopters
+2014,https://arena.nafc.org.au/resource/api/ext/aircraft/2014,HELICOPTER,BELL HELICOPTER CO,212,RotType2,RW - Type 2 Medium,HELITAK 212,VH-NBN,23,Commercial Helicopters (Aust) Pty Ltd
+294,https://arena.nafc.org.au/resource/api/ext/aircraft/294,HELICOPTER,KAWASAKI HEAVY INDUSTRIES,BK117 B-2,RotType2,RW - Type 2 Medium,HELITAK 220,VH-UAX,35,United Aero Helicopters
+282,https://arena.nafc.org.au/resource/api/ext/aircraft/282,HELICOPTER,OAS PARTS LLC,UH-1H,RotType2,RW - Type 2 Medium,HELITAK 223,VH-OXE,71,Touchdown Helicopters Pty Limited
+371,https://arena.nafc.org.au/resource/api/ext/aircraft/371,HELICOPTER,KAWASAKI HEAVY INDUSTRIES	 LTD.,BK117 B-2,RotType2,RW - Type 2 Medium,HELITAK 224,VH-TKD,14,Helitreck
+20,https://arena.nafc.org.au/resource/api/ext/aircraft/20,HELICOPTER,KAWASAKI HEAVY INDUSTRIES,BK117 B-2,RotType2,RW - Type 2 Medium,HELITAK 225,VH-FHB,14,Helitreck
+31,https://arena.nafc.org.au/resource/api/ext/aircraft/31,HELICOPTER,KAWASAKI HEAVY INDUSTRIES,BK117 B-2,RotType2,RW - Type 2 Medium,HELITAK 226,VH-FHF,14,Helitreck
+33,https://arena.nafc.org.au/resource/api/ext/aircraft/33,HELICOPTER,KAWASAKI HEAVY INDUSTRIES,BK117 B-2,RotType2,RW - Type 2 Medium,HELITAK 227,VH-FHD,14,Helitreck
+52,https://arena.nafc.org.au/resource/api/ext/aircraft/52,HELICOPTER,BELL HELICOPTER CO,AMT UH-1H,RotType2,RW - Type 2 Medium,HELITAK 230,VH-UYH,25,Air T&G Pty Ltd
+2655,https://arena.nafc.org.au/resource/api/ext/aircraft/2655,HELICOPTER,UNICAL - BOEING,CH-47D,RotType1,RW - Type 1 Heavy,HELITAK 231,N40CU,118,Coulson Aviation (Australia) Pty
+2848,https://arena.nafc.org.au/resource/api/ext/aircraft/2848,HELICOPTER,SIKORSKY AIRCRAFT,EH-60A,RotType1,RW - Type 1 Heavy,HELITAK 233,N61AA,71,Touchdown Helicopters Pty Limited
+2326,https://arena.nafc.org.au/resource/api/ext/aircraft/2326,HELICOPTER,KAWASAKI HEAVY INDUSTRIES	 LTD.,BK117 B-2,RotType2,RW - Type 2 Medium,HELITAK 237,VH-VCB,103,Orange Helicopters
+279,https://arena.nafc.org.au/resource/api/ext/aircraft/279,HELICOPTER,BELL HELICOPTER CO,214B-1,RotType2,RW - Type 2 Medium,HELITAK 240,VH-SZV,48,McDermott Aviation Pty Ltd
+278,https://arena.nafc.org.au/resource/api/ext/aircraft/278,HELICOPTER,BELL HELICOPTER CO,214B-1,RotType2,RW - Type 2 Medium,HELITAK 241,VH-SYU,48,McDermott Aviation Pty Ltd
+1796,https://arena.nafc.org.au/resource/api/ext/aircraft/1796,HELICOPTER,BELL HELICOPTER CO,412EP,RotType2,RW - Type 2 Medium,HELITAK 248,VH-ESB,17,Kestrel Aviation P/L
+1128,https://arena.nafc.org.au/resource/api/ext/aircraft/1128,HELICOPTER,BELL HELICOPTER CO,412,RotType2,RW - Type 2 Medium,HELITAK 249,VH-XCN,17,Kestrel Aviation P/L
+1756,https://arena.nafc.org.au/resource/api/ext/aircraft/1756,HELICOPTER,BELL HELICOPTER CO,212,RotType2,RW - Type 2 Medium,HELITAK 251,C-GIUP,109,Valhalla Helicopters Pty Ltd.
+331,https://arena.nafc.org.au/resource/api/ext/aircraft/331,HELICOPTER,BELL HELICOPTER CO,205 A1++,RotType2,RW - Type 2 Medium,HELITAK 252,C-FPSZ,109,Valhalla Helicopters Pty Ltd.
+333,https://arena.nafc.org.au/resource/api/ext/aircraft/333,HELICOPTER,BELL HELICOPTER CO,205 A1++,RotType2,RW - Type 2 Medium,HELITAK 253,C-GRUV,109,Valhalla Helicopters Pty Ltd.
+330,https://arena.nafc.org.au/resource/api/ext/aircraft/330,HELICOPTER,BELL HELICOPTER CO,212,RotType2,RW - Type 2 Medium,HELITAK 254,C-GLFT,109,Valhalla Helicopters Pty Ltd.
+2612,https://arena.nafc.org.au/resource/api/ext/aircraft/2612,HELICOPTER,KAWASAKI HEAVY INDUSTRIES	 LTD.,BK117 B-2,RotType2,RW - Type 2 Medium,HELITAK 257,VH-FHZ,14,Helitreck
+705,https://arena.nafc.org.au/resource/api/ext/aircraft/705,HELICOPTER,OAS PARTS LLC,UH-1H,RotType2,RW - Type 2 Medium,HELITAK 258,VH-OXU,193,NSW Helicopters
+741,https://arena.nafc.org.au/resource/api/ext/aircraft/741,HELICOPTER,OAS PARTS LLC,UH-1H,RotType2,RW - Type 2 Medium,HELITAK 258,VH-OXU,244,Stock-Air Heliworks Pty Ltd
+1714,https://arena.nafc.org.au/resource/api/ext/aircraft/1714,HELICOPTER,SIKORSKY AIRCRAFT,UH-60A,RotType1,RW - Type 1 Heavy,HELITAK 260,N563DJ,377,Alamah Pty Ltd
+1177,https://arena.nafc.org.au/resource/api/ext/aircraft/1177,HELICOPTER,KAWASAKI HEAVY INDUSTRIES,BK117 B-2,RotType2,RW - Type 2 Medium,HELITAK 261,VH-BIF,16,Precision Helicopters
+22,https://arena.nafc.org.au/resource/api/ext/aircraft/22,HELICOPTER,GARLICK HELICOPTERS INC,UH-1H,RotType2,RW - Type 2 Medium,HELITAK 263,VH-CPO,16,Precision Helicopters
+1073,https://arena.nafc.org.au/resource/api/ext/aircraft/1073,HELICOPTER,GARLICK HELICOPTERS INC,UH-1H,RotType2,RW - Type 2 Medium,HELITAK 263,VH-CPO,39,Richmond Valley Aviation Pty Ltd
+285,https://arena.nafc.org.au/resource/api/ext/aircraft/285,HELICOPTER,KAWASAKI HEAVY INDUSTRIES,BK117 B-2,RotType2,RW - Type 2 Medium,HELITAK 267,VH-UAN,35,United Aero Helicopters
+1594,https://arena.nafc.org.au/resource/api/ext/aircraft/1594,HELICOPTER,BELL HELICOPTER TEXTRON,412,RotType2,RW - Type 2 Medium,HELITAK 270,VH-NSC,10,Sydney Helicopters
+1535,https://arena.nafc.org.au/resource/api/ext/aircraft/1535,HELICOPTER,BELL HELICOPTER CO,205 A1,RotType2,RW - Type 2 Medium,HELITAK 271,VH-HUE,8,ODriscoll Aviation
+2699,https://arena.nafc.org.au/resource/api/ext/aircraft/2699,HELICOPTER,BELL HELICOPTER TEXTRON INC.,205A-1,null,Unspecified,HELITAK 271,VH-HUE,583,Pay's Air Charter
+2809,https://arena.nafc.org.au/resource/api/ext/aircraft/2809,HELICOPTER,BELL HELICOPTER TEXTRON INC.,205A-1,null,Unspecified,HELITAK 271,VH-HUE,70,Heli-Central Pty Ltd
+37,https://arena.nafc.org.au/resource/api/ext/aircraft/37,HELICOPTER,WILLIAMS HELICOPTER CORPORATION,UH-1H,RotType2,RW - Type 2 Medium,HELITAK 272,VH-LUE,14,Helitreck
+317,https://arena.nafc.org.au/resource/api/ext/aircraft/317,HELICOPTER,BELL HELICOPTER CO,412 SP,RotType2,RW - Type 2 Medium,HELITAK 274,C-FWTQ,35,United Aero Helicopters
+2252,https://arena.nafc.org.au/resource/api/ext/aircraft/2252,HELICOPTER,BELL HELICOPTER CO,412 SP,RotType2,RW - Type 2 Medium,HELITAK 276,VH-NVS,10,Sydney Helicopters
+1081,https://arena.nafc.org.au/resource/api/ext/aircraft/1081,HELICOPTER,TANDEM ROTOR,CH47D,RotType1,RW - Type 1 Heavy,HELITAK 279,N948CH,35,United Aero Helicopters
+1833,https://arena.nafc.org.au/resource/api/ext/aircraft/1833,HELICOPTER,SIKORSKY AIRCRAFT,UH-60A,RotType1,RW - Type 1 Heavy,HELITAK 280,N620TJ,377,Alamah Pty Ltd
+246,https://arena.nafc.org.au/resource/api/ext/aircraft/246,HELICOPTER,GARLICK HELICOPTERS INC,UH-1H,RotType2,RW - Type 2 Medium,HELITAK 282,VH-RSL,85,National Helicopters Pty Ltd
+2251,https://arena.nafc.org.au/resource/api/ext/aircraft/2251,HELICOPTER,BELL HELICOPTER CO,412,RotType2,RW - Type 2 Medium,HELITAK 284,VH-ZMK,10,Sydney Helicopters
+1846,https://arena.nafc.org.au/resource/api/ext/aircraft/1846,HELICOPTER,BOEING - VERTOL,234UT,RotType1,RW - Type 1 Heavy,HELITAK 290,P2-CHY,377,Alamah Pty Ltd
+2332,https://arena.nafc.org.au/resource/api/ext/aircraft/2332,HELICOPTER,BOEING - VERTOL,234UT,RotType1,RW - Type 1 Heavy,HELITAK 291,P2-CHI,377,Alamah Pty Ltd
+213,https://arena.nafc.org.au/resource/api/ext/aircraft/213,HELICOPTER,EUROCOPTER DEUTSCLAND GMBH,MBB-BK 117 C-2,RotType2,RW - Type 2 Medium,HELITAK 294,VH-TNG,76,Truenorth Helicopters
+1902,https://arena.nafc.org.au/resource/api/ext/aircraft/1902,HELICOPTER,SIKORSKY AIRCRAFT,S64E,RotType1,RW - Type 1 Heavy,HELITAK 295,N4035S,76,Truenorth Helicopters
+1001,https://arena.nafc.org.au/resource/api/ext/aircraft/1001,HELICOPTER,BELL HELICOPTER CO,212,RotType2,RW - Type 2 Medium,HELITAK 296,VH-UEC,50,EPS Helicopter Services
+1015,https://arena.nafc.org.au/resource/api/ext/aircraft/1015,HELICOPTER,BELL HELICOPTER CO,204B,RotType2,RW - Type 2 Medium,HELITAK 297,VH-VRC,32,Skyhook Helicopters
+2761,https://arena.nafc.org.au/resource/api/ext/aircraft/2761,HELICOPTER,BELL HELICOPTER TEXTRON CANADA LIMITED,412EP,RotType2,RW - Type 2 Medium,HELITAK 331,VH-JQR,3,Microflite Helicopter Services
+43,https://arena.nafc.org.au/resource/api/ext/aircraft/43,HELICOPTER,BELL HELICOPTER CO,412,RotType2,RW - Type 2 Medium,HELITAK 332,VH-KAC,17,Kestrel Aviation P/L
+1491,https://arena.nafc.org.au/resource/api/ext/aircraft/1491,HELICOPTER,BELL HELICOPTER TEXTRON CANADA LIMITED,412EP,RotType2,RW - Type 2 Medium,HELITAK 333,VH-KHW,17,Kestrel Aviation P/L
+2311,https://arena.nafc.org.au/resource/api/ext/aircraft/2311,HELICOPTER,BELL HELICOPTER TEXTRON,412,RotType2,RW - Type 2 Medium,HELITAK 334,VH-KWU,17,Kestrel Aviation P/L
+217,https://arena.nafc.org.au/resource/api/ext/aircraft/217,HELICOPTER,BELL HELICOPTER CO,214B-1,RotType2,RW - Type 2 Medium,HELITAK 335,N281JL,48,McDermott Aviation Pty Ltd
+605,https://arena.nafc.org.au/resource/api/ext/aircraft/605,HELICOPTER,BELL HELICOPTER CO,204B,RotType2,RW - Type 2 Medium,HELITAK 336,VH-EJL,15,Forest Air Helicopters (Aust) Pty Ltd
+45,https://arena.nafc.org.au/resource/api/ext/aircraft/45,HELICOPTER,BELL HELICOPTER CO,212,RotType2,RW - Type 2 Medium,HELITAK 337,VH-NEN,17,Kestrel Aviation P/L
+1494,https://arena.nafc.org.au/resource/api/ext/aircraft/1494,HELICOPTER,BELL HELICOPTER CO,212,RotType2,RW - Type 2 Medium,HELITAK 338,VH-JJR,3,Microflite Helicopter Services
+251,https://arena.nafc.org.au/resource/api/ext/aircraft/251,HELICOPTER,BELL HELICOPTER CO,214B-1,RotType2,RW - Type 2 Medium,HELITAK 339,N254SM,48,McDermott Aviation Pty Ltd
+26,https://arena.nafc.org.au/resource/api/ext/aircraft/26,HELICOPTER,BELL HELICOPTER CO,212,RotType2,RW - Type 2 Medium,HELITAK 340,VH-JJY,9,Jayrow Helicopters Pty. Ltd.
+2697,https://arena.nafc.org.au/resource/api/ext/aircraft/2697,HELICOPTER,UNICAL - BOEING,CH-47D,RotType1,RW - Type 1 Heavy,HELITAK 341,N42CU,118,Coulson Aviation (Australia) Pty
+2701,https://arena.nafc.org.au/resource/api/ext/aircraft/2701,HELICOPTER,SIKORSKY AIRCRAFT,S64F,RotType1,RW - Type 1 Heavy,HELITAK 342,N163AC,17,Kestrel Aviation P/L
+339,https://arena.nafc.org.au/resource/api/ext/aircraft/339,HELICOPTER,BELL HELICOPTER CO,204B,RotType2,RW - Type 2 Medium,HELITAK 343,VH-EQW,15,Forest Air Helicopters (Aust) Pty Ltd
+47,https://arena.nafc.org.au/resource/api/ext/aircraft/47,HELICOPTER,BELL HELICOPTER CO,212,RotType2,RW - Type 2 Medium,HELITAK 344,VH-KHY,17,Kestrel Aviation P/L
+44,https://arena.nafc.org.au/resource/api/ext/aircraft/44,HELICOPTER,BELL HELICOPTER CO,212,RotType2,RW - Type 2 Medium,HELITAK 345,VH-NNN,17,Kestrel Aviation P/L
+431,https://arena.nafc.org.au/resource/api/ext/aircraft/431,HELICOPTER,BELL HELICOPTER TEXTRON CANADA LTD,412,RotType2,RW - Type 2 Medium,HELITAK 346,VH-KHU,17,Kestrel Aviation P/L
+1694,https://arena.nafc.org.au/resource/api/ext/aircraft/1694,HELICOPTER,BELL HELICOPTER TEXTRON,214ST,RotType1,RW - Type 1 Heavy,HELITAK 347,N391AL,48,McDermott Aviation Pty Ltd
+1376,https://arena.nafc.org.au/resource/api/ext/aircraft/1376,HELICOPTER,SIKORSKY AIRCRAFT,S61N,RotType1,RW - Type 1 Heavy,HELITAK 348,C-FXEC,118,Coulson Aviation (Australia) Pty
+2700,https://arena.nafc.org.au/resource/api/ext/aircraft/2700,HELICOPTER,EUROCOPTER,AS 332 L1,RotType1,RW - Type 1 Heavy,HELITAK 349,VH-KSI,17,Kestrel Aviation P/L
+2357,https://arena.nafc.org.au/resource/api/ext/aircraft/2357,HELICOPTER,BELL HELICOPTER CO,212,RotType2,RW - Type 2 Medium,HELITAK 365,VH-JWV,15,Forest Air Helicopters (Aust) Pty Ltd
+42,https://arena.nafc.org.au/resource/api/ext/aircraft/42,HELICOPTER,BELL HELICOPTER CO,212,RotType2,RW - Type 2 Medium,HELITAK 366,VH-NSY,17,Kestrel Aviation P/L
+46,https://arena.nafc.org.au/resource/api/ext/aircraft/46,HELICOPTER,BELL HELICOPTER CO,212,RotType2,RW - Type 2 Medium,HELITAK 368,VH-KHO,17,Kestrel Aviation P/L
+1842,https://arena.nafc.org.au/resource/api/ext/aircraft/1842,HELICOPTER,SIKORSKY AIRCRAFT,S61N,RotType1,RW - Type 1 Heavy,HELITAK 369,C-FIZA,182,Paton Air Pty Ltd
+275,https://arena.nafc.org.au/resource/api/ext/aircraft/275,HELICOPTER,BELL HELICOPTER CO,214B-1,RotType2,RW - Type 2 Medium,HELITAK 404,P2-MLJ,48,McDermott Aviation Pty Ltd
+1824,https://arena.nafc.org.au/resource/api/ext/aircraft/1824,HELICOPTER,BELL HELICOPTER CO,214B-1,RotType2,RW - Type 2 Medium,HELITAK 408,C-GOOB,48,McDermott Aviation Pty Ltd
+186,https://arena.nafc.org.au/resource/api/ext/aircraft/186,HELICOPTER,BELL HELICOPTER CO,204B,RotType2,RW - Type 2 Medium,HELITAK 416,VH-OCD,48,McDermott Aviation Pty Ltd
+634,https://arena.nafc.org.au/resource/api/ext/aircraft/634,HELICOPTER,BELL HELICOPTER CO,214B-1,RotType2,RW - Type 2 Medium,HELITAK 417,VH-SUH,48,McDermott Aviation Pty Ltd
+185,https://arena.nafc.org.au/resource/api/ext/aircraft/185,HELICOPTER,BELL HELICOPTER CO,214B-1,RotType2,RW - Type 2 Medium,HELITAK 418,VH-SMI,48,McDermott Aviation Pty Ltd
+668,https://arena.nafc.org.au/resource/api/ext/aircraft/668,HELICOPTER,BELL HELICOPTER TEXTRON,412,RotType2,RW - Type 2 Medium,HELITAK 421,VH-ZVP,136,Nautilus Aviation
+198,https://arena.nafc.org.au/resource/api/ext/aircraft/198,HELICOPTER,WILLIAMS HELICOPTER CORPORATION,UH-1H,RotType2,RW - Type 2 Medium,HELITAK 422,VH-UEE,52,Calibre Aviation
+1568,https://arena.nafc.org.au/resource/api/ext/aircraft/1568,HELICOPTER,BELL HELICOPTER CO,UH-1H,RotType2,RW - Type 2 Medium,HELITAK 423,VH-UHE,61,Dwyer Aviation Services
+1861,https://arena.nafc.org.au/resource/api/ext/aircraft/1861,HELICOPTER,BELL HELICOPTER CO,UH-1H,RotType2,RW - Type 2 Medium,HELITAK 423,VH-UHE,200,Stirling Helicopters Pty Ltd
+2351,https://arena.nafc.org.au/resource/api/ext/aircraft/2351,HELICOPTER,BELL HELICOPTER CO,UH-1H,RotType2,RW - Type 2 Medium,HELITAK 423,VH-UHE,538,Helibiz
+2717,https://arena.nafc.org.au/resource/api/ext/aircraft/2717,HELICOPTER,BELL HELICOPTER CO,214B,null,Unspecified,HELITAK 424,VH-SUF,48,McDermott Aviation Pty Ltd
+669,https://arena.nafc.org.au/resource/api/ext/aircraft/669,HELICOPTER,EUROCOPTER FRANCE,AS.365N2,RotType2,RW - Type 2 Medium,HELITAK 429,N38MD,48,McDermott Aviation Pty Ltd
+1162,https://arena.nafc.org.au/resource/api/ext/aircraft/1162,HELICOPTER,BELL HELICOPTER CO,214B-1,RotType2,RW - Type 2 Medium,HELITAK 430,VH-SEK,48,McDermott Aviation Pty Ltd
+1593,https://arena.nafc.org.au/resource/api/ext/aircraft/1593,HELICOPTER,EUROCOPTER FRANCE,AS.365N3,RotType2,RW - Type 2 Medium,HELITAK 439,N365JA,48,McDermott Aviation Pty Ltd
+234,https://arena.nafc.org.au/resource/api/ext/aircraft/234,HELICOPTER,KAWASAKI HEAVY INDUSTRIES,BK117 B-2,RotType2,RW - Type 2 Medium,HELITAK 441,VH-SLA,82,Westpac Life Saver Helicopter
+2211,https://arena.nafc.org.au/resource/api/ext/aircraft/2211,HELICOPTER,KAWASAKI HEAVY INDUSTRIES,BK117 B-2,RotType2,RW - Type 2 Medium,HELITAK 441,VH-SLA,136,Nautilus Aviation
+233,https://arena.nafc.org.au/resource/api/ext/aircraft/233,HELICOPTER,KAWASAKI HEAVY INDUSTRIES,BK117 B-2,RotType2,RW - Type 2 Medium,HELITAK 442,VH-SLU,82,Westpac Life Saver Helicopter
+2223,https://arena.nafc.org.au/resource/api/ext/aircraft/2223,HELICOPTER,KAWASAKI HEAVY INDUSTRIES,BK117 B-2,RotType2,RW - Type 2 Medium,HELITAK 442,VH-SLU,136,Nautilus Aviation
+2273,https://arena.nafc.org.au/resource/api/ext/aircraft/2273,HELICOPTER,BELL HELICOPTER COMPANY,UH-1H,null,Unspecified,HELITAK 468,VH-UHH,70,Heli-Central Pty Ltd
+280,https://arena.nafc.org.au/resource/api/ext/aircraft/280,HELICOPTER,EUROCOPTER FRANCE,AS.365N2,RotType2,RW - Type 2 Medium,HELITAK 482,VH-IYS,48,McDermott Aviation Pty Ltd
+1223,https://arena.nafc.org.au/resource/api/ext/aircraft/1223,HELICOPTER,MIL,MI-8,RotType1,RW - Type 1 Heavy,HELITAK 490,P2-MHM,302,Hevilift Australia (Rotary Wing) Pty Ltd
+1918,https://arena.nafc.org.au/resource/api/ext/aircraft/1918,HELICOPTER,MIL,MI-8,RotType1,RW - Type 1 Heavy,HELITAK 490,P2-MHM,84,Aeropower [OLD - DO NOT USE]
+2269,https://arena.nafc.org.au/resource/api/ext/aircraft/2269,HELICOPTER,SIKORSKY AIRCRAFT,UH-60A,RotType1,RW - Type 1 Heavy,HELITAK 513,VH-UHS,131,Aerotech Helicopters
+2656,https://arena.nafc.org.au/resource/api/ext/aircraft/2656,HELICOPTER,SIKORSKY AIRCRAFT,UH-60A,RotType1,RW - Type 1 Heavy,HELITAK 514,VH-UHG,131,Aerotech Helicopters
+169,https://arena.nafc.org.au/resource/api/ext/aircraft/169,HELICOPTER,BELL HELICOPTER CO,214B-1,RotType2,RW - Type 2 Medium,HELITAK 671,N1073W,48,McDermott Aviation Pty Ltd
+239,https://arena.nafc.org.au/resource/api/ext/aircraft/239,HELICOPTER,BELL HELICOPTER CO,214B-1,RotType2,RW - Type 2 Medium,HELITAK 672,N234PH,48,McDermott Aviation Pty Ltd
+1926,https://arena.nafc.org.au/resource/api/ext/aircraft/1926,HELICOPTER,BELL HELICOPTER CO,214B-1,RotType2,RW - Type 2 Medium,HELITAK 673,N214LJ,48,McDermott Aviation Pty Ltd
+187,https://arena.nafc.org.au/resource/api/ext/aircraft/187,HELICOPTER,BELL HELICOPTER CO,214B-1,RotType2,RW - Type 2 Medium,HELITAK 674,N49732,48,McDermott Aviation Pty Ltd
+244,https://arena.nafc.org.au/resource/api/ext/aircraft/244,HELICOPTER,BELL HELICOPTER CO,214B-1,RotType2,RW - Type 2 Medium,HELITAK 676,N216PJ,48,McDermott Aviation Pty Ltd
+248,https://arena.nafc.org.au/resource/api/ext/aircraft/248,HELICOPTER,BELL HELICOPTER CO,214B-1,RotType2,RW - Type 2 Medium,HELITAK 677,N217PJ,48,McDermott Aviation Pty Ltd
+2736,https://arena.nafc.org.au/resource/api/ext/aircraft/2736,HELICOPTER,SIKORSKY AIRCRAFT,UH-60A,RotType1,RW - Type 1 Heavy,HELITAK 678,N260UH,35,United Aero Helicopters
+1862,https://arena.nafc.org.au/resource/api/ext/aircraft/1862,HELICOPTER,SIKORSKY AIRCRAFT,EH-60A,RotType1,RW - Type 1 Heavy,HELITAK 679,ZK-HKU,35,United Aero Helicopters
+2521,https://arena.nafc.org.au/resource/api/ext/aircraft/2521,HELICOPTER,SIKORSKY AIRCRAFT,UH-60A,RotType1,RW - Type 1 Heavy,HELITAK 679,ZK-HKU,374,Kahu NZ
+1445,https://arena.nafc.org.au/resource/api/ext/aircraft/1445,HELICOPTER,SIKORSKY AIRCRAFT,S64E,RotType1,RW - Type 1 Heavy,HELITAK 730,N189AC,17,Kestrel Aviation P/L
+541,https://arena.nafc.org.au/resource/api/ext/aircraft/541,HELICOPTER,SIKORSKY AIRCRAFT,S64E,RotType1,RW - Type 1 Heavy,HELITAK 733,N154AC,17,Kestrel Aviation P/L
+540,https://arena.nafc.org.au/resource/api/ext/aircraft/540,HELICOPTER,SIKORSKY AIRCRAFT,S64E,RotType1,RW - Type 1 Heavy,HELITAK 734,N218AC,17,Kestrel Aviation P/L
+1773,https://arena.nafc.org.au/resource/api/ext/aircraft/1773,HELICOPTER,SIKORSKY AIRCRAFT,S64E,RotType1,RW - Type 1 Heavy,HELITAK 739,N247AC,17,Kestrel Aviation P/L
+2491,https://arena.nafc.org.au/resource/api/ext/aircraft/2491,HELICOPTER,EUROCOPTER DEUTSCHLAND GMBH,MBB - BK 117 B-2,RotType2,RW - Type 2 Medium,HELITAK 750,VH-ATZ,173,Rotorlift Pty Ltd
+18,https://arena.nafc.org.au/resource/api/ext/aircraft/18,HELICOPTER,GARLICK HELICOPTERS INC,UH-1B,RotType2,RW - Type 2 Medium,HELITAK 776,VH-DHY,12,BlanchAir Pty Ltd
+827,https://arena.nafc.org.au/resource/api/ext/aircraft/827,HELICOPTER,GARLICK HELICOPTERS INC,UH-1B,RotType2,RW - Type 2 Medium,HELITAK 776,VH-DHY,152,Rotorwing Helicopters Pty. Ltd.
+1600,https://arena.nafc.org.au/resource/api/ext/aircraft/1600,HELICOPTER,GARLICK HELICOPTERS INC,UH-1B,RotType2,RW - Type 2 Medium,HELITAK 776,VH-DHY,30,Tasmanian Helicopters Pty Ltd
+1521,https://arena.nafc.org.au/resource/api/ext/aircraft/1521,HELICOPTER,BELL HELICOPTER TEXTRON,212,RotType2,RW - Type 2 Medium,HELITAK 777,VH-NVN,340,SMOKEY AVIATION PTY LTD
+1841,https://arena.nafc.org.au/resource/api/ext/aircraft/1841,HELICOPTER,BELL HELICOPTER TEXTRON,212,RotType2,RW - Type 2 Medium,HELITAK 777,VH-NVN,155,Helicopter Resources pty ltd
+2143,https://arena.nafc.org.au/resource/api/ext/aircraft/2143,HELICOPTER,KAWASAKI HEAVY INDUSTRIES,BK117 B-2,RotType2,RW - Type 2 Medium,HEM-(BK),ZK-HEM,468,Heli Otago
+2154,https://arena.nafc.org.au/resource/api/ext/aircraft/2154,HELICOPTER,EUROCOPTER,AS 350 B3,RotType3,RW - Type 3 Light,HEN-(B3),ZK-HEN,473,Heliventures NZ Limited
+2018,https://arena.nafc.org.au/resource/api/ext/aircraft/2018,HELICOPTER,EUROCOPTER,AS 350 B2,RotType3,RW - Type 3 Light,HFA-(B2),ZK-HFA,434,Mid West Helicopters
+2213,https://arena.nafc.org.au/resource/api/ext/aircraft/2213,HELICOPTER,EUROCOPTER,AS 350 B2,RotType3,RW - Type 3 Light,HFF-(B2),ZK-HFF,496,Wanaka Helicopters Limited
+2914,https://arena.nafc.org.au/resource/api/ext/aircraft/2914,HELICOPTER,EUROCOPTER,AS 350 B2,RotType3,RW - Type 3 Light,HFH-(B2),ZK-HFH,606,Glacier Country Helicopters Limited
+2178,https://arena.nafc.org.au/resource/api/ext/aircraft/2178,HELICOPTER,MCDONNELL DOUGLAS HELICOPTER COMPANY,520N,RotType3,RW - Type 3 Light,HFJ-(520N),ZK-HFJ,485,Rangitikei Helicopters Limited
+2162,https://arena.nafc.org.au/resource/api/ext/aircraft/2162,HELICOPTER,MCDONNELL DOUGLAS HELICOPTER COMPANY,369E,RotType3,RW - Type 3 Light,HFT-(500),ZK-HFT,476,Lister Helicopters Limited
+2546,https://arena.nafc.org.au/resource/api/ext/aircraft/2546,HELICOPTER,EUROCOPTER,AS 350 BA,RotType3,RW - Type 3 Light,HFZ-(BA),ZK-HFZ,565,Nelson Tasman Air & Inflite Charters
+2097,https://arena.nafc.org.au/resource/api/ext/aircraft/2097,HELICOPTER,EUROCOPTER,AS 350 BA,RotType3,RW - Type 3 Light,HGO-(BA),ZK-HGO,458,Central South Island Helicopters Limited
+2050,https://arena.nafc.org.au/resource/api/ext/aircraft/2050,HELICOPTER,EUROCOPTER,AS 350 B2,RotType3,RW - Type 3 Light,HGQ-(B2),ZK-HGQ,440,Heli Glenorchy/Heliworks Queenstown
+2086,https://arena.nafc.org.au/resource/api/ext/aircraft/2086,HELICOPTER,EUROCOPTER,AS 350 B3,RotType3,RW - Type 3 Light,HGR-(B3),ZK-HGR,455,Aspiring Helicopters Limited
+2111,https://arena.nafc.org.au/resource/api/ext/aircraft/2111,HELICOPTER,MESSERSCHMITT-BOLKOW-BLOHM GMBH,MBB BK 117 B-2,RotType2,RW - Type 2 Medium,HGU-(BK),ZK-HGU,461,GCH Aviation
+2109,https://arena.nafc.org.au/resource/api/ext/aircraft/2109,HELICOPTER,KAWASAKI HEAVY INDUSTRIES,BK117 B-2,RotType2,RW - Type 2 Medium,HGW-(BK),ZK-HGW,461,GCH Aviation
+2090,https://arena.nafc.org.au/resource/api/ext/aircraft/2090,HELICOPTER,BELL HELICOPTER CO,UH-1B,RotType2,RW - Type 2 Medium,HHA-(UH-1),ZK-HHA,456,Beck Helicopters Limited
+2091,https://arena.nafc.org.au/resource/api/ext/aircraft/2091,HELICOPTER,BELL HELICOPTER CO,UH-1B,RotType2,RW - Type 2 Medium,HHB-(UH-1),ZK-HHB,456,Beck Helicopters Limited
+1506,https://arena.nafc.org.au/resource/api/ext/aircraft/1506,HELICOPTER,BELL HELICOPTER CO,UH-1B,RotType2,RW - Type 2 Medium,HHF-(UH-1),ZK-HHF,1,Stock Software (Testing Op)
+2092,https://arena.nafc.org.au/resource/api/ext/aircraft/2092,HELICOPTER,BELL HELICOPTER CO,UH-1B,RotType2,RW - Type 2 Medium,HHF-(UH-1),ZK-HHF,456,Beck Helicopters Limited
+2219,https://arena.nafc.org.au/resource/api/ext/aircraft/2219,HELICOPTER,HUGHES HELICOPTERS,369D,RotType3,RW - Type 3 Light,HHG-(500),ZK-HHG,497,Charteris Choppers
+2227,https://arena.nafc.org.au/resource/api/ext/aircraft/2227,HELICOPTER,EUROCOPTER,AS 350 B2,RotType3,RW - Type 3 Light,HHK-(B2),ZK-HHK,500,V3 Heli Limited
+2234,https://arena.nafc.org.au/resource/api/ext/aircraft/2234,HELICOPTER,BELL HELICOPTER CO,206L-4,RotType3,RW - Type 3 Light,HHX-(LR),ZK-HHX,502,Heli Resources 2012 Limited
+2842,https://arena.nafc.org.au/resource/api/ext/aircraft/2842,HELICOPTER,AIRBUS HELICOPTERS,AS 350 B2,RotType3,RW - Type 3 Light,HHZ-(B2),ZK-HHZ,598,WINDHAWK HELICOPTERS
+2528,https://arena.nafc.org.au/resource/api/ext/aircraft/2528,HELICOPTER,MCDONNELL DOUGLAS HELICOPTER COMPANY,369E,RotType3,RW - Type 3 Light,HIB-(369),ZK-HIB,445,Alpine Springs Helicopters
+2216,https://arena.nafc.org.au/resource/api/ext/aircraft/2216,HELICOPTER,AEROSPATIALE INDUSTRIES,AS350 SD1,RotType3,RW - Type 3 Light,HIH-(BA),ZK-HIH,496,Wanaka Helicopters Limited
+2343,https://arena.nafc.org.au/resource/api/ext/aircraft/2343,HELICOPTER,AIRBUS HELICOPTERS,AS 350 B3E,RotType3,RW - Type 3 Light,HIP-(B3),ZK-HIP,532,Helisika Helicopters
+2236,https://arena.nafc.org.au/resource/api/ext/aircraft/2236,HELICOPTER,BELL HELICOPTER CO,206B (III),RotType3,RW - Type 3 Light,HIX-(JR),ZK-HIX,502,Heli Resources 2012 Limited
+2657,https://arena.nafc.org.au/resource/api/ext/aircraft/2657,HELICOPTER,KAWASAKI HEAVY INDUSTRIES,BK117 B-2,RotType2,RW - Type 2 Medium,HJC-(BK),ZK-HJC,461,GCH Aviation
+2614,https://arena.nafc.org.au/resource/api/ext/aircraft/2614,HELICOPTER,BELL HELICOPTER CO,206B (III),RotType3,RW - Type 3 Light,HJI-(JR),ZK-HJI,576,Marlborough Helicopters
+2131,https://arena.nafc.org.au/resource/api/ext/aircraft/2131,HELICOPTER,KAWASAKI HEAVY INDUSTRIES,BK117 B-2,RotType2,RW - Type 2 Medium,HJK-(BK),ZK-HJK,468,Heli Otago
+2081,https://arena.nafc.org.au/resource/api/ext/aircraft/2081,HELICOPTER,AEROSPATIALE INDUSTRIES,AS350 FX2,RotType3,RW - Type 3 Light,HJM-(FX2),ZK-HJM,453,Amuri Helicopters Limited
+2592,https://arena.nafc.org.au/resource/api/ext/aircraft/2592,HELICOPTER,MCDONNELL DOUGLAS HELICOPTER COMPANY,369D,RotType3,RW - Type 3 Light,HJO-(500),ZK-HJO,559,Fiordland Helicopters Ltd
+2088,https://arena.nafc.org.au/resource/api/ext/aircraft/2088,HELICOPTER,MCDONNELL DOUGLAS HELICOPTER COMPANY,369E,RotType3,RW - Type 3 Light,HJS-(500),ZK-HJS,455,Aspiring Helicopters Limited
+2232,https://arena.nafc.org.au/resource/api/ext/aircraft/2232,HELICOPTER,BELL HELICOPTER CO,UH-1H,RotType2,RW - Type 2 Medium,HJX-(UH-1),ZK-HJX,502,Heli Resources 2012 Limited
+2541,https://arena.nafc.org.au/resource/api/ext/aircraft/2541,HELICOPTER,EUROCOPTER,AS 350 B2,RotType3,RW - Type 3 Light,HJZ-(B2),ZK-HJZ,565,Nelson Tasman Air & Inflite Charters
+2084,https://arena.nafc.org.au/resource/api/ext/aircraft/2084,HELICOPTER,EUROCOPTER,AS 350 B2,RotType3,RW - Type 3 Light,HKA-(B2),ZK-HKA,454,Anderson Helicopters Limited
+2053,https://arena.nafc.org.au/resource/api/ext/aircraft/2053,HELICOPTER,EUROCOPTER,AS 350 B3,RotType3,RW - Type 3 Light,HKC-(B3),ZK-HKC,441,Helicopter Services (BOP) Limited
+2897,https://arena.nafc.org.au/resource/api/ext/aircraft/2897,HELICOPTER,BELL HELICOPTER CO,206L-1,RotType3,RW - Type 3 Light,HKE-(LR),ZK-HKE,620,Helicopter Charter Karamea
+2061,https://arena.nafc.org.au/resource/api/ext/aircraft/2061,HELICOPTER,EUROCOPTER,AS 350 B2,RotType3,RW - Type 3 Light,HKQ-(B2),ZK-HKQ,446,Country Helicopters Limited
+2093,https://arena.nafc.org.au/resource/api/ext/aircraft/2093,HELICOPTER,BELL HELICOPTER CO,206B,RotType3,RW - Type 3 Light,HKR-(JR),ZK-HKR,456,Beck Helicopters Limited
+2089,https://arena.nafc.org.au/resource/api/ext/aircraft/2089,HELICOPTER,MCDONNELL DOUGLAS HELICOPTER COMPANY,369D,RotType3,RW - Type 3 Light,HKS-(500),ZK-HKS,455,Aspiring Helicopters Limited
+2167,https://arena.nafc.org.au/resource/api/ext/aircraft/2167,HELICOPTER,BELL HELICOPTER CO,206L-1,RotType3,RW - Type 3 Light,HKT-(LR),ZK-HTK,478,Highland Helicopters
+2057,https://arena.nafc.org.au/resource/api/ext/aircraft/2057,HELICOPTER,EUROCOPTER,EC 130 B4,RotType3,RW - Type 3 Light,HKW-(EC130),ZK-HKW,444,Way to Go Heliservices
+2531,https://arena.nafc.org.au/resource/api/ext/aircraft/2531,HELICOPTER,EUROCOPTER,AS.350B2,RotType3,RW - Type 3 Light,HMD-(B2),ZK-HMD,494,Southern Lakes Helicopters Limited
+2828,https://arena.nafc.org.au/resource/api/ext/aircraft/2828,HELICOPTER,EUROCOPTER,AS 350 BA,RotType3,RW - Type 3 Light,HMG-(BA),ZK-HMG,469,Helicopters South Canterbury 2015 Limited
+2051,https://arena.nafc.org.au/resource/api/ext/aircraft/2051,HELICOPTER,AEROSPATIALE,355F1,RotType3,RW - Type 3 Light,HML-(355),ZK-HML,440,Heli Glenorchy/Heliworks Queenstown
+2104,https://arena.nafc.org.au/resource/api/ext/aircraft/2104,HELICOPTER,MESSERSCHMITT-BOLKOW-BLOHM GMBH,MBB BK 117 B-2,RotType2,RW - Type 2 Medium,HMR-(BK),ZK-HMR,461,GCH Aviation
+2024,https://arena.nafc.org.au/resource/api/ext/aircraft/2024,HELICOPTER,EUROCOPTER,AS 350 B2,RotType3,RW - Type 3 Light,HNC-(B2),ZK-HNC,435,Christchurch Helicopters
+2023,https://arena.nafc.org.au/resource/api/ext/aircraft/2023,HELICOPTER,EUROCOPTER,AS 350 B2,RotType3,RW - Type 3 Light,HND-(B2),ZK-HND,435,Christchurch Helicopters
+2150,https://arena.nafc.org.au/resource/api/ext/aircraft/2150,HELICOPTER,EUROCOPTER,AS 350 B2,RotType3,RW - Type 3 Light,HNL-(B2),ZK-HNL,472,Heli Sika Limited
+2529,https://arena.nafc.org.au/resource/api/ext/aircraft/2529,HELICOPTER,HUGHES HELICOPTERS,369D,RotType3,RW - Type 3 Light,HNT-(500),ZK-HNT,498,Wairarapa Helicopters Limited
+2066,https://arena.nafc.org.au/resource/api/ext/aircraft/2066,HELICOPTER,EUROCOPTER,AS 350 B2,RotType3,RW - Type 3 Light,HNU-(B2),ZK-HNU,448,Te Anau Helicopter Services Ltd
+2027,https://arena.nafc.org.au/resource/api/ext/aircraft/2027,HELICOPTER,MCDONNELL DOUGLAS HELICOPTER COMPANY,520N,RotType3,RW - Type 3 Light,HNV-(520N),ZK-HNV,435,Christchurch Helicopters
+2080,https://arena.nafc.org.au/resource/api/ext/aircraft/2080,HELICOPTER,MCDONNELL DOUGLAS HELICOPTER COMPANY,369E,RotType3,RW - Type 3 Light,HNW-(500),ZK-HNW,452,Alpine Helicopters
+2762,https://arena.nafc.org.au/resource/api/ext/aircraft/2762,HELICOPTER,EUROCOPTER,AS 350 B2,RotType3,RW - Type 3 Light,HNX-(B2),ZK-HNX,465,Helicharter Nelson
+2580,https://arena.nafc.org.au/resource/api/ext/aircraft/2580,HELICOPTER,BELL HELICOPTER CO,206B (III),RotType3,RW - Type 3 Light,HOC-(JR),ZK-HOC,456,Beck Helicopters Limited
+2074,https://arena.nafc.org.au/resource/api/ext/aircraft/2074,HELICOPTER,MCDONNELL DOUGLAS HELICOPTER COMPANY,MD530F,RotType3,RW - Type 3 Light,HOL-(500),ZK-HOL,451,Air West Helicopters Limited
+2591,https://arena.nafc.org.au/resource/api/ext/aircraft/2591,HELICOPTER,AEROSPATIALE,AS 350 B2,RotType3,RW - Type 3 Light,HOP-(B2),ZK-HOP,532,Helisika Helicopters
+2841,https://arena.nafc.org.au/resource/api/ext/aircraft/2841,HELICOPTER,MCDONNELL DOUGLAS HELICOPTER COMPANY,369D,RotType3,RW - Type 3 Light,HOT-(500),ZK-HOT,452,Alpine Helicopters
+2129,https://arena.nafc.org.au/resource/api/ext/aircraft/2129,HELICOPTER,EUROCOPTER,AS 350 B2,RotType3,RW - Type 3 Light,HPE-(B2),ZK-HPE,467,Helicopters Nelson Limited
+2548,https://arena.nafc.org.au/resource/api/ext/aircraft/2548,HELICOPTER,AEROSPATIALE INDUSTRIES,AS.355F1,RotType3,RW - Type 3 Light,HPI-(355),ZK-HPI,565,Nelson Tasman Air & Inflite Charters
+2222,https://arena.nafc.org.au/resource/api/ext/aircraft/2222,HELICOPTER,BELL HELICOPTER CO,206B,RotType3,RW - Type 3 Light,HPK-(JR),ZK-HPK,498,Wairarapa Helicopters Limited
+2574,https://arena.nafc.org.au/resource/api/ext/aircraft/2574,HELICOPTER,BELL HELICOPTER CO,206B (III),RotType3,RW - Type 3 Light,HPK-(JR),ZK-HPK,443,Tararua Heliwork Limited
+2600,https://arena.nafc.org.au/resource/api/ext/aircraft/2600,HELICOPTER,EUROCOPTER,AS 350 B2,RotType3,RW - Type 3 Light,HQD-(B2),ZK-HQD,574,Eastern Airwork Ltd
+2128,https://arena.nafc.org.au/resource/api/ext/aircraft/2128,HELICOPTER,EUROCOPTER,AS 350 B2,RotType3,RW - Type 3 Light,HQN-(B2),ZK-HQN,467,Helicopters Nelson Limited
+2110,https://arena.nafc.org.au/resource/api/ext/aircraft/2110,HELICOPTER,EUROCOPTER,AS 350 BA,RotType3,RW - Type 3 Light,HQT-(BA),ZK-HQT,461,GCH Aviation
+2220,https://arena.nafc.org.au/resource/api/ext/aircraft/2220,HELICOPTER,EUROCOPTER,AS 350 B3,RotType3,RW - Type 3 Light,HRB-(B3),ZK-HRB,497,Charteris Choppers
+2021,https://arena.nafc.org.au/resource/api/ext/aircraft/2021,HELICOPTER,HUGHES HELICOPTERS,369D,RotType3,RW - Type 3 Light,HRF- (369),ZK-HRF,434,Mid West Helicopters
+2077,https://arena.nafc.org.au/resource/api/ext/aircraft/2077,HELICOPTER,EUROCOPTER,AS 350 B2,RotType3,RW - Type 3 Light,HRM-(B2),ZK-HRM,452,Alpine Helicopters
+2551,https://arena.nafc.org.au/resource/api/ext/aircraft/2551,HELICOPTER,EUROCOPTER,AS 350 BA,RotType3,RW - Type 3 Light,HRQ-(BA),ZK-HRQ,449,The Helicopter Line
+2235,https://arena.nafc.org.au/resource/api/ext/aircraft/2235,HELICOPTER,BELL HELICOPTER CO,206L-4,RotType3,RW - Type 3 Light,HRX-(LR),ZK-HRX,502,Heli Resources 2012 Limited
+2028,https://arena.nafc.org.au/resource/api/ext/aircraft/2028,HELICOPTER,MCDONNELL DOUGLAS HELICOPTER COMPANY,369E,RotType3,RW - Type 3 Light,HSC-(500),ZK-HSC,435,Christchurch Helicopters
+2497,https://arena.nafc.org.au/resource/api/ext/aircraft/2497,HELICOPTER,EUROCOPTER,AS 350 BA,RotType3,RW - Type 3 Light,HSE-(BA),ZK-HSE,439,Precision Helicopters	 PHL
+2071,https://arena.nafc.org.au/resource/api/ext/aircraft/2071,HELICOPTER,EUROCOPTER,AS 350 B2,RotType3,RW - Type 3 Light,HSM-(B2),ZK-HSM,449,The Helicopter Line
+2198,https://arena.nafc.org.au/resource/api/ext/aircraft/2198,HELICOPTER,AIRBUS HELICOPTERS,AS 350 B3,RotType3,RW - Type 3 Light,HSS-(B3),ZK-HSS,492,Skywork Helicopters Limited
+2613,https://arena.nafc.org.au/resource/api/ext/aircraft/2613,HELICOPTER,BELL HELICOPTER CO,206L-3,RotType3,RW - Type 3 Light,HTA-(LR),ZK-HTA,576,Marlborough Helicopters
+2767,https://arena.nafc.org.au/resource/api/ext/aircraft/2767,HELICOPTER,AIRBUS HELICOPTERS,AS 350 B2,RotType3,RW - Type 3 Light,HTD (B2),ZK-HTD,448,Te Anau Helicopter Services Ltd
+2022,https://arena.nafc.org.au/resource/api/ext/aircraft/2022,HELICOPTER,BELL HELICOPTER TEXTRON,206B,RotType3,RW - Type 3 Light,HTM-(JR),ZK-HTM,434,Mid West Helicopters
+2768,https://arena.nafc.org.au/resource/api/ext/aircraft/2768,HELICOPTER,BELL HELICOPTER TEXTRON,206B,RotType3,RW - Type 3 Light,HTO-(JR),ZK-HTO,593,Glencree Helicopters Ltd
+2373,https://arena.nafc.org.au/resource/api/ext/aircraft/2373,HELICOPTER,HUGHES HELICOPTERS,369E,RotType3,RW - Type 3 Light,HTT-(500),ZK-HTT,551,Central Heliwork Limited
+2026,https://arena.nafc.org.au/resource/api/ext/aircraft/2026,HELICOPTER,EUROCOPTER,EC120B,RotType3,RW - Type 3 Light,HTV-(EC120),ZK-HTV,435,Christchurch Helicopters
+2735,https://arena.nafc.org.au/resource/api/ext/aircraft/2735,HELICOPTER,BELL HELICOPTER CO,206B,RotType3,RW - Type 3 Light,HTX-(JR),ZK-HTX,574,Eastern Airwork Ltd
+2562,https://arena.nafc.org.au/resource/api/ext/aircraft/2562,HELICOPTER,EUROCOPTER,AS 350 B2,RotType3,RW - Type 3 Light,HUC-(B2),ZK-HUC,559,Fiordland Helicopters Ltd
+2064,https://arena.nafc.org.au/resource/api/ext/aircraft/2064,HELICOPTER,BELL HELICOPTER CO,UH-1H,RotType2,RW - Type 2 Medium,HUE-(UH-1),ZK-HUE,447,Southern Heli Lift
+2025,https://arena.nafc.org.au/resource/api/ext/aircraft/2025,HELICOPTER,EUROCOPTER,AS.355F2,RotType3,RW - Type 3 Light,HUQ-(355),ZK-HUQ,435,Christchurch Helicopters
+2102,https://arena.nafc.org.au/resource/api/ext/aircraft/2102,HELICOPTER,HUGHES HELICOPTERS,369D,RotType3,RW - Type 3 Light,HUZ-(500),ZK-HUZ,460,Eastland Heliservices Limited
+2561,https://arena.nafc.org.au/resource/api/ext/aircraft/2561,HELICOPTER,EUROCOPTER,AS 350 B3,RotType3,RW - Type 3 Light,HVA-(B3),ZK-HVA,559,Fiordland Helicopters Ltd
+2229,https://arena.nafc.org.au/resource/api/ext/aircraft/2229,HELICOPTER,MCDONNELL DOUGLAS HELICOPTER SYSTEMS,600N,RotType3,RW - Type 3 Light,HVH-(600N),ZK-HVH,501,Southland Helicopters Limited
+2857,https://arena.nafc.org.au/resource/api/ext/aircraft/2857,HELICOPTER,MCDONNELL DOUGLAS HELICOPTER SYSTEMS,600N,RotType3,RW - Type 3 Light,HVI-(600N),ZK-HVI,501,Southland Helicopters Limited
+2072,https://arena.nafc.org.au/resource/api/ext/aircraft/2072,HELICOPTER,BELL HELICOPTER CO,206L-1,RotType3,RW - Type 3 Light,HVR-(LR),ZK-HVR,450,Ahaura Helicopters Ltd
+2230,https://arena.nafc.org.au/resource/api/ext/aircraft/2230,HELICOPTER,MCDONNELL DOUGLAS HELICOPTER SYSTEMS,600N,RotType3,RW - Type 3 Light,HVW-(600N),ZK-HVW,501,Southland Helicopters Limited
+2152,https://arena.nafc.org.au/resource/api/ext/aircraft/2152,HELICOPTER,HUGHES HELICOPTERS,369E,RotType3,RW - Type 3 Light,HWB-(500),ZK-HWB,472,Heli Sika Limited
+2374,https://arena.nafc.org.au/resource/api/ext/aircraft/2374,HELICOPTER,MCDONNELL DOUGLAS HELICOPTER COMPANY,520N,RotType3,RW - Type 3 Light,HWH-(520N),ZK-HWH,552,Opotiki Helicopters
+2141,https://arena.nafc.org.au/resource/api/ext/aircraft/2141,HELICOPTER,BELL HELICOPTER CO,206B (III),RotType3,RW - Type 3 Light,HWI-(JR),ZK-HWI,468,Heli Otago
+2136,https://arena.nafc.org.au/resource/api/ext/aircraft/2136,HELICOPTER,BELL HELICOPTER CO,206B (III),RotType3,RW - Type 3 Light,HWK-(JR),ZK-HWK,468,Heli Otago
+2898,https://arena.nafc.org.au/resource/api/ext/aircraft/2898,HELICOPTER,BELL HELICOPTER CO,206L-3,RotType3,RW - Type 3 Light,HWL-(LR),ZK-HWL,620,Helicopter Charter Karamea
+2137,https://arena.nafc.org.au/resource/api/ext/aircraft/2137,HELICOPTER,BELL HELICOPTER CO,206B (III),RotType3,RW - Type 3 Light,HWN-(JR),ZK-HWN,468,Heli Otago
+2140,https://arena.nafc.org.au/resource/api/ext/aircraft/2140,HELICOPTER,BELL HELICOPTER CO,206B (III),RotType3,RW - Type 3 Light,HWQ-(JR),ZK-HWQ,468,Heli Otago
+2197,https://arena.nafc.org.au/resource/api/ext/aircraft/2197,HELICOPTER,AIRBUS HELICOPTERS,AS 350 B3E,RotType3,RW - Type 3 Light,HWW-(B3),ZK-HWW,492,Skywork Helicopters Limited
+2123,https://arena.nafc.org.au/resource/api/ext/aircraft/2123,HELICOPTER,HUGHES HELICOPTERS,369D,RotType3,RW - Type 3 Light,HXX-(500),ZK-HXX,465,Helicharter Nelson
+2059,https://arena.nafc.org.au/resource/api/ext/aircraft/2059,HELICOPTER,HUGHES HELICOPTERS,369D,RotType3,RW - Type 3 Light,HXZ-(500),ZK-HXZ,444,Way to Go Heliservices
+2049,https://arena.nafc.org.au/resource/api/ext/aircraft/2049,HELICOPTER,EUROCOPTER,AS 350 B2,RotType3,RW - Type 3 Light,HYA-(B2),ZK-HYA,440,Heli Glenorchy/Heliworks Queenstown
+2847,https://arena.nafc.org.au/resource/api/ext/aircraft/2847,HELICOPTER,EUROCOPTER,AS 350 B2,RotType3,RW - Type 3 Light,HYA-(B2),ZK-HYA,559,Fiordland Helicopters Ltd
+2019,https://arena.nafc.org.au/resource/api/ext/aircraft/2019,HELICOPTER,HUGHES HELICOPTERS,369E,RotType3,RW - Type 3 Light,HYK-(369),ZK-HYK,434,Mid West Helicopters
+2067,https://arena.nafc.org.au/resource/api/ext/aircraft/2067,HELICOPTER,EUROCOPTER,AS 350 B2,RotType3,RW - Type 3 Light,HYM-(B2),ZK-HYM,448,Te Anau Helicopter Services Ltd
+2078,https://arena.nafc.org.au/resource/api/ext/aircraft/2078,HELICOPTER,EUROCOPTER,AS 350 B2,RotType3,RW - Type 3 Light,HYW-(B2),ZK-HYW,452,Alpine Helicopters
+2052,https://arena.nafc.org.au/resource/api/ext/aircraft/2052,HELICOPTER,AEROSPATIALE INDUSTRIES,AS350 FX2,RotType3,RW - Type 3 Light,HZD-(FX2),ZK-HZD,441,Helicopter Services (BOP) Limited
+2615,https://arena.nafc.org.au/resource/api/ext/aircraft/2615,HELICOPTER,BELL HELICOPTER CO,206B (III),RotType3,RW - Type 3 Light,HZE-(JR),ZK-HZE,576,Marlborough Helicopters
+2559,https://arena.nafc.org.au/resource/api/ext/aircraft/2559,HELICOPTER,MCDONNELL DOUGLAS HELICOPTER COMPANY,520N,RotType3,RW - Type 3 Light,HZG-(520N),ZK-HZG,434,Mid West Helicopters
+2923,https://arena.nafc.org.au/resource/api/ext/aircraft/2923,HELICOPTER,MCDONNELL DOUGLAS HELICOPTER COMPANY,520N,RotType3,RW - Type 3 Light,HZG-(520N),ZK-HZG,444,Way to Go Heliservices
+2151,https://arena.nafc.org.au/resource/api/ext/aircraft/2151,HELICOPTER,EUROCOPTER,AS 350 B2,RotType3,RW - Type 3 Light,HZJ-(B2),ZK-HZJ,472,Heli Sika Limited
+2161,https://arena.nafc.org.au/resource/api/ext/aircraft/2161,HELICOPTER,MCDONNELL DOUGLAS HELICOPTER COMPANY,369E,RotType3,RW - Type 3 Light,HZP-(500),ZK-HZP,476,Lister Helicopters Limited
+2535,https://arena.nafc.org.au/resource/api/ext/aircraft/2535,HELICOPTER,HUGHES HELICOPTERS,369D,RotType3,RW - Type 3 Light,HZR-(500),ZK-HZR,436,Coast to Coast Helicopters 2013 Ltd
+2587,https://arena.nafc.org.au/resource/api/ext/aircraft/2587,HELICOPTER,HUGHES HELICOPTERS,369D,RotType3,RW - Type 3 Light,HZR-(500),ZK-HZR,446,Country Helicopters Limited
+2231,https://arena.nafc.org.au/resource/api/ext/aircraft/2231,HELICOPTER,BELL HELICOPTER CO,UH-1H,RotType2,RW - Type 2 Medium,HZX-(UH-1),ZK-HZX,502,Heli Resources 2012 Limited
+2153,https://arena.nafc.org.au/resource/api/ext/aircraft/2153,HELICOPTER,HUGHES HELICOPTERS,369D,RotType3,RW - Type 3 Light,HZY-(500),ZK-HZY,472,Heli Sika Limited
+2748,https://arena.nafc.org.au/resource/api/ext/aircraft/2748,HELICOPTER,MCDONNELL DOUGLAS HELICOPTER COMPANY,369D,RotType3,RW - Type 3 Light,HZY-(500),ZK-HZY,587,Wairoa Helicopters Ltd
+2200,https://arena.nafc.org.au/resource/api/ext/aircraft/2200,HELICOPTER,EUROCOPTER FRANCE,AS.355N,RotType3,RW - Type 3 Light,HZZ-(355 TW),ZK-HZZ,492,Skywork Helicopters Limited
+2429,https://arena.nafc.org.au/resource/api/ext/aircraft/2429,HELICOPTER,AIRBUS HELICOPTERS,AS 350 B3E,RotType3,RW - Type 3 Light,IAE-(B3),ZK-IAE,433,Lakeview Helicopters
+2242,https://arena.nafc.org.au/resource/api/ext/aircraft/2242,HELICOPTER,EUROCOPTER,AS 350 B2,RotType3,RW - Type 3 Light,IAG-(B2),ZK-IAG,504,Kapiti Heliworx Limited
+2547,https://arena.nafc.org.au/resource/api/ext/aircraft/2547,HELICOPTER,AEROSPATIALE INDUSTRIES,AS.355F1,RotType3,RW - Type 3 Light,IAV-(355),ZK-IAV,565,Nelson Tasman Air & Inflite Charters
+2209,https://arena.nafc.org.au/resource/api/ext/aircraft/2209,HELICOPTER,KAWASAKI HEAVY INDUSTRIES,BK117 B-2,RotType2,RW - Type 2 Medium,IBK-(BK),ZK-IBK,494,Southern Lakes Helicopters Limited
+2221,https://arena.nafc.org.au/resource/api/ext/aircraft/2221,HELICOPTER,EUROCOPTER,AS 350 BA,RotType3,RW - Type 3 Light,IBQ-(BA),ZK-IBQ,498,Wairarapa Helicopters Limited
+2206,https://arena.nafc.org.au/resource/api/ext/aircraft/2206,HELICOPTER,EUROCOPTER,AS 350 B3,RotType3,RW - Type 3 Light,IBR-(B3),ZK-IBR,494,Southern Lakes Helicopters Limited
+2856,https://arena.nafc.org.au/resource/api/ext/aircraft/2856,HELICOPTER,BELL HELICOPTER CO,206B (III),RotType3,RW - Type 3 Light,IBU-(JR),ZK-IBU,433,Lakeview Helicopters
+2233,https://arena.nafc.org.au/resource/api/ext/aircraft/2233,HELICOPTER,EUROCOPTER,AS 350 B3,RotType3,RW - Type 3 Light,IBW-(B3),ZK-IBW,502,Heli Resources 2012 Limited
+2069,https://arena.nafc.org.au/resource/api/ext/aircraft/2069,HELICOPTER,EUROCOPTER,AS 350 B2,RotType3,RW - Type 3 Light,ICD-(B2),ZK-ICD,449,The Helicopter Line
+2622,https://arena.nafc.org.au/resource/api/ext/aircraft/2622,HELICOPTER,EUROCOPTER,AS355NP,RotType3,RW - Type 3 Light,ICE-(355),ZK-ICE,440,Heli Glenorchy/Heliworks Queenstown
+2581,https://arena.nafc.org.au/resource/api/ext/aircraft/2581,HELICOPTER,AIRBUS HELICOPTERS,AS 350 B2,RotType3,RW - Type 3 Light,ICR-(B2),ZK-ICR,464,Heli Ag Limited
+2372,https://arena.nafc.org.au/resource/api/ext/aircraft/2372,HELICOPTER,KAWASAKI HEAVY INDUSTRIES,BK117 B-2,RotType2,RW - Type 2 Medium,ICY-(BK),ZK-ICY,550,Over The Top - The Helicopter Company
+2207,https://arena.nafc.org.au/resource/api/ext/aircraft/2207,HELICOPTER,EUROCOPTER,AS 350 B3,RotType3,RW - Type 3 Light,IDE-(B3),ZK-IDE,494,Southern Lakes Helicopters Limited
+2575,https://arena.nafc.org.au/resource/api/ext/aircraft/2575,HELICOPTER,EUROCOPTER,AS 350 B3,RotType3,RW - Type 3 Light,IDF-(B3),ZK-IDF,440,Heli Glenorchy/Heliworks Queenstown
+2935,https://arena.nafc.org.au/resource/api/ext/aircraft/2935,HELICOPTER,AIRBUS HELICOPTERS,AS 350 B3E,RotType3,RW - Type 3 Light,IDF-(B3),ZK-IDF,629,Ultimate Hikes
+2179,https://arena.nafc.org.au/resource/api/ext/aircraft/2179,HELICOPTER,BELL HELICOPTER CO,206B (III),RotType3,RW - Type 3 Light,IDG-(JR),ZK-IDG,485,Rangitikei Helicopters Limited
+2777,https://arena.nafc.org.au/resource/api/ext/aircraft/2777,HELICOPTER,EUROCOPTER,AS 350 B2,RotType3,RW - Type 3 Light,IDI-(B2),ZK-IDI,434,Mid West Helicopters
+2582,https://arena.nafc.org.au/resource/api/ext/aircraft/2582,HELICOPTER,AEROSPATIALE INDUSTRIES,AS350 FX2,RotType3,RW - Type 3 Light,IDK-(FX2),ZK-IDK,532,Helisika Helicopters
+2070,https://arena.nafc.org.au/resource/api/ext/aircraft/2070,HELICOPTER,EUROCOPTER,AS 350 B2,RotType3,RW - Type 3 Light,IDM-(B2),ZK-IDM,449,The Helicopter Line
+2238,https://arena.nafc.org.au/resource/api/ext/aircraft/2238,HELICOPTER,EUROCOPTER,AS 350 B3,RotType3,RW - Type 3 Light,IDQ-(B3),ZK-IDQ,503,High Country Helicopters Limited
+2880,https://arena.nafc.org.au/resource/api/ext/aircraft/2880,HELICOPTER,EUROCOPTER,AS 350 B2,RotType3,RW - Type 3 Light,IDR-(B2),ZK-IDR,443,Tararua Heliwork Limited
+2174,https://arena.nafc.org.au/resource/api/ext/aircraft/2174,HELICOPTER,HUGHES HELICOPTERS,369E,RotType3,RW - Type 3 Light,IDS-(500),ZK-IDS,482,Precision Helicopters NZ Limited
+2040,https://arena.nafc.org.au/resource/api/ext/aircraft/2040,HELICOPTER,AIRBUS HELICOPTERS,AS 350 B3E,RotType3,RW - Type 3 Light,IDT-(B3),ZK-IDT,438,Glacier Southern Lakes Helicopters
+2829,https://arena.nafc.org.au/resource/api/ext/aircraft/2829,HELICOPTER,MCDONNELL DOUGLAS HELICOPTER COMPANY,369E,RotType3,RW - Type 3 Light,IDV-(500),ZK-IDV,466,Helicopters Hawkes Bay
+2045,https://arena.nafc.org.au/resource/api/ext/aircraft/2045,HELICOPTER,AIRBUS HELICOPTERS,AS 350 B2,RotType3,RW - Type 3 Light,IDW-(B2),ZK-IDW,439,Precision Helicopters	 PHL
+2568,https://arena.nafc.org.au/resource/api/ext/aircraft/2568,HELICOPTER,SCHWEIZER AIRCRAFT CORP,269C,RotType4,RW - Type 4 Extra Light,IED-(300),ZK-IED,473,Heliventures NZ Limited
+2082,https://arena.nafc.org.au/resource/api/ext/aircraft/2082,HELICOPTER,MCDONNELL DOUGLAS HELICOPTER COMPANY,520N,RotType3,RW - Type 3 Light,IEG-(520N),ZK-IEG,453,Amuri Helicopters Limited
+2228,https://arena.nafc.org.au/resource/api/ext/aircraft/2228,HELICOPTER,MCDONNELL DOUGLAS HELICOPTER COMPANY,500N,RotType3,RW - Type 3 Light,IEK-(500),ZK-IEK,501,Southland Helicopters Limited
+2510,https://arena.nafc.org.au/resource/api/ext/aircraft/2510,HELICOPTER,MCDONNELL DOUGLAS HELICOPTER COMPANY,520N,RotType3,RW - Type 3 Light,IEN-(520N),ZK-IEN,473,Heliventures NZ Limited
+2055,https://arena.nafc.org.au/resource/api/ext/aircraft/2055,HELICOPTER,EUROCOPTER,AS 350 B2,RotType3,RW - Type 3 Light,IEP-(B2),ZK-IEP,443,Tararua Heliwork Limited
+2540,https://arena.nafc.org.au/resource/api/ext/aircraft/2540,HELICOPTER,AEROSPATIALE INDUSTRIES,AS350 FX2,RotType3,RW - Type 3 Light,IEQ-(FX2),ZK-IEQ,565,Nelson Tasman Air & Inflite Charters
+2876,https://arena.nafc.org.au/resource/api/ext/aircraft/2876,HELICOPTER,AEROSPATIALE INDUSTRIES,AS350 FX2,RotType3,RW - Type 3 Light,IEQ-(FX2),ZK-IEQ,493,South Pacific Helicopters/Wings over Whales
+2155,https://arena.nafc.org.au/resource/api/ext/aircraft/2155,HELICOPTER,EUROCOPTER,AS 350 B2,RotType3,RW - Type 3 Light,IER-(B2),ZK-IER,473,Heliventures NZ Limited
+2156,https://arena.nafc.org.au/resource/api/ext/aircraft/2156,HELICOPTER,MCDONNELL DOUGLAS HELICOPTER COMPANY,520N,RotType3,RW - Type 3 Light,IES-(520N),ZK-IES,473,Heliventures NZ Limited
+2511,https://arena.nafc.org.au/resource/api/ext/aircraft/2511,HELICOPTER,MCDONNELL DOUGLAS HELICOPTER COMPANY,520N,RotType3,RW - Type 3 Light,IET-(520N),ZK-IET,473,Heliventures NZ Limited
+2538,https://arena.nafc.org.au/resource/api/ext/aircraft/2538,HELICOPTER,AEROSPATIALE INDUSTRIES,AS350 FX2,RotType3,RW - Type 3 Light,IEV-(FX2),ZK-IEV,453,Amuri Helicopters Limited
+2555,https://arena.nafc.org.au/resource/api/ext/aircraft/2555,HELICOPTER,EUROCOPTER,EC 130 B4,RotType3,RW - Type 3 Light,IEX-(EC130),ZK-IEX,461,GCH Aviation
+2539,https://arena.nafc.org.au/resource/api/ext/aircraft/2539,HELICOPTER,AEROSPATIALE INDUSTRIES,AS350 FX2,RotType3,RW - Type 3 Light,IEY-(FX2),ZK-IEY,565,Nelson Tasman Air & Inflite Charters
+2085,https://arena.nafc.org.au/resource/api/ext/aircraft/2085,HELICOPTER,BELL HELICOPTER CO,206L-3,RotType3,RW - Type 3 Light,IFA-(LR),ZK-IFA,454,Anderson Helicopters Limited
+2058,https://arena.nafc.org.au/resource/api/ext/aircraft/2058,HELICOPTER,EUROCOPTER,AS 350 B2,RotType3,RW - Type 3 Light,IFI-(B2),ZK-IFI,444,Way to Go Heliservices
+2864,https://arena.nafc.org.au/resource/api/ext/aircraft/2864,HELICOPTER,KAWASAKI HEAVY INDUSTRIES	 LTD.,BK117 B-2,RotType2,RW - Type 2 Medium,IFO-(BK),ZK-IFO,532,Helisika Helicopters
+2879,https://arena.nafc.org.au/resource/api/ext/aircraft/2879,HELICOPTER,MESSERSCHMITT-BOLKOW-BLOHM,BK117 B-2,RotType2,RW - Type 2 Medium,IFO-(BK),ZK-IFO,461,GCH Aviation
+2203,https://arena.nafc.org.au/resource/api/ext/aircraft/2203,HELICOPTER,EUROCOPTER,EC 120 B,RotType3,RW - Type 3 Light,IFR-(EC120),ZK-IFR,493,South Pacific Helicopters/Wings over Whales
+2020,https://arena.nafc.org.au/resource/api/ext/aircraft/2020,HELICOPTER,HUGHES HELICOPTERS,369E,RotType3,RW - Type 3 Light,IFS-(369),ZK-IFS,434,Mid West Helicopters
+2527,https://arena.nafc.org.au/resource/api/ext/aircraft/2527,HELICOPTER,EUROCOPTER,AS 350 BA,RotType3,RW - Type 3 Light,IFX-(BA),ZK-IFX,494,Southern Lakes Helicopters Limited
+2106,https://arena.nafc.org.au/resource/api/ext/aircraft/2106,HELICOPTER,EUROCOPTER,EC130B4,RotType3,RW - Type 3 Light,IGF-(EC130),ZK-IGF,461,GCH Aviation
+2635,https://arena.nafc.org.au/resource/api/ext/aircraft/2635,HELICOPTER,AIRBUS HELICOPTERS,EC145,RotType2,RW - Type 2 Medium,IGI-(H145),ZK-IGI,461,GCH Aviation
+2369,https://arena.nafc.org.au/resource/api/ext/aircraft/2369,HELICOPTER,EUROCOPTER,AS 350 BA,RotType3,RW - Type 3 Light,IGO-(BA),ZK-IGO,550,Over The Top - The Helicopter Company
+2144,https://arena.nafc.org.au/resource/api/ext/aircraft/2144,HELICOPTER,BELL HELICOPTER CO,206B (III),RotType3,RW - Type 3 Light,IGT-(JR),ZK-IGT,469,Helicopters South Canterbury 2015 Limited
+2852,https://arena.nafc.org.au/resource/api/ext/aircraft/2852,HELICOPTER,EUROCOPTER,EC130B4,RotType3,RW - Type 3 Light,IGW-(EC130),ZK-IGW,565,Nelson Tasman Air & Inflite Charters
+2556,https://arena.nafc.org.au/resource/api/ext/aircraft/2556,HELICOPTER,MCDONNELL DOUGLAS HELICOPTER COMPANY,369E,RotType3,RW - Type 3 Light,IHH-(500),ZK-IHH,564,Backcountry Helicopters
+2105,https://arena.nafc.org.au/resource/api/ext/aircraft/2105,HELICOPTER,EUROCOPTER,AS 350 B3,RotType3,RW - Type 3 Light,IHL-(B3),ZK-IHL,461,GCH Aviation
+2063,https://arena.nafc.org.au/resource/api/ext/aircraft/2063,HELICOPTER,EUROCOPTER,AS 350 B2,RotType3,RW - Type 3 Light,IIC-(B2),ZK-IIC,374,Kahu NZ
+2119,https://arena.nafc.org.au/resource/api/ext/aircraft/2119,HELICOPTER,MCDONNELL DOUGLAS HELICOPTER COMPANY,369E,RotType3,RW - Type 3 Light,IIE-(500),ZK-IIE,463,Amalgamated Helicopters NZ LTD
+2118,https://arena.nafc.org.au/resource/api/ext/aircraft/2118,HELICOPTER,MCDONNELL DOUGLAS HELICOPTER SYSTEMS,600N,RotType3,RW - Type 3 Light,IJD-(600N),ZK-IJD,463,Amalgamated Helicopters NZ LTD
+2125,https://arena.nafc.org.au/resource/api/ext/aircraft/2125,HELICOPTER,EUROCOPTER,AS 350 BA,RotType3,RW - Type 3 Light,IJG-(BA),ZK-IJG,466,Helicopters Hawkes Bay
+2193,https://arena.nafc.org.au/resource/api/ext/aircraft/2193,HELICOPTER,BELL HELICOPTER CO,206L-3,RotType3,RW - Type 3 Light,IJH-(LR),ZK-IJH,490,Salt Air Limited
+2054,https://arena.nafc.org.au/resource/api/ext/aircraft/2054,HELICOPTER,EUROCOPTER,AS 350 B3,RotType3,RW - Type 3 Light,IKA-(B3),ZK-IKA,442,Murchison Heli Tours Limited
+2225,https://arena.nafc.org.au/resource/api/ext/aircraft/2225,HELICOPTER,EUROCOPTER,AS 350 B3,RotType3,RW - Type 3 Light,IKJ-(B3),ZK-IKJ,499,Volcanic Air
+2940,https://arena.nafc.org.au/resource/api/ext/aircraft/2940,HELICOPTER,HUGHES HELICOPTERS,369D,RotType3,RW - Type 3 Light,IKL-(500),ZK-IKL,549,MacKenzie Helicopters Limited
+2192,https://arena.nafc.org.au/resource/api/ext/aircraft/2192,HELICOPTER,BELL HELICOPTER CO,206L-3,RotType3,RW - Type 3 Light,ILM-(LR),ZK-ILM,490,Salt Air Limited
+2044,https://arena.nafc.org.au/resource/api/ext/aircraft/2044,HELICOPTER,AIRBUS HELICOPTERS,AS 350 B2,RotType3,RW - Type 3 Light,ILN-(B2),ZK-ILN,439,Precision Helicopters	 PHL
+2042,https://arena.nafc.org.au/resource/api/ext/aircraft/2042,HELICOPTER,AIRBUS HELICOPTERS,AS 350 B3E,RotType3,RW - Type 3 Light,ILO-(B3),ZK-ILO,438,Glacier Southern Lakes Helicopters
+2017,https://arena.nafc.org.au/resource/api/ext/aircraft/2017,HELICOPTER,BELL HELICOPTER CO,UH-1H,RotType2,RW - Type 2 Medium,ILV-(UH-1),ZK-ILV,433,Lakeview Helicopters
+2794,https://arena.nafc.org.au/resource/api/ext/aircraft/2794,HELICOPTER,EUROCOPTER,AS 350 BA,RotType3,RW - Type 3 Light,ILW-(BA),ZK-ILW,442,Murchison Heli Tours Limited
+2132,https://arena.nafc.org.au/resource/api/ext/aircraft/2132,HELICOPTER,KAWASAKI HEAVY INDUSTRIES,BK117 B-2,RotType2,RW - Type 2 Medium,IME-(BK),ZK-IME,468,Heli Otago
+2043,https://arena.nafc.org.au/resource/api/ext/aircraft/2043,HELICOPTER,AIRBUS HELICOPTERS,AS 350 B2,RotType3,RW - Type 3 Light,IMJ-(B2),ZK-IMJ,439,Precision Helicopters	 PHL
+2557,https://arena.nafc.org.au/resource/api/ext/aircraft/2557,HELICOPTER,EUROCOPTER,AS 350 BA,RotType3,RW - Type 3 Light,IMK-(BA),ZK-IMK,461,GCH Aviation
+2212,https://arena.nafc.org.au/resource/api/ext/aircraft/2212,HELICOPTER,MCDONNELL DOUGLAS HELICOPTER COMPANY,520N,RotType3,RW - Type 3 Light,IML-(520N),ZK-IML,495,Wyndon Aviation Limited
+2658,https://arena.nafc.org.au/resource/api/ext/aircraft/2658,HELICOPTER,KAWASAKI HEAVY INDUSTRIES	 LTD.,BK117 B2,RotType2,RW - Type 2 Medium,IMN-(BK),ZK-IMN,461,GCH Aviation
+2563,https://arena.nafc.org.au/resource/api/ext/aircraft/2563,HELICOPTER,HUGHES HELICOPTERS,369D,RotType3,RW - Type 3 Light,IMT-(500),ZK-IMT,559,Fiordland Helicopters Ltd
+2553,https://arena.nafc.org.au/resource/api/ext/aircraft/2553,HELICOPTER,AIRBUS HELICOPTERS,EC 130 T2,RotType3,RW - Type 3 Light,IMW-(EC130),ZK-IMW,438,Glacier Southern Lakes Helicopters
+2065,https://arena.nafc.org.au/resource/api/ext/aircraft/2065,HELICOPTER,EUROCOPTER,AS 350 B3,RotType3,RW - Type 3 Light,IMY-(B3),ZK-IMY,448,Te Anau Helicopter Services Ltd
+2170,https://arena.nafc.org.au/resource/api/ext/aircraft/2170,HELICOPTER,BELL HELICOPTER CO,206L-1,RotType3,RW - Type 3 Light,INH-(LR),ZK-INH,480,Northland Helicopters Limited
+2041,https://arena.nafc.org.au/resource/api/ext/aircraft/2041,HELICOPTER,AIRBUS HELICOPTERS,AS 350 B3E,RotType3,RW - Type 3 Light,INT-(B3),ZK-INT,438,Glacier Southern Lakes Helicopters
+2120,https://arena.nafc.org.au/resource/api/ext/aircraft/2120,HELICOPTER,MCDONNELL DOUGLAS HELICOPTER COMPANY,369E,RotType3,RW - Type 3 Light,INZ-(500),ZK-INZ,463,Amalgamated Helicopters NZ LTD
+2509,https://arena.nafc.org.au/resource/api/ext/aircraft/2509,HELICOPTER,EUROCOPTER,EC 120 B,RotType3,RW - Type 3 Light,IOC-(EC120),ZK-IOC,440,Heli Glenorchy/Heliworks Queenstown
+2145,https://arena.nafc.org.au/resource/api/ext/aircraft/2145,HELICOPTER,BELL HELICOPTER CO,206B (III),RotType3,RW - Type 3 Light,IOI-(JR),ZK-IOI,469,Helicopters South Canterbury 2015 Limited
+2133,https://arena.nafc.org.au/resource/api/ext/aircraft/2133,HELICOPTER,AIRBUS HELICOPTERS INC.,AS350B3,RotType3,RW - Type 3 Light,IOJ-(B3),ZK-IOJ,468,Heli Otago
+2790,https://arena.nafc.org.au/resource/api/ext/aircraft/2790,HELICOPTER,EUROCOPTER,AS350B2,RotType3,RW - Type 3 Light,IOP-(B2),ZK-IOP,483,Prosser Heli Ag
+2922,https://arena.nafc.org.au/resource/api/ext/aircraft/2922,HELICOPTER,AIRBUS HELICOPTERS,AS 350 B2,RotType3,RW - Type 3 Light,IOP-(B2),ZK-IOP,444,Way to Go Heliservices
+2130,https://arena.nafc.org.au/resource/api/ext/aircraft/2130,HELICOPTER,EUROCOPTER,AS 350 BA,RotType3,RW - Type 3 Light,IOR-(BA),ZK-IOR,467,Helicopters Nelson Limited
+2187,https://arena.nafc.org.au/resource/api/ext/aircraft/2187,HELICOPTER,EUROCOPTER,AS 350 B3,RotType3,RW - Type 3 Light,IOX-(B3),ZK-IOX,488,Rotor Force NZ Limited
+2159,https://arena.nafc.org.au/resource/api/ext/aircraft/2159,HELICOPTER,EUROCOPTER,AS 350 B2,RotType3,RW - Type 3 Light,IPE-(B2),ZK-IPE,475,Independent Helicopters
+2554,https://arena.nafc.org.au/resource/api/ext/aircraft/2554,HELICOPTER,EUROCOPTER,AS 350 B2,RotType3,RW - Type 3 Light,IPG-(B2),ZK-IPG,564,Backcountry Helicopters
+2519,https://arena.nafc.org.au/resource/api/ext/aircraft/2519,HELICOPTER,MCDONNELL DOUGLAS HELICOPTER COMPANY,369D,RotType3,RW - Type 3 Light,IPH-(500),ZK-IPH,446,Country Helicopters Limited
+2375,https://arena.nafc.org.au/resource/api/ext/aircraft/2375,HELICOPTER,MCDONNELL DOUGLAS HELICOPTER COMPANY,520N,RotType3,RW - Type 3 Light,IPR-(520N),ZK-IPR,552,Opotiki Helicopters
+2108,https://arena.nafc.org.au/resource/api/ext/aircraft/2108,HELICOPTER,EUROCOPTER,EC 120 B,RotType3,RW - Type 3 Light,IQT-(EC120),ZK-IQT,461,GCH Aviation
+2047,https://arena.nafc.org.au/resource/api/ext/aircraft/2047,HELICOPTER,HUGHES HELICOPTERS,369D,RotType3,RW - Type 3 Light,IRA-(500),ZK-IRA,439,Precision Helicopters	 PHL
+2046,https://arena.nafc.org.au/resource/api/ext/aircraft/2046,HELICOPTER,BELL HELICOPTER CO,206B,RotType3,RW - Type 3 Light,IRC-(JR),ZK-IRC,439,Precision Helicopters	 PHL
+2122,https://arena.nafc.org.au/resource/api/ext/aircraft/2122,HELICOPTER,EUROCOPTER,AS 350 BA,RotType3,RW - Type 3 Light,IRE-(BA),ZK-IRE,464,Heli Ag Limited
+2205,https://arena.nafc.org.au/resource/api/ext/aircraft/2205,HELICOPTER,EUROCOPTER,AS 350 B3,RotType3,RW - Type 3 Light,IRM-(B3),ZK-IRM,494,Southern Lakes Helicopters Limited
+2031,https://arena.nafc.org.au/resource/api/ext/aircraft/2031,HELICOPTER,MCDONNELL DOUGLAS HELICOPTER COMPANY,520N,RotType3,RW - Type 3 Light,ISO-(520N),ZK-ISO,436,Coast to Coast Helicopters 2013 Ltd
+2241,https://arena.nafc.org.au/resource/api/ext/aircraft/2241,HELICOPTER,AGUSTA AEROSPACE CORPORATION,A119,RotType3,RW - Type 3 Light,ISR-(A119),ZK-ISR,374,Kahu NZ
+2860,https://arena.nafc.org.au/resource/api/ext/aircraft/2860,HELICOPTER,AGUSTA AEROSPACE CORPORATION,A119,RotType3,RW - Type 3 Light,ISR-(A119),ZK-ISR,552,Opotiki Helicopters
+2873,https://arena.nafc.org.au/resource/api/ext/aircraft/2873,HELICOPTER,BELL HELICOPTER TEXTRON,206B,RotType3,RW - Type 3 Light,ISW-(JR),ZK-ISW,576,Marlborough Helicopters
+2160,https://arena.nafc.org.au/resource/api/ext/aircraft/2160,HELICOPTER,EUROCOPTER,AS.350B3,RotType3,RW - Type 3 Light,ITD-(B3),ZK-ITD,476,Lister Helicopters Limited
+2124,https://arena.nafc.org.au/resource/api/ext/aircraft/2124,HELICOPTER,KAWASAKI HEAVY INDUSTRIES,BK117 B-2,RotType2,RW - Type 2 Medium,ITG-(BK),ZK-ITG,466,Helicopters Hawkes Bay
+2173,https://arena.nafc.org.au/resource/api/ext/aircraft/2173,HELICOPTER,EUROCOPTER,AS 350 B2,RotType3,RW - Type 3 Light,ITJ-(B2),ZK-ITJ,482,Precision Helicopters NZ Limited
+2134,https://arena.nafc.org.au/resource/api/ext/aircraft/2134,HELICOPTER,BELL HELICOPTER TEXTRON CANADA LIMITED,206L-4,RotType3,RW - Type 3 Light,ITL-(LR),ZK-ITL,468,Heli Otago
+2048,https://arena.nafc.org.au/resource/api/ext/aircraft/2048,HELICOPTER,EUROCOPTER,AS 350 B3,RotType3,RW - Type 3 Light,ITM-(B3),ZK-ITM,440,Heli Glenorchy/Heliworks Queenstown
+2163,https://arena.nafc.org.au/resource/api/ext/aircraft/2163,HELICOPTER,BELL HELICOPTER CO,206B,RotType3,RW - Type 3 Light,ITN-(JR),ZK-ITN,476,Lister Helicopters Limited
+2177,https://arena.nafc.org.au/resource/api/ext/aircraft/2177,HELICOPTER,MCDONNELL DOUGLAS HELICOPTER COMPANY,520N,RotType3,RW - Type 3 Light,ITX-(520N),ZK-ITX,485,Rangitikei Helicopters Limited
+2068,https://arena.nafc.org.au/resource/api/ext/aircraft/2068,HELICOPTER,EUROCOPTER,AS 350 B3,RotType3,RW - Type 3 Light,ITY-(B3),ZK-ITY,448,Te Anau Helicopter Services Ltd
+2370,https://arena.nafc.org.au/resource/api/ext/aircraft/2370,HELICOPTER,EUROCOPTER,EC 130 B4,RotType3,RW - Type 3 Light,IUP-(EC130),ZK-IUP,550,Over The Top - The Helicopter Company
+2116,https://arena.nafc.org.au/resource/api/ext/aircraft/2116,HELICOPTER,EUROCOPTER,AS 350 B3,RotType3,RW - Type 3 Light,IUU-(B3),ZK-IUU,462,Heli A1 Limited
+2224,https://arena.nafc.org.au/resource/api/ext/aircraft/2224,HELICOPTER,EUROCOPTER,AS 350 B2,RotType3,RW - Type 3 Light,IVA-(B2),ZK-IVA,499,Volcanic Air
+2248,https://arena.nafc.org.au/resource/api/ext/aircraft/2248,HELICOPTER,MESSERSCHMITT-BOLKOW-BLOHM GMBH,MBB BK 117 B-2,RotType2,RW - Type 2 Medium,IVB-(BK),ZK-IVB,461,GCH Aviation
+2371,https://arena.nafc.org.au/resource/api/ext/aircraft/2371,HELICOPTER,EUROCOPTER,EC 130 B4,RotType3,RW - Type 3 Light,IVP-(EC130),ZK-IVP,550,Over The Top - The Helicopter Company
+2243,https://arena.nafc.org.au/resource/api/ext/aircraft/2243,HELICOPTER,BELL HELICOPTER CO,206L-4,RotType3,RW - Type 3 Light,IWA-(LR),ZK-IWA,505,Ashworth Helicopters (2009) Limited
+2532,https://arena.nafc.org.au/resource/api/ext/aircraft/2532,HELICOPTER,EUROCOPTER,EC 120 B,RotType3,RW - Type 3 Light,IWC-(EC120),ZK-IWC,494,Southern Lakes Helicopters Limited
+2142,https://arena.nafc.org.au/resource/api/ext/aircraft/2142,HELICOPTER,EUROCOPTER DEUTSCHLAND GMBH,MBB-BK 117 C-2,RotType2,RW - Type 2 Medium,IWD-(BK),ZK-IWD,468,Heli Otago
+2036,https://arena.nafc.org.au/resource/api/ext/aircraft/2036,HELICOPTER,AIRBUS HELICOPTERS,AS 350 B2,RotType3,RW - Type 3 Light,IWE-(B2),ZK-IWE,438,Glacier Southern Lakes Helicopters
+2139,https://arena.nafc.org.au/resource/api/ext/aircraft/2139,HELICOPTER,BELL HELICOPTER CO,206B (III),RotType3,RW - Type 3 Light,IWM-(JR),ZK-IWM,468,Heli Otago
+2103,https://arena.nafc.org.au/resource/api/ext/aircraft/2103,HELICOPTER,EUROCOPTER,EC130B4,RotType3,RW - Type 3 Light,IWN-(EC130),ZK-IWN,461,GCH Aviation
+2550,https://arena.nafc.org.au/resource/api/ext/aircraft/2550,HELICOPTER,EUROCOPTER,EC 130 B4,RotType3,RW - Type 3 Light,IWS-(EC130),ZK-IWS,461,GCH Aviation
+2135,https://arena.nafc.org.au/resource/api/ext/aircraft/2135,HELICOPTER,BELL HELICOPTER TEXTRON CANADA LIMITED,206L-4,RotType3,RW - Type 3 Light,IWY-(LR),ZK-IWY,468,Heli Otago
+2536,https://arena.nafc.org.au/resource/api/ext/aircraft/2536,HELICOPTER,BELL HELICOPTER TEXTRON CANADA LTD,429,RotType3,RW - Type 3 Light,IXW-(429),ZK-IXW,563,Advanced Flight Limited
+2837,https://arena.nafc.org.au/resource/api/ext/aircraft/2837,HELICOPTER,MCDONNELL DOUGLAS HELICOPTER COMPANY,500N,RotType3,RW - Type 3 Light,IXX-(520N),ZK-IXX,606,Glacier Country Helicopters Limited
+2168,https://arena.nafc.org.au/resource/api/ext/aircraft/2168,HELICOPTER,MCDONNELL DOUGLAS HELICOPTER COMPANY,902N,RotType3,RW - Type 3 Light,IYN-(MD900),ZK-IYN,478,Highland Helicopters
+2208,https://arena.nafc.org.au/resource/api/ext/aircraft/2208,HELICOPTER,KAWASAKI HEAVY INDUSTRIES	 LTD.,BK117 C-1,RotType2,RW - Type 2 Medium,IYY-(BK),ZK-IYY,494,Southern Lakes Helicopters Limited
+2867,https://arena.nafc.org.au/resource/api/ext/aircraft/2867,HELICOPTER,EUROCOPTER,AS 350 BA,RotType3,RW - Type 3 Light,IZW-(BA),ZK-IZW,511,Oceania Helicopters Tauranga Limited
+2744,https://arena.nafc.org.au/resource/api/ext/aircraft/2744,HELICOPTER,BELL HELICOPTER TEXTRON,206L-1,RotType3,RW - Type 3 Light,IZY-(LR),ZK-IZY,459,CTC Helicopters Tasman Limited
+2117,https://arena.nafc.org.au/resource/api/ext/aircraft/2117,HELICOPTER,EUROCOPTER,AS 350 BA,RotType3,RW - Type 3 Light,IZZ-(BA),ZK-IZZ,462,Heli A1 Limited
+2654,https://arena.nafc.org.au/resource/api/ext/aircraft/2654,FIXED_WING,BOMBARDIER INC,CL-600-2B16,FixOther,FW - Other,JCJ-(F/W) JET,ZK-JCJ,461,GCH Aviation
+2095,https://arena.nafc.org.au/resource/api/ext/aircraft/2095,FIXED_WING,CESSNA AIRCRAFT COMPANY,180K,FixAas,FW - AAS / Recce,JCW-(F/W-180),ZK-JCW,457,Canterbury Aviation
+2850,https://arena.nafc.org.au/resource/api/ext/aircraft/2850,FIXED_WING,GIPPSLAND AERONAUTICS PTY. LTD.,GA8 ,FixAas,FW - AAS / Recce,KBZ-(F/W),ZK-KBZ,493,South Pacific Helicopters/Wings over Whales
+757,https://arena.nafc.org.au/resource/api/ext/aircraft/757,HELICOPTER,EUROCOPTER DEUTSCHLAND GMBH,EC135 P2+,RotType3,RW - Type 3 Light,LIFESAVER 30,VH-VJB,3,Microflite Helicopter Services
+2279,https://arena.nafc.org.au/resource/api/ext/aircraft/2279,HELICOPTER,EUROCOPTER,EC120B,RotType3,RW - Type 3 Light,LIFESAVER 31,VH-XXR,3,Microflite Helicopter Services
+2182,https://arena.nafc.org.au/resource/api/ext/aircraft/2182,FIXED_WING,PACIFIC AEROSPACE CORPORATION,08-600,FixType5,FW - Type 5 SEAT,LTB-(F/W),ZK-LTB,486,Aerowork
+2181,https://arena.nafc.org.au/resource/api/ext/aircraft/2181,FIXED_WING,PACIFIC AEROSPACE CORPORATION,08-600,FixType5,FW - Type 5 SEAT,LTW-(F/W),ZK-LTW,486,Aerowork
+2895,https://arena.nafc.org.au/resource/api/ext/aircraft/2895,FIXED_WING,AIR TRACTOR INC,AT-502B,FixType4,FW - Type 4 SEAT,MAA-(FW 502),ZK-MAA,616,Super Air Ltd
+2885,https://arena.nafc.org.au/resource/api/ext/aircraft/2885,FIXED_WING,AIR TRACTOR INC,AT-502B,FixType4,FW - Type 4 SEAT,MAE-(FW 502),ZK-MAE,616,Super Air Ltd
+2294,https://arena.nafc.org.au/resource/api/ext/aircraft/2294,HELICOPTER,OTHER,RW RPAS,UAV,Unmanned Aerial Vehicle,MAVIC07,MAVIC07,515,Air Support QLD
+2564,https://arena.nafc.org.au/resource/api/ext/aircraft/2564,FIXED_WING,PILATUS AIRCRAFT LTD,PC-6,FixAas,FW - AAS / Recce,MCK-(F/W),ZK-MCK,565,Nelson Tasman Air & Inflite Charters
+2565,https://arena.nafc.org.au/resource/api/ext/aircraft/2565,FIXED_WING,PILATUS AIRCRAFT LTD,PC-6,FixAas,FW - AAS / Recce,MCN-(F/W),ZK-MCN,565,Nelson Tasman Air & Inflite Charters
+2566,https://arena.nafc.org.au/resource/api/ext/aircraft/2566,FIXED_WING,PILATUS AIRCRAFT LTD,PC-6,FixAas,FW - AAS / Recce,MCT-(F/W),ZK-MCT,565,Nelson Tasman Air & Inflite Charters
+2169,https://arena.nafc.org.au/resource/api/ext/aircraft/2169,FIXED_WING,AIR TRACTOR INC,AT-402B,FixType5,FW - Type 5 SEAT,MOT-(F/W),ZK-MOT,479,Motunau Ag Air Limited
+2112,https://arena.nafc.org.au/resource/api/ext/aircraft/2112,FIXED_WING,CESSNA AIRCRAFT COMPANY,441,FixOther,FW - Other,NFD-(F/W) AIR AMB,ZK-NFD,461,GCH Aviation
+2171,https://arena.nafc.org.au/resource/api/ext/aircraft/2171,FIXED_WING,PACIFIC AEROSPACE CORPORATION,08-600,FixType5,FW - Type 5 SEAT,OAL-(FW),ZK-OAL,481,Otago Airspread Limited
+2172,https://arena.nafc.org.au/resource/api/ext/aircraft/2172,FIXED_WING,PACIFIC AEROSPACE CORPORATION,08-600,FixType5,FW - Type 5 SEAT,OAS-(FW),ZK-OAS,481,Otago Airspread Limited
+1566,https://arena.nafc.org.au/resource/api/ext/aircraft/1566,HELICOPTER,AIRBUS HELICOPTERS,AS 350 B3E,RotType3,RW - Type 3 Light,PARKAIR 1,VH-NPX,22,National Parks & Wildlife
+90,https://arena.nafc.org.au/resource/api/ext/aircraft/90,HELICOPTER,EUROCOPTER FRANCE,AS.350B3,RotType3,RW - Type 3 Light,PARKAIR 2,VH-NPD,22,National Parks & Wildlife
+2812,https://arena.nafc.org.au/resource/api/ext/aircraft/2812,HELICOPTER,AIRBUS HELICOPTERS,AS 350 B3E,RotType3,RW - Type 3 Light,PARKAIR 3,VH-WDS,22,National Parks & Wildlife
+299,https://arena.nafc.org.au/resource/api/ext/aircraft/299,HELICOPTER,AIRBUS HELICOPTERS,AS 350 B3E,RotType3,RW - Type 3 Light,PARKAIR 4,VH-UAH,22,National Parks & Wildlife
+2815,https://arena.nafc.org.au/resource/api/ext/aircraft/2815,HELICOPTER,AIRBUS HELICOPTERS,AS 350 B3,RotType3,RW - Type 3 Light,PARKAIR 4,VH-UAH,35,United Aero Helicopters
+91,https://arena.nafc.org.au/resource/api/ext/aircraft/91,HELICOPTER,AIRBUS HELICOPTERS,AS 350 B3E,RotType3,RW - Type 3 Light,PARKAIR 5,VH-ZHG,22,National Parks & Wildlife
+2816,https://arena.nafc.org.au/resource/api/ext/aircraft/2816,HELICOPTER,AIRBUS HELICOPTERS,AS 350 B3,RotType3,RW - Type 3 Light,PARKAIR 5,VH-ZHG,35,United Aero Helicopters
+1701,https://arena.nafc.org.au/resource/api/ext/aircraft/1701,FIXED_WING,TEXTRON AVIATION INC.,208B,FixAas,FW - AAS / Recce,PARKAIR 6,VH-TFV,22,National Parks & Wildlife
+2210,https://arena.nafc.org.au/resource/api/ext/aircraft/2210,FIXED_WING,CESSNA AIRCRAFT COMPANY,208B,FixAas,FW - AAS / Recce,PARKAIR 7,VH-TQV,22,National Parks & Wildlife
+216,https://arena.nafc.org.au/resource/api/ext/aircraft/216,HELICOPTER,EUROCOPTER,AS.350B3,RotType3,RW - Type 3 Light,PARKAIR 8,VH-TMY,35,United Aero Helicopters
+2917,https://arena.nafc.org.au/resource/api/ext/aircraft/2917,HELICOPTER,BELL HELICOPTER CO,412EP,RotType2,RW - Type 2 Medium,RESCUE 651,VH-EWA,625,DFES Rescue
+2918,https://arena.nafc.org.au/resource/api/ext/aircraft/2918,HELICOPTER,BELL HELICOPTER CO,412EP,RotType2,RW - Type 2 Medium,RESCUE 652,VH-EPK,625,DFES Rescue
+2916,https://arena.nafc.org.au/resource/api/ext/aircraft/2916,HELICOPTER,BELL HELICOPTER CO,412EP,RotType2,RW - Type 2 Medium,RESCUE 653,VH-VAA,625,DFES Rescue
+2196,https://arena.nafc.org.au/resource/api/ext/aircraft/2196,FIXED_WING,AIR TRACTOR INC,AT-402,FixType5,FW - Type 5 SEAT,SAT-(F/W),ZK-SAT,491,Skyfarmers Aviation Limited
+2195,https://arena.nafc.org.au/resource/api/ext/aircraft/2195,FIXED_WING,AIR TRACTOR INC,AT-504,FixType4,FW - Type 4 SEAT,SKF-(F/W),ZK-SKF,491,Skyfarmers Aviation Limited
+2522,https://arena.nafc.org.au/resource/api/ext/aircraft/2522,FIXED_WING,PACIFIC AEROSPACE CORPORATION,08-600,FixType5,FW - Type 5 SEAT,SUZ-(F/W),ZK-SUZ,489,Rural Air Work Limited
+2585,https://arena.nafc.org.au/resource/api/ext/aircraft/2585,FIXED_WING,PACIFIC AEROSPACE CORPORATION,750XL,FixType5,FW - Type 5 SEAT,SWA-(F/W),ZK-SWA,568,Farmers Air Limited
+2896,https://arena.nafc.org.au/resource/api/ext/aircraft/2896,FIXED_WING,AIR TRACTOR INC,AT-502,FixType4,FW - Type 4 SEAT,SXP-(FW 502),ZK-SXP,616,Super Air Ltd
+2189,https://arena.nafc.org.au/resource/api/ext/aircraft/2189,FIXED_WING,PACIFIC AEROSPACE CORPORATION,08-600,FixType5,FW - Type 5 SEAT,TPW-(F/W),ZK-TPW,489,Rural Air Work Limited
+328,https://arena.nafc.org.au/resource/api/ext/aircraft/328,HELICOPTER,OTHER,RW RPAS,UAV,Unmanned Aerial Vehicle,UAS 200,RPA DJI001,98,Alphaflight Aero
+2586,https://arena.nafc.org.au/resource/api/ext/aircraft/2586,FIXED_WING,PACIFIC AEROSPACE CORPORATION,750XL,FixType5,FW - Type 5 SEAT,XLC-(F/W),ZK-XLC,568,Farmers Air Limited
+2190,https://arena.nafc.org.au/resource/api/ext/aircraft/2190,FIXED_WING,PACIFIC AEROSPACE CORPORATION,750XL,FixType5,FW - Type 5 SEAT,XLR-(F/W),ZK-XLR,489,Rural Air Work Limited
+2839,https://arena.nafc.org.au/resource/api/ext/aircraft/2839,FIXED_WING,PACIFIC AEROSPACE CORPORATION,750XL,FixType5,FW - Type 5 SEAT,XLR-(F/W),ZK-XLR,481,Otago Airspread Limited
