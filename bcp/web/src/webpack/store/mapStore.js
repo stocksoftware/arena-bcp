@@ -1,6 +1,6 @@
 import { action, observable, makeObservable } from "mobx";
 import {ASSET_MODE} from "../constant";
-import IncidentJson from "../../../public/incidents.json"
+import IncidentJson from "../../../public/incidents.json";
 
 export default class mapStore {
     constructor(stores) {

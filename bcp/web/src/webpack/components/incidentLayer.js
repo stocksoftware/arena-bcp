@@ -2,13 +2,13 @@ import React,{useEffect, useState} from 'react';
 import DataLayer from "./dataLayer";
 import * as AM_STYLES from '../helper/map-style';
 import L from "leaflet";
-import incident from '../../../public/incidents.json'
+import incident from '../../../public/incidents.json';
 const IncidentLayer = () => {
     const [data, setData] = useState(null);
     useEffect(() => {
         // fetchIncidentJson('incidents').then(setData);
-        console.log("incident", incident)
-        setData(incident)
+        console.log("incident", incident);
+        setData(incident);
     },[]);
     const pointToLayer = function(feature, latlng){
         const marker = L.marker(latlng, { icon: AM_STYLES.getIconForIncident(feature) });

@@ -1,7 +1,7 @@
 import * as L from 'leaflet';
 import 'leaflet-extra-markers';
-import {MAP_CONSTANTS} from '../constant'
-import * as AMFUNC_MATH from './map-math'
+import {MAP_CONSTANTS} from '../constant';
+import * as AMFUNC_MATH from './map-math';
 export const renderIncidentPopup = function (feature) {
     // let addDisatchBoardButton = false;
     parseNotesField(feature);
