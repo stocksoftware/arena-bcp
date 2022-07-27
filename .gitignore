@@ -1,7 +1,5 @@
 /.bundle
 /.idea
-/vendor/bundle
+data
 reports
-bcp/root
 bcp/node_modules
-bcp/web/node_modules
