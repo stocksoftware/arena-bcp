@@ -1,2 +1,2 @@
 #!/bin/bash
-node bcp/js/app.js bcp/root
+node dist/server/server.js dist/client
