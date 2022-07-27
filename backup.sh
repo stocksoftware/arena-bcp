@@ -1,4 +1,7 @@
 #!/bin/bash
-mkdir -p reports
+mkdir -p dist/client/data
+mkdir -p dist/client/reports
+mkdir -p .data
 node dist/scripts/backup.js
-cp data/*.csv reports
+cp .data/*.json dist/client/data
+cp .data/*.csv dist/client/reports

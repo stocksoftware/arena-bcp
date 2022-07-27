@@ -1,1 +1,1 @@
-node\node.exe bcp/js/app.js
+dist\bin\node.exe dist\server\server.js dist/client

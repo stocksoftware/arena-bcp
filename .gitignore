@@ -1,5 +1,6 @@
 /.bundle
 /.idea
-data
-reports
+/.data
+dist/client/data
+dist/client/reports
 bcp/node_modules

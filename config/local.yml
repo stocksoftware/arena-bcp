@@ -4,3 +4,5 @@ sso_auth_client_id: arena-api
 sso_auth_client_secret: na
 sso_auth_username: bcpbox-application
 sso_auth_password: DkYPl7TJ4MHnjfzGND
+
+data_path: '.data'
