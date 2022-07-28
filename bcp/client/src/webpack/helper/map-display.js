@@ -155,7 +155,6 @@ function getAssetSilhouettePath(asset) {
 export function getAircraftSilhouettePath(aircraft) {
     let silhouettePath;
     const model = aircraft.model;
-    console.log('model', model, model.includes('206'));
     if (aircraft.airframe === 'HELICOPTER') {
         if (model.includes('350')) {
             silhouettePath = 'AS350B3.png';

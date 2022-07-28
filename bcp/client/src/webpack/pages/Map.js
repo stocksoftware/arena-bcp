@@ -11,13 +11,13 @@ import EquipmentTrackLayer from "../components/EquipmentTrackLayer";
 import LocationLayer from "../components/LocationLayer";
 
 const Map = observer(() => {
-    const position = [-27, 130];
+    const mapCenter = [-27, 130];
     const {mapStore} = useStores();
-    const asset = mapStore.assetType;
-    const track = asset + 'TRACK';
+    const assetMode = mapStore.assetType;
+
     return (
         <MapContainer
-            center={position}
+            center={mapCenter}
             zoom={5}
             scrollWheelZoom={true}
             id="map"
@@ -27,29 +27,41 @@ const Map = observer(() => {
                 url={MAP_CONFIG.ESRItopoURL}
             />
             <LayersControl>
-                {asset === ASSET_MODE.EQUIPMENT ?
+                {assetMode === ASSET_MODE.EQUIPMENT ?
                     <>
-                        <LayersControl.Overlay name="Equipment" key={ASSET_MODE.EQUIPMENT}>
-                            <EquipmentLayer/>
+                        <LayersControl.Overlay name="Arena Equipment" key={"Arena Equipment"+assetMode}>
+                            <EquipmentLayer arenaAssetsOnly={true}/>
                         </LayersControl.Overlay>
-                        <LayersControl.Overlay name="Equipment Track" key={track}>
-                            <EquipmentTrackLayer/>
+                        <LayersControl.Overlay name="Arena Track" key={"Arena Tracks"+assetMode}>
+                            <EquipmentTrackLayer arenaAssetsOnly={true}/>
+                        </LayersControl.Overlay>
+                        <LayersControl.Overlay name="Other Equipment" key={"Other Equipment"+assetMode}>
+                            <EquipmentLayer arenaAssetsOnly={false}/>
+                        </LayersControl.Overlay>
+                        <LayersControl.Overlay name="Other Track" key={"other Track"+assetMode}>
+                            <EquipmentTrackLayer arenaAssetsOnly={false}/>
                         </LayersControl.Overlay>
                     </>
                     :
                     <>
-                        <LayersControl.Overlay name="Aircraft" key={ASSET_MODE.AIRCRAFT}>
-                            <AircraftLayer/>
+                        <LayersControl.Overlay name="Arena Aircraft" key={"Arena Aircraft"+assetMode}>
+                            <AircraftLayer arenaAssetsOnly={true}/>
                         </LayersControl.Overlay>
-                        <LayersControl.Overlay name="Aircraft Track" key={track}>
-                            <AircraftTrackLayer/>
+                        <LayersControl.Overlay name="Arena Tracks" key={"Arena Tracks"+assetMode}>
+                            <AircraftTrackLayer arenaAssetsOnly={true}/>
+                        </LayersControl.Overlay>
+                        <LayersControl.Overlay name="Other Aircraft" key={"Other Aircraft"+assetMode}>
+                            <AircraftLayer arenaAssetsOnly={false}/>
+                        </LayersControl.Overlay>
+                        <LayersControl.Overlay name="Other Tracks" key={"Other Tracks"+assetMode}>
+                            <AircraftTrackLayer arenaAssetsOnly={false}/>
                         </LayersControl.Overlay>
                     </>
                 }
-                <LayersControl.Overlay name="Incident" key="Incident">
+                <LayersControl.Overlay name="Incident" key={"Incident"+assetMode}>
                     <IncidentLayer/>
                 </LayersControl.Overlay>
-                <LayersControl.Overlay name="Location" key="Location" checked>
+                <LayersControl.Overlay name="Location" key={"Location"+assetMode} checked>
                     <LocationLayer/>
                 </LayersControl.Overlay>
             </LayersControl>

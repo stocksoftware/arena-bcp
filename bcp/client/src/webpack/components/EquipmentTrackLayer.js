@@ -4,7 +4,7 @@ import {toGeoJSON} from "../helper/toGeoJSON";
 import {styleAssetTrack, buildTrackingPopup} from "../helper/map-style";
 import {observer} from "mobx-react";
 import {ASSET_MODE} from '../constant';
-const EquipmentTrackLayer =observer(()=>{
+const EquipmentTrackLayer =observer(({arenaAssetsOnly})=>{
     const {equipmentTrackGeoJSON} = toGeoJSON();
     const pointToLayer = function(feature, latlng){
         return L.marker(latlng, {
@@ -21,9 +21,9 @@ const EquipmentTrackLayer =observer(()=>{
             layer.bindPopup(buildTrackingPopup(e, feature, ASSET_MODE.AIRCRAFT),{ maxWidth: 600 });
         });
     };
-
+    const filter = (a) => !!a.properties.imeiMatch === arenaAssetsOnly;
     return(
-        <DataLayer  data={equipmentTrackGeoJSON} pointToLayer={pointToLayer} onEachFeature={onEachFeature} />
+        <DataLayer filter={filter} data={equipmentTrackGeoJSON} pointToLayer={pointToLayer} onEachFeature={onEachFeature} />
     );
 });
 

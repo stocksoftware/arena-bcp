@@ -25,6 +25,5 @@ export const toLocationGeoJSON = () => {
         };
         pushFeatureData(LocationGeoJSON, feature);
     });
-    console.log(LocationGeoJSON);
     return LocationGeoJSON;
 };

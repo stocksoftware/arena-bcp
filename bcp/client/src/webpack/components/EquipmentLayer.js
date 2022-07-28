@@ -4,7 +4,7 @@ import {styleAssetMarker,buildPopUpEquipmentContent} from "../helper/map-style";
 import {observer} from "mobx-react";
 import {toGeoJSON} from "../helper/toGeoJSON";
 
-const EquipmentLayer =observer(()=>{
+const EquipmentLayer =observer(({arenaAssetsOnly})=>{
     const { equipmentGeoJSON } = toGeoJSON();
     const pointToLayer = function(feature, latlng){
         return styleAssetMarker(feature, latlng);
@@ -18,8 +18,9 @@ const EquipmentLayer =observer(()=>{
             });
         });
     };
+    const filter = (a) => !!a.properties.imeiMatch === arenaAssetsOnly;
     return(
-        <DataLayer data={equipmentGeoJSON} pointToLayer={pointToLayer} onEachFeature={onEachFeature}/>
+        <DataLayer filter={filter} data={equipmentGeoJSON} pointToLayer={pointToLayer} onEachFeature={onEachFeature}/>
     );
 });
 

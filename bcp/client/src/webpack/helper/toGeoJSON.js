@@ -10,8 +10,8 @@ export const toGeoJSON = () => {
     const {currentLocations} = currentLocationJSON;
     const {aircraft} = aircraftJSON;
     const {equipment} = equipmentJSON;
-    const allEquipment = currentLocations.filter(location => location.assetType === 'VEHICLE');
-    const allAircraft = currentLocations.filter(location => location.assetType === 'FIXED_WING' || location.assetType === 'HELICOPTER');
+    const equipmentLocations = currentLocations.filter(location => location.assetType === 'VEHICLE');
+    const aircraftLocations = currentLocations.filter(location => location.assetType === 'FIXED_WING' || location.assetType === 'HELICOPTER');
 
     const equipmentGeoJSON = {
         type: 'FeatureCollection',
@@ -43,17 +43,18 @@ export const toGeoJSON = () => {
         const type = track.properties.assetType;
         if (AIRCRAFT_TYPE[type]) {
             //aircraft track
+            track.properties.imeiMatch = aircraft.find(a => a.imei === track.properties.imei) !== undefined;
             pushFeatureData(aircraftTrackGeoJSON, track);
         } else {
+            track.properties.imeiMatch = equipment.find(e => e.imei === track.properties.imei) !== undefined;
             pushFeatureData(equipmentTrackGeoJSON, track);
         }
     });
-    currentLocations.forEach(location => {
-        const matchedAircraft = aircraft.find(value => value.imei === location.imei);
-        const matchedEquipment = equipment.find(value => value.imei === location.imei);
-        const arenaAsset = matchedAircraft || matchedEquipment;
 
-        if (matchedAircraft) {
+    aircraftLocations.forEach(location => {
+        const arenaAsset = aircraft.find(value => value.imei === location.imei);
+
+        if (arenaAsset) {
             const newFeature = {
                 type: "Feature",
                 geometry: {
@@ -82,8 +83,29 @@ export const toGeoJSON = () => {
                 }
             };
             pushFeatureData(aircraftGeoJSON, newFeature);
+        } else {
+            const newFeature = {
+                type: "Feature",
+                geometry: {
+                    type: "Point",
+                    coordinates: [
+                        location.longitude,
+                        location.latitude
+                    ]
+                },
+                properties: {
+                    ...location,
+                    imeiMatch: false,
+                }
+            };
+            pushFeatureData(aircraftGeoJSON, newFeature);
         }
-        if (matchedEquipment) {
+    });
+
+    equipmentLocations.forEach(location => {
+        const arenaAsset = equipment.find(value => value.imei === location.imei);
+
+        if (arenaAsset) {
             const newFeature = {
                 type: "Feature",
                 geometry: {
@@ -107,51 +129,26 @@ export const toGeoJSON = () => {
                 }
             };
             pushFeatureData(equipmentGeoJSON, newFeature);
-        }
-    });
-
-    allEquipment.forEach(equipment => {
-        const filterResult = equipmentGeoJSON.features.filter(feature => feature.properties.imei === equipment.imei);
-        if (filterResult.length === 0) {
+        } else {
             const newFeature = {
                 type: "Feature",
                 geometry: {
                     type: "Point",
                     coordinates: [
-                        equipment.longitude,
-                        equipment.latitude
+                        location.longitude,
+                        location.latitude
                     ]
                 },
                 properties: {
-                    ...equipment,
+                    ...location,
                     imeiMatch: false,
                 }
             };
             pushFeatureData(equipmentGeoJSON, newFeature);
         }
     });
-    allAircraft.forEach(aircraft => {
-        const filterResult = aircraftGeoJSON.features.filter(feature => feature.properties.imei === aircraft.imei);
-        if (filterResult.length === 0) {
-            const newFeature = {
-                type: "Feature",
-                geometry: {
-                    type: "Point",
-                    coordinates: [
-                        aircraft.longitude,
-                        aircraft.latitude
-                    ]
-                },
-                properties: {
-                    ...aircraft,
-                    imeiMatch: false,
-                }
-            };
-            pushFeatureData(aircraftGeoJSON, newFeature);
-        }
-    });
+
     return {
         aircraftGeoJSON, equipmentGeoJSON, aircraftTrackGeoJSON, equipmentTrackGeoJSON
     };
-
 };
