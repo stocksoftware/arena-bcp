@@ -1,70 +1,107 @@
 @import "variables.less";
 
+html {
+  height: 100%;
 
-body{
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  #app {
+  body {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    height: 100%;
 
-    .navFilter {
-      background: @altColour;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0 1em;
-      height: 46px;
+    #root {
+      height: 100%;
 
-      #modeFilter {
+
+    #app {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+
+      .navFilter {
+        background: @altColour;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
+        padding: 0 1em;
+        height: 46px;
 
-        #dropdown-mode {
-          background: #fff;
-          color: black;
-          height: 34px;
+        #modeFilter {
           display: flex;
           justify-content: center;
           align-items: center;
 
-          &:hover {
-            background: @darkOrange;
+          #dropdown-mode {
+            background: #fff;
+            color: black;
+            height: 34px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &:hover {
+              background: @darkOrange;
+            }
+          }
+        }
+
+        #viewFilter {
+          border-radius: 4px;
+          margin: 0 0.5em;
+          display: flex;
+          background: #fff;
+          padding: 0;
+
+          li {
+            list-style: none;
+            border-radius: 0;
+            box-shadow: -1px 0 0 0 lightgrey;
+            height: 34px;
+
+            &:hover {
+              background: @darkOrange;
+            }
+
+            &.active {
+              background: @primaryColour;
+            }
           }
         }
       }
 
-      #viewFilter {
-        border-radius: 4px;
-        margin: 0 0.5em;
-        display: flex;
-        background: #fff;
-        padding: 0;
+      .leaflet-container {
+        width: 100%;
+        height: 100%;
 
-        li {
-          list-style: none;
-          border-radius: 0;
-          box-shadow: -1px 0 0 0 lightgrey;
-          height: 34px;
-
-          &:hover {
-            background: @darkOrange;
-          }
-
-          &.active {
-            background: @primaryColour;
+        .leaflet-marker-icon {
+          .fa {
+            position: absolute;
+            bottom: 25px;
+            left: 12px;
+            font-size: 14px;
           }
         }
-      }
-    }
 
-    .leaflet-container {
-      height: 100vh;
-      .leaflet-marker-icon {
-        .fa{
+        .dispatched:after {
+          font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+          content: attr(data-content);
           position: absolute;
-          bottom:25px;
-          left: 12px;
-          font-size: 14px;
+          bottom: -12px;
+          left: 0;
+          right: 0;
+          text-align: center;
+          font-size: 11px;
+        }
+      }
+      .arena-map-table {
+        width: 240px;
+
+        .emphasis {
+          font-weight: bold;
+        }
+        .section:not(:first-child) {
+          margin-top: 10px;
         }
       }
     }
-  }}
+  }
+}
+}
