@@ -3,6 +3,10 @@ export const ASSET_MODE={
     EQUIPMENT: 'EQUIPMENT'
 };
 
+export const AIRCRAFT_TYPE = {
+    FIXED_WING: 'FIXED_WING',
+    HELICOPTER: 'HELICOPTER'
+};
 export const MAP_CONFIG = {
     ESRItopoURL: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}',
 };
@@ -23,4 +27,19 @@ export const MAP_CONSTANTS = {
 
     // Notes
     NOTES_HEADINGS: 'Standby|Unserviceable|Request|Dispatch|Reservation|Availability|Configuration|Temporary Change|Asset Change'
+};
+
+export const AIRCRAFT_CATEGORIES = {
+    RotType1: 'RW - Type 1 Heavy',
+    RotType2: 'RW - Type 2 Medium',
+    RotType3: 'RW - Type 3 Light',
+    RotType4: 'RW - Type 4 Extra Light',
+    RotOther: 'RW - Other',
+    FixType1: 'FW - Type 1 MEAT',
+    FixType4: 'FW - Type 4 SEAT',
+    FixType5: 'FW - Type 5 SEAT',
+    FixAas: 'FW - AAS / Recce',
+    FixOther: 'FW - Other',
+    UAV: 'Unmanned Aerial Vehicle',
+    Other: 'Other'
 };

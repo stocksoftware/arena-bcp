@@ -53,9 +53,9 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rm -r ../dist/* && webpack --mode=production && cp -r config bin ../dist/",
+    "build": "rm -r ../dist/* && webpack --mode=production && cp -r config bin ../dist/ && cp -r public ../dist/client",
     "start": "webpack-dev-server --mode=development",
-    "format": "npx eslint src/webpack --fix"
+    "format": "npx eslint client/src/webpack --fix"
   },
   "keywords": [],
   "author": "",

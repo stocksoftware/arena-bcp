@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {Dropdown} from 'react-bootstrap';
-import Map from './pages/map';
-import List from './pages/list';
+import Map from './pages/Map';
+import List from './pages/List';
 import './less/app.less';
 import {ASSET_MODE} from "./constant";
 import { observer } from "mobx-react";

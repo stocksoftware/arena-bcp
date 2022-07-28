@@ -1,6 +1,6 @@
 import { action, observable, makeObservable } from "mobx";
 import {ASSET_MODE} from "../constant";
-import IncidentJson from "../asset/incidents.json";
+import IncidentJson from "../../../../public/incidents.json";
 import {toGeoJSON} from "../helper/toGeoJSON";
 
 export default class mapStore {
@@ -9,27 +9,13 @@ export default class mapStore {
         makeObservable(this);
     }
 
-    @observable assetType = ASSET_MODE.AIRCRAFT;
-    @observable incidentJson = IncidentJson;
-    @observable aircraftGeoJSON = [];
-    @observable equipmentGeoJSON = [];
+    @observable assetType = ASSET_MODE.EQUIPMENT;
 
     @action
     setAssetType(type) {
         this.assetType = type;
+        console.log('set asset type', type);
     }
-    @action
-    setAircraftGeoJSON(json) {
-        this.aircraftGeoJSON = json;
-    }
-    @action
-    setEquipmentGeoJSON(json) {
-        this.equipmentGeoJSON = json;
-    }
-    loadGeoJSON(){
-        const {aircraftGeoJSON, equipmentGeoJSON} = toGeoJSON();
-        this.setAircraftGeoJSON(aircraftGeoJSON);
-        this.setEquipmentGeoJSON(equipmentGeoJSON);
-    }
+
 
 }

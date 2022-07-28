@@ -1,8 +1,8 @@
 import React,{useEffect, useState} from 'react';
-import DataLayer from "./dataLayer";
+import DataLayer from "./DataLayer";
 import * as AM_STYLES from '../helper/map-style';
 import L from "leaflet";
-import incident from '../asset/incidents.json';
+import incident from '../../../../public/incidents.json';
 const IncidentLayer = () => {
     const [data, setData] = useState(null);
     useEffect(() => {
@@ -13,9 +13,13 @@ const IncidentLayer = () => {
         return marker;
     };
     const onEachFeature = function (feature, layer) {
-        if (feature.properties) {
-            layer.bindPopup(AM_STYLES.renderIncidentPopup(feature), { maxWidth: 600 });
-        }
+        layer.on('click', function(e){
+            layer.bindPopup(AM_STYLES.renderIncidentPopup(feature), { maxWidth: 600 })
+                .openPopup()
+                ._popup._closeButton.addEventListener('click', (event) => {
+                event.preventDefault();
+            });
+        });
     };
     return(
         <DataLayer data={data} pointToLayer={pointToLayer} onEachFeature={onEachFeature}/>

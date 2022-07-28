@@ -1,0 +1,14 @@
+<div class="arena-map-table">
+  <div class="emphasis">TRACKING RECORD</div>
+  <div class="assetLabel" title="Show asset on map">
+    <div class="assetDetails">
+      <span>{{{label}}}</span>
+      <span>{{{assetType}}}</span>
+    </div>
+  </div>
+  <div><span class="emphasis">Time: </span>{{time}}</div>
+  <div><span class="emphasis">Coords: </span>{{coords}}</div>
+  <div><span class="emphasis">Speed: </span>{{speed}} km/h</div>
+  <div><span class="emphasis">Track: </span>{{track}} deg</div>
+  {{#if altitude}}<div><span class="emphasis">Altitude: </span>{{altitude}} ft</div>{{/if}}
+</div>

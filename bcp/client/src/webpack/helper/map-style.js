@@ -1,9 +1,10 @@
 import * as L from 'leaflet';
 import 'leaflet-extra-markers';
-import {MAP_CONSTANTS} from '../constant';
+import {ASSET_MODE, MAP_CONSTANTS} from '../constant';
 import * as AMFUNC_MATH from './map-math';
 import * as AMFUNC_DISP from './map-display';
 import moment from 'moment-timezone';
+import turf from 'turf';
 
 export const renderIncidentPopup = function (feature) {
     // let addDisatchBoardButton = false;
@@ -194,6 +195,7 @@ export const toShortCallsign = (callsign) => {
 
     return result;
 };
+
 export function cleanOperatorName(string) {
     if (!string) {
         return '';
@@ -203,6 +205,7 @@ export function cleanOperatorName(string) {
     result = result.replace(/[lL][tT][dD]/, '');
     return result.trim();
 }
+
 function safeString(string) {
     if (!string) {
         return '';
@@ -212,9 +215,9 @@ function safeString(string) {
     return result;
 }
 
-export function styleAssetMarker(feature, latlng, historicViewDate=null) {
+export function styleAssetMarker(feature, latlng, historicViewDate = null) {
     // build icon URL - start with directory
-    let icon = '../asset/icons/';
+    let icon = './icons/';
     const airframe = (feature.properties.airframe) ?
         feature.properties.airframe.toUpperCase().replace(' ', '_') :
         feature.properties.assetType;
@@ -277,58 +280,189 @@ export function styleAssetMarker(feature, latlng, historicViewDate=null) {
         })
     });
 
-    // if (AM_MAP.showAssetLabels()) {
-    //     const aircraftFromFeature = AM_DATA.getAircraftDetailsForFeature(feature);
-    //     const assetRegistration = feature.properties.assetRegistration;
-    //     const regLabel = assetRegistration.substring(0, assetRegistration.indexOf(' '));
-    //     if (aircraftFromFeature.length > 0) {
-    //         for (let i = 0; i < aircraftFromFeature.length; i++) {
-    //             marker.bindLabel(getAircraftLabel(aircraftFromFeature[i].callsign, regLabel),
-    //                 { noHide: true, className: 'assetLabel' }).showLabel();
-    //         }
-    //     } else {
-    //         marker.bindLabel(getAircraftLabel(feature.properties.callsign, regLabel),
-    //             { noHide: true, className: 'assetLabel' }).showLabel();
-    //     }
-    // }
 
     return marker;
 }
 
-export const buildPopUpEquipmentContent =(feature) => {
+export const buildPopUpEquipmentContent = (feature) => {
     const equipment = feature;
-    if(feature.properties.imeiMatch){
-        const equipmentData = { includeTitle: true };
+    if (feature.properties.imeiMatch) {
+        const equipmentData = {includeTitle: true};
         equipmentData.title = AMFUNC_DISP.getAssetTitle(equipment.properties);
         equipmentData.lastSeen = AMFUNC_DISP.getAssetLastSeen(equipment);
         equipmentData.spatialDisp = AMFUNC_DISP.getAssetSpatialDisp(equipment);
         equipmentData.details = AMFUNC_DISP.getEquipmentDetails(equipment);
         equipmentData.contactDetails = AMFUNC_DISP.getAssetDispatchContactDetails(equipment);
         return require('./templates/assetCommonContent.hbs')(equipmentData);
-    }else{
-        let popupContent = '<div class=\'arena-map-table\'><strong>OTHER ASSET</strong><br/>';
-        popupContent += 'Asset not found in ARENA<br/><br/>';
-        if (feature.properties) {
-            const out = [];
-            Object.entries(feature.properties).forEach(([key,value])=>{
-                if (key !== 'url' && key !== 'unparseableTrackingRego' && value) {
-                    out.push('<span class=\'emphasis\'>' + key + ':</span> ' + value);
-                }
-                if (key === 'transmitted') {
-                    // convert tracking date to a moment
-                    const t = moment(value);
-                    // get current date time
-                    const d = moment();
-                    // calculate the duration
-                    const dh = moment.duration(t.diff(d)).humanize(true);
-                    out.push('<span class=\'emphasis\'>Last seen:</span> ' + dh);
-                }
-            });
-            popupContent += out.join('<br/>');
-        }
-        popupContent +='</div>';
-        return popupContent;
+    } else {
+        return buildPopUpOtherAssetContent(feature);
     }
 
 };
 
+export function buildPopUpAircraftContent(feature) {
+    const aircraftData = {};
+    if (feature.properties.imeiMatch) {
+        // arena aircraft
+        aircraftData.commonContent = buildPopUpAircraftCommonContent(feature, true);
+        aircraftData.operatorDetails = AMFUNC_DISP.getAssetOperatorDetails(feature.properties);
+        aircraftData.contactDetails = AMFUNC_DISP.getAssetDispatchContactDetails(feature);
+        return require('./templates/aircraftPopup.hbs')(aircraftData);
+    } else {
+        return buildPopUpOtherAssetContent(feature);
+    }
+
+}
+
+function buildPopUpAircraftCommonContent(aircraft, includeTitle) {
+    const aircraftData = {includeTitle: includeTitle};
+    if (includeTitle) {
+        aircraftData.title = AMFUNC_DISP.getAssetTitle(aircraft.properties);
+    }
+    aircraftData.lastSeen = AMFUNC_DISP.getAssetLastSeen(aircraft);
+    aircraftData.spatialDisp = AMFUNC_DISP.getAssetSpatialDisp(aircraft);
+    aircraftData.details = AMFUNC_DISP.getAircraftDetails(aircraft.properties);
+    return require('./templates/assetCommonContent.hbs')(aircraftData);
+}
+
+function buildPopUpOtherAssetContent(feature) {
+    let popupContent = '<div class=\'arena-map-table\'><strong>OTHER ASSET</strong><br/>';
+    popupContent += 'Asset not found in ARENA<br/><br/>';
+    if (feature.properties) {
+        const out = [];
+        Object.entries(feature.properties).forEach(([key, value]) => {
+            if (key !== 'url' && key !== 'productType' && key !== 'unparseableTrackingRego' && value) {
+                out.push('<span class=\'emphasis\'>' + key + ':</span> ' + value);
+            }
+            if (key === 'transmitted') {
+                // convert tracking date to a moment
+                const t = moment(value);
+                // get current date time
+                const d = moment();
+                // calculate the duration
+                const dh = moment.duration(t.diff(d)).humanize(true);
+                out.push('<span class=\'emphasis\'>Last seen:</span> ' + dh);
+            }
+        });
+        popupContent += out.join('<br/>');
+    }
+    popupContent += '</div>';
+    return popupContent;
+}
+
+export function styleAssetTrack(feature) {
+    const speed = feature.properties.speed[feature.properties.speed.length - 1];
+    let colour = '#336699';
+    switch (true) {
+        case speed < 0:
+            // use the default colour
+            break;
+        case speed <= 20:
+            colour = '#585858 '; // grey
+            break;
+
+        case speed <= 100:
+            colour = '#ff9900'; // orange
+            break;
+
+        case speed <= 200:
+            colour = '#ff0000'; // red
+            break;
+
+        default:
+            colour = '#cc0099'; // purple
+    }
+    return colour;
+
+}
+
+export function buildTrackingPopup(e, feature, type) {
+    const clickPoint = turf.point([e.latlng.lng, e.latlng.lat]);
+    const coordinates = feature.geometry.coordinates;
+    const properties = feature.properties;
+    const pointOnLine = turf.pointOnLine(feature, clickPoint);
+    const index = pointOnLine.properties.index;
+    const lat = parseFloat(coordinates[index][1]);
+    const lng = parseFloat(coordinates[index][0]);
+    const label = properties.assetRegistration;
+    const assetType = properties.assetType;
+    const coords = lat.toFixed(3) + ',' + lng.toFixed(3);
+    const time = moment(properties.time[index]).format('HH:mm:ss DD/MM/YYYY');
+    const speed = properties.speed[index];
+    const track = properties.track[index];
+    const altitude = AMFUNC_DISP.mToFeet(coordinates[index][2]).toFixed(0);
+    const content = require('./templates/assetSpatialData.hbs')({
+        label,
+        assetType,
+        time,
+        coords,
+        speed,
+        track,
+        altitude
+    });
+    return content;
+}
+
+export function renderLocationPopup(location) {
+    return require('./templates/locationPopup.hbs')({
+        location,
+    });
+}
+
+export function locationIcon(location){
+    let icon ;
+    switch (location.classification) {
+        case 'Primary':
+            icon = locationPrimaryIcon;
+            break;
+        case 'Secondary':
+            icon = locationSecondaryIcon;
+            break;
+        case 'Support':
+            icon = locationSupportIcon;
+            break;
+        case 'Helipad':
+            icon = locationHelipadIcon;
+            break;
+        default:
+            icon = locationUnclassifiedIcon;
+            break;
+    }
+    return icon;
+
+}
+
+const locationPrimaryIcon = L.icon({
+    iconUrl: './icons/location-crosshairs-red.svg',
+    iconSize: [24, 24],
+    iconAnchor: [12, 12],
+    popupAnchor: [0, -12]
+});
+
+ const locationSecondaryIcon = L.icon({
+    iconUrl: './icons/location-crosshairs-orange.svg',
+    iconSize: [24, 24],
+    iconAnchor: [12, 12],
+    popupAnchor: [0, -12]
+});
+
+const locationSupportIcon = L.icon({
+    iconUrl: './icons/location-crosshairs-blue.svg',
+    iconSize: [24, 24],
+    iconAnchor: [12, 12],
+    popupAnchor: [0, -12]
+});
+
+ const locationHelipadIcon = L.icon({
+    iconUrl: './icons/location-crosshairs-purple.svg',
+    iconSize: [24, 24],
+    iconAnchor: [12, 12],
+    popupAnchor: [0, -12]
+});
+
+ const locationUnclassifiedIcon = L.icon({
+    iconUrl: './icons/location-crosshairs-grey.svg',
+    iconSize: [24, 24],
+    iconAnchor: [12, 12],
+    popupAnchor: [0, -12]
+});
