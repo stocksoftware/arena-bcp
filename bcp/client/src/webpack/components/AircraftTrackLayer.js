@@ -1,11 +1,14 @@
-import React from 'react';
+import React,{useState, useEffect}from 'react';
 import DataLayer from "./DataLayer";
-import {toGeoJSON} from "../helper/toGeoJSON";
+import {fetchAircraftTrack} from "../helper/toGeoJSON";
 import {styleAssetTrack, buildTrackingPopup} from "../helper/map-style";
 import {observer} from "mobx-react";
 import {ASSET_MODE} from '../constant';
 const AircraftTrackLayer =observer(({arenaAssetsOnly})=>{
-    const {aircraftTrackGeoJSON} = toGeoJSON();
+    const [aircraftTrackGeoJSON, setAircraftTrackGeoJSON]= useState(null);
+    useEffect(()=>{
+        fetchAircraftTrack(setAircraftTrackGeoJSON);
+    },[]);
     const pointToLayer = function(feature, latlng){
         return L.marker(latlng, {
             icon: L.divIcon({

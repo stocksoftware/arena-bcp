@@ -1,11 +1,46 @@
-import currentLocationJSON from '../../../../public/currentLocations.json';
-import aircraftJSON from '../../../../public/aircraft.json';
-import equipmentJSON from '../../../../public/equipment.json';
-import geoTracks from '../../../../public/geoTracks.json';
 import {createSearchText} from './map-style';
 import {AIRCRAFT_TYPE} from '../constant';
 
-export const toGeoJSON = () => {
+export const fetchLocations = (cb) => {
+    fetch('/locations.json').then(res => res.json()).then(
+        locationJSON => {
+            const {locations} = locationJSON;
+            const LocationGeoJSON = {
+                type: 'FeatureCollection',
+                features: []
+            };
+            const pushFeatureData = (geoJson, newFeature) => {
+                geoJson.features.push(
+                    newFeature
+                );
+            };
+            locations.forEach(track => {
+                const feature = {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            track.long,
+                            track.lat,
+                        ]
+                    },
+                    "properties": {...track}
+                };
+                pushFeatureData(LocationGeoJSON, feature);
+            });
+            cb(LocationGeoJSON);
+        });
+};
+export const toGeoJSON = async () => {
+
+    const geoTracksData = await fetch('/geoTracks.json');
+    const currentLocationData = await fetch('/currentLocations.json');
+    const aircraftData = await fetch('/aircraft.json');
+    const equipmentData = await fetch('/equipment.json');
+    const geoTracks = await geoTracksData.json();
+    const currentLocationJSON = await currentLocationData.json();
+    const aircraftJSON = await aircraftData.json();
+    const equipmentJSON = await equipmentData.json();
     const trackFeature = geoTracks.features;
     const {currentLocations} = currentLocationJSON;
     const {aircraft} = aircraftJSON;
@@ -13,44 +48,52 @@ export const toGeoJSON = () => {
     const equipmentLocations = currentLocations.filter(location => location.assetType === 'VEHICLE');
     const aircraftLocations = currentLocations.filter(location => location.assetType === 'FIXED_WING' || location.assetType === 'HELICOPTER');
 
-    const equipmentGeoJSON = {
-        type: 'FeatureCollection',
-        features: []
-    };
+    return {trackFeature, aircraft, equipment, equipmentLocations, aircraftLocations};
 
-    const aircraftGeoJSON = {
-        type: 'FeatureCollection',
-        features: []
-    };
-
-    const aircraftTrackGeoJSON = {
-        type: 'FeatureCollection',
-        features: []
-    };
-
+};
+const pushFeatureData = (geoJson, newFeature) => {
+    geoJson.features.push(
+        newFeature
+    );
+};
+export const fetchEquipmentTrack = async (cb) => {
+    const {trackFeature, equipment} = await toGeoJSON();
     const equipmentTrackGeoJSON = {
         type: 'FeatureCollection',
         features: []
     };
-
-    const pushFeatureData = (geoJson, newFeature) => {
-        geoJson.features.push(
-            newFeature
-        );
+    trackFeature.forEach(track => {
+        const type = track.properties.assetType;
+        if (!AIRCRAFT_TYPE[type]) {
+            //equipment track
+            track.properties.imeiMatch = equipment.find(e => e.imei === track.properties.imei) !== undefined;
+            pushFeatureData(equipmentTrackGeoJSON, track);
+        }
+    });
+    cb(equipmentTrackGeoJSON);
+};
+export const fetchAircraftTrack = async (cb) => {
+    const {trackFeature, aircraft} = await toGeoJSON();
+    const aircraftTrackGeoJSON = {
+        type: 'FeatureCollection',
+        features: []
     };
-
     trackFeature.forEach(track => {
         const type = track.properties.assetType;
         if (AIRCRAFT_TYPE[type]) {
             //aircraft track
             track.properties.imeiMatch = aircraft.find(a => a.imei === track.properties.imei) !== undefined;
             pushFeatureData(aircraftTrackGeoJSON, track);
-        } else {
-            track.properties.imeiMatch = equipment.find(e => e.imei === track.properties.imei) !== undefined;
-            pushFeatureData(equipmentTrackGeoJSON, track);
         }
     });
-
+    cb(aircraftTrackGeoJSON);
+};
+export const fetchAircraftGeoJSON = async (cb) => {
+    const {aircraft, aircraftLocations} = await toGeoJSON();
+    const aircraftGeoJSON = {
+        type: 'FeatureCollection',
+        features: []
+    };
     aircraftLocations.forEach(location => {
         const arenaAsset = aircraft.find(value => value.imei === location.imei);
 
@@ -101,7 +144,14 @@ export const toGeoJSON = () => {
             pushFeatureData(aircraftGeoJSON, newFeature);
         }
     });
-
+    cb(aircraftGeoJSON);
+};
+export const fetchEquipmentGeoJSON = async (cb) => {
+    const {equipment, equipmentLocations} = await toGeoJSON();
+    const equipmentGeoJSON = {
+        type: 'FeatureCollection',
+        features: []
+    };
     equipmentLocations.forEach(location => {
         const arenaAsset = equipment.find(value => value.imei === location.imei);
 
@@ -147,8 +197,13 @@ export const toGeoJSON = () => {
             pushFeatureData(equipmentGeoJSON, newFeature);
         }
     });
+    cb(equipmentGeoJSON);
+};
 
-    return {
-        aircraftGeoJSON, equipmentGeoJSON, aircraftTrackGeoJSON, equipmentTrackGeoJSON
-    };
+export const fetchIncidentGeoJSON = (cb) => {
+    fetch('/incidents.json').then(res => res.json()).then(
+        incidentJSON => {
+            cb(incidentJSON);
+        }
+    );
 };

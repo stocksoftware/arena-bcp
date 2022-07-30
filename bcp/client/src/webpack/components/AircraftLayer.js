@@ -1,22 +1,20 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import DataLayer from "./DataLayer";
-import {toGeoJSON} from "../helper/toGeoJSON";
+import {fetchAircraftGeoJSON} from "../helper/toGeoJSON";
 import {styleAssetMarker, buildPopUpAircraftContent} from "../helper/map-style";
 import {observer} from "mobx-react";
 
 const AircraftLayer = observer(({arenaAssetsOnly}) => {
-    const {aircraftGeoJSON} = toGeoJSON();
+    const [aircraftGeoJSON, setAircraftGeoJSON] = useState(null);
     const pointToLayer = function (feature, latlng) {
         return styleAssetMarker(feature, latlng);
     };
-
+    useEffect(()=>{
+        fetchAircraftGeoJSON(setAircraftGeoJSON);
+    },[]);
     const onEachFeature = function (feature, layer) {
-        layer.on('click', function (e) {
-            layer.bindPopup(buildPopUpAircraftContent(feature), {maxWidth: 600})
-                .openPopup()
-                ._popup._closeButton.addEventListener('click', (event) => {
-                event.preventDefault();
-            });
+        layer.on('click', function () {
+            layer.bindPopup(buildPopUpAircraftContent(feature), {maxWidth: 600});
         });
     };
 

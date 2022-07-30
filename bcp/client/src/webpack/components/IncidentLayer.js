@@ -2,27 +2,22 @@ import React,{useEffect, useState} from 'react';
 import DataLayer from "./DataLayer";
 import * as AM_STYLES from '../helper/map-style';
 import L from "leaflet";
-import incident from '../../../../public/incidents.json';
+import {fetchIncidentGeoJSON} from '../helper/toGeoJSON';
 const IncidentLayer = () => {
-    const [data, setData] = useState(null);
+    const [incidentGeoJSON, setIncidentGeoJSON] = useState(null);
     useEffect(() => {
-        setData(incident);
+        fetchIncidentGeoJSON(setIncidentGeoJSON) ;
     },[]);
     const pointToLayer = function(feature, latlng){
-        const marker = L.marker(latlng, { icon: AM_STYLES.getIconForIncident(feature) });
-        return marker;
+        return L.marker(latlng, { icon: AM_STYLES.getIconForIncident(feature) });
     };
     const onEachFeature = function (feature, layer) {
         layer.on('click', function(e){
-            layer.bindPopup(AM_STYLES.renderIncidentPopup(feature), { maxWidth: 600 })
-                .openPopup()
-                ._popup._closeButton.addEventListener('click', (event) => {
-                event.preventDefault();
-            });
+            layer.bindPopup(AM_STYLES.renderIncidentPopup(feature), { maxWidth: 600 });
         });
     };
     return(
-        <DataLayer data={data} pointToLayer={pointToLayer} onEachFeature={onEachFeature}/>
+        <DataLayer data={incidentGeoJSON} pointToLayer={pointToLayer} onEachFeature={onEachFeature}/>
     );
 
 };
