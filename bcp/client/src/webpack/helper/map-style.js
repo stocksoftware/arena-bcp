@@ -108,7 +108,11 @@ export function getIconForIncident(feature) {
 }
 
 const iconHtml = (dispatchCount, iconClass, fillColour, iconColour, borderColour, borderWidth, borderOpacity) => {
-    return ` <i style='color: ${iconColour}' class='${(dispatchCount && 'dispatched') + ' fa fa-var-fire ' + iconClass}' data-content='${dispatchCount}'> </i> <svg width='33' height='44' viewBox='0 0 35 45' xmlns='http://www.w3.org/2000/svg'> <path d='M1.872 17.35L9.679 2.993h15.615L33.1 17.35 17.486 44.992z' fill='${fillColour}' style='border: 10px'/> <g opacity='${borderOpacity}' transform='matrix(1.0769 0 0 -1.0769 -272.731 48.23)'> <path d='M276.75 42h-14.5L255 28.668 269.5 3 284 28.668zm-.595-1l6.701-12.323L269.5 5.033l-13.356 23.644L262.845 41z' stroke='${borderColour}' stroke-width='${borderWidth}'/> </g> </svg>`;
+    const dispatched = dispatchCount ? 'dispatched' : '';
+    return ` <svg width='14' height='14' class="${dispatched}  fa-fire" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" >
+ <path fill='${iconColour}' d="M216 23.86c0-23.8-30.65-32.77-44.15-13.04C48 191.85 224 200 224 288c0 35.63-29.11 64.46-64.85 63.99-35.17-.45-63.15-29.77-63.15-64.94v-85.51c0-21.7-26.47-32.23-41.43-16.5C27.8 213.16 0 261.33 0 320c0 105.87 86.13 192 192 192s192-86.13 192-192c0-170.29-168-193-168-296.14z"/></svg>
+ <span class="dispatchCount" style="color: ${iconColour}">${dispatchCount}</span>
+ <svg width='33' height='44' viewBox='0 0 35 45' xmlns='http://www.w3.org/2000/svg'> <path d='M1.872 17.35L9.679 2.993h15.615L33.1 17.35 17.486 44.992z' fill='${fillColour}' style='border: 10px'/> <g opacity='${borderOpacity}' transform='matrix(1.0769 0 0 -1.0769 -272.731 48.23)'> <path d='M276.75 42h-14.5L255 28.668 269.5 3 284 28.668zm-.595-1l6.701-12.323L269.5 5.033l-13.356 23.644L262.845 41z' stroke='${borderColour}' stroke-width='${borderWidth}'/> </g> </svg>`;
 
 };
 const buildIncidentIcon = (dispatchCount, fillColour, iconColour = "white", borderColour) => {
@@ -409,8 +413,8 @@ export function renderLocationPopup(location) {
     });
 }
 
-export function locationIcon(location){
-    let icon ;
+export function locationIcon(location) {
+    let icon;
     switch (location.classification) {
         case 'Primary':
             icon = locationPrimaryIcon;
@@ -439,7 +443,7 @@ const locationPrimaryIcon = L.icon({
     popupAnchor: [0, -12]
 });
 
- const locationSecondaryIcon = L.icon({
+const locationSecondaryIcon = L.icon({
     iconUrl: './icons/location-crosshairs-orange.svg',
     iconSize: [24, 24],
     iconAnchor: [12, 12],
@@ -453,14 +457,14 @@ const locationSupportIcon = L.icon({
     popupAnchor: [0, -12]
 });
 
- const locationHelipadIcon = L.icon({
+const locationHelipadIcon = L.icon({
     iconUrl: './icons/location-crosshairs-purple.svg',
     iconSize: [24, 24],
     iconAnchor: [12, 12],
     popupAnchor: [0, -12]
 });
 
- const locationUnclassifiedIcon = L.icon({
+const locationUnclassifiedIcon = L.icon({
     iconUrl: './icons/location-crosshairs-grey.svg',
     iconSize: [24, 24],
     iconAnchor: [12, 12],
