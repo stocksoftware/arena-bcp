@@ -10,7 +10,7 @@ const AircraftLayer = observer(({arenaAssetsOnly}) => {
         return styleAssetMarker(feature, latlng);
     };
     useEffect(()=>{
-        fetchAircraftGeoJSON(setAircraftGeoJSON);
+        fetchAircraftGeoJSON().then(setAircraftGeoJSON);
     },[]);
     const onEachFeature = function (feature, layer) {
         layer.on('click', function () {

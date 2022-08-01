@@ -7,7 +7,7 @@ import {ASSET_MODE} from '../constant';
 const AircraftTrackLayer =observer(({arenaAssetsOnly})=>{
     const [aircraftTrackGeoJSON, setAircraftTrackGeoJSON]= useState(null);
     useEffect(()=>{
-        fetchAircraftTrack(setAircraftTrackGeoJSON);
+        fetchAircraftTrack().then(setAircraftTrackGeoJSON);
     },[]);
     const pointToLayer = function(feature, latlng){
         return L.marker(latlng, {

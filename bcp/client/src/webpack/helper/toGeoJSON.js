@@ -1,35 +1,32 @@
 import {createSearchText} from './map-style';
 import {AIRCRAFT_TYPE} from '../constant';
 
-export const fetchLocations = (cb) => {
-    fetch('/data/locations.json').then(res => res.json()).then(
-        locationJSON => {
-            const {locations} = locationJSON;
-            const LocationGeoJSON = {
-                type: 'FeatureCollection',
-                features: []
+export const fetchLocations = async () => {
+    const locationData = await fetch('/data/locations.json');
+    const locationJSON = await locationData.json();
+        const {locations} = locationJSON;
+        const LocationGeoJSON = {
+            type: 'FeatureCollection',
+            features: []
+        };
+
+        locations.forEach(track => {
+            const feature = {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [
+                        track.long,
+                        track.lat,
+                    ]
+                },
+                "properties": {...track}
             };
-            const pushFeatureData = (geoJson, newFeature) => {
-                geoJson.features.push(
-                    newFeature
-                );
-            };
-            locations.forEach(track => {
-                const feature = {
-                    "type": "Feature",
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [
-                            track.long,
-                            track.lat,
-                        ]
-                    },
-                    "properties": {...track}
-                };
-                pushFeatureData(LocationGeoJSON, feature);
-            });
-            cb(LocationGeoJSON);
+            pushFeatureData(LocationGeoJSON, feature);
         });
+
+    return LocationGeoJSON;
+
 };
 export const toGeoJSON = async () => {
 
@@ -56,7 +53,7 @@ const pushFeatureData = (geoJson, newFeature) => {
         newFeature
     );
 };
-export const fetchEquipmentTrack = async (cb) => {
+export const fetchEquipmentTrack = async () => {
     const {trackFeature, equipment} = await toGeoJSON();
     const equipmentTrackGeoJSON = {
         type: 'FeatureCollection',
@@ -70,9 +67,9 @@ export const fetchEquipmentTrack = async (cb) => {
             pushFeatureData(equipmentTrackGeoJSON, track);
         }
     });
-    cb(equipmentTrackGeoJSON);
+    return equipmentTrackGeoJSON;
 };
-export const fetchAircraftTrack = async (cb) => {
+export const fetchAircraftTrack = async () => {
     const {trackFeature, aircraft} = await toGeoJSON();
     const aircraftTrackGeoJSON = {
         type: 'FeatureCollection',
@@ -86,9 +83,9 @@ export const fetchAircraftTrack = async (cb) => {
             pushFeatureData(aircraftTrackGeoJSON, track);
         }
     });
-    cb(aircraftTrackGeoJSON);
+    return aircraftTrackGeoJSON;
 };
-export const fetchAircraftGeoJSON = async (cb) => {
+export const fetchAircraftGeoJSON = async () => {
     const {aircraft, aircraftLocations} = await toGeoJSON();
     const aircraftGeoJSON = {
         type: 'FeatureCollection',
@@ -144,9 +141,9 @@ export const fetchAircraftGeoJSON = async (cb) => {
             pushFeatureData(aircraftGeoJSON, newFeature);
         }
     });
-    cb(aircraftGeoJSON);
+    return aircraftGeoJSON;
 };
-export const fetchEquipmentGeoJSON = async (cb) => {
+export const fetchEquipmentGeoJSON = async () => {
     const {equipment, equipmentLocations} = await toGeoJSON();
     const equipmentGeoJSON = {
         type: 'FeatureCollection',
@@ -197,13 +194,11 @@ export const fetchEquipmentGeoJSON = async (cb) => {
             pushFeatureData(equipmentGeoJSON, newFeature);
         }
     });
-    cb(equipmentGeoJSON);
+    return equipmentGeoJSON;
 };
 
-export const fetchIncidentGeoJSON = (cb) => {
-    fetch('/data/incidents.json').then(res => res.json()).then(
-        incidentJSON => {
-            cb(incidentJSON);
-        }
-    );
+export const fetchIncidentGeoJSON = async () => {
+    const incidentData = await fetch('/data/incidents.json');
+    const incidentJSON = await incidentData.json();
+    return incidentJSON;
 };
