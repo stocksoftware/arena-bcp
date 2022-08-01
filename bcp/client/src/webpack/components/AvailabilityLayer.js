@@ -13,7 +13,7 @@ import * as L from "leaflet";
 const AvailabilityLayer = observer(({assetMode}) => {
     const [availableAsset, setAvailableAsset] = useState(null);
     useEffect(() => {
-        filterAvailabilityData(setAvailableAsset,assetMode )
+        filterAvailabilityData(assetMode).then(setAvailableAsset);
     }, []);
     const pointToLayer = function (feature, latlng) {
         const icon = feature.properties.is_equipment ?

@@ -7,7 +7,7 @@ import {fetchEquipmentGeoJSON} from "../helper/toGeoJSON";
 const EquipmentLayer = observer(({arenaAssetsOnly}) => {
     const [equipmentGeoJSON, setEquipmentGeoJSON] = useState(null);
     useEffect(() => {
-        fetchEquipmentGeoJSON(setEquipmentGeoJSON);
+        fetchEquipmentGeoJSON().then(setEquipmentGeoJSON);
     }, []);
     const pointToLayer = function (feature, latlng) {
         return styleAssetMarker(feature, latlng);

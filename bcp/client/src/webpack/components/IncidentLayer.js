@@ -6,7 +6,7 @@ import {fetchIncidentGeoJSON} from '../helper/toGeoJSON';
 const IncidentLayer = () => {
     const [incidentGeoJSON, setIncidentGeoJSON] = useState(null);
     useEffect(() => {
-        fetchIncidentGeoJSON(setIncidentGeoJSON) ;
+        fetchIncidentGeoJSON().then(setIncidentGeoJSON) ;
     },[]);
     const pointToLayer = function(feature, latlng){
         return L.marker(latlng, { icon: AM_STYLES.getIconForIncident(feature) });

@@ -8,7 +8,7 @@ import {ASSET_MODE} from '../constant';
 const EquipmentTrackLayer = observer(({arenaAssetsOnly}) => {
     const [equipmentTrackGeoJSON, setEquipmentTrackGeoJSON] = useState();
     useEffect(() => {
-        fetchEquipmentTrack(setEquipmentTrackGeoJSON);
+        fetchEquipmentTrack().then(setEquipmentTrackGeoJSON);
     }, []);
     const pointToLayer = function (feature, latlng) {
         return L.marker(latlng, {

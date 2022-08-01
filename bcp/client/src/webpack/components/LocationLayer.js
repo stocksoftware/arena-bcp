@@ -6,7 +6,7 @@ import {observer} from "mobx-react";
 const LocationLayer =observer( ()=>{
     const [data, setData] = useState(null);
     useEffect(()=>{
-        fetchLocations(setData);
+        fetchLocations().then(setData);
     },[]);
     const pointToLayer = function(feature, latlng){
         const icon = locationIcon(feature.properties);
