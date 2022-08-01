@@ -257,3 +257,62 @@ export function getAircraftSilhouettePath(aircraft) {
     }
     return silhouettePath;
 }
+
+export function getStatusClass(eventType) {
+    // These are the four status classes:
+    // .status-dispatched
+    // .status-planned-dispatch
+    // .status-standby
+    // .status-available
+    // .status-unserviceable
+
+    // These are the eventTypes.
+    // UNKOWNN
+    // AVAILABLE
+    // UNAVAILABLE
+    // LIMITED
+    // DEPLOYED
+    // PLANNED_DISPATCH
+    // STANDBY
+    // STANDBY_AMENDED
+    // STANDBY_TEMP_ASSET
+    // UNSERVICEABLE
+    // UNSERVICEABLE_AIRDESK
+    // UNSERVICEABLE_STOOD_DOWN
+    // UNSERVICEABLE_RESTRICTED
+    // UNSERVICEABLE_STANDBY
+
+    switch (eventType) {
+        case 'AVAILABLE':
+        case 'LIMITED':
+            return 'available';
+        case 'DEPLOYED':
+            return 'dispatched';
+        case 'PLANNED_DISPATCH':
+            return 'planned-dispatch';
+        case 'STANDBY':
+        case 'STANDBY_AMENDED':
+        case 'STANDBY_TEMP_ASSET':
+            return 'standby';
+        case 'UNSERVICEABLE':
+        case 'UNSERVICEABLE_AIRDESK':
+        case 'UNSERVICEABLE_STOOD_DOWN':
+        case 'UNSERVICEABLE_RESTRICTED':
+        case 'UNSERVICEABLE_STANDBY':
+            return 'unserviceable';
+        default:
+            return 'unknown';
+    }
+}
+export function buildPopUpEquipmentCommonContent(equipment, includeTitle) {
+    const equipmentData = { includeTitle: includeTitle };
+    if (includeTitle) {
+        equipmentData.title = getAssetTitle(equipment);
+    }
+    equipmentData.lastSeen = getAssetLastSeen(equipment);
+    equipmentData.spatialDisp = getAssetSpatialDisp(equipment);
+    equipmentData.details = getEquipmentDetails(equipment);
+    equipmentData.contactDetails = getAssetDispatchContactDetails(equipment);
+    return require('./templates/assetCommonContent.hbs')(equipmentData);
+}
+

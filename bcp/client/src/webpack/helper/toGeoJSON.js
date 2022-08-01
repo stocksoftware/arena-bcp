@@ -1,5 +1,5 @@
 import {createSearchText} from './map-style';
-import {AIRCRAFT_TYPE} from '../constant';
+import {AIRCRAFT_TYPE, ASSET_MODE} from '../constant';
 
 export const fetchLocations = (cb) => {
     fetch('/locations.json').then(res => res.json()).then(
@@ -199,11 +199,22 @@ export const fetchEquipmentGeoJSON = async (cb) => {
     });
     cb(equipmentGeoJSON);
 };
-
 export const fetchIncidentGeoJSON = (cb) => {
     fetch('/incidents.json').then(res => res.json()).then(
         incidentJSON => {
             cb(incidentJSON);
         }
     );
+};
+export const filterAvailabilityData =async (cb,assetMode) => {
+    const availabilityData = await fetch('/availability.json');
+    const availabilityJSON = await availabilityData.json();
+    console.log('availabilityJSON', availabilityJSON);
+    const availableFeatures = availabilityJSON.features.filter(f=>f.geometry.coordinates.length!==0);
+    // const availableFeatures = AvailabilityData.features.filter(f=>f.properties.event_type === "AVAILABLE").filter(f=>f.properties.event_type === "AVAILABLE").filter(f=>f.geometry.coordinates.length!==0);
+    let availableAsset = assetMode===ASSET_MODE.EQUIPMENT ? availableFeatures.filter(a=>a.properties.is_equipment===true):availableFeatures.filter(a=>a.properties.is_equipment===false);
+    const availableAssetGeo =  {
+        "type": "FeatureCollection",
+        "features":availableAsset};
+    cb(availableAssetGeo);
 };

@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import {observer} from "mobx-react";
 import {MAP_CONFIG, ASSET_MODE} from "../constant";
 import useStores from "../hooks/use-stores";
@@ -9,6 +9,8 @@ import AircraftLayer from "../components/AircraftLayer";
 import AircraftTrackLayer from "../components/AircraftTrackLayer";
 import EquipmentTrackLayer from "../components/EquipmentTrackLayer";
 import LocationLayer from "../components/LocationLayer";
+import AvailabilityLayer from "../components/AvailabilityLayer";
+
 
 const Map = observer(() => {
     const mapCenter = [-27, 130];
@@ -63,6 +65,9 @@ const Map = observer(() => {
                 </LayersControl.Overlay>
                 <LayersControl.Overlay name="Location" key={"Location"+assetMode} >
                     <LocationLayer/>
+                </LayersControl.Overlay>
+                <LayersControl.Overlay name="availability" key={"availability"+assetMode} checked>
+                    <AvailabilityLayer/>
                 </LayersControl.Overlay>
             </LayersControl>
         </MapContainer>

@@ -470,3 +470,291 @@ const locationUnclassifiedIcon = L.icon({
     iconAnchor: [12, 12],
     popupAnchor: [0, -12]
 });
+export const equipmentAVMarker = L.ExtraMarkers.icon({
+    // AVAILABLE marker
+    icon: 'fa-truck',
+    iconColor: 'yellow',
+    markerColor: 'green-dark',
+    shape: 'square',
+    prefix: 'fa'
+});
+export const equipmentLIMarker = L.ExtraMarkers.icon({
+    // LIMITED AVILABLE marker
+    icon: 'fa-truck',
+    iconColor: 'orange',
+    markerColor: 'green-dark',
+    shape: 'square',
+    prefix: 'fa'
+});
+export const equipmentSTMarker = L.ExtraMarkers.icon({
+    // STANDBY marker
+    icon: 'fa-truck',
+    iconColor: 'yellow',
+    markerColor: 'blue',
+    shape: 'square',
+    prefix: 'fa'
+});
+export const equipmentDSMarker = L.ExtraMarkers.icon({
+    // DISPATCHED marker
+    icon: 'fa-truck',
+    iconColor: 'orange',
+    markerColor: 'blue',
+    shape: 'square',
+    prefix: 'fa'
+});
+export const equipmentUAMarker = L.ExtraMarkers.icon({
+    // UNAVAILABLE marker
+    icon: 'fa-truck',
+    iconColor: 'gray',
+    markerColor: 'white',
+    shape: 'square',
+    prefix: 'fa'
+});
+export const equipmentUSMarker = L.ExtraMarkers.icon({
+    // UNSERVICEABLE marker
+    icon: 'fa-truck',
+    iconColor: 'black',
+    markerColor: 'white',
+    shape: 'square',
+    prefix: 'fa'
+});
+export const equipmentMGMarker = L.ExtraMarkers.icon({
+    // Multiple AVAILABLE OR LIMITED marker
+    icon: 'fa-truck',
+    iconColor: 'white',
+    markerColor: 'green-dark',
+    shape: 'star',
+    prefix: 'fa',
+    extraClasses: 'marker-cluster-multi'
+});
+export const equipmentMBMarker = L.ExtraMarkers.icon({
+    // MULTIPLE STANDBY OR DEPLOYED marker
+    icon: 'fa-truck',
+    iconColor: 'white',
+    markerColor: 'blue',
+    shape: 'star',
+    prefix: 'fa',
+    extraClasses: 'marker-cluster-multi'
+});
+// Creates a marker with a equipment icon
+export const equipmentMarker = L.ExtraMarkers.icon({
+    // generic marker
+    icon: 'fa-truck',
+    markerColor: 'blue',
+    shape: 'square',
+    prefix: 'fa'
+});
+// show different markers for different types of Aircraft Availability
+export function iconForEquipmentAvailability(availabilityType) {
+    switch (availabilityType) {
+        case 'AVAILABLE':
+            return equipmentAVMarker;
+        case 'LIMITED':
+            return equipmentLIMarker;
+        case 'STANDBY':
+        case 'STANDBY_TEMP_ASSET':
+        case 'STANDBY_AMENDED':
+            return equipmentSTMarker;
+        case 'UNAVAILABLE':
+            return equipmentUAMarker;
+        case 'UNSERVICEABLE':
+            return equipmentUSMarker;
+        case 'DEPLOYED':
+        case 'DISPATCHED':
+            return equipmentDSMarker;
+
+        default:
+            return equipmentMarker;
+    }
+};
+// const paperPlane = <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"/></svg>;
+
+// Creates a marker with a plane icon
+export const planeMarker = L.ExtraMarkers.icon({
+    // generic marker
+    icon: 'fa-paper-plane',
+    markerColor: 'blue',
+    shape: 'square',
+    prefix: 'fa'
+});
+export const planeAVMarker = L.ExtraMarkers.icon({
+    // AVAILABLE marker
+    icon: 'fa-paper-plane',
+    iconColor: 'yellow',
+    markerColor: 'green-dark',
+    shape: 'square',
+    prefix: 'fa'
+});
+
+export const planeLIMarker = L.ExtraMarkers.icon({
+    // LIMITED AVILABLE marker
+    icon: 'fa-paper-plane',
+    iconColor: 'orange',
+    markerColor: 'green-dark',
+    shape: 'square',
+    prefix: 'fa'
+});
+
+export const planeSTMarker = L.ExtraMarkers.icon({
+    // STANDBY marker
+    icon: 'fa-paper-plane',
+    iconColor: 'yellow',
+    markerColor: 'blue',
+    shape: 'square',
+    prefix: 'fa'
+});
+
+export const planeDSMarker = L.ExtraMarkers.icon({
+    // DISPATCHED marker
+    icon: 'fa-paper-plane',
+    iconColor: 'orange',
+    markerColor: 'blue',
+    shape: 'square',
+    prefix: 'fa'
+});
+
+export const planePDMarker = L.ExtraMarkers.icon({
+    // PLANNED DISPATCHED marker
+    icon: 'fa-paper-plane',
+    iconColor: '#6300d0',
+    markerColor: 'blue',
+    shape: 'square',
+    prefix: 'fa'
+});
+
+export const planeUAMarker = L.ExtraMarkers.icon({
+    // UNAVAILABLE marker
+    icon: 'fa-paper-plane',
+    iconColor: 'gray',
+    markerColor: 'white',
+    shape: 'square',
+    prefix: 'fa'
+});
+export const planeUSMarker = L.ExtraMarkers.icon({
+    // UNSERVICEABLE marker
+    icon: 'fa-paper-plane',
+    iconColor: 'black',
+    markerColor: 'white',
+    shape: 'square',
+    prefix: 'fa'
+});
+
+export const planeMGMarker = L.ExtraMarkers.icon({
+    // Multiple AVAILABLE OR LIMITED marker
+    icon: 'fa-paper-plane',
+    iconColor: 'white',
+    markerColor: 'green-dark',
+    shape: 'star',
+    prefix: 'fa',
+    extraClasses: 'marker-cluster-multi'
+});
+
+export const planeMBMarker = L.ExtraMarkers.icon({
+    // MULTIPLE STANDBY OR DEPLOYED marker
+    icon: 'fa-paper-plane',
+    iconColor: 'white',
+    markerColor: 'blue',
+    shape: 'star',
+    prefix: 'fa',
+    extraClasses: 'marker-cluster-multi'
+});
+// show different markers for different types of Aircraft Availability
+export function iconForAircraftAvailability(availabilityType) {
+    switch (availabilityType) {
+        case 'AVAILABLE':
+            return planeAVMarker;
+        case 'LIMITED':
+            return planeLIMarker;
+        case 'STANDBY':
+        case 'STANDBY_TEMP_ASSET':
+        case 'STANDBY_AMENDED':
+            return planeSTMarker;
+        case 'UNAVAILABLE':
+            return planeUAMarker;
+        case 'UNSERVICEABLE':
+            return planeUSMarker;
+        case 'DEPLOYED':
+        case 'DISPATCHED':
+        case 'PLANNED_DISPATCH':
+            return planeDSMarker;
+
+        default:
+            return planeMarker;
+    }
+}
+// Always returns an array, possibly empty
+const popUpAvailabilityContent = function(feature, popupContent) {
+    if (feature.properties) {
+        const availability = feature.properties;
+        const status = availability.event_name ? availability.event_name : availability.event_type;
+        const statusClass = 'status-' + AMFUNC_DISP.getStatusClass(availability.event_type);
+
+        // Ensure popups are styled the same as tables.
+        popupContent += '<div class="arena-map-table">';
+        popupContent += '<span class="emphasis">' + AMFUNC_DISP.getAssetTitle(asset) + '</span><br/>';
+        popupContent += '<span class="' + statusClass + '">';
+        popupContent += '<span class="eventName emphasis">' + status + '</span>';
+        popupContent += availability.dispatch_number ? '' : ' ' + timeToString(availability.response);
+        popupContent += '</span><br/>';
+
+        if (availability.base_location) {
+            popupContent += '<span class="emphasis">';
+            if (availability.temp_base) {
+                popupContent += 'TOB';
+            } else {
+                popupContent += 'NOB';
+            }
+            popupContent += `: </span>${availability.base_location}<br/>`;
+        }
+
+        if (availability.fuelling_arrangement) {
+            const fuellingDescription = getFuellingArrangmentDisplayValue(availability.fuelling_arrangement);
+            popupContent += '<span class="emphasis">Fuelling Arrangement:</span> ';
+            popupContent += fuellingDescription;
+            popupContent += '<br/>';
+        }
+
+        if (feature.geometry&&
+            // MIGHT NEED TO ADD MORE EVENT TYPES HERE
+            availability.event_type !== 'UNAVAILABLE' &&
+            availability.event_type !== 'UNSERVICEABLE') {
+            const fromPt = {
+                type: 'Feature',
+                properties: {},
+                geometry:feature.geometry.coordinates
+            };
+            const toPt = {
+                type: 'Feature',
+                properties: {},
+                geometry: feature.properties.base_location_coordinates
+            };
+            const distance = turf.distance(fromPt, toPt, 'kilometers');
+            if (!isNaN(distance)) {
+                popupContent += '<span class="emphasis">Currently:</span> ';
+                if (distance < 5) {
+                    popupContent += 'at base';
+                } else {
+                    popupContent += distance.toFixed(0) + ' km from base';
+                }
+            }
+            popupContent += '<br/>';
+        }
+
+        const isEquipment = availability.is_equipment;
+        popupContent +=
+            (!isEquipment ? buildPopUpAircraftCommonContent(asset, false) : buildPopUpEquipmentCommonContent(asset, false));
+
+        popupContent += AMFUNC_DISP.getAssetOperatorDetails(asset);
+        popupContent += AMFUNC_DISP.getAssetDispatchContactDetails(asset) + '<br/>';
+        popupContent += '</div>';
+        popupContent += getAssetPlanningActions(isEquipment, asset);
+    }
+    return popupContent;
+};
+
+export const renderAvailabilityPopup = function(feature, assetMode) {
+    let popupContent = '<strong>AVAILABILITY RECORD </strong><br/>';
+    popupContent = popUpAvailabilityContent(feature.properties, popupContent);
+    return popupContent;
+};
+
