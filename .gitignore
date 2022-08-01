@@ -4,3 +4,5 @@
 dist/client/data
 dist/client/reports
 bcp/node_modules
+bcp/public/data
+bcp/public/reports
