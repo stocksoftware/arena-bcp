@@ -201,6 +201,7 @@ export const fetchIncidentGeoJSON = async () => {
     const incidentJSON = await incidentData.json();
     return incidentJSON;
 };
+
 export const filterAvailabilityData =async (assetMode) => {
     const availabilityData = await fetch('/data/availability.json');
     const availabilityJSON = await availabilityData.json();

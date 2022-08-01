@@ -258,6 +258,7 @@ export function getAircraftSilhouettePath(aircraft) {
     return silhouettePath;
 }
 
+
 export function getStatusClass(eventType) {
     // These are the four status classes:
     // .status-dispatched

@@ -470,6 +470,7 @@ const locationUnclassifiedIcon = L.icon({
     iconAnchor: [12, 12],
     popupAnchor: [0, -12]
 });
+
 export const equipmentAVMarker = L.ExtraMarkers.icon({
     // AVAILABLE marker
     icon: 'fa-truck',
