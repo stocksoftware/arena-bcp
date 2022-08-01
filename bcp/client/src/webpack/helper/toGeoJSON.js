@@ -2,7 +2,7 @@ import {createSearchText} from './map-style';
 import {AIRCRAFT_TYPE, ASSET_MODE} from '../constant';
 
 export const fetchLocations = (cb) => {
-    fetch('/locations.json').then(res => res.json()).then(
+    fetch('/data/locations.json').then(res => res.json()).then(
         locationJSON => {
             const {locations} = locationJSON;
             const LocationGeoJSON = {
@@ -33,10 +33,10 @@ export const fetchLocations = (cb) => {
 };
 export const toGeoJSON = async () => {
 
-    const geoTracksData = await fetch('/geoTracks.json');
-    const currentLocationData = await fetch('/currentLocations.json');
-    const aircraftData = await fetch('/aircraft.json');
-    const equipmentData = await fetch('/equipment.json');
+    const geoTracksData = await fetch('/data/geoTracks.json');
+    const currentLocationData = await fetch('/data/currentLocations.json');
+    const aircraftData = await fetch('/data/aircraft.json');
+    const equipmentData = await fetch('/data/equipment.json');
     const geoTracks = await geoTracksData.json();
     const currentLocationJSON = await currentLocationData.json();
     const aircraftJSON = await aircraftData.json();
@@ -200,7 +200,7 @@ export const fetchEquipmentGeoJSON = async (cb) => {
     cb(equipmentGeoJSON);
 };
 export const fetchIncidentGeoJSON = (cb) => {
-    fetch('/incidents.json').then(res => res.json()).then(
+    fetch('/data/incidents.json').then(res => res.json()).then(
         incidentJSON => {
             cb(incidentJSON);
         }
