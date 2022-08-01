@@ -31,7 +31,6 @@
     "arrow-body-style": ["off", "always"],
     "semi": [2, "always"],
     "space-before-function-paren": "off",
-    "eol-last": 2,
     "react/display-name": "off",
     "react-hooks/exhaustive-deps": "off",
     "react/prop-types": "off",
