@@ -257,3 +257,4 @@ export function getAircraftSilhouettePath(aircraft) {
     }
     return silhouettePath;
 }
+
