@@ -1,5 +1,6 @@
 import { action, observable, makeObservable } from "mobx";
 import {ASSET_MODE} from "../constant";
+
 export default class mapStore {
     constructor(stores) {
         this.stores = stores;
@@ -7,9 +8,9 @@ export default class mapStore {
     }
 
     @observable assetType = ASSET_MODE.EQUIPMENT;
+
     @action
     setAssetType(type) {
         this.assetType = type;
     }
-
 }

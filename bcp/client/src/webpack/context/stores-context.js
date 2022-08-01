@@ -1,9 +1,8 @@
 import React from "react";
 import MapStore from "../store/mapStore";
-
 const stores = {};
 
-const mapStore = new MapStore();
+const mapStore = new MapStore(stores);
 stores.mapStore = mapStore;
 
 const storesContext = React.createContext({
