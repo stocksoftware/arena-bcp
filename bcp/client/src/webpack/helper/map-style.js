@@ -759,3 +759,4 @@ export const renderAvailabilityPopup = function(feature, assetMode) {
     return popupContent;
 };
 
+

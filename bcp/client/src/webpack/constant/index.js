@@ -7,9 +7,11 @@ export const AIRCRAFT_TYPE = {
     FIXED_WING: 'FIXED_WING',
     HELICOPTER: 'HELICOPTER'
 };
+
 export const MAP_CONFIG = {
     ESRItopoURL: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}',
 };
+
 export const MAP_CONSTANTS = {
     // Local Storage Keys
     MAP_AIRCRAFT_LAYER_STORAGE_KEY: 'mapAircraftLayers',
