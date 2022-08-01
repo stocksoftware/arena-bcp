@@ -470,3 +470,4 @@ const locationUnclassifiedIcon = L.icon({
     iconAnchor: [12, 12],
     popupAnchor: [0, -12]
 });
+
