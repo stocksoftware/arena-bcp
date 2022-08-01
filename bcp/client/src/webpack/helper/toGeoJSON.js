@@ -205,9 +205,7 @@ export const fetchIncidentGeoJSON = async () => {
 export const filterAvailabilityData =async (assetMode) => {
     const availabilityData = await fetch('/data/availability.json');
     const availabilityJSON = await availabilityData.json();
-    console.log('availabilityJSON', availabilityJSON);
     const availableFeatures = availabilityJSON.features.filter(f => f.geometry.coordinates.length !== 0);
-    // const availableFeatures = AvailabilityData.features.filter(f=>f.properties.event_type === "AVAILABLE").filter(f=>f.properties.event_type === "AVAILABLE").filter(f=>f.geometry.coordinates.length!==0);
     let availableAsset = assetMode === ASSET_MODE.EQUIPMENT ? availableFeatures.filter(a => a.properties.is_equipment === true) : availableFeatures.filter(a => a.properties.is_equipment === false);
     const availableAssetGeo = {
         "type": "FeatureCollection",
