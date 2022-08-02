@@ -223,15 +223,24 @@ export const fetchAsset = async (id, is_equipment) => {
     const equipmentJSON = await equipmentData.json();
     const {aircraft} = aircraftJSON;
     const {equipment} = equipmentJSON;
+    const currentLocationsData = await fetch('/data/currentLocations.json');
+    const currentLocationsJSON = await currentLocationsData.json();
+    const {currentLocations} = currentLocationsJSON;
     if (is_equipment) {
         const matchAsset = equipment.filter(e => e.id === id);
         if (matchAsset.length > 0) {
-            return matchAsset[0];
+            const asset = matchAsset[0];
+            const matchLocation = currentLocations.filter(location => location.imei === asset.imei);
+            const location = matchLocation.length > 0 && matchLocation[0];
+            return {...asset, ...location};
         }
     } else {
         const matchAsset = aircraft.filter(acraft => acraft.id === id);
         if (matchAsset.length > 0) {
-            return matchAsset[0];
+            const asset = matchAsset[0];
+            const matchLocation = currentLocations.filter(location => location.imei === asset.imei);
+            const location = matchLocation.length > 0 && matchLocation[0];
+            return {...asset, ...location};
         }
     }
 };
