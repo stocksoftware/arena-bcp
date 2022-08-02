@@ -309,7 +309,7 @@ export function buildPopUpAircraftContent(feature) {
     const aircraftData = {};
     if (feature.properties.imeiMatch) {
         // arena aircraft
-        aircraftData.commonContent = buildPopUpAircraftCommonContent(feature, true);
+        aircraftData.commonContent = AMFUNC_DISP.buildPopUpAircraftCommonContent(feature, true);
         aircraftData.operatorDetails = AMFUNC_DISP.getAssetOperatorDetails(feature.properties);
         aircraftData.contactDetails = AMFUNC_DISP.getAssetDispatchContactDetails(feature);
         return require('./templates/aircraftPopup.hbs')(aircraftData);
@@ -319,16 +319,6 @@ export function buildPopUpAircraftContent(feature) {
 
 }
 
-function buildPopUpAircraftCommonContent(aircraft, includeTitle) {
-    const aircraftData = {includeTitle: includeTitle};
-    if (includeTitle) {
-        aircraftData.title = AMFUNC_DISP.getAssetTitle(aircraft.properties);
-    }
-    aircraftData.lastSeen = AMFUNC_DISP.getAssetLastSeen(aircraft);
-    aircraftData.spatialDisp = AMFUNC_DISP.getAssetSpatialDisp(aircraft);
-    aircraftData.details = AMFUNC_DISP.getAircraftDetails(aircraft.properties);
-    return require('./templates/assetCommonContent.hbs')(aircraftData);
-}
 
 function buildPopUpOtherAssetContent(feature) {
     let popupContent = '<div class=\'arena-map-table\'><strong>OTHER ASSET</strong><br/>';
@@ -481,10 +471,10 @@ const planeIconMarker = (iconColor, markerColor) => L.ExtraMarkers.icon({
     svg: true
 });
 const planeIconHtml = (iconColor, markerColor) => {
-    return `<svg class="fa-content" width="15" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path fill='${iconColor}' d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"/></svg><svg class="truckContainer" width="35" height="45" viewBox="0 0 35 45" xmlns="http://www.w3.org/2000/svg"><path fill='${markerColor}' d="M28.205 3.217H6.777c-2.367 0-4.286 1.87-4.286 4.179v19.847c0 2.308 1.919 4.179 4.286 4.179h5.357l5.337 13.58 5.377-13.58h5.357c2.366 0 4.285-1.87 4.285-4.179V7.396c0-2.308-1.919-4.179-4.285-4.179" fill="red" /><g opacity=".15" transform="matrix(1.0714 0 0 -1.0714 -233.22 146.783)"><path d="M244 134h-20c-2.209 0-4-1.746-4-3.9v-18.525c0-2.154 1.791-3.9 4-3.9h5L233.982 95 239 107.675h5c2.209 0 4 1.746 4 3.9V130.1c0 2.154-1.791 3.9-4 3.9m0-1c1.654 0 3-1.301 3-2.9v-18.525c0-1.599-1.346-2.9-3-2.9h-5.68l-.25-.632-4.084-10.318-4.055 10.316-.249.634H224c-1.654 0-3 1.301-3 2.9V130.1c0 1.599 1.346 2.9 3 2.9h20" fill="#231f20" /></g></svg>`
+    return `<svg class="fa-content" width="15" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill='${iconColor}' d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"/></svg><svg class="truckContainer" width="35" height="45" viewBox="0 0 35 45" xmlns="http://www.w3.org/2000/svg"><path fill='${markerColor}' d="M28.205 3.217H6.777c-2.367 0-4.286 1.87-4.286 4.179v19.847c0 2.308 1.919 4.179 4.286 4.179h5.357l5.337 13.58 5.377-13.58h5.357c2.366 0 4.285-1.87 4.285-4.179V7.396c0-2.308-1.919-4.179-4.285-4.179"  /><g opacity=".15" transform="matrix(1.0714 0 0 -1.0714 -233.22 146.783)"><path d="M244 134h-20c-2.209 0-4-1.746-4-3.9v-18.525c0-2.154 1.791-3.9 4-3.9h5L233.982 95 239 107.675h5c2.209 0 4 1.746 4 3.9V130.1c0 2.154-1.791 3.9-4 3.9m0-1c1.654 0 3-1.301 3-2.9v-18.525c0-1.599-1.346-2.9-3-2.9h-5.68l-.25-.632-4.084-10.318-4.055 10.316-.249.634H224c-1.654 0-3 1.301-3 2.9V130.1c0 1.599 1.346 2.9 3 2.9h20" fill="#231f20" /></g></svg>`
 };
 const equipmentIconHtml = (iconColor, markerColor) => {
-    return `<svg class="fa-content" width="15" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill='${iconColor}' d="M368 0C394.5 0 416 21.49 416 48V96H466.7C483.7 96 499.1 102.7 512 114.7L589.3 192C601.3 204 608 220.3 608 237.3V352C625.7 352 640 366.3 640 384C640 401.7 625.7 416 608 416H576C576 469 533 512 480 512C426.1 512 384 469 384 416H256C256 469 213 512 160 512C106.1 512 64 469 64 416H48C21.49 416 0 394.5 0 368V48C0 21.49 21.49 0 48 0H368zM416 160V256H544V237.3L466.7 160H416zM160 368C133.5 368 112 389.5 112 416C112 442.5 133.5 464 160 464C186.5 464 208 442.5 208 416C208 389.5 186.5 368 160 368zM480 464C506.5 464 528 442.5 528 416C528 389.5 506.5 368 480 368C453.5 368 432 389.5 432 416C432 442.5 453.5 464 480 464z"/></svg><svg class="truckContainer" width="35" height="45" viewBox="0 0 35 45" xmlns="http://www.w3.org/2000/svg"><path fill='${markerColor}' d="M28.205 3.217H6.777c-2.367 0-4.286 1.87-4.286 4.179v19.847c0 2.308 1.919 4.179 4.286 4.179h5.357l5.337 13.58 5.377-13.58h5.357c2.366 0 4.285-1.87 4.285-4.179V7.396c0-2.308-1.919-4.179-4.285-4.179" fill="red" /><g opacity=".15" transform="matrix(1.0714 0 0 -1.0714 -233.22 146.783)"><path d="M244 134h-20c-2.209 0-4-1.746-4-3.9v-18.525c0-2.154 1.791-3.9 4-3.9h5L233.982 95 239 107.675h5c2.209 0 4 1.746 4 3.9V130.1c0 2.154-1.791 3.9-4 3.9m0-1c1.654 0 3-1.301 3-2.9v-18.525c0-1.599-1.346-2.9-3-2.9h-5.68l-.25-.632-4.084-10.318-4.055 10.316-.249.634H224c-1.654 0-3 1.301-3 2.9V130.1c0 1.599 1.346 2.9 3 2.9h20" fill="#231f20" /></g></svg>`
+    return `<svg class="fa-content" width="15" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill='${iconColor}' d="M368 0C394.5 0 416 21.49 416 48V96H466.7C483.7 96 499.1 102.7 512 114.7L589.3 192C601.3 204 608 220.3 608 237.3V352C625.7 352 640 366.3 640 384C640 401.7 625.7 416 608 416H576C576 469 533 512 480 512C426.1 512 384 469 384 416H256C256 469 213 512 160 512C106.1 512 64 469 64 416H48C21.49 416 0 394.5 0 368V48C0 21.49 21.49 0 48 0H368zM416 160V256H544V237.3L466.7 160H416zM160 368C133.5 368 112 389.5 112 416C112 442.5 133.5 464 160 464C186.5 464 208 442.5 208 416C208 389.5 186.5 368 160 368zM480 464C506.5 464 528 442.5 528 416C528 389.5 506.5 368 480 368C453.5 368 432 389.5 432 416C432 442.5 453.5 464 480 464z"/></svg><svg class="truckContainer" width="35" height="45" viewBox="0 0 35 45" xmlns="http://www.w3.org/2000/svg"><path fill='${markerColor}' d="M28.205 3.217H6.777c-2.367 0-4.286 1.87-4.286 4.179v19.847c0 2.308 1.919 4.179 4.286 4.179h5.357l5.337 13.58 5.377-13.58h5.357c2.366 0 4.285-1.87 4.285-4.179V7.396c0-2.308-1.919-4.179-4.285-4.179"  /><g opacity=".15" transform="matrix(1.0714 0 0 -1.0714 -233.22 146.783)"><path d="M244 134h-20c-2.209 0-4-1.746-4-3.9v-18.525c0-2.154 1.791-3.9 4-3.9h5L233.982 95 239 107.675h5c2.209 0 4 1.746 4 3.9V130.1c0 2.154-1.791 3.9-4 3.9m0-1c1.654 0 3-1.301 3-2.9v-18.525c0-1.599-1.346-2.9-3-2.9h-5.68l-.25-.632-4.084-10.318-4.055 10.316-.249.634H224c-1.654 0-3 1.301-3 2.9V130.1c0 1.599 1.346 2.9 3 2.9h20" fill="#231f20" /></g></svg>`
 };
 
 // show different markers for different types of Aircraft Availability
@@ -519,6 +509,7 @@ const planeSTMarker = planeIconMarker('yellow', 'blue');
 export const planeDSMarker = planeIconMarker('orange', 'blue');
 export const planeUAMarker = planeIconMarker('gray', 'white');
 export const planeUSMarker = planeIconMarker('black', 'white');
+
 // show different markers for different types of Aircraft Availability
 export function iconForAircraftAvailability(availabilityType) {
     switch (availabilityType) {
@@ -611,7 +602,7 @@ const popUpAvailabilityContent = function (feature, popupContent) {
             // arena asset
             const isEquipment = availability.is_equipment;
             popupContent +=
-                (!isEquipment ? buildPopUpAircraftCommonContent(feature, false) : buildPopUpEquipmentCommonContent(feature, false));
+                (!isEquipment ? AMFUNC_DISP.buildPopUpAircraftCommonContent(feature, false) : AMFUNC_DISP.buildPopUpEquipmentCommonContent(feature, false));
             popupContent += AMFUNC_DISP.getAssetOperatorDetails(feature.properties);
             popupContent += AMFUNC_DISP.getAssetAvailabilityNotes(feature);
             popupContent += AMFUNC_DISP.getAssetDispatchContactDetails(feature);

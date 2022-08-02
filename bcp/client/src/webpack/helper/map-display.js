@@ -1,5 +1,5 @@
 const FEET_PER_M = 3.281;
-import {AIRCRAFT_CATEGORIES} from '../constant';
+import {AIRCRAFT_CATEGORIES, MAP_CONSTANTS} from '../constant';
 
 import moment from 'moment-timezone';
 export function getAssetTitle(asset) {
@@ -305,6 +305,16 @@ export function getStatusClass(eventType) {
             return 'unknown';
     }
 }
+export  function buildPopUpAircraftCommonContent(aircraft, includeTitle) {
+    const aircraftData = {includeTitle: includeTitle};
+    if (includeTitle) {
+        aircraftData.title = getAssetTitle(aircraft.properties);
+    }
+    aircraftData.lastSeen = getAssetLastSeen(aircraft);
+    aircraftData.spatialDisp = getAssetSpatialDisp(aircraft);
+    aircraftData.details = getAircraftDetails(aircraft.properties);
+    return require('./templates/assetCommonContent.hbs')(aircraftData);
+}
 export function buildPopUpEquipmentCommonContent(equipment, includeTitle) {
     const equipmentData = { includeTitle: includeTitle };
     if (includeTitle) {
@@ -379,7 +389,7 @@ export function truncateNotes(notes, maxLength) {
 }
 export function truncateLines(lines, maxLength) {
     let result = '';
-    _.each(lines.split('\n'), function(line) {
+    lines.split('\n').forEach(line =>{
         if (line.length > maxLength) {
             result += line.substring(0, maxLength - 3) + '...\n';
         } else {

@@ -118,7 +118,8 @@ export const fetchAircraftGeoJSON = async () => {
                     category: arenaAsset.category,
                     make: arenaAsset.make,
                     model: arenaAsset.model,
-                    airframe: arenaAsset.airframe
+                    airframe: arenaAsset.airframe,
+                    id: arenaAsset.id
                 }
             };
             pushFeatureData(aircraftGeoJSON, newFeature);
@@ -171,7 +172,8 @@ export const fetchEquipmentGeoJSON = async () => {
                     dispatch_phone: arenaAsset.operator.operationalContact,
                     dispatch_email: arenaAsset.operator.email,
                     description: arenaAsset.description,
-                    fuelType: arenaAsset.fuelType
+                    fuelType: arenaAsset.fuelType,
+                    id: arenaAsset.id
                 }
             };
             pushFeatureData(equipmentGeoJSON, newFeature);
@@ -198,8 +200,7 @@ export const fetchEquipmentGeoJSON = async () => {
 
 export const fetchIncidentGeoJSON = async () => {
     const incidentData = await fetch('/data/incidents.json');
-    const incidentJSON = await incidentData.json();
-    return incidentJSON;
+    return await incidentData.json();
 };
 
 export const filterAvailabilityData = async (assetMode) => {
@@ -213,6 +214,7 @@ export const filterAvailabilityData = async (assetMode) => {
     };
     return availableAssetGeo;
 };
+
 
 export const fetchAsset = async (id, is_equipment) => {
     const aircraftData = await fetch('/data/aircraft.json');
@@ -233,4 +235,6 @@ export const fetchAsset = async (id, is_equipment) => {
         }
     }
 };
+
+
 
