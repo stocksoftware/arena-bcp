@@ -7,6 +7,7 @@ export function ddm(dd, precision) {
     var pad = mins < 10 ? '0' : '';
     return '' + deg + ', ' + pad + mins;
 }
+
 const MINUTES_PER_DAY = 24 * 60;
 const MINUTES_PER_HOUR = 60;
 
@@ -47,5 +48,6 @@ export function timeToString(timeParam) {
     }
     return responseTime;
 }
+
 
 

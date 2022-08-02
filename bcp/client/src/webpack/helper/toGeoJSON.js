@@ -24,10 +24,9 @@ export const fetchLocations = async () => {
         };
         pushFeatureData(LocationGeoJSON, feature);
     });
-
     return LocationGeoJSON;
-
 };
+
 export const toGeoJSON = async () => {
 
     const geoTracksData = await fetch('/data/geoTracks.json');
@@ -196,6 +195,7 @@ export const fetchEquipmentGeoJSON = async () => {
     });
     return equipmentGeoJSON;
 };
+
 export const fetchIncidentGeoJSON = async () => {
     const incidentData = await fetch('/data/incidents.json');
     const incidentJSON = await incidentData.json();
@@ -221,7 +221,6 @@ export const fetchAsset = async (id, is_equipment) => {
     const equipmentJSON = await equipmentData.json();
     const {aircraft} = aircraftJSON;
     const {equipment} = equipmentJSON;
-
     if (is_equipment) {
         const matchAsset = equipment.filter(e => e.id === id);
         if (matchAsset.length > 0) {
@@ -233,5 +232,5 @@ export const fetchAsset = async (id, is_equipment) => {
             return matchAsset[0];
         }
     }
-}
+};
 

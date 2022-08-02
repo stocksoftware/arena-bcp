@@ -471,6 +471,7 @@ const locationUnclassifiedIcon = L.icon({
     iconAnchor: [12, 12],
     popupAnchor: [0, -12]
 });
+
 const equipmentIconMarker = (iconColor, markerColor) => L.ExtraMarkers.icon({
     innerHTML: equipmentIconHtml(iconColor, markerColor),
     svg: true
@@ -618,7 +619,5 @@ const popUpAvailabilityContent = function (feature, popupContent) {
     }
     return popupContent;
 };
-
-
 
 
