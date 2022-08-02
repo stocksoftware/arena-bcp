@@ -3,6 +3,59 @@ import {AIRCRAFT_CATEGORIES, MAP_CONSTANTS} from '../constant';
 
 import moment from 'moment-timezone';
 
+export const getEquipmentCell = (equipment) => {
+    const equipmentDetails = {
+        description: equipment.description,
+        registration: equipment.registration ? equipment.registration : null,
+        operatorName: equipment.operator ?
+            cleanOperatorName(equipment.operator.name ?
+                equipment.operator.name :
+                equipment.operator.registeredName) :
+            null
+    }
+    return equipmentDetails;
+}
+export const getPopUpContents = (asset) => {
+    let feature = {properties: asset};
+    const lastSeen = getAssetLastSeenDetails(feature);
+    const aircraftDetails = getAircraftDetails(feature);
+    const operator = getAssetOperatorDetails(asset);
+    const dispatchDetails = getAssetDispatchDetails(feature)
+    return {lastSeen,aircraftDetails, operator, dispatchDetails}
+
+}
+
+export function getAssetDispatchDetails(feature) {
+const {properties} = feature;
+    if (properties.dispatch_contact ||
+        properties.dispatch_email ||
+        properties.dispatch_phone) {
+        details.showContact = true;
+        details.contactName = properties.dispatch_contact;
+        details.email = properties.dispatch_email;
+        details.phone = properties.dispatch_phone;
+        details.altPhone = properties.dispatch_alt_phone;
+        details.altPhoneIntegration = formatPhoneIntegrationValue(user.phoneIntegration, details.altPhone);
+        return require('./templates/assetDispatchContactDetails.hbs')(details);
+    }
+
+
+}
+
+export const getAircraftCell = function (aircraft) {
+    const aircraftDetails = {
+        description: aircraft.callsign ? aircraft.callsign : null,
+        registration: aircraft.registration ? aircraft.registration : null,
+        operatorName: aircraft.operator ?
+            cleanOperatorName(aircraft.operator.name ?
+                aircraft.operator.name :
+                aircraft.operator.registeredName) :
+            null
+    };
+    return aircraftDetails;
+};
+
+
 export function getAssetTitle(asset) {
     return asset.callsign ? asset.callsign + ' [' + asset.registration + ']' : asset.registration;
 }
@@ -88,15 +141,6 @@ export function getAssetDispatchContactDetails(asset) {
         }
         return require('./templates/assetDispatchContactDetails.hbs')(details);
     }
-}
-
-function safeString(string) {
-    if (!string) {
-        return '';
-    }
-    let result = string.replace(/'/g, '&#39');
-    result = result.replace(/"/g, '&#34');
-    return result;
 }
 
 export function mToFeet(m) {
@@ -426,4 +470,26 @@ export function wrapNotesHeader(notes, colonFollowedByNewline) {
     }
     return notes.replace(regex, '<span class=\'notes-header\'>$1:</span>$2');
 }
+
+export function safeString(string) {
+    if (!string) {
+        return '';
+    }
+    let result = string.replace(/'/g, '&#39');
+    result = result.replace(/"/g, '&#34');
+    return result;
+}
+
+export const getIncident = function (incidentId) {
+    let incident = null;
+    if (_cachedIncidentData) {
+        _cachedIncidentData.features.forEach(f => {
+            if (f.properties.id === incidentId) {
+                incident = f;
+                return false;
+            }
+        });
+    }
+    return incident;
+};
 

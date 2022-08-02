@@ -49,4 +49,26 @@ export function timeToString(timeParam) {
     return responseTime;
 }
 
+export const filterAssets = (assets, filterText) =>{
+    console.log('filterAssets')
+    let filterResult = [];
+    let pushed = false;
+    for(let i =0; i< assets.length ; i++){
+        pushed = true;
+        Object.values(assets[i]).forEach(value=>{
+            if(value && (typeof value === 'string' ||typeof value === 'number')){
+                value = value.toString().toUpperCase();
+                if (value && value.includes(filterText.toUpperCase())){
+                    console.log('asset', assets[i]);
+                    if(pushed){
+                        filterResult.push(assets[i]);
+                        pushed = false;
+                    }
+                }
+            }
+        })
+    }
+    return filterResult;
+};
+
 

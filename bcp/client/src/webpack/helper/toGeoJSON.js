@@ -235,5 +235,33 @@ export const fetchAsset = async (id, is_equipment) => {
         }
     }
 };
+export const fetchAssetList = async (assetMode) => {
 
-
+    const aircraftData = await fetch('/data/aircraft.json');
+    const equipmentData = await fetch('/data/equipment.json');
+    const equipmentJSON = await equipmentData.json();
+    const aircraftJSON = await aircraftData.json();
+    const availabilityData = await fetch('/data/availability.json');
+    const availabilityJSON = await availabilityData.json();
+    const {aircraft} = aircraftJSON;
+    const {equipment} = equipmentJSON;
+    if(assetMode===ASSET_MODE.AIRCRAFT){
+        return  aircraft.map(a=>{
+            const matchedAsset = availabilityJSON.features.filter(feature=>feature.properties.asset_id===a.id);
+            if(matchedAsset.length>0){
+                const matchedFeature = matchedAsset[0].properties;
+                return {...a, ...matchedFeature,availabilityFeature: true};
+            }
+            return{...a, availabilityFeature: false} ;
+        })
+    }else{
+        return  equipment.map(e=>{
+            const matchedAsset = availabilityJSON.features.filter(feature=>feature.properties.asset_id===e.id);
+            if(matchedAsset.length>0){
+                const matchedFeature = matchedAsset[0].properties;
+                return {...e,...matchedFeature};
+            }
+            return e;
+        });
+    }
+}
