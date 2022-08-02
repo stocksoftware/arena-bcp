@@ -11,7 +11,6 @@ import EquipmentTrackLayer from "../components/EquipmentTrackLayer";
 import LocationLayer from "../components/LocationLayer";
 import AvailabilityLayer from "../components/AvailabilityLayer";
 
-
 const Map = observer(() => {
     const mapCenter = [-27, 130];
     const {mapStore} = useStores();

@@ -2,9 +2,11 @@ const FEET_PER_M = 3.281;
 import {AIRCRAFT_CATEGORIES, MAP_CONSTANTS} from '../constant';
 
 import moment from 'moment-timezone';
+
 export function getAssetTitle(asset) {
     return asset.callsign ? asset.callsign + ' [' + asset.registration + ']' : asset.registration;
 }
+
 export function getAssetLastSeen(asset) {
     let content = '';
     if (asset.properties.transmitted) {
@@ -19,7 +21,7 @@ export function getAssetLastSeen(asset) {
 export function getAssetLastSeenDetails(asset) {
     const lastSeen = getAssetLastSeen(asset);
     if (lastSeen) {
-        return require('./templates/lastSeenDetails.hbs')({ details: lastSeen });
+        return require('./templates/lastSeenDetails.hbs')({details: lastSeen});
     }
     return '';
 }
@@ -60,6 +62,7 @@ export function getAssetSpatialDisp(asset) {
 
     return content;
 }
+
 export function getEquipmentDetails(equipment) {
     let content = '';
     content += (equipment.properties.description ?
@@ -69,9 +72,10 @@ export function getEquipmentDetails(equipment) {
         (equipment.properties.fuelType ? '<strong>Fuel Type: </strong>' + safeString(equipment.properties.fuelType) + '<br/>' : '');
     return content;
 }
+
 export function getAssetDispatchContactDetails(asset) {
     if (asset.properties) {
-        const details = { showContact: false };
+        const details = {showContact: false};
         const properties = asset.properties;
         details.number = properties.dispatch_number;
         if (properties.dispatch_contact ||
@@ -85,6 +89,7 @@ export function getAssetDispatchContactDetails(asset) {
         return require('./templates/assetDispatchContactDetails.hbs')(details);
     }
 }
+
 function safeString(string) {
     if (!string) {
         return '';
@@ -93,9 +98,11 @@ function safeString(string) {
     result = result.replace(/"/g, '&#34');
     return result;
 }
+
 export function mToFeet(m) {
     return m * FEET_PER_M;
 }
+
 export function getAssetOperatorDetails(asset) {
     const details = {};
     details.photo = asset.profilePhotoSmall ? getAssetProfilePhoto(asset) : '';
@@ -107,6 +114,7 @@ export function getAssetOperatorDetails(asset) {
     }
     return details.photo;
 }
+
 export function getAircraftDetails(aircraft) {
     let content = '<span class="subsection-heading">Type:</span><div class="subsection">';
 
@@ -122,12 +130,14 @@ export function formatAircraftCategory(category) {
     const aircraftcategory = AIRCRAFT_CATEGORIES[category] || category;
     return aircraftcategory.replace(/FW -/, 'Fixed Wing -').replace(/RW -/, 'Helicopter -');
 }
+
 export function getAssetProfilePhoto(asset) {
     if (asset.profilePhotoSmall) {
         return '<img src=\'' + asset.profilePhotoSmall + '\' style="width:auto;height:90px">';
     }
     return '';
 }
+
 export function cleanOperatorName(string) {
     if (!string) {
         return '';
@@ -137,9 +147,11 @@ export function cleanOperatorName(string) {
     result = result.replace(/[lL][tT][dD]/, '');
     return result.trim();
 }
+
 export function getAssetSilhouette(asset) {
     return '<img src=\'' + getAssetSilhouettePath(asset) + '\' style=\'width:100px; height:auto;\'/>';
 }
+
 function getAssetSilhouettePath(asset) {
     let path;
 
@@ -305,7 +317,8 @@ export function getStatusClass(eventType) {
             return 'unknown';
     }
 }
-export  function buildPopUpAircraftCommonContent(aircraft, includeTitle) {
+
+export function buildPopUpAircraftCommonContent(aircraft, includeTitle) {
     const aircraftData = {includeTitle: includeTitle};
     if (includeTitle) {
         aircraftData.title = getAssetTitle(aircraft.properties);
@@ -315,8 +328,9 @@ export  function buildPopUpAircraftCommonContent(aircraft, includeTitle) {
     aircraftData.details = getAircraftDetails(aircraft.properties);
     return require('./templates/assetCommonContent.hbs')(aircraftData);
 }
+
 export function buildPopUpEquipmentCommonContent(equipment, includeTitle) {
-    const equipmentData = { includeTitle: includeTitle };
+    const equipmentData = {includeTitle: includeTitle};
     if (includeTitle) {
         equipmentData.title = getAssetTitle(equipment);
     }
@@ -326,11 +340,11 @@ export function buildPopUpEquipmentCommonContent(equipment, includeTitle) {
     equipmentData.contactDetails = getAssetDispatchContactDetails(equipment);
     return require('./templates/assetCommonContent.hbs')(equipmentData);
 }
+
 export function getFuellingArrangmentDisplayValue(fuellingArrangement) {
     if (!fuellingArrangement) {
         return '';
     }
-
     switch (fuellingArrangement) {
         case 'D':
             return 'Dry Only';
@@ -348,6 +362,7 @@ export function getFuellingArrangmentDisplayValue(fuellingArrangement) {
             return '';
     }
 }
+
 export function getAssetAvailabilityNotes(asset) {
     if (asset && asset.properties.notes) {
         // Remove double and training newlines.
@@ -377,6 +392,7 @@ export function getAssetAvailabilityNotes(asset) {
     }
     return '';
 }
+
 export function truncateNotes(notes, maxLength) {
     // Put each note onto one line.
     const oneLine = notes.replace(/\n/g, ' ');
@@ -387,9 +403,10 @@ export function truncateNotes(notes, maxLength) {
 
     return truncateLines(oneLinePerNote, maxLength);
 }
+
 export function truncateLines(lines, maxLength) {
     let result = '';
-    lines.split('\n').forEach(line =>{
+    lines.split('\n').forEach(line => {
         if (line.length > maxLength) {
             result += line.substring(0, maxLength - 3) + '...\n';
         } else {
@@ -398,6 +415,7 @@ export function truncateLines(lines, maxLength) {
     });
     return result.trim();
 }
+
 export function wrapNotesHeader(notes, colonFollowedByNewline) {
     let regex;
     // /mg puts the regex into a mode where ^ matches the start of each line, not just he start of the string.

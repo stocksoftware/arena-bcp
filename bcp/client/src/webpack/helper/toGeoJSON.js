@@ -237,4 +237,3 @@ export const fetchAsset = async (id, is_equipment) => {
 };
 
 
-

@@ -3,10 +3,10 @@ import DataLayer from "./DataLayer";
 import {
     iconForEquipmentAvailability,
     iconForAircraftAvailability,
-    buildPopUpAvailability, renderAvailabilityPopup
+    renderAvailabilityPopup
 } from "../helper/map-style";
 import {observer} from "mobx-react";
-import {filterAvailabilityData, fetchAssetfetchAsset, fetchAsset} from '../helper/toGeoJSON';
+import {filterAvailabilityData, fetchAsset} from '../helper/toGeoJSON';
 import '../css/thirdparty/leaflet.label.css';
 import * as L from "leaflet";
 import useStores from "../hooks/use-stores";
@@ -19,18 +19,17 @@ const AvailabilityLayer = observer(() => {
     useEffect(() => {
         filterAvailabilityData(assetMode).then(setAvailableAsset);
     }, [assetMode]);
-    const pointToLayer =function (feature, latlng) {
+    const pointToLayer = function (feature, latlng) {
         const icon = feature.properties.is_equipment ?
             iconForEquipmentAvailability(feature.properties.event_type) :
             iconForAircraftAvailability(feature.properties.event_type);
-        return L.marker(latlng, { icon: icon, zIndexOffset: 30 });
+        return L.marker(latlng, {icon: icon, zIndexOffset: 30});
     };
 
-    const onEachFeature =  function (feature, layer) {
-
+    const onEachFeature = function (feature, layer) {
         layer.on('click', async function (e) {
             let match = await fetchAsset(feature.properties.asset_id, feature.properties.is_equipment);
-            feature.properties={...(feature.properties),...match};
+            feature.properties = {...(feature.properties), ...match};
             const content = await renderAvailabilityPopup(feature);
             layer.bindPopup(content, {maxWidth: 600})
                 .openPopup()
