@@ -4,26 +4,26 @@ import {AIRCRAFT_TYPE, ASSET_MODE} from '../constant';
 export const fetchLocations = async () => {
     const locationData = await fetch('/data/locations.json');
     const locationJSON = await locationData.json();
-        const {locations} = locationJSON;
-        const LocationGeoJSON = {
-            type: 'FeatureCollection',
-            features: []
-        };
+    const {locations} = locationJSON;
+    const LocationGeoJSON = {
+        type: 'FeatureCollection',
+        features: []
+    };
 
-        locations.forEach(track => {
-            const feature = {
-                "type": "Feature",
-                "geometry": {
-                    "type": "Point",
-                    "coordinates": [
-                        track.long,
-                        track.lat,
-                    ]
-                },
-                "properties": {...track}
-            };
-            pushFeatureData(LocationGeoJSON, feature);
-        });
+    locations.forEach(track => {
+        const feature = {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    track.long,
+                    track.lat,
+                ]
+            },
+            "properties": {...track}
+        };
+        pushFeatureData(LocationGeoJSON, feature);
+    });
 
     return LocationGeoJSON;
 
@@ -202,15 +202,36 @@ export const fetchIncidentGeoJSON = async () => {
     return incidentJSON;
 };
 
-export const filterAvailabilityData =async (assetMode) => {
+export const filterAvailabilityData = async (assetMode) => {
     const availabilityData = await fetch('/data/availability.json');
     const availabilityJSON = await availabilityData.json();
     const availableFeatures = availabilityJSON.features.filter(f => f.geometry.coordinates.length !== 0);
-    let availableAsset = assetMode === ASSET_MODE.EQUIPMENT ? availableFeatures.filter(a => a.properties.is_equipment === true) : availableFeatures.filter(a => a.properties.is_equipment === false);
+    let availableAsset = assetMode === ASSET_MODE.EQUIPMENT ? availableFeatures.filter(a => a.properties.is_equipment) : availableFeatures.filter(a => !a.properties.is_equipment);
     const availableAssetGeo = {
         "type": "FeatureCollection",
         "features": availableAsset
     };
     return availableAssetGeo;
 };
+
+export const fetchAsset = async (id, is_equipment) => {
+    const aircraftData = await fetch('/data/aircraft.json');
+    const equipmentData = await fetch('/data/equipment.json');
+    const aircraftJSON = await aircraftData.json();
+    const equipmentJSON = await equipmentData.json();
+    const {aircraft} = aircraftJSON;
+    const {equipment} = equipmentJSON;
+
+    if (is_equipment) {
+        const matchAsset = equipment.filter(e => e.id === id);
+        if (matchAsset.length > 0) {
+            return matchAsset[0];
+        }
+    } else {
+        const matchAsset = aircraft.filter(acraft => acraft.id === id);
+        if (matchAsset.length > 0) {
+            return matchAsset[0];
+        }
+    }
+}
 

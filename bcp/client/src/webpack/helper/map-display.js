@@ -315,4 +315,86 @@ export function buildPopUpEquipmentCommonContent(equipment, includeTitle) {
     equipmentData.contactDetails = getAssetDispatchContactDetails(equipment);
     return require('./templates/assetCommonContent.hbs')(equipmentData);
 }
+export function getFuellingArrangmentDisplayValue(fuellingArrangement) {
+    if (!fuellingArrangement) {
+        return '';
+    }
+
+    switch (fuellingArrangement) {
+        case 'D':
+            return 'Dry Only';
+
+        case 'BD':
+            return 'Wet-B or Dry';
+
+        case 'ABD':
+            return 'Wet-A, Wet-B or Dry';
+
+        case 'NA':
+            return 'Not Applicable';
+
+        default:
+            return '';
+    }
+}
+export function getAssetAvailabilityNotes(asset) {
+    if (asset && asset.properties.notes) {
+        // Remove double and training newlines.
+        let fullNotes = asset.properties.notes.replace(/\n\n/g, '\n').trim();
+
+        if (fullNotes !== '') {
+            let truncatedNotes = truncateNotes(fullNotes, 60);
+            truncatedNotes = wrapNotesHeader(truncatedNotes, false);
+            truncatedNotes = truncatedNotes.replace(/\n/g, '<br/>');
+
+            fullNotes = wrapNotesHeader(fullNotes, true);
+            fullNotes = fullNotes.replace(/\n/g, '<br/>');
+
+            if (truncatedNotes.indexOf('...') > 0) {
+                return require('./templates/assetAvailabilityNotes.hbs')({
+                    truncatedNotes: truncatedNotes,
+                    popup: require('./templates/popup.hbs')({
+                        position: 'left', title: 'Notes', content: fullNotes
+                    })
+                });
+            } else {
+                return require('./templates/assetAvailabilityNotes.hbs')({
+                    truncatedNotes: truncatedNotes
+                });
+            }
+        }
+    }
+    return '';
+}
+export function truncateNotes(notes, maxLength) {
+    // Put each note onto one line.
+    const oneLine = notes.replace(/\n/g, ' ');
+
+    // Split the notes on the headings
+    const regex = new RegExp('(' + MAP_CONSTANTS.NOTES_HEADINGS + '):', 'g');
+    const oneLinePerNote = oneLine.replace(regex, '\n$1:').trim();
+
+    return truncateLines(oneLinePerNote, maxLength);
+}
+export function truncateLines(lines, maxLength) {
+    let result = '';
+    _.each(lines.split('\n'), function(line) {
+        if (line.length > maxLength) {
+            result += line.substring(0, maxLength - 3) + '...\n';
+        } else {
+            result += line + '\n';
+        }
+    });
+    return result.trim();
+}
+export function wrapNotesHeader(notes, colonFollowedByNewline) {
+    let regex;
+    // /mg puts the regex into a mode where ^ matches the start of each line, not just he start of the string.
+    if (colonFollowedByNewline) {
+        regex = new RegExp('^(' + MAP_CONSTANTS.NOTES_HEADINGS + '):()$', 'mg');
+    } else {
+        regex = new RegExp('^(' + MAP_CONSTANTS.NOTES_HEADINGS + '):([^\n]*)$', 'mg');
+    }
+    return notes.replace(regex, '<span class=\'notes-header\'>$1:</span>$2');
+}
 
