@@ -50,7 +50,6 @@ export function timeToString(timeParam) {
 }
 
 export const filterAssets = (assets, filterText) =>{
-    console.log('filterAssets')
     let filterResult = [];
     let pushed = false;
     for(let i =0; i< assets.length ; i++){
@@ -59,7 +58,7 @@ export const filterAssets = (assets, filterText) =>{
             if(value && (typeof value === 'string' ||typeof value === 'number')){
                 value = value.toString().toUpperCase();
                 if (value && value.includes(filterText.toUpperCase())){
-                    console.log('asset', assets[i]);
+                    console.log('value', value)
                     if(pushed){
                         filterResult.push(assets[i]);
                         pushed = false;
@@ -68,6 +67,7 @@ export const filterAssets = (assets, filterText) =>{
             }
         })
     }
+    console.log('filterResult',filterResult)
     return filterResult;
 };
 

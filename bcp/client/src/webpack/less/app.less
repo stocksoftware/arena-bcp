@@ -140,7 +140,7 @@ html {
 
         .keyword_filter {
           display: block;
-          padding-left: 1em;
+          padding: 1em;
         }
 
         .table {
@@ -156,7 +156,7 @@ html {
 
             .table_sort {
               position: absolute;
-              top: 0.5em;
+              top: 0;
               right: 0.5em;
             }
           }
@@ -164,23 +164,57 @@ html {
           tbody td {
             font-weight: 300;
             border: 1px solid #ddd;
-            position:relative;
+            position: relative;
+
+            .assetName {
+              display: flex;
+              flex-direction: row;
+              justify-content: flex-start;
+            }
+
+            .font_bold {
+              font-weight: bold;
+            }
+
             .popup {
               position: absolute;
-              width:200px;
-              right: -200px;
+              width: 18em;
+              right: -18em;
               top: 0;
               background: #fff;
               z-index: 10;
+              font-weight: normal;
+
+              .callsignAndRego {
+                padding: 0.5em 1em;
+                background: #eee;
+                font-weight: bold;
+              }
+
+              .label {
+                display: inline-block;
+                font-weight: 600;
+                padding-right: 0.5rem;
+
+              }
+
+              .content {
+                padding: 1em;
+
+                .operator_detail {
+                  padding-left: 2em;
+                }
+
+                .image {
+                  width: 100px;
+                }
+              }
+
             }
           }
 
           .dispatched {
             color: #f00;
-          }
-
-          .assetName {
-            font-weight: bold;
           }
 
           .operator {

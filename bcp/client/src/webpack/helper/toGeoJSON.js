@@ -208,11 +208,10 @@ export const filterAvailabilityData = async (assetMode) => {
     const availabilityJSON = await availabilityData.json();
     const availableFeatures = availabilityJSON.features.filter(f => f.geometry.coordinates.length !== 0);
     let availableAsset = assetMode === ASSET_MODE.EQUIPMENT ? availableFeatures.filter(a => a.properties.is_equipment) : availableFeatures.filter(a => !a.properties.is_equipment);
-    const availableAssetGeo = {
+    return {
         "type": "FeatureCollection",
         "features": availableAsset
     };
-    return availableAssetGeo;
 };
 
 
@@ -245,23 +244,31 @@ export const fetchAssetList = async (assetMode) => {
     const availabilityJSON = await availabilityData.json();
     const {aircraft} = aircraftJSON;
     const {equipment} = equipmentJSON;
-    if(assetMode===ASSET_MODE.AIRCRAFT){
-        return  aircraft.map(a=>{
-            const matchedAsset = availabilityJSON.features.filter(feature=>feature.properties.asset_id===a.id);
-            if(matchedAsset.length>0){
+    const currentLocationsData = await fetch('/data/currentLocations.json');
+    const currentLocationsJSON = await currentLocationsData.json();
+    const {currentLocations} = currentLocationsJSON;
+    if (assetMode === ASSET_MODE.AIRCRAFT) {
+        return aircraft.map(a => {
+            const matchedAsset = availabilityJSON.features.filter(feature => feature.properties.asset_id === a.id);
+            if (matchedAsset.length > 0) {
                 const matchedFeature = matchedAsset[0].properties;
-                return {...a, ...matchedFeature,availabilityFeature: true};
+                const matchLocation = currentLocations.filter(location => location.imei === a.imei);
+                const location = matchLocation.length > 0 && matchLocation[0];
+                return {...a, ...matchedFeature, ...location, availabilityFeature: true};
             }
-            return{...a, availabilityFeature: false} ;
-        })
-    }else{
-        return  equipment.map(e=>{
-            const matchedAsset = availabilityJSON.features.filter(feature=>feature.properties.asset_id===e.id);
-            if(matchedAsset.length>0){
+            return {...a, availabilityFeature: false};
+        }
+        );
+    } else {
+        return equipment.map(e => {
+            const matchedAsset = availabilityJSON.features.filter(feature => feature.properties.asset_id === e.id);
+            if (matchedAsset.length > 0) {
                 const matchedFeature = matchedAsset[0].properties;
-                return {...e,...matchedFeature};
+                const matchLocation = currentLocations.filter(location => location.imei === e.imei);
+                const location = matchLocation.length > 0 && matchLocation[0];
+                return {...e, ...matchedFeature, ...location};
             }
             return e;
         });
     }
-}
+};

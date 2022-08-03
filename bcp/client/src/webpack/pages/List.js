@@ -9,6 +9,8 @@ import {ASSET_MODE, DEBOUNCE_DELAY_MS} from '../constant';
 import {filterAssets} from "../helper/map-math";
 import _ from 'lodash';
 import {TableSort} from '../components/TableSort';
+import AircraftAssetCol from '../components/AircraftAssetCol';
+import EquipmentAssetCol from '../components/EquipmentAssetCol';
 
 const List = observer(() => {
     const {mapStore} = useStores();
@@ -19,7 +21,7 @@ const List = observer(() => {
     const [popUpKey, setPopupKey] = useState('');
     useEffect(() => {
         fetchAssetList(assetMode).then(setAssets);
-    }, []);
+    }, [assetMode]);
     useEffect(() => {
         if (assets.length > 0) {
             const debounce_search = _.debounce(function () {
@@ -66,36 +68,15 @@ const List = observer(() => {
                 <tbody>
                 {assets && assets.map(asset => {
                     const {eventType, location} = getLocationCell(asset);
-                    const isDispatched = asset.event_name === 'Dispatched' ? 'dispatched' : '';
-                    const {
-                        description,
-                        registration,
-                        operatorName
-                    } = assetMode === ASSET_MODE.EQUIPMENT ? AMFUNC_DISP.getEquipmentCell(asset) : AMFUNC_DISP.getAircraftCell(asset);
+                    const isDispatched = asset.event_name ==='Dispatched' ? 'dispatched' : '';
                     return (
                         <tr key={asset.id}>
-                            <td className="assetColumn" onMouseOver={() => {
-                                setPopupKey(asset.id)
-                            }} onMouseOut={() => {
-                                setPopupKey('')
-                            }}>
-                                <div className="assetName">
-                                    <span className='description'>{description}</span>
-                                    <span className={isDispatched}>{registration}</span>
-                                </div>
-                                <div className="operator">
-                                    {operatorName}
-                                </div>
-                                {
-                                    popUpKey ===asset.id && (<div className='popup'>
-                                        <strong>{description}{registration}</strong>
-                                        <p>{operatorName}</p>
-                                        <p>{asset.event_type}</p>
-                                        <p><strong>Type </strong>{asset.fuelType}</p>
+                            {
+                                assetMode === ASSET_MODE.EQUIPMENT ?
+                                    <EquipmentAssetCol asset={asset} isDispatched={isDispatched}/>
+                                    :<AircraftAssetCol asset={asset} isDispatched={isDispatched}/>
+                            }
 
-                                    </div>)
-                                }
-                            </td>
                             <td className="baseLocation">
                                 <p>{eventType}{location}</p>
                             </td>

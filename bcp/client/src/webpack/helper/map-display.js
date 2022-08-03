@@ -17,16 +17,32 @@ export const getEquipmentCell = (equipment) => {
 }
 export const getPopUpContents = (asset) => {
     let feature = {properties: asset};
-    const lastSeen = getAssetLastSeenDetails(feature);
-    const aircraftDetails = getAircraftDetails(feature);
-    const operator = getAssetOperatorDetails(asset);
-    const dispatchDetails = getAssetDispatchDetails(feature)
-    return {lastSeen,aircraftDetails, operator, dispatchDetails}
+    const lastSeen = getAssetLastSeen(feature);
+    const aircraftDetails = getAircraftDetailsForPopup(feature.properties);
+    const operator = getAssetOperatorDetailsForPopup(asset);
+    // const dispatchDetails = getAssetDispatchDetails(feature)
+    // return {lastSeen,aircraftDetails, operator, dispatchDetails}
+    return {lastSeen, aircraftDetails,operator};
+}
+function getAssetOperatorDetailsForPopup(asset){
+    let details ={name:'', contact: ''};
+    if (asset.operator.name || asset.operator.registeredName || asset.operator.operationalContact) {
+        details.name = cleanOperatorName(asset.operator.name ? asset.operator.name : asset.operator.registeredName);
+        details.contact =
+            asset.operator.operationalContact ? safeString(asset.operator.operationalContact) : '';}
+    return details;
+}
+function getAircraftDetailsForPopup(aircraft) {
 
+    const category = aircraft.category ? formatAircraftCategory(aircraft.category)  : '';
+    let makeAndModel = aircraft.make ? safeString(aircraft.make) + ' ' : '';
+    makeAndModel += aircraft.model ? safeString(aircraft.model)  : '';
+    const imageSrc = aircraft.model ? getAssetSilhouettePath(aircraft) : '';
+    return {category, makeAndModel, imageSrc};
 }
 
 export function getAssetDispatchDetails(feature) {
-const {properties} = feature;
+    const {properties} = feature;
     if (properties.dispatch_contact ||
         properties.dispatch_email ||
         properties.dispatch_phone) {
@@ -44,7 +60,7 @@ const {properties} = feature;
 
 export const getAircraftCell = function (aircraft) {
     const aircraftDetails = {
-        description: aircraft.callsign ? aircraft.callsign : null,
+        callsign: aircraft.callsign ? aircraft.callsign : null,
         registration: aircraft.registration ? aircraft.registration : null,
         operatorName: aircraft.operator ?
             cleanOperatorName(aircraft.operator.name ?
