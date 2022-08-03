@@ -208,11 +208,10 @@ export const filterAvailabilityData = async (assetMode) => {
     const availabilityJSON = await availabilityData.json();
     const availableFeatures = availabilityJSON.features.filter(f => f.geometry.coordinates.length !== 0);
     let availableAsset = assetMode === ASSET_MODE.EQUIPMENT ? availableFeatures.filter(a => a.properties.is_equipment) : availableFeatures.filter(a => !a.properties.is_equipment);
-    const availableAssetGeo = {
+    return {
         "type": "FeatureCollection",
         "features": availableAsset
     };
-    return availableAssetGeo;
 };
 
 export const fetchAsset = async (id, is_equipment) => {
