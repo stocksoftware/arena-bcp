@@ -439,32 +439,9 @@ export function truncateNotes(notes, maxLength) {
     // Split the notes on the headings
     const regex = new RegExp('(' + MAP_CONSTANTS.NOTES_HEADINGS + '):', 'g');
     const oneLinePerNote = notes.replace(regex, '\n$1:').trim();
-    // return truncateLines(oneLinePerNote, maxLength);
     return oneLinePerNote;
 }
 
-// export function truncateLines(lines, maxLength) {
-//     let result = '';
-//     lines.split('\n').forEach(line => {
-//         if (line.length > maxLength) {
-//             result += line.substring(0, maxLength - 3) + '...\n';
-//         } else {
-//             result += line + '\n';
-//         }
-//     });
-//     return result.trim();
-// }
-
-export function wrapNotesHeader(notes, colonFollowedByNewline) {
-    let regex;
-    // /mg puts the regex into a mode where ^ matches the start of each line, not just he start of the string.
-    if (colonFollowedByNewline) {
-        regex = new RegExp('^(' + MAP_CONSTANTS.NOTES_HEADINGS + '):()$', 'mg');
-    } else {
-        regex = new RegExp('^(' + MAP_CONSTANTS.NOTES_HEADINGS + '):([^\n]*)$', 'mg');
-    }
-    return notes.replace(regex, '<span class=\'notes-header\'>$1:</span>$2');
-}
 
 export function safeString(string) {
     if (!string) {
