@@ -1,5 +1,6 @@
 import {createSearchText} from './map-style';
 import {AIRCRAFT_TYPE, ASSET_MODE} from '../constant';
+import {getLocationOrder, getStatusOrder} from '../helper/map-display';
 
 export const fetchLocations = async () => {
     const locationData = await fetch('/data/locations.json');
@@ -249,15 +250,20 @@ export const fetchAssetList = async (assetMode) => {
     const {currentLocations} = currentLocationsJSON;
     if (assetMode === ASSET_MODE.AIRCRAFT) {
         return aircraft.map(a => {
-            const matchedAsset = availabilityJSON.features.filter(feature => feature.properties.asset_id === a.id);
-            if (matchedAsset.length > 0) {
-                const matchedFeature = matchedAsset[0].properties;
-                const matchLocation = currentLocations.filter(location => location.imei === a.imei);
-                const location = matchLocation.length > 0 && matchLocation[0];
-                return {...a, ...matchedFeature, ...location, availabilityFeature: true};
+                const matchedAsset = availabilityJSON.features.filter(feature => feature.properties.asset_id === a.id);
+                if (matchedAsset.length > 0) {
+                    const matchedFeature = matchedAsset[0].properties;
+                    const matchLocation = currentLocations.filter(location => location.imei === a.imei);
+                    const location = matchLocation.length > 0 && matchLocation[0];
+                    const properties = {...a, ...matchedFeature, ...location}
+                    const locationOrder = getLocationOrder(properties);
+                    properties.locationOrder = locationOrder;
+                    const statusOrder = getStatusOrder(properties);
+                    properties.statusOrder = statusOrder;
+                    return properties;
+                }
+                return {...a, locationOrder: 'Z', statusOrder: 'Z'};
             }
-            return {...a, availabilityFeature: false};
-        }
         );
     } else {
         return equipment.map(e => {
@@ -266,9 +272,14 @@ export const fetchAssetList = async (assetMode) => {
                 const matchedFeature = matchedAsset[0].properties;
                 const matchLocation = currentLocations.filter(location => location.imei === e.imei);
                 const location = matchLocation.length > 0 && matchLocation[0];
-                return {...e, ...matchedFeature, ...location};
+                const properties = {...e, ...matchedFeature, ...location}
+                const locationOrder = getLocationOrder(properties);
+                properties.locationOrder = locationOrder;
+                const statusOrder = getStatusOrder(properties);
+                properties.statusOrder = statusOrder;
+                return properties;
             }
-            return e;
+            return {...e, locationOrder: 'Z', statusOrder: 'Z'};
         });
     }
 };

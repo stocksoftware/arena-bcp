@@ -508,4 +508,57 @@ export const getIncident = function (incidentId) {
     }
     return incident;
 };
+export const getLocationOrder = function(asset) {
+    let order = 'Z';
+        if (asset.location) {
+            switch (asset.event_type) {
+                // POSSIBLY NEED TO ADD MORE CASES HERE
+                case 'STANDBY':
+                    order = 'A ' + asset.location;
+                    break;
+                case 'AVAILABLE':
+                    order = 'B ' + asset.location;
+                    break;
+                default:
+                    order = 'X ' + asset.location;
+                    break;
+            }
+    }
+    return order;
+};
+export const getStatusOrder = function(asset) {
+    let order = 'Z';
+    if (asset.response) {
+        // zero pad the minutes for response time
+        let mins = '000000000' + asset.response;
+        mins = mins.slice(mins.length - 6);
+        switch (asset.event_type) {
+            case 'DEPLOYED': // TEMPORARY FIX AS THIS SHOULD BE 'DISPATCHED'
+            case 'DISPATCHED':
+                order = 'A';
+                break;
+            case 'STANDBY':
+                order = 'B' + mins;
+                break;
+            case 'STANDBY_AMENDED':
+                order = 'B' + mins;
+                break;
+            case 'AVAILABLE':
+            case 'LIMITED':
+                order = 'C' + mins;
+                break;
+            case 'UNSERVICABLE':
+                order = 'E';
+                break;
+            case 'UNAVAILABLE':
+                order = 'F';
+                break;
+            default:
+                order = 'X';
+                break;
+        }
+        return order;
+    }
+    return order;
+};
 
