@@ -426,29 +426,31 @@ export function getFuellingArrangmentDisplayValue(fuellingArrangement) {
 export function getAssetAvailabilityNotes(asset) {
     if (asset && asset.properties.notes) {
         // Remove double and training newlines.
-        let fullNotes = asset.properties.notes.replace(/\n\n/g, '\n').trim();
-
-        if (fullNotes !== '') {
-            let truncatedNotes = truncateNotes(fullNotes, 60);
-            truncatedNotes = wrapNotesHeader(truncatedNotes, false);
-            truncatedNotes = truncatedNotes.replace(/\n/g, '<br/>');
-
-            fullNotes = wrapNotesHeader(fullNotes, true);
-            fullNotes = fullNotes.replace(/\n/g, '<br/>');
-
-            if (truncatedNotes.indexOf('...') > 0) {
-                return require('./templates/assetAvailabilityNotes.hbs')({
-                    truncatedNotes: truncatedNotes,
-                    popup: require('./templates/popup.hbs')({
-                        position: 'left', title: 'Notes', content: fullNotes
-                    })
-                });
-            } else {
-                return require('./templates/assetAvailabilityNotes.hbs')({
-                    truncatedNotes: truncatedNotes
-                });
-            }
-        }
+        // let fullNotes = asset.properties.notes.replace(/\n\n/g, '\n').trim();
+        return require('./templates/assetAvailabilityNotes.hbs')({
+            truncatedNotes: asset.properties.notes
+        });
+        // if (fullNotes !== '') {
+        //     let truncatedNotes = truncateNotes(fullNotes, 60);
+        //     truncatedNotes = wrapNotesHeader(truncatedNotes, false);
+        //     truncatedNotes = truncatedNotes.replace(/\n/g, '<br/>');
+        //
+        //     fullNotes = wrapNotesHeader(fullNotes, true);
+        //     fullNotes = fullNotes.replace(/\n/g, '<br/>');
+        //     console.log('truncatedNotes', truncatedNotes);
+        //     if (truncatedNotes.indexOf('...') > 0) {
+        //         return require('./templates/assetAvailabilityNotes.hbs')({
+        //             truncatedNotes: truncatedNotes,
+        //             popup: require('./templates/popup.hbs')({
+        //                 position: 'left', title: 'Notes', content: fullNotes
+        //             })
+        //         });
+        //     } else {
+        //         return require('./templates/assetAvailabilityNotes.hbs')({
+        //             truncatedNotes: truncatedNotes
+        //         });
+        //     }
+        // }
     }
     return '';
 }
