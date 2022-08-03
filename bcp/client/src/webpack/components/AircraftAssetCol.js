@@ -8,7 +8,6 @@ const AircraftAssetCol = ({asset, isDispatched}) => {
     const {category, makeAndModel, imageSrc} = aircraftDetails;
     const {name, contact} = operator;
     return (
-
         <td className="assetColumn" onMouseOver={() => {
             setShowPopup(true);
         }} onMouseOut={() => {
