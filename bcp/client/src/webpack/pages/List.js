@@ -4,7 +4,7 @@ import {observer} from "mobx-react";
 import Table from 'react-bootstrap/Table';
 import {ASSET_MODE} from "../constant";
 import {fetchAircraftGeoJSON, fetchEquipmentGeoJSON} from "../helper/toGeoJSON";
-import {getAssetCell} from '../helper/map-dashboard'
+import {getAssetCell} from '../helper/map-dashboard';
 
 const List =observer(() => {
     const {mapStore} = useStores();
@@ -16,7 +16,7 @@ const List =observer(() => {
         }else{
             fetchEquipmentGeoJSON(setDataSource);
         }
-    },[])
+    },[]);
     return (
         <div>
             <Table striped>
@@ -36,7 +36,7 @@ const List =observer(() => {
                         <tr>
                             <td>{getAssetCell(properties)}</td>
                         </tr>
-                    )
+                    );
                 })}
                 </tbody>
             </Table>
