@@ -5,7 +5,9 @@ import * as AMFUNC_MATH from './map-math';
 import * as AMFUNC_DISP from './map-display';
 import moment from 'moment-timezone';
 import turf from 'turf';
-import {fetchAsset} from "./toGeoJSON";
+import paperPlane from "../../../../public/icons/paper-plane.svg";
+import square from "../../../../public/icons/square.svg";
+
 
 export const renderIncidentPopup = function (feature) {
     // let addDisatchBoardButton = false;
@@ -538,7 +540,6 @@ export const renderAvailabilityPopup = async function (feature) {
     popupContent = await popUpAvailabilityContent(feature, popupContent);
     return popupContent;
 };
-
 const popUpAvailabilityContent = function (feature, popupContent) {
     if (feature && feature.properties) {
         const availability = feature.properties;
@@ -546,30 +547,23 @@ const popUpAvailabilityContent = function (feature, popupContent) {
         const statusClass = 'status-' + AMFUNC_DISP.getStatusClass(availability.event_type);
 
         // Ensure popups are styled the same as tables.
-        popupContent += '<div class="arena-map-table">';
-        popupContent += '<span class="emphasis">' + AMFUNC_DISP.getAssetTitle(availability) + '</span><br/>';
-        popupContent += '<span class="' + statusClass + '">';
-        popupContent += '<span class="eventName emphasis">' + status + '</span>';
-        popupContent += availability.dispatch_number ? '' : ' ' + AMFUNC_MATH.timeToString(availability.response);
-        popupContent += '</span><br/>';
-
+        const title = AMFUNC_DISP.getAssetTitle(availability);
+        const dispatch_number= availability.dispatch_number ? '' : AMFUNC_MATH.timeToString(availability.response);
+        let locationDetails;
         if (availability.base_location) {
             popupContent += '<span class="emphasis">';
             if (availability.temp_base) {
-                popupContent += 'TOB';
+                locationDetails= 'TOB';
             } else {
-                popupContent += 'NOB';
+                locationDetails= 'NOB';
             }
-            popupContent += `: </span>${availability.base_location}<br/>`;
+            locationDetails += availability.base_location;
         }
-
+        let fuellingDescription ;
         if (availability.fuelling_arrangement) {
-            const fuellingDescription = AMFUNC_DISP.getFuellingArrangmentDisplayValue(availability.fuelling_arrangement);
-            popupContent += '<span class="emphasis">Fuelling Arrangement:</span> ';
-            popupContent += fuellingDescription;
-            popupContent += '<br/>';
+             fuellingDescription = AMFUNC_DISP.getFuellingArrangmentDisplayValue(availability.fuelling_arrangement);
         }
-
+        let distanceToBase;
         if (availability &&
             // MIGHT NEED TO ADD MORE EVENT TYPES HERE
             availability.event_type !== 'UNAVAILABLE' &&
@@ -589,24 +583,28 @@ const popUpAvailabilityContent = function (feature, popupContent) {
             if (!isNaN(distance)) {
                 popupContent += '<span class="emphasis">Currently:</span> ';
                 if (distance < 5) {
-                    popupContent += 'at base';
+                    distanceToBase = 'at base';
                 } else {
-                    popupContent += distance.toFixed(0) + ' km from base';
+                    distanceToBase = distance.toFixed(0) + ' km from base';
                 }
             }
-            popupContent += '<br/>';
+
         }
+        let commonContent, operatorDetails, availabilityNote, dispatchContactDetails;
         if (availability.id) {
             // arena asset
             const isEquipment = availability.is_equipment;
-            popupContent +=
+            commonContent =
                 (!isEquipment ? AMFUNC_DISP.buildPopUpAircraftCommonContent(feature, false) : AMFUNC_DISP.buildPopUpEquipmentCommonContent(feature, false));
-            popupContent += AMFUNC_DISP.getAssetOperatorDetails(feature.properties);
-            popupContent += AMFUNC_DISP.getAssetAvailabilityNotes(feature);
-            popupContent += AMFUNC_DISP.getAssetDispatchContactDetails(feature);
+            operatorDetails = AMFUNC_DISP.getAssetOperatorDetails(feature.properties);
+            availabilityNote = AMFUNC_DISP.getAssetAvailabilityNotes(feature);
+            dispatchContactDetails = AMFUNC_DISP.getAssetDispatchContactDetails(feature);
         }
+        return require('../helper/templates/popUpAvailabilityContent.hbs')({title,statusClass,status,dispatch_number,locationDetails,fuellingDescription,distanceToBase,commonContent,operatorDetails,availabilityNote,dispatchContactDetails})
     }
-    return popupContent;
+
 };
+
+
 
 

@@ -53,8 +53,8 @@ const clientConfig = {
             },
             {
                 test: /\.hbs$/, loader: 'handlebars-loader'
-            }
-
+            },
+            // { test: /\.svg/, type: 'asset/source' }
         ]
     },
     devServer: {
