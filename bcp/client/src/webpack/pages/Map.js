@@ -59,13 +59,13 @@ const Map = observer(() => {
                         </LayersControl.Overlay>
                     </>
                 }
-                <LayersControl.Overlay name="Incident" key={"Incident"+assetMode}  checked>
+                <LayersControl.Overlay name="Incident" key={"Incident"+assetMode}  >
                     <IncidentLayer/>
                 </LayersControl.Overlay>
                 <LayersControl.Overlay name="Location" key={"Location"+assetMode} >
                     <LocationLayer/>
                 </LayersControl.Overlay>
-                <LayersControl.Overlay name="Availability" key={"availability"+assetMode}>
+                <LayersControl.Overlay name="Availability" key={"availability"+assetMode} checked>
                     <AvailabilityLayer/>
                 </LayersControl.Overlay>
             </LayersControl>
