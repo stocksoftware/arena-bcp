@@ -8,6 +8,8 @@ import turf from 'turf';
 import paperPlane from "../../../../public/icons/paper-plane.svg";
 import square from "../../../../public/icons/square.svg";
 import truck from "../../../../public/icons/truck.svg";
+import fire from "../../../../public/icons/fire.svg";
+import penta from "../../../../public/icons/penta.svg";
 
 export const renderIncidentPopup = function (feature) {
     // let addDisatchBoardButton = false;
@@ -70,38 +72,48 @@ export function getIconForIncident(feature) {
     const startDate = new Date(feature.properties.startDate);
 
     let borderColour;
-    let fillColour = '#ccc';
-    let iconColour = 'white';
+    const darkRedBorderColor = '#905678';
+    const orangeBorderColor = '#ef9227';
+    const greyFillColor = '#ccc';
+    const blackFillColor = '#211c1d';
+    const blueFillColor = '#276273';
+    const redFillColor ='#a23337';
+    const whiteIconColor = 'white';
+    const orangeIconColor = 'ef9227';
+    const blackIconColor ='#211c1d';
+    const greyIconColor ='#d3d3de';
+    let fillColour = 'greyFillColor';
+    let iconColour = 'whiteIconColor';
 
     // Determine Border Colour
     if (currentDate < startDate) {
-        borderColour = '#905678';
+        borderColour = 'darkRedBorderColor';
     } else if (feature.properties.dataSource === 'ARENA') {
-        borderColour = '#ef9227';
+        borderColour = 'orangeBorderColor';
     }
 
     // Determine Fill Colour
     if (feature.properties.classification === MAP_CONSTANTS.MAP_BURN_INCIDENT_CLASSIFICATION) {
-        fillColour = '#211c1d';
+        fillColour = 'blackFillColor';
     } else if (feature.properties.classification === MAP_CONSTANTS.MAP_OTHER_INCIDENT_CLASSIFICATION) {
-        fillColour = '#276273';
+        fillColour = 'blueFillColor';
     } else if (feature.properties.classification === MAP_CONSTANTS.MAP_FIRE_INCIDENT_CLASSIFICATION) {
-        fillColour = '#a23337';
+        fillColour = 'redFillColor';
         switch (feature.properties.status) {
             case 'GOING':
                 // leave as default
                 break;
             case 'CONTAINED':
-                iconColour = '#ef9227';
+                iconColour = 'orangeIconColor';
                 break;
             case 'CONTROLLED':
-                iconColour = '#211c1d';
+                iconColour = 'blackIconColor';
                 break;
             case 'OTHER':
-                iconColour = '#d3d3de';
+                iconColour = 'greyIconColor';
                 break;
             default:
-                fillColour = '#ccc';
+                fillColour = 'greyFillColor';
                 break;
         }
     }
@@ -109,22 +121,23 @@ export function getIconForIncident(feature) {
     // none of the above
     return buildIncidentIcon(dispatchCount, fillColour, iconColour, borderColour);
 }
-
-const iconHtml = (dispatchCount, iconClass, fillColour, iconColour, borderColour, borderWidth, borderOpacity) => {
+const iconHtml = (dispatchCount, iconClass, fillColour, iconColour,borderOpacity, strokeBorderColour, strokeBorderWidth) => {
     const dispatched = dispatchCount ? 'dispatched' : '';
-    return ` <svg width='14' height='14' class="${dispatched}  fa-fire" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" >
- <path fill='${iconColour}' d="M216 23.86c0-23.8-30.65-32.77-44.15-13.04C48 191.85 224 200 224 288c0 35.63-29.11 64.46-64.85 63.99-35.17-.45-63.15-29.77-63.15-64.94v-85.51c0-21.7-26.47-32.23-41.43-16.5C27.8 213.16 0 261.33 0 320c0 105.87 86.13 192 192 192s192-86.13 192-192c0-170.29-168-193-168-296.14z"/></svg>
- <span class="dispatchCount" style="color: ${iconColour}">${dispatchCount}</span>
- <svg width='33' height='44' viewBox='0 0 35 45' xmlns='http://www.w3.org/2000/svg'> <path d='M1.872 17.35L9.679 2.993h15.615L33.1 17.35 17.486 44.992z' fill='${fillColour}' style='border: 10px'/> <g opacity='${borderOpacity}' transform='matrix(1.0769 0 0 -1.0769 -272.731 48.23)'> <path d='M276.75 42h-14.5L255 28.668 269.5 3 284 28.668zm-.595-1l6.701-12.323L269.5 5.033l-13.356 23.644L262.845 41z' stroke='${borderColour}' stroke-width='${borderWidth}'/> </g> </svg>`;
-
+    return`<div class="${dispatched} ${iconColour} fa-fire">${fire}</div> <span class="dispatchCount ${iconColour}" >${dispatchCount}</span><div class="fa-penta ${fillColour} ${borderOpacity} ${strokeBorderColour} ${strokeBorderWidth}">${penta}</div>`
 };
+
+
+
 const buildIncidentIcon = (dispatchCount, fillColour, iconColour = "white", borderColour) => {
-    let borderWidth = 3;
-    let borderOpacity = 1;
+    let borderWidth = 'threeStrokeBorderWidth';
+    let borderOpacity = "wholeBorderOpacity";
+
     if (borderColour === undefined) {
         borderColour = 'black';
-        borderWidth = 1;
-        borderOpacity = 0.3;
+        borderColour = 'blackBorderColor';
+
+        borderWidth = 'oneStrokeBorderWidth';
+        borderOpacity = 'pointThreeBoarderOpacity';
     }
 
     return L.ExtraMarkers.icon({
@@ -468,7 +481,7 @@ const equipmentIconMarker = (iconColor, markerColor) => L.ExtraMarkers.icon({
     innerHTML: equipmentIconHtml(iconColor, markerColor),
     svg: true
 });
-const equipmentIconHtml = (iconColor, markerColor)=>{
+const equipmentIconHtml = (iconColor, markerColor) => {
     return `<div class="fa-content ${iconColor}">${truck}</div><div class="fa-container ${markerColor}">${square}</div>`;
 }
 const planeIconMarker = (iconColor, markerColor) => L.ExtraMarkers.icon({
