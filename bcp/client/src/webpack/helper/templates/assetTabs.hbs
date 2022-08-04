@@ -1,0 +1,24 @@
+<div class="arena-map-table">
+  <span class="warning-icon">
+    {{{svg}}} This aircraft has been registered by multiple operators
+  </span>
+  <ul class="tabs" id="{{tabsId}}-ul">
+    {{#each operator}}
+      <li id="li-{{@index}}" class="{{#if @first}}selected{{/if}}">
+        <a href="#" onclick="AM_DISP.showOperatorTab('{{../tabsId}}', 'tab-{{@index}}', 'li-{{@index}}')">Operator {{this.index}}</a>
+      </li>
+    {{/each}}
+  </ul>
+  <div id="{{tabsId}}-div">
+    {{#each operator}}
+    <div id="tab-{{@index}}" class="tabContent {{#if @first}}open{{else}}close{{/if}}">
+        <div class="subsection-heading">Operator:</div>
+        <div class="subsection">
+            <div>{{{name}}}</div>
+             <div>{{{contact}}}</div>
+        </div>
+
+    </div>
+    {{/each}}
+  </div>
+</div>

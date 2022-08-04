@@ -1,7 +1,8 @@
 const FEET_PER_M = 3.281;
 import {AIRCRAFT_CATEGORIES, MAP_CONSTANTS} from '../constant';
-
+import $ from 'jquery';
 import moment from 'moment-timezone';
+import warning from "../../../../public/icons/fa-warning.svg";
 
 export function getAssetTitle(asset) {
     return asset.callsign ? asset.callsign + ' [' + asset.registration + ']' : asset.registration;
@@ -106,14 +107,47 @@ export function mToFeet(m) {
 export function getAssetOperatorDetails(asset) {
     const details = {};
     details.photo = asset.profilePhotoSmall ? getAssetProfilePhoto(asset) : '';
-    if (asset.operator.name || asset.operator.registeredName || asset.operator.operationalContact) {
-        details.name = cleanOperatorName(asset.operator.name ? asset.operator.name : asset.operator.registeredName);
-        details.contact =
-            asset.operator.operationalContact ? safeString(asset.operator.operationalContact) : '';
-        return require('./templates/assetOperatorDetails.hbs')(details);
+    const warningSvg = warning;
+    if (Array.isArray(asset.operator)) {
+        const aircraftData = {operator: asset.operator};
+        const operator = [];
+        for (let i = 0; i < asset.operator.length; i++) {
+            const operatorDetails = displayOperatorDetails(asset.operator[i]);
+            operator.push({index:i+1,...operatorDetails});
+        }
+        return require('./templates/assetTabs.hbs')({svg:warningSvg,operator});
+    } else {
+        const {operator} = asset;
+        if (operator.name || operator.registeredName || operator.operationalContact) {
+            details.name = cleanOperatorName(operator.name ? operator.name : operator.registeredName);
+            details.contact =
+                operator.operationalContact ? safeString(operator.operationalContact) : '';
+            return require('./templates/assetOperatorDetails.hbs')(details);
+        }
     }
     return details.photo;
+};
+
+const displayOperatorDetails = (operator) => {
+    if (operator.name || operator.registeredName || operator.operationalContact) {
+        const name = cleanOperatorName(operator.name ? operator.name : operator.registeredName);
+        const contact =
+            operator.operationalContact ? safeString(operator.operationalContact) : '';
+        return {name, contact};
+    }
+};
+
+export function showOperatorTab(tabsId, tabId, liId) {
+    $('#' + tabsId + '-ul>li.selected').removeClass('selected');
+    const openTab = $('#' + tabsId + '-div>div.tabContent.open');
+    openTab.addClass('close');
+    openTab.removeClass('open');
+
+    $('#' + tabsId + '-ul>#' + liId).addClass('selected');
+    $('#' + tabsId + '-div>#' + tabId).removeClass('close').addClass('open');
 }
+
+
 
 export function getAircraftDetails(aircraft) {
     let content = '<span class="subsection-heading">Type:</span><div class="subsection">';
@@ -381,5 +415,8 @@ export function truncateNotes(notes, maxLength) {
     const oneLinePerNote = notes.replace(regex, '\n$1:').trim();
     return oneLinePerNote;
 }
+
+window.AM_DISP = {};
+window.AM_DISP.showOperatorTab = showOperatorTab;
 
 

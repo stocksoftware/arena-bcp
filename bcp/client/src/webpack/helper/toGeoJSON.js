@@ -43,7 +43,6 @@ export const toGeoJSON = async () => {
     const {equipment} = equipmentJSON;
     const equipmentLocations = currentLocations.filter(location => location.assetType === 'VEHICLE');
     const aircraftLocations = currentLocations.filter(location => location.assetType === 'FIXED_WING' || location.assetType === 'HELICOPTER');
-
     return {trackFeature, aircraft, equipment, equipmentLocations, aircraftLocations};
 
 };
@@ -86,12 +85,27 @@ export const fetchAircraftTrack = async () => {
 };
 export const fetchAircraftGeoJSON = async () => {
     const {aircraft, aircraftLocations} = await toGeoJSON();
+    const aircraftWithoutImei = aircraft.filter(a=>!a.imei.match(/\w{15}/));
+    const aircraftWithImei = aircraft.filter(a=>a.imei.match(/\w{15}/));
+    const concatAssets =[];
+    aircraftWithImei.forEach(a=>{
+        const sameImeiAssets =aircraftWithImei.filter(aCraft=>aCraft.imei===a.imei);
+        if(sameImeiAssets.length>1){
+            const operator =sameImeiAssets.map(asset=>asset.operator);
+            const mergedAsset = {...a,operator};
+            if(concatAssets.find(asset=>asset.imei ===a.imei)===undefined){
+                concatAssets.push(mergedAsset);
+            }
+        }
+    });
+    const allAircrafts = [...concatAssets, ...aircraftWithoutImei];
+
     const aircraftGeoJSON = {
         type: 'FeatureCollection',
         features: []
     };
     aircraftLocations.forEach(location => {
-        const arenaAsset = aircraft.find(value => value.imei === location.imei);
+        const arenaAsset = allAircrafts.find(value => value.imei === location.imei);
 
         if (arenaAsset) {
             const newFeature = {
@@ -109,11 +123,7 @@ export const fetchAircraftGeoJSON = async () => {
                     searchText: createSearchText(arenaAsset),
                     callsign: arenaAsset.callsign,
                     registration: arenaAsset.registration,
-                    operator: {
-                        name: arenaAsset.operator.name,
-                        registeredName: arenaAsset.operator.registeredName,
-                        operationalContact: arenaAsset.operator.operationalContact
-                    },
+                    operator: arenaAsset.operator,
                     profilePhotoSmall: arenaAsset.profilePhotoSmall,
                     category: arenaAsset.category,
                     make: arenaAsset.make,
