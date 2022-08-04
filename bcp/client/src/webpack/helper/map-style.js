@@ -72,16 +72,6 @@ export function getIconForIncident(feature) {
     const startDate = new Date(feature.properties.startDate);
 
     let borderColour;
-    const darkRedBorderColor = '#905678';
-    const orangeBorderColor = '#ef9227';
-    const greyFillColor = '#ccc';
-    const blackFillColor = '#211c1d';
-    const blueFillColor = '#276273';
-    const redFillColor ='#a23337';
-    const whiteIconColor = 'white';
-    const orangeIconColor = 'ef9227';
-    const blackIconColor ='#211c1d';
-    const greyIconColor ='#d3d3de';
     let fillColour = 'greyFillColor';
     let iconColour = 'whiteIconColor';
 
@@ -121,30 +111,29 @@ export function getIconForIncident(feature) {
     // none of the above
     return buildIncidentIcon(dispatchCount, fillColour, iconColour, borderColour);
 }
-const iconHtml = (dispatchCount, iconClass, fillColour, iconColour,borderOpacity, strokeBorderColour, strokeBorderWidth) => {
+
+const iconHtml = (dispatchCount, fillColour, iconColour, borderOpacity, strokeBorderColour, strokeBorderWidth) => {
     const dispatched = dispatchCount ? 'dispatched' : '';
-    return`<div class="${dispatched} ${iconColour} fa-fire">${fire}</div> <span class="dispatchCount ${iconColour}" >${dispatchCount}</span><div class="fa-penta ${fillColour} ${borderOpacity} ${strokeBorderColour} ${strokeBorderWidth}">${penta}</div>`
+    return `<div class="${dispatched} ${iconColour} fa-fire">${fire}</div> <span class="dispatchCount ${iconColour}" >${dispatchCount}</span><div class="fa-penta ${fillColour} ${borderOpacity} ${strokeBorderColour} ${strokeBorderWidth}">${penta}</div>`
 };
 
-
-
-const buildIncidentIcon = (dispatchCount, fillColour, iconColour = "white", borderColour) => {
+const buildIncidentIcon = (dispatchCount, fillColour, iconColour = "whiteIconColor", borderColour) => {
     let borderWidth = 'threeStrokeBorderWidth';
     let borderOpacity = "wholeBorderOpacity";
 
     if (borderColour === undefined) {
         borderColour = 'black';
         borderColour = 'blackBorderColor';
-
         borderWidth = 'oneStrokeBorderWidth';
         borderOpacity = 'pointThreeBoarderOpacity';
     }
 
     return L.ExtraMarkers.icon({
-        innerHTML: iconHtml(dispatchCount, 'fa-fire', fillColour, iconColour, borderColour, borderWidth, borderOpacity),
+        innerHTML: iconHtml(dispatchCount, fillColour, iconColour, borderColour, borderWidth, borderOpacity),
         svg: true
     });
 };
+
 const parseNotesField = function (feature) {
     const props = feature.properties;
     const notes = props.notes;
