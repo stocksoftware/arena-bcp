@@ -1,33 +1,32 @@
 import {createSearchText} from './map-style';
-import {AIRCRAFT_TYPE} from '../constant';
+import {AIRCRAFT_TYPE, ASSET_MODE} from '../constant';
 
 export const fetchLocations = async () => {
     const locationData = await fetch('/data/locations.json');
     const locationJSON = await locationData.json();
-        const {locations} = locationJSON;
-        const LocationGeoJSON = {
-            type: 'FeatureCollection',
-            features: []
+    const {locations} = locationJSON;
+    const LocationGeoJSON = {
+        type: 'FeatureCollection',
+        features: []
+    };
+
+    locations.forEach(track => {
+        const feature = {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    track.long,
+                    track.lat,
+                ]
+            },
+            "properties": {...track}
         };
-
-        locations.forEach(track => {
-            const feature = {
-                "type": "Feature",
-                "geometry": {
-                    "type": "Point",
-                    "coordinates": [
-                        track.long,
-                        track.lat,
-                    ]
-                },
-                "properties": {...track}
-            };
-            pushFeatureData(LocationGeoJSON, feature);
-        });
-
+        pushFeatureData(LocationGeoJSON, feature);
+    });
     return LocationGeoJSON;
-
 };
+
 export const toGeoJSON = async () => {
 
     const geoTracksData = await fetch('/data/geoTracks.json');
@@ -119,7 +118,8 @@ export const fetchAircraftGeoJSON = async () => {
                     category: arenaAsset.category,
                     make: arenaAsset.make,
                     model: arenaAsset.model,
-                    airframe: arenaAsset.airframe
+                    airframe: arenaAsset.airframe,
+                    id: arenaAsset.id
                 }
             };
             pushFeatureData(aircraftGeoJSON, newFeature);
@@ -172,7 +172,8 @@ export const fetchEquipmentGeoJSON = async () => {
                     dispatch_phone: arenaAsset.operator.operationalContact,
                     dispatch_email: arenaAsset.operator.email,
                     description: arenaAsset.description,
-                    fuelType: arenaAsset.fuelType
+                    fuelType: arenaAsset.fuelType,
+                    id: arenaAsset.id
                 }
             };
             pushFeatureData(equipmentGeoJSON, newFeature);
@@ -199,6 +200,47 @@ export const fetchEquipmentGeoJSON = async () => {
 
 export const fetchIncidentGeoJSON = async () => {
     const incidentData = await fetch('/data/incidents.json');
-    const incidentJSON = await incidentData.json();
-    return incidentJSON;
+    return await incidentData.json();
 };
+
+export const filterAvailabilityData = async (assetMode) => {
+    const availabilityData = await fetch('/data/availability.json');
+    const availabilityJSON = await availabilityData.json();
+    const availableFeatures = availabilityJSON.features.filter(f => f.geometry.coordinates.length !== 0);
+    let availableAsset = assetMode === ASSET_MODE.EQUIPMENT ? availableFeatures.filter(a => a.properties.is_equipment) : availableFeatures.filter(a => !a.properties.is_equipment);
+    return {
+        "type": "FeatureCollection",
+        "features": availableAsset
+    };
+};
+
+export const fetchAsset = async (id, is_equipment) => {
+    const aircraftData = await fetch('/data/aircraft.json');
+    const equipmentData = await fetch('/data/equipment.json');
+    const aircraftJSON = await aircraftData.json();
+    const equipmentJSON = await equipmentData.json();
+    const {aircraft} = aircraftJSON;
+    const {equipment} = equipmentJSON;
+    const currentLocationsData = await fetch('/data/currentLocations.json');
+    const currentLocationsJSON = await currentLocationsData.json();
+    const {currentLocations} = currentLocationsJSON;
+    if (is_equipment) {
+        const matchAsset = equipment.filter(e => e.id === id);
+        if (matchAsset.length > 0) {
+            const asset = matchAsset[0];
+            const matchLocation = currentLocations.filter(location => location.imei === asset.imei);
+            const location = matchLocation.length > 0 && matchLocation[0];
+            return {...asset, ...location};
+        }
+    } else {
+        const matchAsset = aircraft.filter(acraft => acraft.id === id);
+        if (matchAsset.length > 0) {
+            const asset = matchAsset[0];
+            const matchLocation = currentLocations.filter(location => location.imei === asset.imei);
+            const location = matchLocation.length > 0 && matchLocation[0];
+            return {...asset, ...location};
+        }
+    }
+};
+
+

@@ -1,10 +1,12 @@
 const FEET_PER_M = 3.281;
-import {AIRCRAFT_CATEGORIES} from '../constant';
+import {AIRCRAFT_CATEGORIES, MAP_CONSTANTS} from '../constant';
 
 import moment from 'moment-timezone';
+
 export function getAssetTitle(asset) {
     return asset.callsign ? asset.callsign + ' [' + asset.registration + ']' : asset.registration;
 }
+
 export function getAssetLastSeen(asset) {
     let content = '';
     if (asset.properties.transmitted) {
@@ -19,7 +21,7 @@ export function getAssetLastSeen(asset) {
 export function getAssetLastSeenDetails(asset) {
     const lastSeen = getAssetLastSeen(asset);
     if (lastSeen) {
-        return require('./templates/lastSeenDetails.hbs')({ details: lastSeen });
+        return require('./templates/lastSeenDetails.hbs')({details: lastSeen});
     }
     return '';
 }
@@ -60,6 +62,7 @@ export function getAssetSpatialDisp(asset) {
 
     return content;
 }
+
 export function getEquipmentDetails(equipment) {
     let content = '';
     content += (equipment.properties.description ?
@@ -69,9 +72,10 @@ export function getEquipmentDetails(equipment) {
         (equipment.properties.fuelType ? '<strong>Fuel Type: </strong>' + safeString(equipment.properties.fuelType) + '<br/>' : '');
     return content;
 }
+
 export function getAssetDispatchContactDetails(asset) {
     if (asset.properties) {
-        const details = { showContact: false };
+        const details = {showContact: false};
         const properties = asset.properties;
         details.number = properties.dispatch_number;
         if (properties.dispatch_contact ||
@@ -85,6 +89,7 @@ export function getAssetDispatchContactDetails(asset) {
         return require('./templates/assetDispatchContactDetails.hbs')(details);
     }
 }
+
 function safeString(string) {
     if (!string) {
         return '';
@@ -93,9 +98,11 @@ function safeString(string) {
     result = result.replace(/"/g, '&#34');
     return result;
 }
+
 export function mToFeet(m) {
     return m * FEET_PER_M;
 }
+
 export function getAssetOperatorDetails(asset) {
     const details = {};
     details.photo = asset.profilePhotoSmall ? getAssetProfilePhoto(asset) : '';
@@ -107,6 +114,7 @@ export function getAssetOperatorDetails(asset) {
     }
     return details.photo;
 }
+
 export function getAircraftDetails(aircraft) {
     let content = '<span class="subsection-heading">Type:</span><div class="subsection">';
 
@@ -122,12 +130,14 @@ export function formatAircraftCategory(category) {
     const aircraftcategory = AIRCRAFT_CATEGORIES[category] || category;
     return aircraftcategory.replace(/FW -/, 'Fixed Wing -').replace(/RW -/, 'Helicopter -');
 }
+
 export function getAssetProfilePhoto(asset) {
     if (asset.profilePhotoSmall) {
         return '<img src=\'' + asset.profilePhotoSmall + '\' style="width:auto;height:90px">';
     }
     return '';
 }
+
 export function cleanOperatorName(string) {
     if (!string) {
         return '';
@@ -137,9 +147,11 @@ export function cleanOperatorName(string) {
     result = result.replace(/[lL][tT][dD]/, '');
     return result.trim();
 }
+
 export function getAssetSilhouette(asset) {
     return '<img src=\'' + getAssetSilhouettePath(asset) + '\' style=\'width:100px; height:auto;\'/>';
 }
+
 function getAssetSilhouettePath(asset) {
     let path;
 
@@ -257,4 +269,117 @@ export function getAircraftSilhouettePath(aircraft) {
     }
     return silhouettePath;
 }
+
+
+export function getStatusClass(eventType) {
+    // These are the four status classes:
+    // .status-dispatched
+    // .status-planned-dispatch
+    // .status-standby
+    // .status-available
+    // .status-unserviceable
+
+    // These are the eventTypes.
+    // UNKOWNN
+    // AVAILABLE
+    // UNAVAILABLE
+    // LIMITED
+    // DEPLOYED
+    // PLANNED_DISPATCH
+    // STANDBY
+    // STANDBY_AMENDED
+    // STANDBY_TEMP_ASSET
+    // UNSERVICEABLE
+    // UNSERVICEABLE_AIRDESK
+    // UNSERVICEABLE_STOOD_DOWN
+    // UNSERVICEABLE_RESTRICTED
+    // UNSERVICEABLE_STANDBY
+
+    switch (eventType) {
+        case 'AVAILABLE':
+        case 'LIMITED':
+            return 'available';
+        case 'DEPLOYED':
+            return 'dispatched';
+        case 'PLANNED_DISPATCH':
+            return 'planned-dispatch';
+        case 'STANDBY':
+        case 'STANDBY_AMENDED':
+        case 'STANDBY_TEMP_ASSET':
+            return 'standby';
+        case 'UNSERVICEABLE':
+        case 'UNSERVICEABLE_AIRDESK':
+        case 'UNSERVICEABLE_STOOD_DOWN':
+        case 'UNSERVICEABLE_RESTRICTED':
+        case 'UNSERVICEABLE_STANDBY':
+            return 'unserviceable';
+        default:
+            return 'unknown';
+    }
+}
+
+export function buildPopUpAircraftCommonContent(aircraft, includeTitle) {
+    const aircraftData = {includeTitle: includeTitle};
+    if (includeTitle) {
+        aircraftData.title = getAssetTitle(aircraft.properties);
+    }
+    aircraftData.lastSeen = getAssetLastSeen(aircraft);
+    aircraftData.spatialDisp = getAssetSpatialDisp(aircraft);
+    aircraftData.details = getAircraftDetails(aircraft.properties);
+    return require('./templates/assetCommonContent.hbs')(aircraftData);
+}
+
+export function buildPopUpEquipmentCommonContent(equipment, includeTitle) {
+    const equipmentData = {includeTitle: includeTitle};
+    if (includeTitle) {
+        equipmentData.title = getAssetTitle(equipment);
+    }
+    equipmentData.lastSeen = getAssetLastSeen(equipment);
+    equipmentData.spatialDisp = getAssetSpatialDisp(equipment);
+    equipmentData.details = getEquipmentDetails(equipment);
+    equipmentData.contactDetails = getAssetDispatchContactDetails(equipment);
+    return require('./templates/assetCommonContent.hbs')(equipmentData);
+}
+
+export function getFuellingArrangmentDisplayValue(fuellingArrangement) {
+    if (!fuellingArrangement) {
+        return '';
+    }
+    switch (fuellingArrangement) {
+        case 'D':
+            return 'Dry Only';
+
+        case 'BD':
+            return 'Wet-B or Dry';
+
+        case 'ABD':
+            return 'Wet-A, Wet-B or Dry';
+
+        case 'NA':
+            return 'Not Applicable';
+
+        default:
+            return '';
+    }
+}
+
+export function getAssetAvailabilityNotes(asset) {
+    if (asset && asset.properties.notes) {
+        const fullNotes = asset.properties.notes.trim();
+        const notes = truncateNotes(fullNotes, 60);
+        // Remove double and training newlines.
+        return require('./templates/assetAvailabilityNotes.hbs')({
+            truncatedNotes: notes
+        });
+    }
+    return '';
+}
+
+export function truncateNotes(notes, maxLength) {
+    // Split the notes on the headings
+    const regex = new RegExp('(' + MAP_CONSTANTS.NOTES_HEADINGS + '):', 'g');
+    const oneLinePerNote = notes.replace(regex, '\n$1:').trim();
+    return oneLinePerNote;
+}
+
 

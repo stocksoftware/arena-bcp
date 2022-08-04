@@ -5,6 +5,11 @@ import * as AMFUNC_MATH from './map-math';
 import * as AMFUNC_DISP from './map-display';
 import moment from 'moment-timezone';
 import turf from 'turf';
+import paperPlane from "../../../../public/icons/paper-plane.svg";
+import square from "../../../../public/icons/square.svg";
+import truck from "../../../../public/icons/truck.svg";
+import fire from "../../../../public/icons/fire.svg";
+import penta from "../../../../public/icons/penta.svg";
 
 export const renderIncidentPopup = function (feature) {
     // let addDisatchBoardButton = false;
@@ -67,38 +72,38 @@ export function getIconForIncident(feature) {
     const startDate = new Date(feature.properties.startDate);
 
     let borderColour;
-    let fillColour = '#ccc';
-    let iconColour = 'white';
+    let fillColour = 'greyFillColor';
+    let iconColour = 'whiteIconColor';
 
     // Determine Border Colour
     if (currentDate < startDate) {
-        borderColour = '#905678';
+        borderColour = 'darkRedBorderColor';
     } else if (feature.properties.dataSource === 'ARENA') {
-        borderColour = '#ef9227';
+        borderColour = 'orangeBorderColor';
     }
 
     // Determine Fill Colour
     if (feature.properties.classification === MAP_CONSTANTS.MAP_BURN_INCIDENT_CLASSIFICATION) {
-        fillColour = '#211c1d';
+        fillColour = 'blackFillColor';
     } else if (feature.properties.classification === MAP_CONSTANTS.MAP_OTHER_INCIDENT_CLASSIFICATION) {
-        fillColour = '#276273';
+        fillColour = 'blueFillColor';
     } else if (feature.properties.classification === MAP_CONSTANTS.MAP_FIRE_INCIDENT_CLASSIFICATION) {
-        fillColour = '#a23337';
+        fillColour = 'redFillColor';
         switch (feature.properties.status) {
             case 'GOING':
                 // leave as default
                 break;
             case 'CONTAINED':
-                iconColour = '#ef9227';
+                iconColour = 'orangeIconColor';
                 break;
             case 'CONTROLLED':
-                iconColour = '#211c1d';
+                iconColour = 'blackIconColor';
                 break;
             case 'OTHER':
-                iconColour = '#d3d3de';
+                iconColour = 'greyIconColor';
                 break;
             default:
-                fillColour = '#ccc';
+                fillColour = 'greyFillColor';
                 break;
         }
     }
@@ -107,28 +112,28 @@ export function getIconForIncident(feature) {
     return buildIncidentIcon(dispatchCount, fillColour, iconColour, borderColour);
 }
 
-const iconHtml = (dispatchCount, iconClass, fillColour, iconColour, borderColour, borderWidth, borderOpacity) => {
+const iconHtml = (dispatchCount, fillColour, iconColour, borderOpacity, strokeBorderColour, strokeBorderWidth) => {
     const dispatched = dispatchCount ? 'dispatched' : '';
-    return ` <svg width='14' height='14' class="${dispatched}  fa-fire" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" >
- <path fill='${iconColour}' d="M216 23.86c0-23.8-30.65-32.77-44.15-13.04C48 191.85 224 200 224 288c0 35.63-29.11 64.46-64.85 63.99-35.17-.45-63.15-29.77-63.15-64.94v-85.51c0-21.7-26.47-32.23-41.43-16.5C27.8 213.16 0 261.33 0 320c0 105.87 86.13 192 192 192s192-86.13 192-192c0-170.29-168-193-168-296.14z"/></svg>
- <span class="dispatchCount" style="color: ${iconColour}">${dispatchCount}</span>
- <svg width='33' height='44' viewBox='0 0 35 45' xmlns='http://www.w3.org/2000/svg'> <path d='M1.872 17.35L9.679 2.993h15.615L33.1 17.35 17.486 44.992z' fill='${fillColour}' style='border: 10px'/> <g opacity='${borderOpacity}' transform='matrix(1.0769 0 0 -1.0769 -272.731 48.23)'> <path d='M276.75 42h-14.5L255 28.668 269.5 3 284 28.668zm-.595-1l6.701-12.323L269.5 5.033l-13.356 23.644L262.845 41z' stroke='${borderColour}' stroke-width='${borderWidth}'/> </g> </svg>`;
-
+    return `<div class="${dispatched} ${iconColour} fa-fire">${fire}</div> <span class="dispatchCount ${iconColour}" >${dispatchCount}</span><div class="fa-penta ${fillColour} ${borderOpacity} ${strokeBorderColour} ${strokeBorderWidth}">${penta}</div>`
 };
-const buildIncidentIcon = (dispatchCount, fillColour, iconColour = "white", borderColour) => {
-    let borderWidth = 3;
-    let borderOpacity = 1;
+
+const buildIncidentIcon = (dispatchCount, fillColour, iconColour = "whiteIconColor", borderColour) => {
+    let borderWidth = 'threeStrokeBorderWidth';
+    let borderOpacity = "wholeBorderOpacity";
+
     if (borderColour === undefined) {
         borderColour = 'black';
-        borderWidth = 1;
-        borderOpacity = 0.3;
+        borderColour = 'blackBorderColor';
+        borderWidth = 'oneStrokeBorderWidth';
+        borderOpacity = 'pointThreeBoarderOpacity';
     }
 
     return L.ExtraMarkers.icon({
-        innerHTML: iconHtml(dispatchCount, 'fa-fire', fillColour, iconColour, borderColour, borderWidth, borderOpacity),
+        innerHTML: iconHtml(dispatchCount, fillColour, iconColour, borderColour, borderWidth, borderOpacity),
         svg: true
     });
 };
+
 const parseNotesField = function (feature) {
     const props = feature.properties;
     const notes = props.notes;
@@ -308,7 +313,7 @@ export function buildPopUpAircraftContent(feature) {
     const aircraftData = {};
     if (feature.properties.imeiMatch) {
         // arena aircraft
-        aircraftData.commonContent = buildPopUpAircraftCommonContent(feature, true);
+        aircraftData.commonContent = AMFUNC_DISP.buildPopUpAircraftCommonContent(feature, true);
         aircraftData.operatorDetails = AMFUNC_DISP.getAssetOperatorDetails(feature.properties);
         aircraftData.contactDetails = AMFUNC_DISP.getAssetDispatchContactDetails(feature);
         return require('./templates/aircraftPopup.hbs')(aircraftData);
@@ -318,16 +323,6 @@ export function buildPopUpAircraftContent(feature) {
 
 }
 
-function buildPopUpAircraftCommonContent(aircraft, includeTitle) {
-    const aircraftData = {includeTitle: includeTitle};
-    if (includeTitle) {
-        aircraftData.title = AMFUNC_DISP.getAssetTitle(aircraft.properties);
-    }
-    aircraftData.lastSeen = AMFUNC_DISP.getAssetLastSeen(aircraft);
-    aircraftData.spatialDisp = AMFUNC_DISP.getAssetSpatialDisp(aircraft);
-    aircraftData.details = AMFUNC_DISP.getAircraftDetails(aircraft.properties);
-    return require('./templates/assetCommonContent.hbs')(aircraftData);
-}
 
 function buildPopUpOtherAssetContent(feature) {
     let popupContent = '<div class=\'arena-map-table\'><strong>OTHER ASSET</strong><br/>';
@@ -470,4 +465,148 @@ const locationUnclassifiedIcon = L.icon({
     iconAnchor: [12, 12],
     popupAnchor: [0, -12]
 });
+
+const equipmentIconMarker = (iconColor, markerColor) => L.ExtraMarkers.icon({
+    innerHTML: equipmentIconHtml(iconColor, markerColor),
+    svg: true
+});
+const equipmentIconHtml = (iconColor, markerColor) => {
+    return `<div class="fa-content ${iconColor}">${truck}</div><div class="fa-container ${markerColor}">${square}</div>`;
+}
+const planeIconMarker = (iconColor, markerColor) => L.ExtraMarkers.icon({
+    innerHTML: planeIconHtml(iconColor, markerColor),
+    svg: true
+});
+const planeIconHtml = (iconColor, markerColor) => {
+    return `<div class="fa-content ${iconColor}">${paperPlane}</div><div class="fa-container ${markerColor}">${square}</div>`;
+};
+
+// show different markers for different types of Aircraft Availability
+export const iconForEquipmentAvailability = (availabilityType) => {
+    switch (availabilityType) {
+        case 'AVAILABLE':
+            return equipmentIconMarker('yellow', 'green-dark');
+        case 'LIMITED':
+            return equipmentIconMarker('orange', 'green-dark');
+        case 'STANDBY':
+        case 'STANDBY_TEMP_ASSET':
+        case 'STANDBY_AMENDED':
+            return equipmentIconMarker('yellow', 'blue');
+        case 'UNAVAILABLE':
+            return equipmentIconMarker('grey', 'white');
+        case 'UNSERVICEABLE':
+            return equipmentIconMarker('black', 'white');
+        case 'DEPLOYED':
+        case 'DISPATCHED':
+            return equipmentIconMarker('orange', 'blue');
+
+        default:
+            return equipmentIconMarker('', 'blue');
+    }
+};
+
+// show different markers for different types of Aircraft Availability
+export function iconForAircraftAvailability(availabilityType) {
+    switch (availabilityType) {
+        case 'AVAILABLE':
+            return planeIconMarker('yellow', 'green-dark');
+        case 'LIMITED':
+            return planeIconMarker('orange', 'green-dark');
+        case 'STANDBY':
+        case 'STANDBY_TEMP_ASSET':
+        case 'STANDBY_AMENDED':
+            return planeIconMarker('yellow', 'blue');
+        case 'UNAVAILABLE':
+            return planeIconMarker('gray', 'white');
+        case 'UNSERVICEABLE':
+            return planeIconMarker('black', 'white');
+        case 'DEPLOYED':
+        case 'DISPATCHED':
+        case 'PLANNED_DISPATCH':
+            return planeIconMarker('orange', 'blue');
+        default:
+            return planeIconHtml('', 'blue');
+    }
+}
+
+export const renderAvailabilityPopup = async function (feature) {
+    return await popUpAvailabilityContent(feature);
+};
+
+const popUpAvailabilityContent = function (feature) {
+    if (feature && feature.properties) {
+        const availability = feature.properties;
+        const status = availability.event_name ? availability.event_name : availability.event_type;
+        const statusClass = 'status-' + AMFUNC_DISP.getStatusClass(availability.event_type);
+
+        // Ensure popups are styled the same as tables.
+        const title = AMFUNC_DISP.getAssetTitle(availability);
+        const dispatch_number = availability.dispatch_number ? '' : AMFUNC_MATH.timeToString(availability.response);
+        let locationDetails;
+        if (availability.base_location) {
+            if (availability.temp_base) {
+                locationDetails = 'TOB';
+            } else {
+                locationDetails = 'NOB';
+            }
+            locationDetails += availability.base_location;
+        }
+        let fuellingDescription;
+        if (availability.fuelling_arrangement) {
+            fuellingDescription = AMFUNC_DISP.getFuellingArrangmentDisplayValue(availability.fuelling_arrangement);
+        }
+        let distanceToBase;
+        if (availability &&
+            // MIGHT NEED TO ADD MORE EVENT TYPES HERE
+            availability.event_type !== 'UNAVAILABLE' &&
+            availability.event_type !== 'UNSERVICEABLE') {
+            const fromPt = {
+                type: 'Feature',
+                properties: {},
+                geometry: feature.geometry
+            };
+            const toPt = {
+                type: 'Feature',
+                properties: {},
+                geometry: {type: 'Point', coordinates: feature.properties.base_location_coordinates}
+
+            };
+            const distance = turf.distance(fromPt, toPt, 'kilometers');
+            if (!isNaN(distance)) {
+                if (distance < 5) {
+                    distanceToBase = 'at base';
+                } else {
+                    distanceToBase = distance.toFixed(0) + ' km from base';
+                }
+            }
+        }
+        let commonContent, operatorDetails, availabilityNote, dispatchContactDetails;
+        if (availability.id) {
+            // arena asset
+            const isEquipment = availability.is_equipment;
+            commonContent =
+                (!isEquipment ? AMFUNC_DISP.buildPopUpAircraftCommonContent(feature, false) : AMFUNC_DISP.buildPopUpEquipmentCommonContent(feature, false));
+            operatorDetails = AMFUNC_DISP.getAssetOperatorDetails(feature.properties);
+            availabilityNote = AMFUNC_DISP.getAssetAvailabilityNotes(feature);
+            dispatchContactDetails = AMFUNC_DISP.getAssetDispatchContactDetails(feature);
+        }
+        return require('../helper/templates/popUpAvailabilityContent.hbs')({
+            title,
+            statusClass,
+            status,
+            dispatch_number,
+            locationDetails,
+            fuellingDescription,
+            distanceToBase,
+            commonContent,
+            operatorDetails,
+            availabilityNote,
+            dispatchContactDetails
+        });
+    }
+};
+
+
+
+
 

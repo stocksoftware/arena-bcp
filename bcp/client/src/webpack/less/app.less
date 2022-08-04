@@ -86,12 +86,127 @@ html {
               bottom: 25px;
               left: 10px;
               font-size: 14px;
+
+              &.orangeIconColor svg path {
+                fill: #ef9227;
+              }
+
+              &.whiteIconColor svg path {
+                fill: white;
+              }
+
+              &.blackIconColor svg path {
+                fill: #211c1d;
+              }
+
+              &.greyIconColor svg path {
+                fill: #d3d3de;
+              }
+            }
+
+            .fa-penta {
+              &.greyFillColor svg {
+                fill: #ccc;
+              }
+
+              &.blackFillColor svg {
+                fill: #211c1d;
+              }
+
+              &.blueFillColor svg {
+                fill: #276273;
+              }
+
+              &.redFillColor svg {
+                fill: #a23337;
+              }
+
+              &.wholeBorderOpacity svg g {
+                opacity: 1;
+              }
+
+              &.pointThreeBoarderOpacity svg g {
+                opacity: 0.3;
+              }
+
+              &.darkRedBorderColor svg path {
+                stroke: #905678;
+              }
+
+              &.orangeBorderColor svg path {
+                stroke: #ef9227;
+              }
+
+              &.blackBorderColor svg path {
+                stroke: black;
+              }
+
+              &.oneStrokeBorderWidth svg path {
+                stroke-width: 1;
+              }
+
+              &.threeStrokeBorderWidth svg path {
+                stroke-width: 3;
+              }
+            }
+
+            .fa-container {
+              &.green-dark svg path {
+                fill: #006838
+              }
+
+              &.blue svg path {
+                fill: #105BAE;
+              }
+
+              &.white svg path {
+                fill: white;
+              }
+            }
+
+            .fa-content {
+              position: absolute;
+              bottom: 20px;
+              left: 10px;
+
+              &.yellow svg path {
+                fill: #FEFF04;
+              }
+
+              &.orange svg path {
+                fill: #FFA500;
+              }
+
+              &.gray svg path {
+                fill: gray;
+              }
+
+              &.black svg path {
+                fill: black;
+              }
             }
 
             .dispatchCount {
               position: absolute;
               left: 14px;
               bottom: 9px;
+
+              &.whiteIconColor {
+                color: white;
+              }
+
+              &.orangeIconColor {
+                color: #ef9227;
+              }
+
+              &.blackIconColor {
+                color: #211c1d;
+              }
+
+              &.greyIconColor {
+                color: #d3d3de;
+              }
+
             }
 
           }
@@ -129,6 +244,11 @@ html {
             flex-direction: column;
             margin: 0.5em 0;
           }
+
+          .subsection-notes {
+            white-space: pre-line;
+          }
+
         }
       }
     }
