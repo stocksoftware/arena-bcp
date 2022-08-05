@@ -425,58 +425,35 @@ export function getFuellingArrangmentDisplayValue(fuellingArrangement) {
 
 export function getAssetAvailabilityNotes(asset) {
     if (asset && asset.properties.notes) {
+        const fullNotes = asset.properties.notes.trim();
+        const notes = truncateNotes(fullNotes, 60);
         // Remove double and training newlines.
-        // let fullNotes = asset.properties.notes.replace(/\n\n/g, '\n').trim();
         return require('./templates/assetAvailabilityNotes.hbs')({
-            truncatedNotes: asset.properties.notes
+            truncatedNotes: notes
         });
-        // if (fullNotes !== '') {
-        //     let truncatedNotes = truncateNotes(fullNotes, 60);
-        //     truncatedNotes = wrapNotesHeader(truncatedNotes, false);
-        //     truncatedNotes = truncatedNotes.replace(/\n/g, '<br/>');
-        //
-        //     fullNotes = wrapNotesHeader(fullNotes, true);
-        //     fullNotes = fullNotes.replace(/\n/g, '<br/>');
-        //     console.log('truncatedNotes', truncatedNotes);
-        //     if (truncatedNotes.indexOf('...') > 0) {
-        //         return require('./templates/assetAvailabilityNotes.hbs')({
-        //             truncatedNotes: truncatedNotes,
-        //             popup: require('./templates/popup.hbs')({
-        //                 position: 'left', title: 'Notes', content: fullNotes
-        //             })
-        //         });
-        //     } else {
-        //         return require('./templates/assetAvailabilityNotes.hbs')({
-        //             truncatedNotes: truncatedNotes
-        //         });
-        //     }
-        // }
     }
     return '';
 }
 
 export function truncateNotes(notes, maxLength) {
-    // Put each note onto one line.
-    const oneLine = notes.replace(/\n/g, ' ');
-
     // Split the notes on the headings
     const regex = new RegExp('(' + MAP_CONSTANTS.NOTES_HEADINGS + '):', 'g');
-    const oneLinePerNote = oneLine.replace(regex, '\n$1:').trim();
-
-    return truncateLines(oneLinePerNote, maxLength);
+    const oneLinePerNote = notes.replace(regex, '\n$1:').trim();
+    // return truncateLines(oneLinePerNote, maxLength);
+    return oneLinePerNote;
 }
 
-export function truncateLines(lines, maxLength) {
-    let result = '';
-    lines.split('\n').forEach(line => {
-        if (line.length > maxLength) {
-            result += line.substring(0, maxLength - 3) + '...\n';
-        } else {
-            result += line + '\n';
-        }
-    });
-    return result.trim();
-}
+// export function truncateLines(lines, maxLength) {
+//     let result = '';
+//     lines.split('\n').forEach(line => {
+//         if (line.length > maxLength) {
+//             result += line.substring(0, maxLength - 3) + '...\n';
+//         } else {
+//             result += line + '\n';
+//         }
+//     });
+//     return result.trim();
+// }
 
 export function wrapNotesHeader(notes, colonFollowedByNewline) {
     let regex;

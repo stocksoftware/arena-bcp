@@ -468,11 +468,14 @@ const equipmentIconMarker = (iconColor, markerColor) => L.ExtraMarkers.icon({
     innerHTML: equipmentIconHtml(iconColor, markerColor),
     svg: true
 });
+const equipmentIconHtml = (iconColor, markerColor)=>{
+    return `<div class="fa-content ${iconColor}">${truck}</div><div class="fa-container ${markerColor}">${square}</div>`;
+}
 const planeIconMarker = (iconColor, markerColor) => L.ExtraMarkers.icon({
     innerHTML: planeIconHtml(iconColor, markerColor),
     svg: true
 });
-const planeIconHtml =(iconColor, markerColor) => {
+const planeIconHtml = (iconColor, markerColor) => {
     return `<div class="fa-content ${iconColor}">${paperPlane}</div><div class="fa-container ${markerColor}">${square}</div>`;
 };
 
@@ -499,14 +502,6 @@ export const iconForEquipmentAvailability = (availabilityType) => {
             return equipmentIconMarker('', 'blue');
     }
 };
-// Creates a marker with a plane icon
-export const planeMarker = planeIconHtml('', 'blue');
-const planeAVMarker = planeIconMarker('yellow', 'green-dark');
-const planeLIMarker = planeIconMarker('orange', 'green-dark');
-const planeSTMarker = planeIconMarker('yellow', 'blue');
-export const planeDSMarker = planeIconMarker('orange', 'blue');
-export const planeUAMarker = planeIconMarker('gray', 'white');
-export const planeUSMarker = planeIconMarker('black', 'white');
 
 // show different markers for different types of Aircraft Availability
 export function iconForAircraftAvailability(availabilityType) {
@@ -533,11 +528,10 @@ export function iconForAircraftAvailability(availabilityType) {
 }
 
 export const renderAvailabilityPopup = async function (feature) {
-    let popupContent = '<strong>AVAILABILITY RECORD </strong><br/>';
-    popupContent = await popUpAvailabilityContent(feature, popupContent);
-    return popupContent;
+    return await popUpAvailabilityContent(feature);
 };
-const popUpAvailabilityContent = function (feature, popupContent) {
+
+const popUpAvailabilityContent = function (feature) {
     if (feature && feature.properties) {
         const availability = feature.properties;
         const status = availability.event_name ? availability.event_name : availability.event_type;
@@ -545,20 +539,19 @@ const popUpAvailabilityContent = function (feature, popupContent) {
 
         // Ensure popups are styled the same as tables.
         const title = AMFUNC_DISP.getAssetTitle(availability);
-        const dispatch_number= availability.dispatch_number ? '' : AMFUNC_MATH.timeToString(availability.response);
+        const dispatch_number = availability.dispatch_number ? '' : AMFUNC_MATH.timeToString(availability.response);
         let locationDetails;
         if (availability.base_location) {
-            popupContent += '<span class="emphasis">';
             if (availability.temp_base) {
-                locationDetails= 'TOB';
+                locationDetails = 'TOB';
             } else {
-                locationDetails= 'NOB';
+                locationDetails = 'NOB';
             }
             locationDetails += availability.base_location;
         }
-        let fuellingDescription ;
+        let fuellingDescription;
         if (availability.fuelling_arrangement) {
-             fuellingDescription = AMFUNC_DISP.getFuellingArrangmentDisplayValue(availability.fuelling_arrangement);
+            fuellingDescription = AMFUNC_DISP.getFuellingArrangmentDisplayValue(availability.fuelling_arrangement);
         }
         let distanceToBase;
         if (availability &&
@@ -584,7 +577,6 @@ const popUpAvailabilityContent = function (feature, popupContent) {
                     distanceToBase = distance.toFixed(0) + ' km from base';
                 }
             }
-
         }
         let commonContent, operatorDetails, availabilityNote, dispatchContactDetails;
         if (availability.id) {
@@ -596,10 +588,22 @@ const popUpAvailabilityContent = function (feature, popupContent) {
             availabilityNote = AMFUNC_DISP.getAssetAvailabilityNotes(feature);
             dispatchContactDetails = AMFUNC_DISP.getAssetDispatchContactDetails(feature);
         }
-        return require('../helper/templates/popUpAvailabilityContent.hbs')({title,statusClass,status,dispatch_number,locationDetails,fuellingDescription,distanceToBase,commonContent,operatorDetails,availabilityNote,dispatchContactDetails});
+        return require('../helper/templates/popUpAvailabilityContent.hbs')({
+            title,
+            statusClass,
+            status,
+            dispatch_number,
+            locationDetails,
+            fuellingDescription,
+            distanceToBase,
+            commonContent,
+            operatorDetails,
+            availabilityNote,
+            dispatchContactDetails
+        });
     }
-
 };
+
 
 
 
