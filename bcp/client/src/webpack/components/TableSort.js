@@ -1,13 +1,13 @@
 import React from "react";
-import SortIcon from '../../../../public/icons/sort.svg';
-import DescendingIcon from '../../../../public/icons/descending.svg';
-import AscendingIcon from '../../../../public/icons/ascending.svg';
+import SortIcon from '../../../../public/icons/sort.svgcomponent';
+import DescendingIcon from '../../../../public/icons/descending.svgcomponent';
+import AscendingIcon from '../../../../public/icons/ascending.svgcomponent';
 
 
 const TableSort = ({desc, sortKey, tagKey}) => {
     return(
-       sortKey === tagKey ? (desc ?< img src={DescendingIcon}/>:<img src={AscendingIcon}/>) :<img src={SortIcon}/>
-)
+        sortKey === tagKey ? (desc ? <DescendingIcon/>:<AscendingIcon/>) :<SortIcon/>
+    );
     };
 
 

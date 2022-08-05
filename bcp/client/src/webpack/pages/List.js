@@ -26,11 +26,10 @@ const List = observer(() => {
     useEffect(() => {
         fetchAssetList(assetMode).then(setAllAssets);
         fetchAssetList(assetMode).then(setAssets);
-        sortByName();
         //initilisation of a new mode
-        setAssetNameDesc(false);
         setLocationDesc(false);
         setStatusDesc(false);
+        setCTAFDesc(false);
     }, [assetMode]);
 
     useEffect(() => {
@@ -47,7 +46,7 @@ const List = observer(() => {
         assets.sort((a, b) => {
             const aValue = a.callsign || a.registration;
             const bValue = b.callsign || b.registration;
-            return assetNameDesc ? aValue.localeCompare(bValue) : bValue.localeCompare(aValue);
+            return assetNameDesc ? bValue.localeCompare(aValue) : aValue.localeCompare(bValue);
         });
         setAssets(assets);
         setAssetNameDesc(!assetNameDesc);
@@ -58,7 +57,7 @@ const List = observer(() => {
         assets.sort((a, b) => {
             const aValue = a.locationOrder;
             const bValue = b.locationOrder;
-            return locationDesc ? aValue.localeCompare(bValue) : bValue.localeCompare(aValue);
+            return locationDesc ? bValue.localeCompare(aValue) : aValue.localeCompare(bValue);
         });
         setAssets(assets);
         setLocationDesc(!locationDesc);
@@ -96,24 +95,24 @@ const List = observer(() => {
             <Table striped>
                 <thead>
                 <tr>
-                    <th onClick={sortByName} className={sortKey === SORTKEYID.Asset && "selected"}>Asset
-                        <div className='table_sort'>
+                    <th onClick={sortByName} className={sortKey === SORTKEYID.Asset ?"selected":""}>Asset
+                        <div className="table_sort">
                             <TableSort desc={assetNameDesc} sortKey={sortKey} tagKey={SORTKEYID.Asset}/>
                         </div>
                     </th>
-                    <th onClick={sortByLocation} className={sortKey === SORTKEYID.BaseLocation && "selected"}>Base
+                    <th onClick={sortByLocation} className={sortKey === SORTKEYID.BaseLocation ?"selected":""}>Base
                         Location
-                        <div className='table_sort'>
+                        <div className="table_sort">
                             <TableSort desc={locationDesc} sortKey={sortKey} tagKey={SORTKEYID.BaseLocation}/>
                         </div>
                     </th>
-                    <th onClick={sortByStatus} className={sortKey === SORTKEYID.Status && "selected"}>Status
-                        <div className='table_sort'>
+                    <th onClick={sortByStatus} className={sortKey === SORTKEYID.Status ?"selected":""}>Status
+                        <div className="table_sort">
                             <TableSort desc={statusDesc} sortKey={sortKey} tagKey={SORTKEYID.Status}/>
                         </div>
                     </th>
-                    <th onClick={sortByCTAF} className={sortKey === SORTKEYID.FCTAF && "selected"}>F-CTAF
-                        <div className='table_sort'>
+                    <th onClick={sortByCTAF} className={sortKey === SORTKEYID.FCTAF ?"selected":""}>F-CTAF
+                        <div className="table_sort">
                             <TableSort desc={CTAFDesc} sortKey={sortKey} tagKey={SORTKEYID.FCTAF}/>
                         </div>
                     </th>

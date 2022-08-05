@@ -64,7 +64,7 @@ export const filterAssets = (assets, filterText) =>{
                     }
                 }
             }
-        })
+        });
     }
     return filterResult;
 };

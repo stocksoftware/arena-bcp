@@ -56,12 +56,26 @@ const clientConfig = {
             },
             {
 
-                test: /\.svg/, type: 'asset'
+                test: /\.svg$/, type: 'asset/source'
             },
             // {
-            //     test: /\.svg$/,
-            //     use: ['@svgr/webpack'],
-            // }
+            //     test: /\.svg\?component/,
+            //     use: ['@svgr/webpack']
+            // },
+            {
+                test: /\.svgcomponent/,
+                use: [
+                    {
+                        loader: "babel-loader"
+                    },
+                    {
+                        loader: "react-svg-loader",
+                        options: {
+                            jsx: true // true outputs JSX tags
+                        }
+                    }
+                ]
+            }
         ]
     },
     devServer: {

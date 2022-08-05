@@ -257,7 +257,7 @@ export const fetchAssetList = async (assetMode) => {
     const currentLocationsJSON = await currentLocationsData.json();
     const {currentLocations} = currentLocationsJSON;
     if (assetMode === ASSET_MODE.AIRCRAFT) {
-        return aircraft.map(a => {
+        const aircraftWithActivity = aircraft.map(a => {
                 const matchedAsset = availabilityJSON.features.filter(feature => feature.properties.asset_id === a.id);
                 if (matchedAsset.length > 0) {
                     const matchedFeature = matchedAsset[0].properties;
@@ -273,8 +273,10 @@ export const fetchAssetList = async (assetMode) => {
                 return {...a, locationOrder: 'Z', statusOrder: 'Z'};
             }
         );
+        // send data with alphabetic order for callsign or rego
+        return sortNameByAlphabetic(aircraftWithActivity);
     } else {
-        return equipment.map(e => {
+        const equipmentWithActivity = equipment.map(e => {
             const matchedAsset = availabilityJSON.features.filter(feature => feature.properties.asset_id === e.id);
             if (matchedAsset.length > 0) {
                 const matchedFeature = matchedAsset[0].properties;
@@ -289,6 +291,16 @@ export const fetchAssetList = async (assetMode) => {
             }
             return {...e, locationOrder: 'Z', statusOrder: 'Z'};
         });
+        // send data with alphabetic order for callsign or rego
+        return sortNameByAlphabetic(equipmentWithActivity);
     }
+
 };
 
+const sortNameByAlphabetic = (arr) => {
+    return arr.sort((a,b)=>{
+        const aValue = a.callsign || a.registration;
+        const bValue = b.callsign || b.registration;
+        return  aValue.localeCompare(bValue);
+    });
+}
