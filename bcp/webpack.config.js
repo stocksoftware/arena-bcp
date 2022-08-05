@@ -55,8 +55,13 @@ const clientConfig = {
                 test: /\.hbs$/, loader: 'handlebars-loader'
             },
             {
-                test: /\.svg/, type: 'asset/source'
-            }
+
+                test: /\.svg/, type: 'asset'
+            },
+            // {
+            //     test: /\.svg$/,
+            //     use: ['@svgr/webpack'],
+            // }
         ]
     },
     devServer: {

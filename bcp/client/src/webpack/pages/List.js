@@ -4,10 +4,10 @@ import {observer} from "mobx-react";
 import Table from 'react-bootstrap/Table';
 import {fetchAssetList} from "../helper/toGeoJSON";
 import {getLocationCell} from '../helper/map-dashboard';
-import {ASSET_MODE, DEBOUNCE_DELAY_MS} from '../constant';
+import {ASSET_MODE, DEBOUNCE_DELAY_MS, SORTKEYID} from '../constant';
 import {filterAssets} from "../helper/map-math";
 import _ from 'lodash';
-import {TableSort} from '../components/TableSort';
+import TableSort from '../components/TableSort';
 import AircraftAssetCol from '../components/AircraftAssetCol';
 import EquipmentAssetCol from '../components/EquipmentAssetCol';
 
@@ -15,24 +15,28 @@ import EquipmentAssetCol from '../components/EquipmentAssetCol';
 const List = observer(() => {
     const {mapStore} = useStores();
     const assetMode = mapStore.assetType;
+    const [allAssets, setAllAssets] = useState([]);
     const [assets, setAssets] = useState([]);
     const [filter, setFilter] = useState('');
     const [assetNameDesc, setAssetNameDesc] = useState(true);
-    const [locationDesc, setLocationDesc] = useState(true);
-    const [statusDesc, setStatusDesc] = useState(true);
-    const [CTAFDesc, setCTAFDesc] = useState(true);
+    const [locationDesc, setLocationDesc] = useState(false);
+    const [statusDesc, setStatusDesc] = useState(false);
+    const [CTAFDesc, setCTAFDesc] = useState(false);
+    const [sortKey, setSortKey] = useState('A');
     useEffect(() => {
+        fetchAssetList(assetMode).then(setAllAssets);
         fetchAssetList(assetMode).then(setAssets);
+        sortByName();
         //initilisation of a new mode
-        setAssetNameDesc(true);
-        setLocationDesc(true);
-        setStatusDesc(true);
+        setAssetNameDesc(false);
+        setLocationDesc(false);
+        setStatusDesc(false);
     }, [assetMode]);
 
     useEffect(() => {
         if (assets.length > 0) {
             const debounce_search = _.debounce(function () {
-                    let filterResult = filterAssets(assets, filter);
+                    let filterResult = filterAssets(allAssets, filter);
                     setAssets(filterResult);
                 }
                 , DEBOUNCE_DELAY_MS);
@@ -47,6 +51,7 @@ const List = observer(() => {
         });
         setAssets(assets);
         setAssetNameDesc(!assetNameDesc);
+        setSortKey('A');
     };
 
     const sortByLocation = () => {
@@ -57,6 +62,8 @@ const List = observer(() => {
         });
         setAssets(assets);
         setLocationDesc(!locationDesc);
+        setSortKey('B');
+
     };
     const sortByStatus = () => {
         assets.sort((a, b) => {
@@ -66,6 +73,7 @@ const List = observer(() => {
         });
         setAssets(assets);
         setStatusDesc(!statusDesc);
+        setSortKey('C');
     };
     const sortByCTAF = () => {
         assets.sort((a, b) => {
@@ -75,6 +83,7 @@ const List = observer(() => {
         });
         setAssets(assets);
         setCTAFDesc(!CTAFDesc);
+        setSortKey('D');
     };
 
     return (
@@ -87,24 +96,25 @@ const List = observer(() => {
             <Table striped>
                 <thead>
                 <tr>
-                    <th onClick={sortByName}>Asset
+                    <th onClick={sortByName} className={sortKey === SORTKEYID.Asset && "selected"}>Asset
                         <div className='table_sort'>
-                            <TableSort desc={assetNameDesc}/>
+                            <TableSort desc={assetNameDesc} sortKey={sortKey} tagKey={SORTKEYID.Asset}/>
                         </div>
                     </th>
-                    <th onClick={sortByLocation}>Base Location
+                    <th onClick={sortByLocation} className={sortKey === SORTKEYID.BaseLocation && "selected"}>Base
+                        Location
                         <div className='table_sort'>
-                            <TableSort desc={locationDesc}/>
+                            <TableSort desc={locationDesc} sortKey={sortKey} tagKey={SORTKEYID.BaseLocation}/>
                         </div>
                     </th>
-                    <th onClick={sortByStatus}>Status
+                    <th onClick={sortByStatus} className={sortKey === SORTKEYID.Status && "selected"}>Status
                         <div className='table_sort'>
-                            <TableSort desc={statusDesc}/>
+                            <TableSort desc={statusDesc} sortKey={sortKey} tagKey={SORTKEYID.Status}/>
                         </div>
                     </th>
-                    <th onClick={sortByCTAF}>F-CTAF
+                    <th onClick={sortByCTAF} className={sortKey === SORTKEYID.FCTAF && "selected"}>F-CTAF
                         <div className='table_sort'>
-                            <TableSort desc={CTAFDesc}/>
+                            <TableSort desc={CTAFDesc} sortKey={sortKey} tagKey={SORTKEYID.FCTAF}/>
                         </div>
                     </th>
                     <th>Notes</th>
