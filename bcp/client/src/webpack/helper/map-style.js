@@ -10,6 +10,7 @@ import square from "../../../../public/icons/square.svg";
 import truck from "../../../../public/icons/truck.svg";
 import fire from "../../../../public/icons/fire.svg";
 import penta from "../../../../public/icons/penta.svg";
+
 export const renderIncidentPopup = function (feature) {
     parseNotesField(feature);
     let showCurrentDispatchCountEvenIfZero = false;

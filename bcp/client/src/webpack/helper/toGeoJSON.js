@@ -44,7 +44,6 @@ export const toGeoJSON = async () => {
     const equipmentLocations = currentLocations.filter(location => location.assetType === 'VEHICLE');
     const aircraftLocations = currentLocations.filter(location => location.assetType === 'FIXED_WING' || location.assetType === 'HELICOPTER');
     return {trackFeature, aircraft, equipment, equipmentLocations, aircraftLocations};
-
 };
 const pushFeatureData = (geoJson, newFeature) => {
     geoJson.features.push(
@@ -88,6 +87,7 @@ export const fetchAircraftGeoJSON = async () => {
     const aircraftWithoutImei = aircraft.filter(a=>!a.imei.match(/\w{15}/));
     const aircraftWithImei = aircraft.filter(a=>a.imei.match(/\w{15}/));
     const concatAssets =[];
+    // merge all operators for assets with the same imei
     aircraftWithImei.forEach(a=>{
         const sameImeiAssets =aircraftWithImei.filter(aCraft=>aCraft.imei===a.imei);
         if(sameImeiAssets.length>1){
