@@ -94,23 +94,26 @@ const List = observer(() => {
             <Table striped>
                 <thead>
                 <tr>
-                    <th onClick={sortByName} className={sortKey === SORTKEYID.Asset ? "selected" : ""}>Asset
+                    <th onClick={sortByName} className={`sort ${sortKey === SORTKEYID.Asset ? "selected" : ""} `}>
+                        <span >Asset</span>
                         <div className="table_sort">
                             <TableSort desc={assetNameDesc} sortKey={sortKey} tagKey={SORTKEYID.Asset}/>
                         </div>
                     </th>
-                    <th onClick={sortByLocation} className={sortKey === SORTKEYID.BaseLocation ? "selected" : ""}>Base
-                        Location
+                    <th onClick={sortByLocation} className={`sort ${sortKey === SORTKEYID.BaseLocation ? "selected" : ""} `}>Base
+                        <span >Location</span>
                         <div className="table_sort">
                             <TableSort desc={locationDesc} sortKey={sortKey} tagKey={SORTKEYID.BaseLocation}/>
                         </div>
                     </th>
-                    <th onClick={sortByStatus} className={sortKey === SORTKEYID.Status ? "selected" : ""}>Status
+                    <th onClick={sortByStatus} className={`sort ${sortKey === SORTKEYID.Status ? "selected" : ""} `}>
+                        <span >Status</span>
                         <div className="table_sort">
                             <TableSort desc={statusDesc} sortKey={sortKey} tagKey={SORTKEYID.Status}/>
                         </div>
                     </th>
-                    <th onClick={sortByCTAF} className={sortKey === SORTKEYID.FCTAF ? "selected" : ""}>F-CTAF
+                    <th onClick={sortByCTAF} className={`sort ${sortKey === SORTKEYID.FCTAF ? "selected" : ""} `}>
+                        <span >F-CTAF</span>
                         <div className="table_sort">
                             <TableSort desc={CTAFDesc} sortKey={sortKey} tagKey={SORTKEYID.FCTAF}/>
                         </div>
