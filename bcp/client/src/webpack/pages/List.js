@@ -1,4 +1,4 @@
-import React,{useState, useEffect} from 'react';
+import React, {useState, useEffect} from 'react';
 import useStores from "../hooks/use-stores";
 import {observer} from "mobx-react";
 import Table from 'react-bootstrap/Table';
@@ -10,7 +10,6 @@ import _ from 'lodash';
 import TableSort from '../components/TableSort';
 import AircraftAssetCol from '../components/AircraftAssetCol';
 import EquipmentAssetCol from '../components/EquipmentAssetCol';
-
 
 const List = observer(() => {
     const {mapStore} = useStores();
@@ -95,23 +94,23 @@ const List = observer(() => {
             <Table striped>
                 <thead>
                 <tr>
-                    <th onClick={sortByName} className={sortKey === SORTKEYID.Asset ?"selected":""}>Asset
+                    <th onClick={sortByName} className={sortKey === SORTKEYID.Asset ? "selected" : ""}>Asset
                         <div className="table_sort">
                             <TableSort desc={assetNameDesc} sortKey={sortKey} tagKey={SORTKEYID.Asset}/>
                         </div>
                     </th>
-                    <th onClick={sortByLocation} className={sortKey === SORTKEYID.BaseLocation ?"selected":""}>Base
+                    <th onClick={sortByLocation} className={sortKey === SORTKEYID.BaseLocation ? "selected" : ""}>Base
                         Location
                         <div className="table_sort">
                             <TableSort desc={locationDesc} sortKey={sortKey} tagKey={SORTKEYID.BaseLocation}/>
                         </div>
                     </th>
-                    <th onClick={sortByStatus} className={sortKey === SORTKEYID.Status ?"selected":""}>Status
+                    <th onClick={sortByStatus} className={sortKey === SORTKEYID.Status ? "selected" : ""}>Status
                         <div className="table_sort">
                             <TableSort desc={statusDesc} sortKey={sortKey} tagKey={SORTKEYID.Status}/>
                         </div>
                     </th>
-                    <th onClick={sortByCTAF} className={sortKey === SORTKEYID.FCTAF ?"selected":""}>F-CTAF
+                    <th onClick={sortByCTAF} className={sortKey === SORTKEYID.FCTAF ? "selected" : ""}>F-CTAF
                         <div className="table_sort">
                             <TableSort desc={CTAFDesc} sortKey={sortKey} tagKey={SORTKEYID.FCTAF}/>
                         </div>
@@ -121,7 +120,7 @@ const List = observer(() => {
                 </thead>
                 <tbody>
                 {assets.length > 0 && assets.map(asset => {
-                    const {eventType, location} = getLocationCell(asset);
+                    const locations = getLocationCell(asset);
                     const isDispatched = asset.event_name === 'Dispatched' ? 'dispatched' : '';
                     return (
                         <tr key={asset.id}>
@@ -134,7 +133,11 @@ const List = observer(() => {
 
 
                             <td className="baseLocation">
-                                <p>{eventType}{location}</p>
+                                {locations.length>0&& locations.map((loc, index) => <p key={index}>
+                                    <span className="loc-header">{loc.eventType}</span>
+                                    {loc.location}</p>)
+                                }
+
                             </td>
                             <td className="statusCell">
                                 <div className="eventAndNumber">

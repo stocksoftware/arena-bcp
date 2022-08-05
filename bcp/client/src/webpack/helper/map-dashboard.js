@@ -23,28 +23,30 @@ export function cleanOperatorName(string) {
 }
 
 export function getLocationCell(asset) {
+    const locations = []
     if (asset.location) {
         if (asset.temp_base) {
-            return {eventType: 'TOB:', location: asset.location};
+            locations.push({eventType: 'TOB:', location: asset.location});
+            return locations;
         } else {
             switch (asset.event_type) {
                 // NEED TO ADD MORE CASES HERE
                 case 'STANDBY':
                 case 'STANDBY_TEMP_ASSET':
                 case 'STANDBY_AMENDED':
-                    return {eventType: 'NOB:', location: asset.location};
-                    break;
+                    locations.push({eventType: 'NOB:', location: asset.location});
+                    return locations;
                 case 'DEPLOYED':
-                    return {eventType: 'NOB:', location: asset.base_location};
-                    return {eventType: 'STG:', location: asset.location};
-                    break;
+                    locations.push({eventType: 'NOB:', location: asset.base_location});
+                    locations.push({eventType: 'STG:', location: asset.location});
+                    return locations;
                 default:
-                    return {eventType: 'AVL:', location: asset.location};
-                    break;
+                    locations.push({eventType: 'AVL:', location: asset.location});
+                    return locations;
             }
         }
     }
-    return {eventType: '', location: ''};
+    return locations;
 }
 
 export const getStatusCell = function(asset, assetMode) {
