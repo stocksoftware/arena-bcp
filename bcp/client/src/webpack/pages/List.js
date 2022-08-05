@@ -11,6 +11,7 @@ import {TableSort} from '../components/TableSort';
 import AircraftAssetCol from '../components/AircraftAssetCol';
 import EquipmentAssetCol from '../components/EquipmentAssetCol';
 
+
 const List = observer(() => {
     const {mapStore} = useStores();
     const assetMode = mapStore.assetType;
@@ -27,6 +28,7 @@ const List = observer(() => {
         setLocationDesc(true);
         setStatusDesc(true);
     }, [assetMode]);
+
     useEffect(() => {
         if (assets.length > 0) {
             const debounce_search = _.debounce(function () {
@@ -74,6 +76,8 @@ const List = observer(() => {
         setCTAFDesc(!CTAFDesc);
     };
 
+
+
     return (
         <div>
             <div className='keyword_filter'>
@@ -104,6 +108,7 @@ const List = observer(() => {
                             <TableSort desc={CTAFDesc}/>
                         </div>
                     </th>
+
                     <th>Notes</th>
                 </tr>
                 </thead>
@@ -118,6 +123,7 @@ const List = observer(() => {
                                     <EquipmentAssetCol asset={asset} isDispatched={isDispatched}/>
                                     : <AircraftAssetCol asset={asset} isDispatched={isDispatched}/>
                             }
+
 
                             <td className="baseLocation">
                                 <p>{eventType}{location}</p>
@@ -146,7 +152,9 @@ const List = observer(() => {
                 </tbody>
             </Table>
         </div>
-    );
+        )
+
+
 });
 
 export default List;

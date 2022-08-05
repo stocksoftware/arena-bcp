@@ -20,8 +20,6 @@ export const getPopUpContents = (asset) => {
     const lastSeen = getAssetLastSeen(feature);
     const aircraftDetails = getAircraftDetailsForPopup(feature.properties);
     const operator = getAssetOperatorDetailsForPopup(asset);
-    // const dispatchDetails = getAssetDispatchDetails(feature)
-    // return {lastSeen,aircraftDetails, operator, dispatchDetails}
     return {lastSeen, aircraftDetails,operator};
 }
 function getAssetOperatorDetailsForPopup(asset){
@@ -42,21 +40,27 @@ function getAircraftDetailsForPopup(aircraft) {
 }
 
 export function getAssetDispatchDetails(feature) {
-    const {properties} = feature;
-    if (properties.dispatch_contact ||
-        properties.dispatch_email ||
-        properties.dispatch_phone) {
-        details.showContact = true;
-        details.contactName = properties.dispatch_contact;
-        details.email = properties.dispatch_email;
-        details.phone = properties.dispatch_phone;
-        details.altPhone = properties.dispatch_alt_phone;
-        details.altPhoneIntegration = formatPhoneIntegrationValue(user.phoneIntegration, details.altPhone);
-        return require('./templates/assetDispatchContactDetails.hbs')(details);
-    }
-
-
+    const lastSeen = getAssetLastSeenDetails(feature);
+    const aircraftDetails = getAircraftDetails(feature);
+    const operator = getAssetOperatorDetails(asset);
+    const dispatchDetails = getAssetDispatchDetails(feature)
+    return {lastSeen,aircraftDetails, operator, dispatchDetails}
 }
+//
+// export function getAssetDispatchDetails(feature) {
+// const {properties} = feature;
+//     if (properties.dispatch_contact ||
+//         properties.dispatch_email ||
+//         properties.dispatch_phone) {
+//         details.showContact = true;
+//         details.contactName = properties.dispatch_contact;
+//         details.email = properties.dispatch_email;
+//         details.phone = properties.dispatch_phone;
+//         details.altPhone = properties.dispatch_alt_phone;
+//         details.altPhoneIntegration = formatPhoneIntegrationValue(user.phoneIntegration, details.altPhone);
+//         return require('./templates/assetDispatchContactDetails.hbs')(details);
+//     }
+// }
 
 export const getAircraftCell = function (aircraft) {
     const aircraftDetails = {
@@ -464,6 +468,7 @@ export const getIncident = function (incidentId) {
     }
     return incident;
 };
+
 export const getLocationOrder = function(asset) {
     let order = 'Z';
         if (asset.location) {
@@ -517,4 +522,5 @@ export const getStatusOrder = function(asset) {
     }
     return order;
 };
+
 
