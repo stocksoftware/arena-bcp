@@ -48,6 +48,7 @@ const List = observer(() => {
         setAssets(assets);
         setAssetNameDesc(!assetNameDesc);
     };
+
     const sortByLocation = () => {
         assets.sort((a, b) => {
             const aValue = a.locationOrder;
@@ -75,8 +76,6 @@ const List = observer(() => {
         setAssets(assets);
         setCTAFDesc(!CTAFDesc);
     };
-
-
 
     return (
         <div>
@@ -108,7 +107,6 @@ const List = observer(() => {
                             <TableSort desc={CTAFDesc}/>
                         </div>
                     </th>
-
                     <th>Notes</th>
                 </tr>
                 </thead>

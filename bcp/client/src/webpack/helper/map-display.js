@@ -468,7 +468,6 @@ export const getIncident = function (incidentId) {
     }
     return incident;
 };
-
 export const getLocationOrder = function(asset) {
     let order = 'Z';
         if (asset.location) {
