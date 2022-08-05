@@ -58,7 +58,6 @@ export const filterAssets = (assets, filterText) =>{
             if(value && (typeof value === 'string' ||typeof value === 'number')){
                 value = value.toString().toUpperCase();
                 if (value && value.includes(filterText.toUpperCase())){
-
                     if(pushed){
                         filterResult.push(assets[i]);
                         pushed = false;

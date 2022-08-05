@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React,{useState, useEffect} from 'react';
 import useStores from "../hooks/use-stores";
 import {observer} from "mobx-react";
 import Table from 'react-bootstrap/Table';
@@ -123,6 +123,7 @@ const List = observer(() => {
                                     <EquipmentAssetCol asset={asset} isDispatched={isDispatched}/>
                                     : <AircraftAssetCol asset={asset} isDispatched={isDispatched}/>
                             }
+
 
 
                             <td className="baseLocation">

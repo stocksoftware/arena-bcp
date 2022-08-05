@@ -3,6 +3,7 @@ import {getEquipmentCell, getPopUpContents} from '../helper/map-display';
 
 const EquipmentAssetCol = ({asset, isDispatched}) => {
     const [showPopup, setShowPopup] = useState(false);
+
     const {description, registration, operatorName} = getEquipmentCell(asset);
     const {lastSeen, operator} = getPopUpContents(asset);
     const {name, contact} = operator;
