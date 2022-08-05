@@ -215,7 +215,6 @@ export const filterAvailabilityData = async (assetMode) => {
     };
 };
 
-
 export const fetchAsset = async (id, is_equipment) => {
     const aircraftData = await fetch('/data/aircraft.json');
     const equipmentData = await fetch('/data/equipment.json');

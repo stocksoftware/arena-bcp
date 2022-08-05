@@ -36,7 +36,6 @@ const List = observer(() => {
                 , DEBOUNCE_DELAY_MS);
             debounce_search();
         }
-
     }, [filter]);
     const sortByName = () => {
         assets.sort((a, b) => {
@@ -74,6 +73,7 @@ const List = observer(() => {
         setAssets(assets);
         setCTAFDesc(!CTAFDesc);
     };
+
     return (
         <div>
             <div className='keyword_filter'>
