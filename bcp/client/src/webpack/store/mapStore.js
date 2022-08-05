@@ -7,7 +7,7 @@ export default class mapStore {
         makeObservable(this);
     }
 
-    @observable assetType = ASSET_MODE.AIRCRAFT;
+    @observable assetType = ASSET_MODE.EQUIPMENT;
 
     @action
     setAssetType(type) {

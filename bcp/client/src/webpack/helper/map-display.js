@@ -118,15 +118,11 @@ export function getAssetOperatorDetails(asset) {
         return require('./templates/assetTabs.hbs')({svg:warningSvg,operator});
     } else {
         const {operator} = asset;
-        if (operator.name || operator.registeredName || operator.operationalContact) {
-            details.name = cleanOperatorName(operator.name ? operator.name : operator.registeredName);
-            details.contact =
-                operator.operationalContact ? safeString(operator.operationalContact) : '';
-            return require('./templates/assetOperatorDetails.hbs')(details);
-        }
+        const operatorDetails =displayOperatorDetails(operator);
+        return require('./templates/assetOperatorDetails.hbs')(operatorDetails);
     }
     return details.photo;
-};
+}
 
 const displayOperatorDetails = (operator) => {
     if (operator.name || operator.registeredName || operator.operationalContact) {
@@ -146,8 +142,6 @@ export function showOperatorTab(tabsId, tabId, liId) {
     $('#' + tabsId + '-ul>#' + liId).addClass('selected');
     $('#' + tabsId + '-div>#' + tabId).removeClass('close').addClass('open');
 }
-
-
 
 export function getAircraftDetails(aircraft) {
     let content = '<span class="subsection-heading">Type:</span><div class="subsection">';
