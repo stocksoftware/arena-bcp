@@ -12,7 +12,6 @@ import fire from "../../../../public/icons/fire.svg";
 import penta from "../../../../public/icons/penta.svg";
 
 export const renderIncidentPopup = function (feature) {
-    // let addDisatchBoardButton = false;
     parseNotesField(feature);
     let showCurrentDispatchCountEvenIfZero = false;
     const out = [];
