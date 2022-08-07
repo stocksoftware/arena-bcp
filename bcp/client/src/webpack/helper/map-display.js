@@ -113,12 +113,12 @@ export function getAssetOperatorDetails(asset) {
         const operator = [];
         for (let i = 0; i < asset.operator.length; i++) {
             const operatorDetails = displayOperatorDetails(asset.operator[i]);
-            operator.push({index:i+1,...operatorDetails});
+            operator.push({index: i + 1, ...operatorDetails});
         }
-        return require('./templates/assetTabs.hbs')({svg:warningSvg,operator});
+        return require('./templates/assetTabs.hbs')({svg: warningSvg, operator});
     } else {
         const {operator} = asset;
-        const operatorDetails =displayOperatorDetails(operator);
+        const operatorDetails = displayOperatorDetails(operator);
         return require('./templates/assetOperatorDetails.hbs')(operatorDetails);
     }
     return details.photo;
@@ -134,13 +134,15 @@ const displayOperatorDetails = (operator) => {
 };
 
 export function showOperatorTab(tabsId, tabId, liId) {
-    $('#' + tabsId + '-ul>li.selected').removeClass('selected');
-    const openTab = $('#' + tabsId + '-div>div.tabContent.open');
-    openTab.addClass('close');
-    openTab.removeClass('open');
-
-    $('#' + tabsId + '-ul>#' + liId).addClass('selected');
-    $('#' + tabsId + '-div>#' + tabId).removeClass('close').addClass('open');
+    document.querySelectorAll(`.tabs li`).forEach(list => {
+        list.classList.remove('selected');
+    });
+    const openTab = document.querySelector('div.tabContent.open');
+    openTab.classList.add('close');
+    openTab.classList.remove('open');
+    document.querySelector(`#${liId}`).classList.add('selected');
+    document.querySelector(`#${tabId}`).classList.remove('close');
+    document.querySelector(`#${tabId}`).classList.add('open');
 }
 
 export function getAircraftDetails(aircraft) {

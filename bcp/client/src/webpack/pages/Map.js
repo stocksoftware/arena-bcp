@@ -45,7 +45,7 @@ const Map = observer(() => {
                     </>
                     :
                     <>
-                        <LayersControl.Overlay name="Arena Aircraft" key={"Arena Aircraft"+assetMode}>
+                        <LayersControl.Overlay name="Arena Aircraft" key={"Arena Aircraft"+assetMode} checked>
                             <AircraftLayer arenaAssetsOnly={true}/>
                         </LayersControl.Overlay>
                         <LayersControl.Overlay name="Arena Tracks" key={"Arena Tracks"+assetMode}>
@@ -65,7 +65,7 @@ const Map = observer(() => {
                 <LayersControl.Overlay name="Location" key={"Location"+assetMode} >
                     <LocationLayer/>
                 </LayersControl.Overlay>
-                <LayersControl.Overlay name="Availability" key={"availability"+assetMode} checked>
+                <LayersControl.Overlay name="Availability" key={"availability"+assetMode} >
                     <AvailabilityLayer/>
                 </LayersControl.Overlay>
             </LayersControl>
