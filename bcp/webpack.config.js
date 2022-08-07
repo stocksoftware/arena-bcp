@@ -55,13 +55,9 @@ const clientConfig = {
                 test: /\.hbs$/, loader: 'handlebars-loader'
             },
             {
-
                 test: /\.svg$/, type: 'asset/source'
             },
-            // {
-            //     test: /\.svg\?component/,
-            //     use: ['@svgr/webpack']
-            // },
+          
             {
                 test: /\.svgcomponent/,
                 use: [
@@ -72,7 +68,7 @@ const clientConfig = {
                         loader: "react-svg-loader",
                         options: {
                             jsx: true // true outputs JSX tags
-                        }
+                     }
                     }
                 ]
             }

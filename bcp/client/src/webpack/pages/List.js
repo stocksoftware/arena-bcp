@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import useStores from "../hooks/use-stores";
 import {observer} from "mobx-react";
 import Table from 'react-bootstrap/Table';
@@ -11,9 +11,11 @@ import TableSort from '../components/TableSort';
 import AircraftAssetCol from '../components/AircraftAssetCol';
 import EquipmentAssetCol from '../components/EquipmentAssetCol';
 
+
 const List = observer(() => {
     const {mapStore} = useStores();
     const assetMode = mapStore.assetType;
+
     const [allAssets, setAllAssets] = useState([]);
     const [assets, setAssets] = useState([]);
     const [filter, setFilter] = useState('');
@@ -168,8 +170,6 @@ const List = observer(() => {
             </Table>
         </div>
     )
-
-
 });
 
 export default List;
