@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import useStores from "../hooks/use-stores";
 import {observer} from "mobx-react";
 import Table from 'react-bootstrap/Table';
@@ -37,7 +37,6 @@ const List = observer(() => {
         if (allAssets.length > 0) {
             const debounce_search = _.debounce(function () {
                     let filterResult = filterAssets(allAssets, filter);
-                    console.log('allAssets', filter, filterResult);
                     setAssets(filterResult);
                 }
                 , DEBOUNCE_DELAY_MS);
