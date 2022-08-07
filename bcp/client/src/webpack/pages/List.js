@@ -32,9 +32,10 @@ const List = observer(() => {
     }, [assetMode]);
 
     useEffect(() => {
-        if (assets.length > 0) {
+        if (allAssets.length > 0) {
             const debounce_search = _.debounce(function () {
                     let filterResult = filterAssets(allAssets, filter);
+                    console.log('allAssets', filter, filterResult);
                     setAssets(filterResult);
                 }
                 , DEBOUNCE_DELAY_MS);
@@ -95,25 +96,26 @@ const List = observer(() => {
                 <thead>
                 <tr>
                     <th onClick={sortByName} className={`sort ${sortKey === SORTKEYID.Asset ? "selected" : ""} `}>
-                        <span >Asset</span>
+                        <span>Asset</span>
                         <div className="table_sort">
                             <TableSort desc={assetNameDesc} sortKey={sortKey} tagKey={SORTKEYID.Asset}/>
                         </div>
                     </th>
-                    <th onClick={sortByLocation} className={`sort ${sortKey === SORTKEYID.BaseLocation ? "selected" : ""} `}>Base
-                        <span >Location</span>
+                    <th onClick={sortByLocation}
+                        className={`sort ${sortKey === SORTKEYID.BaseLocation ? "selected" : ""} `}>Base
+                        <span>Location</span>
                         <div className="table_sort">
                             <TableSort desc={locationDesc} sortKey={sortKey} tagKey={SORTKEYID.BaseLocation}/>
                         </div>
                     </th>
                     <th onClick={sortByStatus} className={`sort ${sortKey === SORTKEYID.Status ? "selected" : ""} `}>
-                        <span >Status</span>
+                        <span>Status</span>
                         <div className="table_sort">
                             <TableSort desc={statusDesc} sortKey={sortKey} tagKey={SORTKEYID.Status}/>
                         </div>
                     </th>
                     <th onClick={sortByCTAF} className={`sort ${sortKey === SORTKEYID.FCTAF ? "selected" : ""} `}>
-                        <span >F-CTAF</span>
+                        <span>F-CTAF</span>
                         <div className="table_sort">
                             <TableSort desc={CTAFDesc} sortKey={sortKey} tagKey={SORTKEYID.FCTAF}/>
                         </div>
@@ -134,9 +136,8 @@ const List = observer(() => {
                             }
 
 
-
                             <td className="baseLocation">
-                                {locations.length>0&& locations.map((loc, index) => <p key={index}>
+                                {locations.length > 0 && locations.map((loc, index) => <p key={index}>
                                     <span className="loc-header">{loc.eventType}</span>
                                     {loc.location}</p>)
                                 }
@@ -166,7 +167,7 @@ const List = observer(() => {
                 </tbody>
             </Table>
         </div>
-        )
+    )
 
 
 });

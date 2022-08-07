@@ -20,21 +20,24 @@ export const getPopUpContents = (asset) => {
     const lastSeen = getAssetLastSeen(feature);
     const aircraftDetails = getAircraftDetailsForPopup(feature.properties);
     const operator = getAssetOperatorDetailsForPopup(asset);
-    return {lastSeen, aircraftDetails,operator};
+    return {lastSeen, aircraftDetails, operator};
 }
-function getAssetOperatorDetailsForPopup(asset){
-    let details ={name:'', contact: ''};
+
+function getAssetOperatorDetailsForPopup(asset) {
+    let details = {name: '', contact: ''};
     if (asset.operator.name || asset.operator.registeredName || asset.operator.operationalContact) {
         details.name = cleanOperatorName(asset.operator.name ? asset.operator.name : asset.operator.registeredName);
         details.contact =
-            asset.operator.operationalContact ? safeString(asset.operator.operationalContact) : '';}
+            asset.operator.operationalContact ? safeString(asset.operator.operationalContact) : '';
+    }
     return details;
 }
+
 function getAircraftDetailsForPopup(aircraft) {
 
-    const category = aircraft.category ? formatAircraftCategory(aircraft.category)  : '';
+    const category = aircraft.category ? formatAircraftCategory(aircraft.category) : '';
     let makeAndModel = aircraft.make ? safeString(aircraft.make) + ' ' : '';
-    makeAndModel += aircraft.model ? safeString(aircraft.model)  : '';
+    makeAndModel += aircraft.model ? safeString(aircraft.model) : '';
     const imageSrc = aircraft.model ? getAssetSilhouettePath(aircraft) : '';
     return {category, makeAndModel, imageSrc};
 }
@@ -44,8 +47,9 @@ export function getAssetDispatchDetails(feature) {
     const aircraftDetails = getAircraftDetails(feature);
     const operator = getAssetOperatorDetails(asset);
     const dispatchDetails = getAssetDispatchDetails(feature)
-    return {lastSeen,aircraftDetails, operator, dispatchDetails}
+    return {lastSeen, aircraftDetails, operator, dispatchDetails}
 }
+
 //
 // export function getAssetDispatchDetails(feature) {
 // const {properties} = feature;
@@ -468,25 +472,25 @@ export const getIncident = function (incidentId) {
     }
     return incident;
 };
-export const getLocationOrder = function(asset) {
+export const getLocationOrder = function (asset) {
     let order = 'Z';
-        if (asset.location) {
-            switch (asset.event_type) {
-                // POSSIBLY NEED TO ADD MORE CASES HERE
-                case 'STANDBY':
-                    order = 'A ' + asset.location;
-                    break;
-                case 'AVAILABLE':
-                    order = 'B ' + asset.location;
-                    break;
-                default:
-                    order = 'X ' + asset.location;
-                    break;
-            }
+    if (asset.location) {
+        switch (asset.event_type) {
+            // POSSIBLY NEED TO ADD MORE CASES HERE
+            case 'STANDBY':
+                order = 'A ' + asset.location;
+                break;
+            case 'AVAILABLE':
+                order = 'B ' + asset.location;
+                break;
+            default:
+                order = 'X ' + asset.location;
+                break;
+        }
     }
     return order;
 };
-export const getStatusOrder = function(asset) {
+export const getStatusOrder = function (asset) {
     let order = 'Z';
     if (asset.response) {
         // zero pad the minutes for response time

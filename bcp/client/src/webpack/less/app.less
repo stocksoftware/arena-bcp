@@ -281,6 +281,7 @@ html {
             &.selected {
               background: #e6e6e6;
             }
+
             &.sort {
               cursor: pointer;
             }
@@ -292,49 +293,60 @@ html {
             }
           }
 
-          tbody td {
-            font-weight: 400;
-            border: 1px solid #ddd;
-            position: relative;
-
-            .assetName {
-              display: flex;
-              flex-direction: row;
-              justify-content: flex-start;
+          tbody {
+            tr:nth-child(odd) > td {
+              background-color: #f9f9f9;
+              --bs-table-accent-bg: #f9f9f9;
             }
 
-            .font_bold {
-              font-weight: bold;
+            tr:nth-child(even) > td {
+              background-color: #fff;
             }
 
-            .popup {
-              position: absolute;
-              width: 18em;
-              right: -18em;
-              top: 0;
-              background: #fff;
-              z-index: 10;
-              font-weight: normal;
+            td {
+              font-weight: 400;
+              border: 1px solid #ddd;
+              position: relative;
 
-              .callsignAndRego {
-                padding: 0.5em 1em;
-                background: #eee;
+              .assetName {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+              }
+
+              .font_bold {
                 font-weight: bold;
               }
 
+              .popup {
+                position: absolute;
+                width: 18em;
+                right: -18em;
+                top: 0;
+                background: #fff;
+                z-index: 10;
+                font-weight: normal;
 
-              .content {
-                padding: 1em;
-
-                .operator_detail {
-                  padding-left: 2em;
+                .callsignAndRego {
+                  padding: 0.5em 1em;
+                  background: #eee;
+                  font-weight: bold;
                 }
 
-                .image {
-                  width: 100px;
+
+                .content {
+                  padding: 1em;
+
+                  .operator_detail {
+                    padding-left: 2em;
+                  }
+
+                  .image {
+                    width: 100px;
+                  }
                 }
+
               }
-
             }
           }
 
