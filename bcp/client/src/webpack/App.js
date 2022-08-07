@@ -8,7 +8,7 @@ import { observer } from "mobx-react";
 import useStores from "./hooks/use-stores";
 
 const App = observer(() => {
-    const [key, setKey] = useState('list');
+    const [key, setKey] = useState('map');
     const {mapStore} = useStores();
     const asset = mapStore.assetType;
     return (

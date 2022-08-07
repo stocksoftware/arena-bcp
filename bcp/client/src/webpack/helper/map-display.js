@@ -49,23 +49,7 @@ export function getAssetDispatchDetails(feature) {
     const operator = getAssetOperatorDetails(asset);
     const dispatchDetails = getAssetDispatchDetails(feature)
     return {lastSeen, aircraftDetails, operator, dispatchDetails}
-}
-
-//
-// export function getAssetDispatchDetails(feature) {
-// const {properties} = feature;
-//     if (properties.dispatch_contact ||
-//         properties.dispatch_email ||
-//         properties.dispatch_phone) {
-//         details.showContact = true;
-//         details.contactName = properties.dispatch_contact;
-//         details.email = properties.dispatch_email;
-//         details.phone = properties.dispatch_phone;
-//         details.altPhone = properties.dispatch_alt_phone;
-//         details.altPhoneIntegration = formatPhoneIntegrationValue(user.phoneIntegration, details.altPhone);
-//         return require('./templates/assetDispatchContactDetails.hbs')(details);
-//     }
-// }
+};
 
 export const getAircraftCell = function (aircraft) {
     const aircraftDetails = {

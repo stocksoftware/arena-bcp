@@ -110,16 +110,3 @@ export const getStatusCell = function(asset, assetMode) {
     }
     return require('./templates/statusCell.hbs')(props);
 };
-const findIncidentById =async (id) => {
-    const _incidentJSON = await fetch('/data/incident');
-    const _incidentData = await _incidentJSON.json();
-    let result = null;
-    if (_incidentData) {
-        _incidentData.features.forEach((feature)=>{
-            if(feature.properties.id === id){
-                result = feature ;
-            }
-        });
-    }
-    return result;
-};
