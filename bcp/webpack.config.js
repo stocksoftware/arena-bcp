@@ -76,6 +76,15 @@ const clientConfig = {
                     }
                 ]
 
+            },
+            {
+                test: /\.(png|jpg|gif)$/,
+                use: {
+                    loader: 'file-loader',
+                    options: {
+                        name: 'img/[name]_[hash:7].[ext]'
+                    }
+                }
             }
         ]
     },
