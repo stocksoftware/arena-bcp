@@ -55,21 +55,24 @@ const clientConfig = {
                 test: /\.hbs$/, loader: 'handlebars-loader'
             },
             {
-                test: /\.svg$/, type: 'asset/source'
-            },
-            {
-                test: /\.svg\\?component/,
-                use: [
+                test: /\.svg$/,
+                oneOf: [
                     {
-                        loader: "babel-loader"
+                        resourceQuery: /component/,
+                        use: [
+                            {
+                                loader:'react-svg-loader',
+                                options: {
+                                            jsx: true // true outputs JSX tags
+                                }
+                            }
+                        ]
                     },
                     {
-                        loader: "react-svg-loader",
-                        options: {
-                            jsx: true // true outputs JSX tags
-                     }
+                        type: 'asset/source'
                     }
                 ]
+
             }
         ]
     },
