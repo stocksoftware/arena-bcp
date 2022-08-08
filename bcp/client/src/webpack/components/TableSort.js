@@ -4,11 +4,6 @@ import DescendingIcon from '../../../../public/icons/descending.svgcomponent';
 import AscendingIcon from '../../../../public/icons/ascending.svgcomponent';
 
 
-const TableSort = ({desc, sortKey, tagKey}) => {
-    return(
-        sortKey === tagKey ? (desc ? <DescendingIcon/>:<AscendingIcon/>) :<SortIcon/>
-    );
-    };
-
+const TableSort = ({desc, sortKey, tagKey}) => sortKey === tagKey ? (desc ? <DescendingIcon/>:<AscendingIcon/>) :<SortIcon/>;
 
 export default TableSort;
