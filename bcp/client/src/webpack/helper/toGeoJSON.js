@@ -310,4 +310,4 @@ const sortNameByAlphabetic = (arr) => {
         const bValue = b.callsign || b.registration;
         return aValue.localeCompare(bValue);
     });
-}
+};

@@ -27,9 +27,8 @@ const List = observer(() => {
     useEffect(() => {
         fetchAssetList(assetMode).then(data => {
             setAllAssets(data);
-            setAssets(data)
+            setAssets(data);
         });
-        // fetchAssetList(assetMode).then(setAssets);
         //initilisation of a new mode
         setLocationDesc(false);
         setStatusDesc(false);
