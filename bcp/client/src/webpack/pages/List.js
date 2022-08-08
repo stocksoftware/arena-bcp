@@ -15,7 +15,6 @@ import EquipmentAssetCol from '../components/EquipmentAssetCol';
 const List = observer(() => {
     const {mapStore} = useStores();
     const assetMode = mapStore.assetType;
-
     const [allAssets, setAllAssets] = useState([]);
     const [assets, setAssets] = useState([]);
     const [filter, setFilter] = useState('');
