@@ -48,11 +48,11 @@ const AvailabilityLayer = observer(() => {
             });
         });
     };
-    const onClick = ()=>{
-        console.log('onClick')
+    const onClick = () => {
+        console.log('onClick');
     }
     return (
-        <MarkerClusterGroup onClick={onClick} spiderfyOnMaxZoom={true} showCoverageOnHover={false} spiderfyDistanceMultiplier={3} maxClusterRadius={30}  iconCreateFunction={createClusterCustomIcon}>
+        <MarkerClusterGroup iconCreateFunction={createClusterCustomIcon} spiderfyOnMaxZoom={true} showCoverageOnHover={false} spiderfyDistanceMultiplier={3} maxClusterRadius={30}>
             <DataLayer data={availableAsset} pointToLayer={pointToLayer} onEachFeature={onEachFeature}/>
         </MarkerClusterGroup>
     );
