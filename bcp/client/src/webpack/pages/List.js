@@ -25,8 +25,11 @@ const List = observer(() => {
     const [CTAFDesc, setCTAFDesc] = useState(false);
     const [sortKey, setSortKey] = useState('A');
     useEffect(() => {
-        fetchAssetList(assetMode).then(setAllAssets);
-        fetchAssetList(assetMode).then(setAssets);
+        fetchAssetList(assetMode).then(data => {
+            setAllAssets(data);
+            setAssets(data)
+        });
+        // fetchAssetList(assetMode).then(setAssets);
         //initilisation of a new mode
         setLocationDesc(false);
         setStatusDesc(false);

@@ -1,6 +1,7 @@
 import {createSearchText} from './map-style';
 import {AIRCRAFT_TYPE, ASSET_MODE} from '../constant';
 import {getLocationOrder, getStatusOrder} from '../helper/map-display';
+import {result} from "loadsh/object";
 
 export const fetchLocations = async () => {
     const locationData = await fetch('/data/locations.json');
@@ -85,16 +86,16 @@ export const fetchAircraftTrack = async () => {
 };
 export const fetchAircraftGeoJSON = async () => {
     const {aircraft, aircraftLocations} = await toGeoJSON();
-    const aircraftWithoutImei = aircraft.filter(a=>!a.imei.match(/\w{15}/));
-    const aircraftWithImei = aircraft.filter(a=>a.imei.match(/\w{15}/));
-    const concatAssets =[];
+    const aircraftWithoutImei = aircraft.filter(a => !a.imei.match(/\w{15}/));
+    const aircraftWithImei = aircraft.filter(a => a.imei.match(/\w{15}/));
+    const concatAssets = [];
     // merge all operators for assets with the same imei
-    aircraftWithImei.forEach(a=>{
-        const sameImeiAssets =aircraftWithImei.filter(aCraft=>aCraft.imei===a.imei);
-        if(sameImeiAssets.length>1){
-            const operator =sameImeiAssets.map(asset=>asset.operator);
-            const mergedAsset = {...a,operator};
-            if(concatAssets.find(asset=>asset.imei ===a.imei)===undefined){
+    aircraftWithImei.forEach(a => {
+        const sameImeiAssets = aircraftWithImei.filter(aCraft => aCraft.imei === a.imei);
+        if (sameImeiAssets.length > 1) {
+            const operator = sameImeiAssets.map(asset => asset.operator);
+            const mergedAsset = {...a, operator};
+            if (concatAssets.find(asset => asset.imei === a.imei) === undefined) {
                 concatAssets.push(mergedAsset);
             }
         }
@@ -254,63 +255,59 @@ export const fetchAsset = async (id, is_equipment) => {
     }
 };
 export const fetchAssetList = async (assetMode) => {
-
-    const aircraftData = await fetch('/data/aircraft.json');
-    const equipmentData = await fetch('/data/equipment.json');
-    const equipmentJSON = await equipmentData.json();
-    const aircraftJSON = await aircraftData.json();
-    const availabilityData = await fetch('/data/availability.json');
-    const availabilityJSON = await availabilityData.json();
-    const {aircraft} = aircraftJSON;
-    const {equipment} = equipmentJSON;
-    const currentLocationsData = await fetch('/data/currentLocations.json');
-    const currentLocationsJSON = await currentLocationsData.json();
-    const {currentLocations} = currentLocationsJSON;
-    if (assetMode === ASSET_MODE.AIRCRAFT) {
-        const aircraftWithActivity = aircraft.map(a => {
-                const matchedAsset = availabilityJSON.features.filter(feature => feature.properties.asset_id === a.id);
-                if (matchedAsset.length > 0) {
-                    const matchedFeature = matchedAsset[0].properties;
-                    const matchLocation = currentLocations.filter(location => location.imei === a.imei);
-                    const location = matchLocation.length > 0 && matchLocation[0];
-                    const properties = {...a, ...matchedFeature, ...location}
-                    const locationOrder = getLocationOrder(properties);
-                    properties.locationOrder = locationOrder;
-                    const statusOrder = getStatusOrder(properties);
-                    properties.statusOrder = statusOrder;
-                    return properties;
+  return Promise.all([fetch('/data/aircraft.json'), fetch('/data/equipment.json'), fetch('/data/availability.json'), fetch('/data/currentLocations.json')])
+        .then(results=>Promise.all(results.map(r=>r.json()))).then(
+            res=>{
+                const {aircraft} = res[0];
+                const {equipment} =res[1];
+                const availabilityJSON = res[2];
+                const {currentLocations} = res[3];
+                if (assetMode === ASSET_MODE.AIRCRAFT) {
+                    const aircraftWithActivity = aircraft.map(a => {
+                            const matchedAsset = availabilityJSON.features.filter(feature => feature.properties.asset_id === a.id);
+                            if (matchedAsset.length > 0) {
+                                const matchedFeature = matchedAsset[0].properties;
+                                const matchLocation = currentLocations.filter(location => location.imei === a.imei);
+                                const location = matchLocation.length > 0 && matchLocation[0];
+                                const properties = {...a, ...matchedFeature, ...location};
+                                const locationOrder = getLocationOrder(properties);
+                                properties.locationOrder = locationOrder;
+                                const statusOrder = getStatusOrder(properties);
+                                properties.statusOrder = statusOrder;
+                                return properties;
+                            }
+                            return {...a, locationOrder: 'Z', statusOrder: 'Z'};
+                        }
+                    );
+                    // send data with alphabetic order for callsign or rego
+                    return sortNameByAlphabetic(aircraftWithActivity);
+                } else {
+                    const equipmentWithActivity = equipment.map(e => {
+                        const matchedAsset = availabilityJSON.features.filter(feature => feature.properties.asset_id === e.id);
+                        if (matchedAsset.length > 0) {
+                            const matchedFeature = matchedAsset[0].properties;
+                            const matchLocation = currentLocations.filter(location => location.imei === e.imei);
+                            const location = matchLocation.length > 0 && matchLocation[0];
+                            const properties = {...e, ...matchedFeature, ...location};
+                            const locationOrder = getLocationOrder(properties);
+                            properties.locationOrder = locationOrder;
+                            const statusOrder = getStatusOrder(properties);
+                            properties.statusOrder = statusOrder;
+                            return properties;
+                        }
+                        return {...e, locationOrder: 'Z', statusOrder: 'Z'};
+                    });
+                    // send data with alphabetic order for callsign or rego
+                    return sortNameByAlphabetic(equipmentWithActivity);
                 }
-                return {...a, locationOrder: 'Z', statusOrder: 'Z'};
             }
-        );
-        // send data with alphabetic order for callsign or rego
-        return sortNameByAlphabetic(aircraftWithActivity);
-    } else {
-        const equipmentWithActivity = equipment.map(e => {
-            const matchedAsset = availabilityJSON.features.filter(feature => feature.properties.asset_id === e.id);
-            if (matchedAsset.length > 0) {
-                const matchedFeature = matchedAsset[0].properties;
-                const matchLocation = currentLocations.filter(location => location.imei === e.imei);
-                const location = matchLocation.length > 0 && matchLocation[0];
-                const properties = {...e, ...matchedFeature, ...location}
-                const locationOrder = getLocationOrder(properties);
-                properties.locationOrder = locationOrder;
-                const statusOrder = getStatusOrder(properties);
-                properties.statusOrder = statusOrder;
-                return properties;
-            }
-            return {...e, locationOrder: 'Z', statusOrder: 'Z'};
-        });
-        // send data with alphabetic order for callsign or rego
-        return sortNameByAlphabetic(equipmentWithActivity);
-    }
-
+       );
 };
 
 const sortNameByAlphabetic = (arr) => {
-    return arr.sort((a,b)=>{
+    return arr.sort((a, b) => {
         const aValue = a.callsign || a.registration;
         const bValue = b.callsign || b.registration;
-        return  aValue.localeCompare(bValue);
+        return aValue.localeCompare(bValue);
     });
 }
