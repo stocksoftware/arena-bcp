@@ -1,0 +1,47 @@
+<div class="statusColumn amPopupContainer hoverToggle" {{#if popup}}data-popup="{{popup}}"{{/if}}>
+  <div class="statusCell">
+    <div>
+      {{#if availability}}
+        <div class="eventAndNumber">
+          <div>
+            <span class="eventName">{{eventName}}</span>
+            <span class="eventResponse">{{eventResponse}}</span>
+          </div>
+          {{#if deployed}}
+            <div class="dispatchNumber">
+              {{dispatchNumber}}
+            </div>
+          {{/if}}
+        </div>
+        {{#if deployed}}
+          {{#if dispatchTime}}
+            <div class="dispatchTime">{{dispatchTime}}</div>
+          {{/if}}
+        {{/if}}
+        <div class="incidentName">{{incidentName}}</div>
+        {{#if ctaf}}
+          <div class="ctaf">F-CTAF: {{ctaf}}</div>
+        {{/if}}
+      {{/if}}
+    </div>
+    {{#if editUrl}}
+      <div class="colActions">
+        <a href="{{editUrl}}" target="register" class="btn">
+          <i class="fa fa-pencil-square-o"></i>
+        </a>
+      </div>
+    {{/if}}
+    {{#if asset.warnings}}
+      <span class="warning-icon" data-toggle="tooltip" data-placement="bottom" title="There are warnings related to this {{assetLabel}}.">
+        <a href="#" onclick="AM_DASHBOARD.showWarnings('{{asset.id}}', '{{currentAssetFilter}}');return false;">
+          <i class="fa fa-warning"></i>
+        </a>
+      </span>
+    {{/if}}
+    {{#if overwrittenResponseTime}}
+      <span class="time-icon" data-toggle="tooltip" data-placement="bottom" title="The operator has overwritten the standby response time of {{standbyResponse}} in Availability.">
+          <i class="fa fa-clock-o"></i>
+      </span>
+    {{/if}}
+  </div>
+</div>

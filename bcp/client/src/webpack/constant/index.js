@@ -1,4 +1,4 @@
-export const ASSET_MODE={
+export const ASSET_MODE = {
     AIRCRAFT: 'AIRCRAFT',
     EQUIPMENT: 'EQUIPMENT'
 };
@@ -8,6 +8,7 @@ export const AIRCRAFT_TYPE = {
     HELICOPTER: 'HELICOPTER'
 };
 
+export const DEBOUNCE_DELAY_MS = 500;
 export const MAP_CONFIG = {
     ESRItopoURL: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}',
 };
@@ -44,4 +45,11 @@ export const AIRCRAFT_CATEGORIES = {
     FixOther: 'FW - Other',
     UAV: 'Unmanned Aerial Vehicle',
     Other: 'Other'
+};
+
+export const SORTKEYID = {
+    Asset: 'A',
+    BaseLocation: 'B',
+    Status: 'C',
+    FCTAF: 'D'
 };

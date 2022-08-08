@@ -4,6 +4,67 @@ import $ from 'jquery';
 import moment from 'moment-timezone';
 import warning from "../../../../public/icons/fa-warning.svg";
 
+export const getEquipmentCell = (equipment) => {
+    const equipmentDetails = {
+        description: equipment.description,
+        registration: equipment.registration ? equipment.registration : null,
+        operatorName: equipment.operator ?
+            cleanOperatorName(equipment.operator.name ?
+                equipment.operator.name :
+                equipment.operator.registeredName) :
+            null
+    }
+    return equipmentDetails;
+}
+export const getPopUpContents = (asset) => {
+    let feature = {properties: asset};
+    const lastSeen = getAssetLastSeen(feature);
+    const aircraftDetails = getAircraftDetailsForPopup(feature.properties);
+    const operator = getAssetOperatorDetailsForPopup(asset);
+    return {lastSeen, aircraftDetails, operator};
+}
+
+function getAssetOperatorDetailsForPopup(asset) {
+    let details = {name: '', contact: ''};
+    if (asset.operator.name || asset.operator.registeredName || asset.operator.operationalContact) {
+        details.name = cleanOperatorName(asset.operator.name ? asset.operator.name : asset.operator.registeredName);
+        details.contact =
+            asset.operator.operationalContact ? safeString(asset.operator.operationalContact) : '';
+    }
+    return details;
+}
+
+function getAircraftDetailsForPopup(aircraft) {
+
+    const category = aircraft.category ? formatAircraftCategory(aircraft.category) : '';
+    let makeAndModel = aircraft.make ? safeString(aircraft.make) + ' ' : '';
+    makeAndModel += aircraft.model ? safeString(aircraft.model) : '';
+    const imageSrc = aircraft.model ? getAssetSilhouettePath(aircraft) : '';
+    return {category, makeAndModel, imageSrc};
+}
+
+export function getAssetDispatchDetails(feature) {
+    const lastSeen = getAssetLastSeenDetails(feature);
+    const aircraftDetails = getAircraftDetails(feature);
+    const operator = getAssetOperatorDetails(asset);
+    const dispatchDetails = getAssetDispatchDetails(feature)
+    return {lastSeen, aircraftDetails, operator, dispatchDetails}
+};
+
+export const getAircraftCell = function (aircraft) {
+    const aircraftDetails = {
+        callsign: aircraft.callsign ? aircraft.callsign : null,
+        registration: aircraft.registration ? aircraft.registration : null,
+        operatorName: aircraft.operator ?
+            cleanOperatorName(aircraft.operator.name ?
+                aircraft.operator.name :
+                aircraft.operator.registeredName) :
+            null
+    };
+    return aircraftDetails;
+};
+
+
 export function getAssetTitle(asset) {
     return asset.callsign ? asset.callsign + ' [' + asset.registration + ']' : asset.registration;
 }
@@ -89,15 +150,6 @@ export function getAssetDispatchContactDetails(asset) {
         }
         return require('./templates/assetDispatchContactDetails.hbs')(details);
     }
-}
-
-function safeString(string) {
-    if (!string) {
-        return '';
-    }
-    let result = string.replace(/'/g, '&#39');
-    result = result.replace(/"/g, '&#34');
-    return result;
 }
 
 export function mToFeet(m) {
@@ -412,7 +464,83 @@ export function truncateNotes(notes, maxLength) {
     return oneLinePerNote;
 }
 
+export function safeString(string) {
+    if (!string) {
+        return '';
+    }
+    let result = string.replace(/'/g, '&#39');
+    result = result.replace(/"/g, '&#34');
+    return result;
+}
+
 window.AM_DISP = {};
 window.AM_DISP.showOperatorTab = showOperatorTab;
+
+
+export const getIncident = function (incidentId) {
+    let incident = null;
+    if (_cachedIncidentData) {
+        _cachedIncidentData.features.forEach(f => {
+            if (f.properties.id === incidentId) {
+                incident = f;
+                return false;
+            }
+        });
+    }
+    return incident;
+};
+export const getLocationOrder = function (asset) {
+    let order = 'Z';
+    if (asset.location) {
+        switch (asset.event_type) {
+            // POSSIBLY NEED TO ADD MORE CASES HERE
+            case 'STANDBY':
+                order = 'A ' + asset.location;
+                break;
+            case 'AVAILABLE':
+                order = 'B ' + asset.location;
+                break;
+            default:
+                order = 'X ' + asset.location;
+                break;
+        }
+    }
+    return order;
+};
+export const getStatusOrder = function (asset) {
+    let order = 'Z';
+    if (asset.response) {
+        // zero pad the minutes for response time
+        let mins = '000000000' + asset.response;
+        mins = mins.slice(mins.length - 6);
+        switch (asset.event_type) {
+            case 'DEPLOYED': // TEMPORARY FIX AS THIS SHOULD BE 'DISPATCHED'
+            case 'DISPATCHED':
+                order = 'A';
+                break;
+            case 'STANDBY':
+                order = 'B' + mins;
+                break;
+            case 'STANDBY_AMENDED':
+                order = 'B' + mins;
+                break;
+            case 'AVAILABLE':
+            case 'LIMITED':
+                order = 'C' + mins;
+                break;
+            case 'UNSERVICABLE':
+                order = 'E';
+                break;
+            case 'UNAVAILABLE':
+                order = 'F';
+                break;
+            default:
+                order = 'X';
+                break;
+        }
+        return order;
+    }
+    return order;
+};
 
 

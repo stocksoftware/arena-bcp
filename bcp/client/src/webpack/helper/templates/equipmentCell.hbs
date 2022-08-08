@@ -1,0 +1,24 @@
+<div class="assetColumn amPopupContainer hoverToggle" data-popup="{{popup}}">
+  <div class="{{#if registration}}registration {{/if}}defaultColumn">
+    {{#if description}}
+      {{description}}
+    {{/if}}
+    {{#if registration}}
+      [{{registration}}]
+    {{/if}}
+  </div>
+  <div class="assetName">
+    {{#if callsign}}
+      {{callsign}}
+    {{else}}
+      {{#if registration}}
+        [{{registration}}]
+      {{/if}}
+    {{/if}}
+  </div>
+  {{#if operatorName}}
+    <div class="operator">
+      {{operatorName}}
+    </div>
+  {{/if}}
+</div>

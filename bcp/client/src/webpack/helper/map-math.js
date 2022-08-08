@@ -1,5 +1,6 @@
 export const COORD_LON = 0;
 export const COORD_LAT = 1;
+
 export function ddm(dd, precision) {
     var deg = parseInt(dd);
     var dec = Math.abs(dd - deg);
@@ -48,5 +49,29 @@ export function timeToString(timeParam) {
     }
     return responseTime;
 }
+
+export const filterAssets = (assets, filterText) => {
+    let filterResult = [];
+    let pushed = false;
+    if (!filterText) {
+        return assets;
+    } else {
+        for (let i = 0; i < assets.length; i++) {
+            pushed = true;
+            Object.values(assets[i]).forEach(value => {
+                if (value && (typeof value === 'string' || typeof value === 'number')) {
+                    value = value.toString().toUpperCase();
+                    if (value && value.includes(filterText.toUpperCase())) {
+                        if (pushed) {
+                            filterResult.push(assets[i]);
+                            pushed = false;
+                        }
+                    }
+                }
+            });
+        }
+        return filterResult;
+    }
+};
 
 
