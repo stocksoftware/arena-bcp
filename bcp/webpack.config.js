@@ -57,9 +57,8 @@ const clientConfig = {
             {
                 test: /\.svg$/, type: 'asset/source'
             },
-          
             {
-                test: /\.svgcomponent/,
+                test: /\.svg\\?component/,
                 use: [
                     {
                         loader: "babel-loader"
