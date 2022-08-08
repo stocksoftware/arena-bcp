@@ -6,7 +6,7 @@ import {fetchAssetList} from "../helper/toGeoJSON";
 import {getLocationCell} from '../helper/map-dashboard';
 import {ASSET_MODE, DEBOUNCE_DELAY_MS, SORTKEYID} from '../constant';
 import {filterAssets} from "../helper/map-math";
-import _ from 'lodash';
+import debounce from 'lodash.debounce';
 import TableSort from '../components/TableSort';
 import AircraftAssetCol from '../components/AircraftAssetCol';
 import EquipmentAssetCol from '../components/EquipmentAssetCol';
@@ -35,7 +35,7 @@ const List = observer(() => {
 
     useEffect(() => {
         if (allAssets.length > 0) {
-            const debounce_search = _.debounce(function () {
+            const debounce_search = debounce(function () {
                     let filterResult = filterAssets(allAssets, filter);
                     setAssets(filterResult);
                 }

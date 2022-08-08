@@ -93,7 +93,6 @@ export const getStatusCell = function(asset, assetMode) {
             if ( availabilityProperties.dispatch_ctaf) {
                 props.ctaf = AMFUNC_DISP.safeString(availabilityProperties.dispatch_ctaf);
             }
-// 5:45
             const assetType = (availabilityProperties.is_equipment ?
                 ASSET_MODE.EQUIPMENT :
                 ASSET_MODE.AIRCRAFT);
