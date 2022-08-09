@@ -22,7 +22,7 @@ const AvailabilityLayer = observer(() => {
     useEffect(() => {
         filterAvailabilityData(assetMode).then(setAvailableAsset);
     }, [assetMode]);
-    const createClusterCustomIcon = function (cluster) {
+    const createClusterCustomIcon = function () {
         if (assetMode === ASSET_MODE.AIRCRAFT) {
             return planeMBMarker;
         } else {
@@ -50,7 +50,8 @@ const AvailabilityLayer = observer(() => {
     };
 
     return (
-        <MarkerClusterGroup iconCreateFunction={createClusterCustomIcon} spiderfyOnMaxZoom={true} showCoverageOnHover={false} spiderfyDistanceMultiplier={3} maxClusterRadius={30}>
+        <MarkerClusterGroup iconCreateFunction={createClusterCustomIcon} spiderfyOnMaxZoom={true}
+                            showCoverageOnHover={false} spiderfyDistanceMultiplier={3} maxClusterRadius={30}>
             <DataLayer data={availableAsset} pointToLayer={pointToLayer} onEachFeature={onEachFeature}/>
         </MarkerClusterGroup>
     );
