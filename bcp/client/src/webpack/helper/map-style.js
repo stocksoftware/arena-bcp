@@ -112,9 +112,9 @@ export function getIconForIncident(feature) {
     return buildIncidentIcon(dispatchCount, fillColour, iconColour, borderColour);
 }
 
-const iconHtml = (dispatchCount, fillColour, iconColour, borderOpacity, strokeBorderColour, strokeBorderWidth) => {
+const iconHtml = (dispatchCount, fillColour, iconColour, borderOpacity, borderColour, borderWidth) => {
     const dispatched = dispatchCount ? 'dispatched' : '';
-    return `<div class="${dispatched} ${iconColour} fa-fire">${fire}</div> <span class="dispatchCount ${iconColour}" >${dispatchCount}</span><div class="fa-penta ${fillColour} ${borderOpacity} ${strokeBorderColour} ${strokeBorderWidth}">${penta}</div>`
+    return `<div class="${dispatched} ${iconColour} fa-fire">${fire}</div> <span class="dispatchCount ${iconColour}" >${dispatchCount}</span><div class="fa-penta ${fillColour} ${borderOpacity} ${borderColour} ${borderWidth}">${penta}</div>`
 };
 
 const buildIncidentIcon = (dispatchCount, fillColour, iconColour = "whiteIconColor", borderColour) => {
@@ -129,7 +129,7 @@ const buildIncidentIcon = (dispatchCount, fillColour, iconColour = "whiteIconCol
     }
 
     return L.ExtraMarkers.icon({
-        innerHTML: iconHtml(dispatchCount, fillColour, iconColour, borderColour, borderWidth, borderOpacity),
+        innerHTML: iconHtml(dispatchCount, fillColour, iconColour,borderOpacity, borderColour, borderWidth),
         svg: true
     });
 };
