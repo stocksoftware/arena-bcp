@@ -76,6 +76,10 @@ const clientConfig = {
                     }
                 ]
 
+            },
+            {
+                test: /\.(png|jpg|gif)$/,
+                type: 'asset/resource'
             }
         ]
     },

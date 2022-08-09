@@ -171,6 +171,18 @@ html {
               bottom: 20px;
               left: 10px;
 
+              &.customMarker {
+                left: 5px;
+                color: #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &::after {
+                  content: '+';
+                }
+              }
+
               &.yellow svg path {
                 fill: #FEFF04;
               }
@@ -185,6 +197,10 @@ html {
 
               &.black svg path {
                 fill: black;
+              }
+
+              &.white svg path {
+                fill: white;
               }
             }
 

@@ -10,6 +10,7 @@ import square from "../../../../public/icons/square.svg";
 import truck from "../../../../public/icons/truck.svg";
 import fire from "../../../../public/icons/fire.svg";
 import penta from "../../../../public/icons/penta.svg";
+import star from "../../../../public/icons/star.svg";
 
 export const renderIncidentPopup = function (feature) {
     parseNotesField(feature);
@@ -465,20 +466,26 @@ const locationUnclassifiedIcon = L.icon({
     popupAnchor: [0, -12]
 });
 
-const equipmentIconMarker = (iconColor, markerColor) => L.ExtraMarkers.icon({
-    innerHTML: equipmentIconHtml(iconColor, markerColor),
+const equipmentIconMarker = (iconColor, markerColor,wrapperIcon=square) => L.ExtraMarkers.icon({
+    innerHTML: equipmentIconHtml(iconColor, markerColor,wrapperIcon),
     svg: true
 });
-const equipmentIconHtml = (iconColor, markerColor) => {
-    return `<div class="fa-content ${iconColor}">${truck}</div><div class="fa-container ${markerColor}">${square}</div>`;
+
+const equipmentIconHtml = (iconColor, markerColor,wrapperIcon) => {
+    const customMarker = wrapperIcon === star ? 'customMarker' : '';
+    return `<div class="fa-content ${iconColor} ${customMarker}">${truck}</div><div class="fa-container ${markerColor}">${wrapperIcon}</div>`;
 }
-const planeIconMarker = (iconColor, markerColor) => L.ExtraMarkers.icon({
-    innerHTML: planeIconHtml(iconColor, markerColor),
+const planeIconMarker = (iconColor, markerColor, wrapperIcon = square) => L.ExtraMarkers.icon({
+    innerHTML: planeIconHtml(iconColor, markerColor, wrapperIcon),
     svg: true
 });
-const planeIconHtml = (iconColor, markerColor) => {
-    return `<div class="fa-content ${iconColor}">${paperPlane}</div><div class="fa-container ${markerColor}">${square}</div>`;
+const planeIconHtml = (iconColor, markerColor, wrapperIcon) => {
+    const customMarker = wrapperIcon === star ? 'customMarker' : '';
+    return `<div class="fa-content ${iconColor} ${customMarker}">${paperPlane}</div><div class="fa-container ${markerColor}">${wrapperIcon}</div>`;
 };
+
+export const planeMBMarker = planeIconMarker('white', 'blue', star);
+export const equipmentMBMarker = equipmentIconMarker('white','blue',star);
 
 // show different markers for different types of Aircraft Availability
 export const iconForEquipmentAvailability = (availabilityType) => {

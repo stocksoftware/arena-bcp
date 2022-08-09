@@ -1,7 +1,6 @@
 import {createSearchText} from './map-style';
 import {AIRCRAFT_TYPE, ASSET_MODE} from '../constant';
 import {getLocationOrder, getStatusOrder} from '../helper/map-display';
-import {result} from "loadsh/object";
 
 export const fetchLocations = async () => {
     const locationData = await fetch('/data/locations.json');

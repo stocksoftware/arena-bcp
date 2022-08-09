@@ -2948,6 +2948,11 @@ leaflet.control.layers.tree@1.0.2:
   resolved "https://registry.yarnpkg.com/leaflet.control.layers.tree/-/leaflet.control.layers.tree-1.0.2.tgz#5a59c1967ff0bde34fa761987a79818455f4ffc1"
   integrity sha512-x/Boki4syfLRuKkpEpkGRaM9MxcktqrLmCaobYWOf/GQN3ND6WSdHC59zkkpx2AsyqLKgbmVUo/IHcchTevDug==
 
+leaflet.markercluster@^1.5.3:
+  version "1.5.3"
+  resolved "https://registry.yarnpkg.com/leaflet.markercluster/-/leaflet.markercluster-1.5.3.tgz#9cdb52a4eab92671832e1ef9899669e80efc4056"
+  integrity sha512-vPTw/Bndq7eQHjLBVlWpnGeLa3t+3zGiuM7fJwCkiMFq+nmRuG3RI3f7f4N4TDX7T4NpbAXpR2+NTRSEGfCSeA==
+
 leaflet@^1.8.0:
   version "1.8.0"
   resolved "https://registry.yarnpkg.com/leaflet/-/leaflet-1.8.0.tgz#4615db4a22a304e8e692cae9270b983b38a2055e"
@@ -3016,11 +3021,6 @@ loader-utils@^2.0.0:
     big.js "^5.2.2"
     emojis-list "^3.0.0"
     json5 "^2.1.2"
-
-loadsh@^0.0.4:
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/loadsh/-/loadsh-0.0.4.tgz#5314babd12bb13315dde024a4ca70758c5489d2d"
-  integrity sha512-U+wLL8InpfRalWrr+0SuhWgGt10M4OyAk6G8xCYo2rwpiHtxZkWiFpjei0vO463ghW8LPCdhqQxXlMy2qicAEw==
 
 locate-path@^5.0.0:
   version "5.0.0"
@@ -3755,6 +3755,13 @@ react-is@^16.13.1, react-is@^16.3.2:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
+
+react-leaflet-cluster@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/react-leaflet-cluster/-/react-leaflet-cluster-2.0.0.tgz#803a40d8c084142586a90711319be75e0caa3a18"
+  integrity sha512-tREjHM3mlNwj7sJdV+i0QSYbrOeju3RtPThfe7ik0T2oH56OffgMCC+mAjLOR+OrQXLIPktJpFYHpNNZOEtyUA==
+  dependencies:
+    leaflet.markercluster "^1.5.3"
 
 react-leaflet@4.0.0:
   version "4.0.0"
