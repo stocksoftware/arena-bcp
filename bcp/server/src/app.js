@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
-const port = 3001;
-console.log(process.argv)
+const port = 3000;
+
 let root_path;
 if (process.argv.length > 2) {
   root_path = process.argv[2];
