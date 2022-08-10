@@ -332,7 +332,6 @@ html {
 
       .label {
         display: inline-block;
-        font-weight: 600;
         padding-right: 0.5rem;
         padding-left: 1em;
 
@@ -349,9 +348,12 @@ html {
           line-height: 3em;
           padding-left: 0.5em;
           min-width: 10em;
+          font-weight: 700;
+          color: #757575;
 
           &.selected {
             background: #e6e6e6;
+            color: #222222;
           }
 
           &.sort {
@@ -384,6 +386,11 @@ html {
               display: flex;
               flex-direction: row;
               justify-content: flex-start;
+            }
+
+            .dispatched{
+              color:#D00000;
+              font-weight: bold;
             }
 
             .font_bold {
