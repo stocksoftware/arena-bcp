@@ -4,7 +4,7 @@ import {observer} from "mobx-react";
 import Table from 'react-bootstrap/Table';
 import {fetchAssetList} from "../helper/toGeoJSON";
 import {getLocationCell} from '../helper/map-dashboard';
-import {ASSET_MODE, DEBOUNCE_DELAY_MS, SORTKEYID} from '../constant';
+import {ASSET_MODE, DEBOUNCE_DELAY_MS, SORTKEYID, STATUSLIST} from '../constant';
 import {filterAssets} from "../helper/map-math";
 import debounce from 'lodash.debounce';
 import TableSort from '../components/TableSort';
@@ -128,13 +128,14 @@ const List = observer(() => {
                 <tbody>
                 {assets.length > 0 && assets.map(asset => {
                     const locations = getLocationCell(asset);
-                    const isDispatched = asset.event_name === 'Dispatched' ? 'dispatched' : '';
+
+                    const status =STATUSLIST[asset.event_name];
                     return (
                         <tr key={asset.id}>
                             {
                                 assetMode === ASSET_MODE.EQUIPMENT ?
-                                    <EquipmentAssetCol asset={asset} isDispatched={isDispatched}/>
-                                    : <AircraftAssetCol asset={asset} isDispatched={isDispatched}/>
+                                    <EquipmentAssetCol asset={asset} status={status}/>
+                                    : <AircraftAssetCol asset={asset} status={status}/>
                             }
 
 
@@ -147,8 +148,8 @@ const List = observer(() => {
                             </td>
                             <td className="statusCell">
                                 <div className="eventAndNumber">
-                                    <div className="eventName">
-                                        <span className={isDispatched}>{asset.event_name}
+                                    <div className={status}>
+                                        <span className="eventName">{asset.event_name}
                                         </span>
                                     </div>
                                     <span className="dispatchNumber">
