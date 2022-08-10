@@ -4,7 +4,7 @@ import {observer} from "mobx-react";
 import Table from 'react-bootstrap/Table';
 import {fetchAssetList} from "../helper/toGeoJSON";
 import {getLocationCell} from '../helper/map-dashboard';
-import {ASSET_MODE, DEBOUNCE_DELAY_MS, SORTKEYID, STATUSLIST} from '../constant';
+import {ASSET_MODE, DEBOUNCE_DELAY_MS, SORTKEYID, STATUS_LIST} from '../constant';
 import {filterAssets} from "../helper/map-math";
 import debounce from 'lodash.debounce';
 import TableSort from '../components/TableSort';
@@ -129,7 +129,7 @@ const List = observer(() => {
                 {assets.length > 0 && assets.map(asset => {
                     const locations = getLocationCell(asset);
 
-                    const status =STATUSLIST[asset.event_name];
+                    const status =STATUS_LIST[asset.event_name];
                     return (
                         <tr key={asset.id}>
                             {

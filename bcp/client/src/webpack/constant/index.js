@@ -54,7 +54,7 @@ export const SORTKEYID = {
     FCTAF: 'D'
 };
 
-export const STATUSLIST = {
+export const STATUS_LIST = {
     'Dispatched': 'status-dispatched',
     'Standby': 'status-standby',
     'Available': 'status-available',
