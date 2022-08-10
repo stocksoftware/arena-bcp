@@ -92,3 +92,4 @@ const clientConfig = {
 }
 
 module.exports = (env, argv) => [clientConfig, ...(argv.mode === 'production' ? [serverConfig, scriptConfig] : [])];
+
