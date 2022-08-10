@@ -20,7 +20,8 @@ paths like `/client/index.<hash>.js` are served
 with contents of the `/client/index.<hash>.js` file. For
 Example, NodeJS contains a built-in HTTP server that can serve static files
 <br/>
-Run `$ cd bcp/server/src`<br/>
-Run `$ node app.js`
+Run `$ sh backup.sh`<br/>
+Run `$ sh launch.sh`<br/>
+
 
 
