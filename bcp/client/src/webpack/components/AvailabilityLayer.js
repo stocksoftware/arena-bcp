@@ -23,7 +23,7 @@ const AvailabilityLayer = observer(() => {
     useEffect(() => {
         filterAvailabilityData(assetMode).then(setAvailableAsset);
     }, [assetMode]);
-    const createClusterCustomIcon = function (cluster) {
+    const createClusterCustomIcon = function () {
         if (assetMode === ASSET_MODE.AIRCRAFT) {
             return planeMBMarker;
         } else {
