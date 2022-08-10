@@ -382,14 +382,19 @@ html {
             border: 1px solid #ddd;
             position: relative;
 
+            .loc-header {
+              color: #7990a2;
+              font-weight: 600;
+              margin-right: 0.5rem;
+            }
             .assetName {
               display: flex;
               flex-direction: row;
               justify-content: flex-start;
             }
 
-            .dispatched{
-              color:#D00000;
+            .dispatched {
+              color: #D00000;
               font-weight: bold;
             }
 
@@ -399,12 +404,14 @@ html {
 
             .popup {
               position: absolute;
-              width: 18em;
-              right: -18em;
+              width: 25em;
+              right: -26em;
               top: 0;
               background: #fff;
               z-index: 10;
               font-weight: normal;
+              border: 1px solid #bbb;
+              border-radius: 5px;
 
               .callsignAndRego {
                 padding: 0.5em 1em;
@@ -415,6 +422,11 @@ html {
 
               .content {
                 padding: 1em;
+
+                .label {
+                  font-weight: bold;
+                  color: #222222;
+                }
 
                 .operator_detail {
                   padding-left: 2em;
@@ -428,21 +440,6 @@ html {
 
               .warning-icon svg path {
                 fill: #f0ad4e;
-              }
-
-
-              .loc-header {
-                color: #7990a2;
-                font-weight: 600;
-                margin-right: 0.5rem;
-              }
-
-              .dispatched {
-                color: #D00000;
-              }
-
-              .assetName {
-                font-weight: bold;
               }
 
               .operator {
