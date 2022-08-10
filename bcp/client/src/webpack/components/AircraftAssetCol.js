@@ -23,21 +23,22 @@ const AircraftAssetCol = ({asset, status}) => {
             </div>
             {
                 showPopup && (<div className='popup'>
-                    <div className="callsignAndRego">{callsign}{registration&&callsign?<span>[{registration}]</span> :<span>{registration}</span>}</div>
-                <div className="content">
-                    {lastSeen && <div>
-                        <div className="label">Last Seen:</div>
-                        {lastSeen}</div>}
-                    <div className="label">Type:</div>
-                    <div className="detail">{category}</div>
-                    <div className="detail">{makeAndModel}</div>
-                    {imageSrc && <div className="detail"><img src={imageSrc} className="image"/></div>}
-                    <div>
-                        <div className="label">Operator:</div>
-                        <div className="detail">{name}</div>
-                        <div className="detail">{contact}</div>
+                    <div className="callsignAndRego">{callsign}{registration && callsign ? <span>[{registration}]</span> :
+                        <span>{registration}</span>}</div>
+                    <div className="content">
+                        {lastSeen && <div>
+                            <div className="label">Last Seen:</div>
+                            {lastSeen}</div>}
+                        <div className="label">Type:</div>
+                        <div className="detail">{category}</div>
+                        <div className="detail">{makeAndModel}</div>
+                        {imageSrc && <div className="detail"><img src={imageSrc} className="image"/></div>}
+                        <div>
+                            <div className="label">Operator:</div>
+                            <div className="detail">{name}</div>
+                            <div className="detail">{contact}</div>
+                        </div>
                     </div>
-                </div>
                 </div>)
             }
         </td>

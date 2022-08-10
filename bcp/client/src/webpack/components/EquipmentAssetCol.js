@@ -23,7 +23,7 @@ const EquipmentAssetCol = ({asset, status}) => {
                 {operatorName}
             </div>
             {
-               showPopup && (<div className='popup'>
+                showPopup && (<div className='popup'>
                     <div className="content">
 
                         {lastSeen && <div>
