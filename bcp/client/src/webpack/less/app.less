@@ -40,6 +40,7 @@ html {
 
               &:hover {
                 background: @darkOrange;
+                color: #fff;
               }
             }
           }
@@ -47,22 +48,33 @@ html {
           #viewFilter {
             border-radius: 4px;
             margin: 0 0.5em;
-            display: flex;
-            background: #fff;
-            padding: 0;
+            height: 34px;
+
 
             li {
+              border: none;
               list-style: none;
-              border-radius: 0;
               box-shadow: -1px 0 0 0 lightgrey;
-              height: 34px;
+              background: #fff;
+
+              &:first-child {
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+              }
+
+              &:last-child {
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+              }
 
               &:hover {
                 background: @darkOrange;
+                color: #fff;
               }
 
               &.active {
                 background: @primaryColour;
+                color: #fff;
               }
             }
           }

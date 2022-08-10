@@ -50,7 +50,7 @@ const AvailabilityLayer = observer(() => {
     };
 
     return (
-        <MarkerClusterGroup iconCreateFunction={createClusterCustomIcon} spiderfyOnMaxZoom={true}
+        <MarkerClusterGroup  iconCreateFunction={createClusterCustomIcon} spiderfyOnMaxZoom={true}
                             showCoverageOnHover={false} spiderfyDistanceMultiplier={3} maxClusterRadius={30}>
             <DataLayer data={availableAsset} pointToLayer={pointToLayer} onEachFeature={onEachFeature}/>
         </MarkerClusterGroup>

@@ -82,11 +82,13 @@ const clientConfig = {
                 type: 'asset/resource'
             }
         ]
+
     },
     devServer: {
         host: "localhost",
         port: "3000",
     },
+    devtool: 'source-map'
 }
 
 module.exports = (env, argv) => [clientConfig, ...(argv.mode === 'production' ? [serverConfig, scriptConfig] : [])];
