@@ -14,6 +14,7 @@ import * as L from "leaflet";
 import useStores from "../hooks/use-stores";
 import MarkerClusterGroup from 'react-leaflet-cluster';
 import {ASSET_MODE} from "../constant";
+import {Marker} from 'react-leaflet';
 
 const AvailabilityLayer = observer(() => {
     const {mapStore} = useStores();
@@ -22,7 +23,7 @@ const AvailabilityLayer = observer(() => {
     useEffect(() => {
         filterAvailabilityData(assetMode).then(setAvailableAsset);
     }, [assetMode]);
-    const createClusterCustomIcon = function () {
+    const createClusterCustomIcon = function (cluster) {
         if (assetMode === ASSET_MODE.AIRCRAFT) {
             return planeMBMarker;
         } else {
@@ -50,8 +51,15 @@ const AvailabilityLayer = observer(() => {
     };
 
     return (
-        <MarkerClusterGroup  iconCreateFunction={createClusterCustomIcon} spiderfyOnMaxZoom={true}
-                            showCoverageOnHover={false} spiderfyDistanceMultiplier={3} maxClusterRadius={30}>
+        <MarkerClusterGroup
+            iconCreateFunction={createClusterCustomIcon}
+            onMouseOver={e => {
+                e.layer.spiderfy();
+            }}
+            showCoverageOnHover={false}
+            spiderfyDistanceMultiplier={3}
+            maxClusterRadius={30}
+            key={Math.random()}>
             <DataLayer data={availableAsset} pointToLayer={pointToLayer} onEachFeature={onEachFeature}/>
         </MarkerClusterGroup>
     );
