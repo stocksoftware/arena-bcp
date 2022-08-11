@@ -30,6 +30,11 @@ html {
             justify-content: center;
             align-items: center;
 
+            &:hover #dropdown-mode {
+              background: @darkOrange;
+              color: #fff;
+            }
+
             #dropdown-mode {
               background: #fff;
               color: black;
@@ -38,10 +43,12 @@ html {
               justify-content: center;
               align-items: center;
 
-              &:hover {
-                background: @darkOrange;
-                color: #fff;
-              }
+
+            }
+
+            .dropdown {
+              width: 100%;
+              z-index: 2000;
             }
           }
 

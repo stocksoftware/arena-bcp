@@ -18,7 +18,7 @@ const App = observer(() => {
                     <Dropdown.Toggle  id="dropdown-mode">
                         <span>MODE:{asset}</span>
                     </Dropdown.Toggle>
-                    <Dropdown.Menu>
+                    <Dropdown.Menu className="dropdown">
                         <Dropdown.Item onClick={()=>{mapStore.setAssetType(ASSET_MODE.AIRCRAFT);}}>{ASSET_MODE.AIRCRAFT}</Dropdown.Item>
                         <Dropdown.Item onClick={()=>{mapStore.setAssetType(ASSET_MODE.EQUIPMENT);}}>{ASSET_MODE.EQUIPMENT}</Dropdown.Item>
                     </Dropdown.Menu>
