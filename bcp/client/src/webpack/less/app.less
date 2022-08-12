@@ -30,6 +30,11 @@ html {
             justify-content: center;
             align-items: center;
 
+            &:hover #dropdown-mode {
+              background: @darkOrange;
+              color: #fff;
+            }
+
             #dropdown-mode {
               background: #fff;
               color: black;
@@ -38,31 +43,45 @@ html {
               justify-content: center;
               align-items: center;
 
-              &:hover {
-                background: @darkOrange;
-              }
+
+            }
+
+            .dropdown {
+              width: 100%;
+              z-index: 2000;
             }
           }
 
           #viewFilter {
             border-radius: 4px;
             margin: 0 0.5em;
-            display: flex;
-            background: #fff;
-            padding: 0;
+            height: 34px;
+
 
             li {
+              border: none;
               list-style: none;
-              border-radius: 0;
               box-shadow: -1px 0 0 0 lightgrey;
-              height: 34px;
+              background: #fff;
+
+              &:first-child {
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+              }
+
+              &:last-child {
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+              }
 
               &:hover {
                 background: @darkOrange;
+                color: #fff;
               }
 
               &.active {
                 background: @primaryColour;
+                color: #fff;
               }
             }
           }
@@ -85,7 +104,7 @@ html {
           .leaflet-marker-icon {
             .fa-fire {
               position: absolute;
-              bottom: 25px;
+              bottom: 22px;
               left: 10px;
               font-size: 14px;
 
@@ -208,6 +227,7 @@ html {
               position: absolute;
               left: 14px;
               bottom: 9px;
+              font-size: 14px;
 
               &.whiteIconColor {
                 color: white;
@@ -319,10 +339,25 @@ html {
 
       .label {
         display: inline-block;
-        font-weight: 600;
         padding-right: 0.5rem;
         padding-left: 1em;
+      }
 
+      .status-dispatched {
+        color: #D00000;
+        font-weight: bold;
+      }
+
+      .status-planned-dispatch {
+        color: #6300d0;
+      }
+
+      .status-standby {
+        color: #009000;
+      }
+
+      .status-available {
+        color: #0090B0;
       }
 
       .table {
@@ -336,9 +371,12 @@ html {
           line-height: 3em;
           padding-left: 0.5em;
           min-width: 10em;
+          font-weight: 700;
+          color: #757575;
 
           &.selected {
             background: #e6e6e6;
+            color: #222222;
           }
 
           &.sort {
@@ -367,11 +405,18 @@ html {
             border: 1px solid #ddd;
             position: relative;
 
+            .loc-header {
+              color: #7990a2;
+              font-weight: 600;
+              margin-right: 0.5rem;
+            }
+
             .assetName {
               display: flex;
               flex-direction: row;
               justify-content: flex-start;
             }
+
 
             .font_bold {
               font-weight: bold;
@@ -379,12 +424,14 @@ html {
 
             .popup {
               position: absolute;
-              width: 18em;
-              right: -18em;
+              width: 25em;
+              right: -26em;
               top: 0;
               background: #fff;
               z-index: 10;
               font-weight: normal;
+              border: 1px solid #bbb;
+              border-radius: 5px;
 
               .callsignAndRego {
                 padding: 0.5em 1em;
@@ -396,8 +443,13 @@ html {
               .content {
                 padding: 1em;
 
-                .operator_detail {
-                  padding-left: 2em;
+                .label {
+                  font-weight: bold;
+                  color: #222222;
+                }
+
+                .detail {
+                  padding-left: 1.5em;
                 }
 
                 .image {
@@ -408,21 +460,6 @@ html {
 
               .warning-icon svg path {
                 fill: #f0ad4e;
-              }
-
-
-              .loc-header {
-                color: #7990a2;
-                font-weight: 600;
-                margin-right: 0.5rem;
-              }
-
-              .dispatched {
-                color: #D00000;
-              }
-
-              .assetName {
-                font-weight: bold;
               }
 
               .operator {

@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {getEquipmentCell, getPopUpContents} from '../helper/map-display';
 
-const EquipmentAssetCol = ({asset, isDispatched}) => {
+const EquipmentAssetCol = ({asset, status}) => {
     const [showPopup, setShowPopup] = useState(false);
 
     const {description, registration, operatorName} = getEquipmentCell(asset);
@@ -17,13 +17,13 @@ const EquipmentAssetCol = ({asset, isDispatched}) => {
             <div className="assetName">
                 <span className="description">{description} </span>
                 {registration &&
-                    <div className="font_bold"><span className={isDispatched}>[{registration}]</span></div>}
+                    <div className="font_bold"><span className={status}>[{registration}]</span></div>}
             </div>
             <div className="operator">
                 {operatorName}
             </div>
             {
-               showPopup && (<div className='popup'>
+                showPopup && (<div className='popup'>
                     <div className="content">
 
                         {lastSeen && <div>
