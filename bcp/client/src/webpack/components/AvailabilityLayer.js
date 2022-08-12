@@ -14,7 +14,6 @@ import * as L from "leaflet";
 import useStores from "../hooks/use-stores";
 import MarkerClusterGroup from 'react-leaflet-cluster';
 import {ASSET_MODE} from "../constant";
-import {Marker} from 'react-leaflet';
 
 const AvailabilityLayer = observer(() => {
     const {mapStore} = useStores();
